@@ -1,8 +1,8 @@
-# D2R-Ytemod-Rossi
+# D2R-Ytemod-Enhanced
 
 Customized Ytemod build for **Diablo II: Resurrected**, focused on cleaner UI, clearer item information, stable stash behavior, original-style combat UI, and optional offline runtime enhancements.
 
-Current release: **v4.54 Rossi - CLEAN STASH**
+Current release: **v4.54 - CLEAN STASH**
 
 ---
 
