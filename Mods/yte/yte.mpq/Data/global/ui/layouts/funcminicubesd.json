@@ -1,0 +1,34 @@
+{
+    "type": "UKComplianceModal", "name": "FuncMiniCubesd",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "drawTint": false,
+        "isDismissable": false,
+    },
+    "children": [
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:TogglePanel:MiniCubeLayoutsd"
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PlayerInventoryPanelMessage:Close"
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:ClosePanel:FuncMiniCubesd"
+            }
+        }
+    ]
+}

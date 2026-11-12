@@ -1,0 +1,93 @@
+{
+    "basedOn": "YteDiyGuidePanelHD.json",
+    "type": "SettingsPanel", "name": "YteDiyGuidePanel",
+    "fields": {
+        "defaultWidget": "Close"
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "UIDiySetting",
+                    "fields": {
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "down": { "name": "Close" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "P00",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes00",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes02",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes03",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes04",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes05",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes06",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes07",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes08",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes09",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis00",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "up": { "name": "UIDiySetting" },
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "P32",
+                }
+            ]
+        },
+    ]
+}

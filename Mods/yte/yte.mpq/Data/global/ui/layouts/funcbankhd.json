@@ -1,0 +1,27 @@
+{
+    "type": "UKComplianceModal", "name": "FuncBank",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "drawTint": false,
+        "isDismissable": false,
+    },
+    "children": [
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:TogglePanel:BankExpansionLayout"//资料片仓库（2选1）
+                //"message": "PanelManager:TogglePanel:BankOriginalLayout"//非资料片仓库（2选1），若是非资料片请在上一行开头加双斜杠“//”，并去掉本行开头的双斜杠
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:ClosePanel:FuncBank"
+            }
+        }
+    ]
+}

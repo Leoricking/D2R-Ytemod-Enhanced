@@ -1,0 +1,500 @@
+{
+    "basedOn": "YteFuncIntroPanelHD.json",
+    "type": "SettingsPanel", "name": "YteFuncIntroPanel",
+    "fields": {
+        "defaultWidget": "ScrollController"
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                        "focusOnMouseOver": false,
+                        "focusIndicatorVisible": false,
+						"navigation": {
+							"left": { "name": "Anch01" },
+							"right": { "name": "Close" },
+						}
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "YteFih1",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih2",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch01",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+                                    "up": { "name": "ScrollController" },
+									"down": { "name": "Anch02" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih3",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih4",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih5",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih6",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih7",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih8",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih9",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih10",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch02",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch01" },
+									"down": { "name": "Anch03" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih11",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih12",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih13",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch03",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch02" },
+									"down": { "name": "Anch04" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih14",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih15",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih16",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih17",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih18",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih19",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih20",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih21",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih22",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih23",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih24",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih25",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih26",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih27",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih28",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch04",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch03" },
+									"down": { "name": "Anch05" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih29",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih30",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih31",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih32",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih33",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih34",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih35",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih36",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih37",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch05",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch04" },
+									"down": { "name": "Anch06" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih38",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih39",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih40",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch06",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch05" },
+									"down": { "name": "Anch07" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih41",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih42",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih43",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih44",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih45",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih46",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih47",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih48",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih49",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch07",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch06" },
+									"down": { "name": "Anch08" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih50",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih51",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih52",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih53",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih54",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih55",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch08",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch07" },
+									"down": { "name": "Anch09" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih56",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih57",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih58",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih59",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih60",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih61",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch09",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch08" },
+									"down": { "name": "Anch10" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih62",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih63",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih64",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih65",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih66",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch10",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch09" },
+									"down": { "name": "Anch11" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih67",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih68",
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch11",
+							"fields": {
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+                                    "right": { "name": "ScrollController" },
+									"up": { "name": "Anch10" },
+									"down": { "name": "ModFunDL" }
+								}
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih69",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih70",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih71",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih72",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih73",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih74",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih75",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih76",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih77",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih78",
+                },
+                {
+                    "type": "ButtonWidget", "name": "ModFunDL",
+                    "fields": {
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "right": { "name": "ScrollController" },
+                            "up": { "name": "Anch11" },
+                            "down": { "name": "ModMoreFun" }
+						}
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih79",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih80",
+                },
+                {
+                    "type": "ButtonWidget", "name": "ModMoreFun",
+                    "fields": {
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "right": { "name": "ScrollController" },
+                            "up": { "name": "ModFunDL" },
+                            "down": { "name": "Close" }
+						}
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "right": { "name": "ScrollController" },
+                            "up": { "name": "ModMoreFun" },
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih81",
+                },
+            ]
+        },
+    ]
+}

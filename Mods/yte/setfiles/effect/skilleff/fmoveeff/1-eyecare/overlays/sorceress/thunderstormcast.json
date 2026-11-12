@@ -1,0 +1,24 @@
+{
+	"dependencies": {
+		"particles": [],
+		"models": [],
+		"skeletons": [],
+		"animations": [],
+		"textures": [],
+		"physics": [],
+		"json": [],
+		"variantdata": [],
+		"objecteffects": [],
+		"other": []
+	},
+	"type": "OverlayDefinition",
+	"name": "thunderstormcast",
+	"entities": [
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 1916245135,
+			"components": []
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"basedOn": "UI_New_WeaponSwapHD.json",
+    "type": "PlayerInventoryPanel", "name": "UI_New_WeaponSwap",
+    "fields": {
+        "priority": -4,
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "background_right_arm_selected",
+        },
+        {
+            "type": "ImageWidget", "name": "background_right_arm",
+			"children": [
+				{
+					"type": "NineTileImageWidget", "name": "WeaponSwapTip",
+					"children": [
+						{
+							"type": "TextBoxWidget", "name": "Title",
+						},
+					]
+				},
+			]
+        },
+    ]
+}

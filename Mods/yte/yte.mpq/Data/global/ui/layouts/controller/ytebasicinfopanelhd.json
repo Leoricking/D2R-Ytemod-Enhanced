@@ -1,0 +1,107 @@
+{
+    "basedOn": "YteBasicInfoPanelHD.json",
+    "type": "SettingsPanel", "name": "YteBasicInfoPanel",
+    "fields": {
+        "defaultWidget": "Close"
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph1",
+
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph2",
+
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph3",
+
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph4",
+
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph5",
+
+                },
+                {
+                    "type": "ButtonWidget", "name": "Modupdate",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            //"left": { "name": "Close" },
+                            "right": { "name": "Modfeedback" },
+                            "down": { "name": "Close" }
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Modfeedback",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "left": { "name": "Modupdate" },
+                            //"right": { "name": "Close" },
+                            "down": { "name": "Close" }
+						}	
+                    }
+                },
+				/*
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph6",
+
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph7",
+
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph8",
+
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph9",
+
+                },
+				*/
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "left": { "name": "Modupdate" },
+                            "right": { "name": "Modfeedback" },
+                            "up": { "name": "Modfeedback" },
+                        }
+                    }
+                },
+            ]
+        },
+    ]
+}

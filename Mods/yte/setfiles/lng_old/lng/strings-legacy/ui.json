@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": 4227,
+    "Key": "StrSklTree1",
+    "enUS": "Skill",
+    "zhTW": "技能",
+    "deDE": "Fertigkeit",
+    "esES": "",
+    "frFR": "Aptitude",
+    "itIT": "",
+    "koKR": "스킬",
+    "plPL": "Umiejętności"
+  },
+  {
+    "id": 4228,
+    "Key": "StrSklTree2",
+    "enUS": "Choices",
+    "zhTW": "點數",
+    "deDE": "Auswahl",
+    "esES": "",
+    "frFR": "Choix",
+    "itIT": "",
+    "koKR": "향상",
+    "plPL": "do wyboru"
+  },
+  {
+    "id": 4229,
+    "Key": "StrSklTree3",
+    "enUS": "Remaining",
+    "zhTW": "剩餘",
+    "deDE": "Verbleibend",
+    "esES": " Restantes\n Habilidad\n  Opc. de",
+    "frFR": "Restant",
+    "itIT": "  Restanti\n   Abilità\n   Scelte",
+    "koKR": "포인트",
+    "plPL": ""
+  },
+]

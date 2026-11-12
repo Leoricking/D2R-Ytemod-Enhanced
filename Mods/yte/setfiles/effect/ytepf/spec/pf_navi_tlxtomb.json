@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [],
+    "skeletons": [],
+    "animations": [],
+    "textures": [],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "Prefab",
+  "name": "pf_navi_special_tlxtomb",
+  "entities": [
+//符文
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":29.7, "y": 2, "z": 60.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_4/vfx_arcanerune_4.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":49.7, "y": 2, "z": 30.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_3/vfx_arcanerune_3.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":29.7, "y": 2, "z": 50.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_2/vfx_arcanerune_2.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":59.7, "y": 2, "z": 30.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_1/vfx_arcanerune_1.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":39.7, "y": 2, "z": 30.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_5/vfx_arcanerune_5.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":29.7, "y": 2, "z": 40.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_6/vfx_arcanerune_6.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"vfx","id":9999998666,"components":[{"type":"TransformDefinitionComponent","name":"vfx_TransformDefinition","position":{"x":29.7, "y": 2, "z": 30.3},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_VfxDefinition","filename":"data/hd/vfx/particles/objects/vfx_only/arcane_rune_7/vfx_arcanerune_7.particles","hardKillOnDestroy":false}]},
+//光线
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":30.0, "y": 5.0, "z": 30.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":30.0,"y":5.0,"z":38.0},"orientation":{"x":0.2706,"y":0.0,"z":0.2706,"w":0.9239},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":30.0,"y":5.0,"z":48.0},"orientation":{"x":0.3725,"y":0.0,"z":0.3725,"w":0.85},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":30.0,"y":5.0,"z":55.0},"orientation":{"x":0.5,"y":0.0,"z":0.5,"w":0.7071},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":38.0,"y":5.0,"z":30.0},"orientation":{"x":0.2706,"y":0.0,"z":0.2706,"w":-0.9239},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":48.0,"y":5.0,"z":30.0},"orientation":{"x":0.4243,"y":0.0,"z":0.4243,"w":-0.8},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_entrance_light","position":{"x":55.0,"y":5.0,"z":30.0},"orientation":{"x":0.5,"y":0.0,"z":0.5,"w":-0.7071},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_entrance_light","filename":"data/hd/ajae_light/particles/ajae_light_r01.particles","hardKillOnDestroy":false}]},
+
+]
+}

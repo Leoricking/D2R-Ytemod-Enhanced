@@ -1,0 +1,81 @@
+{
+    "type": "Panel", "name": "YtemodUptoVip",
+    "fields": {
+        "anchor":  { "x": 1.0, "y": 0.0 },
+        "priority": -110,
+        "isDismissable": false,
+    },
+	"children": [
+		{
+			"type": "NineTileImageWidget", "name": "VipHeaderTile",
+			"fields": {
+				"filename": "PANEL/TooltipBorder/TooltipBorder",
+				"backgroundColor": [ 0.0, 0.0, 0.0, 0.30 ],
+				"tileScale": 1.0,
+				"rect": { "x": -430, "y": 542, "width": 360, "height": 0 },
+			},
+			"children": [
+				{
+					"type": "TextBoxWidget", "name": "VipHeaderText",
+					"fields": {
+						"text": "ㄿ升級增值版ㄿ",
+						"fitToParent": true,
+						"style": {
+							"pointSize": "$MediumLargeFontSize",
+							"alignment": { "v": "center", "h": "center" },
+							"fontColor": "$FontColorGold",
+						}
+					}
+				},
+			]
+		},
+		{
+			"type": "NineTileImageWidget", "name": "VipBodyTile",
+			"fields": {
+				"filename": "PANEL/TooltipBorder/TooltipBorder",
+				"backgroundColor": [ 0.0, 0.0, 0.0, 0.30 ],
+				"tileScale": 1.0,
+				"rect": { "x": -430, "y": 588, "width": 360, "height": 470 },
+			},
+			"children": [
+				{
+					"type": "TextBoxWidget", "name": "RewardText",
+					"fields": {
+						"rect": { "x": 0, "y": 20, "width": 360, "height": 60 },
+						"text": "微信打赏码",
+						"style": {
+							"pointSize": "$MediumLargeFontSize",
+							"alignment": { "v": "center", "h": "center" },
+							"spacing": { "leading": 0.9 },
+							"options": { "pipeCharacterBehavior": "handle", "newlineHandling": "standard", "lineWrap": false },
+						},
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "RewardQRCode",
+					"fields": {
+						"rect": { "x": 35, "y": 90, "scale": 1.2 },
+						"filename": "ytepic\\dgs",
+						"hoveredFrame": 0,
+						"pressedFrame": 0,
+						"sound": "",
+						"tooltipString": "请用微信扫描打赏码，选择打赏 30 元，并在留言中附上邮箱用以接收网盘信息。\n留言长度可能会因微信版本不同而有所差异，若邮箱信息填写不完整，或漏填写，\n可以在凯恩论坛中发私信给我，我会尽量在第一时间将网盘链接发送至你的邮箱。",
+					}
+				},
+				{
+					"type": "TextBoxWidget", "name": "RewardText",
+					"fields": {
+						"rect": { "x": 0, "y": 390, "width": 360, "height": 60 },
+						"text": "感谢支持",
+						"style": {
+							"pointSize": "$MediumLargeFontSize",
+							"alignment": { "v": "center", "h": "center" },
+							"spacing": { "leading": 0.9 },
+							"options": { "pipeCharacterBehavior": "handle", "newlineHandling": "standard", "lineWrap": false },
+						},
+					}
+				},
+			]
+		},
+	]
+}

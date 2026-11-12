@@ -1,0 +1,318 @@
+{
+    "type": "SettingsPanel", "name": "YteValueAddedPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "YteVA01",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "欢迎使用 YteMod ，祝您游戏愉快！", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA02",
+                    "fields": {
+                        "rect": { "x": 0, "y": 110, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "从 3.0 版本开始推出共享版和增值版两种版本，增值版为付费版本，享受额外的增值内容。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA03",
+                    "fields": {
+                        "rect": { "x": 0, "y": 170, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "增值功能项目为买断制，一次付费享受该增值功能的后续所有更新维护服务。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA04",
+                    "fields": {
+                        "rect": { "x": 0, "y": 230, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "后续若开发出新的增值功能则以增值包的形式推出，可按需求选择是否购买。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA05",
+                    "fields": {
+                        "rect": { "x": 0, "y": 290, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "共享版和增值版的主要区别为：内置的查询功能@ytecyc8「凯恩之书」@ytecyc4资料及UI界面布局等功能的差异。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA06",
+                    "fields": {
+                        "rect": { "x": 0, "y": 350, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "共享版提供完整的方块公式、符文之语资料及部分其他项目资料。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA07",
+                    "fields": {
+                        "rect": { "x": 0, "y": 410, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "增值版提供完整的方块公式、符文之语、暗金、套装、实用基础物品、基础知识、有价值物品最高词缀", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA08",
+                    "fields": {
+                        "rect": { "x": 0, "y": 470, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "属性等资料，以及更多UI界面布局方案和其他功能优化。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA09",
+                    "fields": {
+                        "rect": { "x": 0, "y": 530, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "共享版与增值版差异其实不大，核心、重要功能共享版都有。增值版多出的内容也就是一些基础资料，", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA10",
+                    "fields": {
+                        "rect": { "x": 0, "y": 590, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "在网站、小程序里都能轻易查询到，内置到游戏内也仅是增加一点便利而已。将其作为付费项目也不是", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA11",
+                    "fields": {
+                        "rect": { "x": 0, "y": 650, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "因为这点便利有这个价值，只是为了区分免费与付费而已。以这种方式收费究其原因，一是做此 MOD ", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA12",
+                    "fields": {
+                        "rect": { "x": 0, "y": 710, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "确实耗费了大量时间，二是现实问题，希望能以此获得一点收入，所以，还请有能力的朋友可以多多支", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA13",
+                    "fields": {
+                        "rect": { "x": 0, "y": 770, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "持一下，谢谢！", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA14",
+                    "fields": {
+                        "rect": { "x": 0, "y": 830, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "使用过程中如有问题或发现错漏之处也欢迎在论坛或QQ群里反馈。", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA15",
+                    "fields": {
+                        "rect": { "x": 0, "y": 890, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "升级增值版方法：@ytecyc2（当前为共享版可升级）", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA16",
+                    "fields": {
+                        "rect": { "x": 0, "y": 950, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "微信/支付宝扫码赞助，30元/半年、50元/1年、100元/3年，留言附上邮箱用以接收获取信息。", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "YteDSM",
+							"fields": {
+								"rect": { "x": 0, "y": 70 },
+								"filename": "ytepic/dgs",
+							}
+						},
+						{
+							"type": "ImageWidget", "name": "YteDSM",
+							"fields": {
+								"rect": { "x": 300, "y": 70 },
+								"filename": "ytepic/dgs_zfb",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA17",
+                    "fields": {
+                        "rect": { "x": 260, "y": 1010, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 600, "y": 1150 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:ClosePanel:YtemodInfo",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEMultiLineButtonText",
+                        "textString": "@close", 
+                    }
+                },
+            ]
+        },
+    ]
+}

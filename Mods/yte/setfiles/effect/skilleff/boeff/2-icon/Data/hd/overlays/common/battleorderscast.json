@@ -1,0 +1,74 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/custom particles/Call To Arms/Battle Orders V effect.particles"
+            },
+            {
+                "path": "data/hd/vfx/custom particles/Call To Arms/Battle Orders R effect.particles"
+            },
+            {
+                "path": "data/hd/vfx/custom particles/Call To Arms/Battle Orders Y effect.particles"
+            },
+            {
+                "path": "data/hd/vfx/particles/overlays/common/Battle Orders/Battle Orders_icon.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/custom effect/baalshield/V_fire_color.texture"
+            },
+            {
+                "path": "data/hd/vfx/custom effect/baalshield/R_fire_color.texture"
+            },
+            {
+                "path": "data/hd/vfx/custom effect/baalshield/Y_fire_color.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/graphic/battleO/battle_icon.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/graphic/battleO/battleO_glowmask.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/graphic/battleO/battleO_mask.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "battleorderscast",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 992020576,
+            "components": [
+                //戰鬥命令效果圖標皮膚
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/common/Battle Orders/Battle Orders_icon.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 128.0,
+                        "y": 101.0,
+                        "z": 124.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

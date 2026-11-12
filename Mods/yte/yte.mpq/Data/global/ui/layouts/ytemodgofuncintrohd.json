@@ -1,0 +1,51 @@
+{
+    "type": "UKComplianceModal", "name": "YtemodGoFuncintro",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "drawTint": false,
+        "isDismissable": true,//false
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "YtemodInfoTile",
+            "fields": {
+                "rect": { "x": -350, "y": -150, "width": 800, "height": 80 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.2, 0.30 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 780, "height": 80 },
+                        "style": {
+                            "fontColor": "$FontColorDarkGreen",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$LargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytefuncintrotip2", 
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 2,
+                "message": "ModalMessage:Confirm:https://www.wolai.com/9kN7kQrDJ4uiiDDM2981Q5"
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 2,
+                "message": "PanelManager:ClosePanel:YtemodGoFuncintro"
+            }
+        }
+    ]
+}

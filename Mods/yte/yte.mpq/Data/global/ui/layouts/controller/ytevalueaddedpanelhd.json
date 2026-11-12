@@ -1,0 +1,90 @@
+{
+    "basedOn": "YteValueAddedPanelHD.json",
+    "type": "SettingsPanel", "name": "YteValueAddedPanel",
+    "fields": {
+        "defaultWidget": "Close"
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "YteVA01",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA02",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA03",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA04",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA05",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA06",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA07",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA08",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA09",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA10",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA11",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA12",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA13",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA14",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA15",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA16",
+					"children": [
+						{
+							"type": "ImageWidget", "name": "YteDSM",
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteVA17",
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                    }
+                },
+            ]
+        },
+    ]
+}

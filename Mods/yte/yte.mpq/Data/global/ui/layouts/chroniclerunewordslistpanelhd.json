@@ -1,0 +1,161 @@
+{
+    "basedOn": "ChronicleBaseListPanelHD.json",
+    "type": "ChronicleRunewordsListPanel", "name": "ChronicleRunewordsListPanel",
+    "children": [
+		{
+            "type": "GrowableImageWidget", "name": "InputBackground",
+			"children": [
+				{
+					"type": "InputTextBoxWidget", "name": "SearchInput",
+				}
+			],
+        },
+		{
+			"type": "DropdownListWidget", "name": "FilterRules",
+		},
+        {
+            "type": "ImageWidget", "name": "TypeScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "TypeScrollController",
+                }
+            ]
+        },
+        {
+            "type": "FocusableListContainerWidget", "name": "TabScrollViewContainer",
+            "fields":{
+                "navigation": {
+                    "up":{"name": "FilterRules"}
+                }
+            },
+            "children": [
+                {
+                    "type": "ChronicleRecyclingListWidget", "name": "TabListContainer",
+                    "children": [
+                        {
+                            "type": "ChronicleCategoryListItem", "name": "CategoryTabTemplate",
+                            "children": [
+                                {
+                                    "type":"Widget", "name":"StandaloneCategoryContainerWidget",
+                                    "children":[
+                                        {
+                                            "type": "ToggleButtonWidget", "name": "CategoryButton",
+                                            "children":[
+                                                {
+                                                    "type":"TextBoxWidget", "name": "CategoryText",
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "TabListSelector"
+                        }
+                    ]
+                },
+            ]
+        },
+                
+        {
+            "type": "ImageWidget", "name": "ItemScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ItemScrollController",
+                }
+            ]
+        },
+        {
+            "type": "FocusableListContainerWidget", "name": "ItemScrollViewContainer",
+            "fields":{
+                "navigation": {
+                    "up":{"name": "FilterRules"}
+                }
+            },
+            "children": [
+                { 
+                    "type": "ChronicleRecyclingListWidget", "name": "ItemListContainer",
+                    "children": [
+                        {
+                            "type": "ChronicleItemListItem", "name": "ItemSlotTemplate",
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "ItemSlotBackground_Locked",
+                                    "children":[
+                                        {
+                                            "type": "Widget", "name": "ItemSpriteContainer",
+                                            "children":[
+                                                {
+                                                    "type": "ImageWidget", "name": "ItemSprite",
+                                                },
+                                                {
+                                                    "type": "TextBoxWidget", "name": "ItemSpriteText",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotText",
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "ItemSlotBackground_Unlocked",
+                                    "children":[
+                                        {
+                                            "type": "Widget", "name": "ItemSpriteContainer",
+                                            "children":[
+                                                {
+                                                    "type": "ImageWidget", "name": "ItemSprite",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotText",
+											"fields": {
+												"style": {
+													"options": { "lineWrap": true, "pipeCharacterBehavior": "handle" },
+												},
+											}
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotTimestamp",
+                                        }
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "ItemListSelector"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "CompletionContainer",
+            "children":[
+                {
+                    "type":"TextBoxWidget", "name": "CompletionText",
+                },
+                {
+                    "type":"ImageWidget", "name": "FillBg",
+                },
+                {
+                    "type": "ProgressBarWidget", "name": "ChronicleCompletionProgressBar",
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "RewardsButton",
+            "children":[
+                {
+                    "type":"TextBoxWidget", "name": "RewardsButtonText"
+                }
+            ]
+        },
+		{
+            "type": "ImageWidget", "name": "ChronicleRunewordAtlas"
+        }
+    ]
+}

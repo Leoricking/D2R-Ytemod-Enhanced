@@ -1,0 +1,3082 @@
+{
+    "type": "SettingsPanel", "name": "BocCubeVPanel",
+    "fields": {
+        "priority": 110,
+        "rect": "$MessagePageRect",
+        "anchor": "$LeftPanelAnchor",
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": {
+                    "x": 7,
+                    "y": -126
+                },
+                "anchor": {
+                    "x": 1.0
+                },
+                "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_ScrollBar"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": {
+                            "x": -30,
+                            "y": 29,
+                            "width": 26,
+                            "height": 1192
+                        },
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+                {
+                    "type": "ButtonWidget",
+                    "name": "anchbtn",
+                    "fields": {
+                        "rect": {"x": 33,"y": 465,"scale": 0.45},
+                        "filename": "PAUSEMENU\\Leftarrow",
+                        "hoveredFrame": 1,
+                        "pressedFrame": 0,
+                        "tooltipString": "@Ytemodhelp19\n@yteconsumablestf\n@ytequeststf"
+                    }
+                },
+                {
+                    "type": "ButtonWidget",
+                    "name": "anchbtn",
+                    "fields": {
+                        "rect": {"x": 33,"y": 635,"scale": 0.45},
+                        "filename": "PAUSEMENU\\Leftarrow",
+                        "hoveredFrame": 1,
+                        "pressedFrame": 0,
+                        "tooltipString": "@Ytemodhelp19\n@ytesocketsadd\n@yteitemupg"
+                    }
+                },
+                {
+                    "type": "ButtonWidget",
+                    "name": "anchbtn",
+                    "fields": {
+                        "rect": {"x": 33,"y": 820,"scale": 0.45},
+                        "filename": "PAUSEMENU\\Leftarrow",
+                        "hoveredFrame": 1,
+                        "pressedFrame": 0,
+                        "tooltipString": "@Ytemodhelp19\n@yteitemfix\n@yteitemcreaterecast"
+                    }
+                },
+                {
+                    "type": "ButtonWidget",
+                    "name": "anchbtn",
+                    "fields": {
+                        "rect": {"x": 33,"y": 1090,"scale": 0.45},
+                        "filename": "PAUSEMENU\\Leftarrow",
+                        "hoveredFrame": 1,
+                        "pressedFrame": 0,
+                        "tooltipString": "@Ytemodhelp19\n@ytecrafteditemstf"
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "YteTitleBox",
+                    "fields": {
+                        "rect": { "x": 25, "y": 18, "width": 600, "height": 92 },
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.2, 0.0, 0.2, 0.20 ],
+                        "tileScale": 1.0,
+						"allowScissorResizing": false
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "Title",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 600, "height": 92 },
+                                    "style": {
+                                        "fontColor": "$FontColorGoldYellow",
+                                        "alignment": { "h": "center", "v": "center" },
+                                        "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                                        "pointSize": "$LargeFontSize",
+                                        "spacing": "$DefaultSpacing",
+                                    },
+                                    "text": "@ytecubemain",
+                            }
+                        },
+                    ]
+                },
+                {//160 寶石合成
+                    "type": "Widget",
+                    "name": "YteWidgetGemA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 160
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetGemB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextGem",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytegemstf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "GemImage",
+                                    "fields": {
+                                        "rect": { "x": 10, "y": -30, "scale": 0.6 },
+                                        "filename": "$Fileytegv5",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy1",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 20,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegy1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegy1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv1",
+                            "fields": {
+                                "rect": {
+                                    "x": 90,
+                                    "y": 20,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegv1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegv1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb1",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 20,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegb1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegb1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr1",
+                            "fields": {
+                                "rect": {
+                                    "x": 270,
+                                    "y": 20,
+                                    "scale": 1.1
+                                },
+                                "filename": "$Fileytegr1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegr1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg1",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 20,
+                                    "scale": 1.1
+                                },
+                                "filename": "$Fileytegg1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegg1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw1",
+                            "fields": {
+                                "rect": {
+                                    "x": 450,
+                                    "y": 20,
+                                    "scale": 1.1
+                                },
+                                "filename": "$Fileytegw1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegw1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk1",
+                            "fields": {
+                                "rect": {
+                                    "x": 540,
+                                    "y": 20,
+                                    "scale": 0.80
+                                },
+                                "filename": "$Fileytegk1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegk1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy2",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 100,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegy2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegy2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv2",
+                            "fields": {
+                                "rect": {
+                                    "x": 90,
+                                    "y": 100,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegv2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegv2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb2",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 100,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegb2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegb2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr2",
+                            "fields": {
+                                "rect": {
+                                    "x": 270,
+                                    "y": 100,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegr2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegr2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg2",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 100,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegg2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegg2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw2",
+                            "fields": {
+                                "rect": {
+                                    "x": 450,
+                                    "y": 100,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegw2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegw2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk2",
+                            "fields": {
+                                "rect": {
+                                    "x": 540,
+                                    "y": 110,
+                                    "scale": 0.80
+                                },
+                                "filename": "$Fileytegk2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegk2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy3",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 190,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegy3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegy3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv3",
+                            "fields": {
+                                "rect": {
+                                    "x": 90,
+                                    "y": 190,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegv3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegv3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb3",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 190,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegb3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegb3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr3",
+                            "fields": {
+                                "rect": {
+                                    "x": 270,
+                                    "y": 190,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegr3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegr3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg3",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 190,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegg3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegg3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw3",
+                            "fields": {
+                                "rect": {
+                                    "x": 450,
+                                    "y": 190,
+                                    "scale": 1
+                                },
+                                "filename": "$Fileytegw3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegw3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk3",
+                            "fields": {
+                                "rect": {
+                                    "x": 540,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$Fileytegk3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegk3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy4",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 290,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegy4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegy4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv4",
+                            "fields": {
+                                "rect": {
+                                    "x": 90,
+                                    "y": 290,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegv4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegv4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb4",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 290,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegb4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegb4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr4",
+                            "fields": {
+                                "rect": {
+                                    "x": 270,
+                                    "y": 290,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegr4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegr4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg4",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 290,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegg4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegg4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw4",
+                            "fields": {
+                                "rect": {
+                                    "x": 450,
+                                    "y": 290,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegw4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegw4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk4",
+                            "fields": {
+                                "rect": {
+                                    "x": 540,
+                                    "y": 290,
+                                    "scale": 0.90
+                                },
+                                "filename": "$Fileytegk4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegk4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy5",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 380,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegy5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegy5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv5",
+                            "fields": {
+                                "rect": {
+                                    "x": 90,
+                                    "y": 380,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegv5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegv5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb5",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 380,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegb5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegb5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr5",
+                            "fields": {
+                                "rect": {
+                                    "x": 270,
+                                    "y": 380,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegr5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegr5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg5",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 380,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegg5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegg5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw5",
+                            "fields": {
+                                "rect": {
+                                    "x": 450,
+                                    "y": 380,
+                                    "scale": 0.9
+                                },
+                                "filename": "$Fileytegw5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegw5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk5",
+                            "fields": {
+                                "rect": {
+                                    "x": 540,
+                                    "y": 380,
+                                    "scale": 0.90
+                                },
+                                "filename": "$Fileytegk5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegk5",
+                                "sound": ""
+                            }
+                        },
+
+                    ]
+                },
+                {//690 符文合成
+                    "type": "Widget",
+                    "name": "YteWidgetRuneA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 710
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetRuneB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextRune",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yterunestf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "RuneImage",
+                                    "fields": {
+                                        "rect": { "x": 15, "y": -40, "scale": 0.6 },
+                                        "filename": "$FileRune15",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune01",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune02",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune03",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune04",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune05",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune06",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune6",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune6",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune07",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune7",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune7",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune08",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune8",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune8",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune09",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune9",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune9",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune10",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune10",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune10",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune11",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune11",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune11",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune12",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune12",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune12",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune13",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune13",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune13",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune14",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune14",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune14",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune15",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune15",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune15",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune16",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 120,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune16",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune16",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune17",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune17",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune17",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune18",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune18",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune18",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune19",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune19",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune19",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune20",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune20",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune20",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune21",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune21",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune21",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune22",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune22",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune22",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune23",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune23",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune23",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune24",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 200,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune24",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune24",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune25",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune25",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune25",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune26",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune26",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune26",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune27",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune27",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune27",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune28",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune28",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune28",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune29",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune29",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune29",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune30",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune30",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune30",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune31",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune31",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune31",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune32",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 280,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune32",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune32",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune33",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune33",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune33",
+                                "sound": ""
+                            }
+                        }
+
+                    ]
+                },
+                {//1180 消耗品合成
+                    "type": "Widget",
+                    "name": "YteWidgetConsumablesA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1220
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetConsumablesB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextConsumables",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteconsumablestf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "RvlImage",
+                                    "fields": {
+                                        "rect": { "x": 15, "y": -40, "scale": 0.6 },
+                                        "filename": "items\\misc\\potion\\full_rejuv_potion",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Yps",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 83,
+                                    "scale": 0.8
+                                },
+                                "filename": "items\\misc\\potion\\antidote_potion",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfyps",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rvs",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 83,
+                                    "scale": 0.8
+                                },
+                                "filename": "items\\misc\\potion\\rejuv_potion",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfrvs",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rvl",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 81,
+                                    "scale": 0.80
+                                },
+                                "filename": "items\\misc\\potion\\full_rejuv_potion",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfrvl",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Aqv",
+                            "fields": {
+                                "rect": {
+                                    "x": 305,
+                                    "y": 40,
+                                    "scale": 0.4
+                                },
+                                "filename": "items\\misc\\quiver\\arrows",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfaqv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Cqv",
+                            "fields": {
+                                "rect": {
+                                    "x": 390,
+                                    "y": 48,
+                                    "scale": 0.4
+                                },
+                                "filename": "items\\misc\\quiver\\bolts",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfcqv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Jav",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 55,
+                                    "scale": 0.35
+                                },
+                                "filename": "items\\weapon\\javelin\\javelin",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfjav",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Tax",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 62,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\weapon\\axe\\throwing_axe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetftax",
+                                "sound": ""
+                            }
+                        },
+                    ]
+                },
+                {//1400 任務品合成
+                    "type": "Widget",
+                    "name": "YteWidgetQuestsA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1460
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetQuestsB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextQuests",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytequeststf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ToaImage",
+                                    "fields": {
+                                        "rect": { "x": 15, "y": -40, "scale": 0.6 },
+                                        "filename": "items\\misc\\quest\\token_of_absolution",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Hst",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 40,
+                                    "scale": 0.3
+                                },
+                                "filename": "items\\weapon\\staff\\horadric_staff",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "@ytechsttf",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Qf2",
+                            "fields": {
+                                "rect": {
+                                    "x": 180,
+                                    "y": 45,
+                                    "scale": 0.40
+                                },
+                                "filename": "items\\weapon\\mace\\super_khalim_flail",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "@ytecqf2tf",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Toa",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 75,
+                                    "scale": 0.8
+                                },
+                                "filename": "items\\misc\\quest\\token_of_absolution",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "@ytectoatf",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Redp",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 70,
+                                    "scale": 0.25
+                                },
+                                "filename": "ytepic\\redportal",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "@yteredportal@yteredportal2",
+                                "sound": ""
+                            }
+                        },
+                    ]
+                },
+                {//1620 裝備打孔
+                    "type": "Widget",
+                    "name": "YteWidgetSocketsA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1700
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetSocketsB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextSockets",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytesocketsadd",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "SocketedImage",
+                                    "fields": {
+                                        "rect": { "x": 10, "y": -45, "scale": 0.5 },
+                                        "filename": "ytepic\\yteaddsoc",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpns",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpns",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytewpnasoc",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Arms",
+                            "fields": {
+                                "rect": {
+                                    "x": 140,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\arms",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytearmasoc",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shlds",
+                            "fields": {
+                                "rect": {
+                                    "x": 280,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\shlds",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesldasoc",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helms",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\helms",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehlmasoc",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rares",
+                            "fields": {
+                                "rect": {
+                                    "x": 540,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\rareitems",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyterareasoc",
+                                "sound": ""
+                            }
+                        },
+                    ]
+                },
+                {//1860 裝備升級
+                    "type": "Widget",
+                    "name": "YteWidgetItemupgA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1960
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetItemupgB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextItemupg",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteitemupg",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ItemupgImage",
+                                    "fields": {
+                                        "rect": { "x": 10, "y": -45, "scale": 0.5 },
+                                        "filename": "ytepic\\yteitemupg",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Lowwpn",
+                            "fields": {
+                                "rect": {
+                                    "x": 30,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\lowwpnup",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytelqwpnupg",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Lowarm",
+                            "fields": {
+                                "rect": {
+                                    "x": 190,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\lowarmup",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytelqarmupg",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnup",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpnup",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytewpnupg",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armup",
+                            "fields": {
+                                "rect": {
+                                    "x": 510,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\armup",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytearmupg",
+                                "sound": ""
+                            }
+                        },
+                    ]
+                },
+                {//2100 裝備修复与镶嵌物移除
+                    "type": "Widget",
+                    "name": "YteWidgetItemfixA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2220
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetItemfixB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextItemfix",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteitemfix",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ItemfixImage",
+                                    "fields": {
+                                        "rect": { "x": 10, "y": -45, "scale": 0.35 },
+                                        "filename": "ytepic\\yteitemfix",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnfix",
+                            "fields": {
+                                "rect": {
+                                    "x": 30,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpnfix",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytewpnrepair",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armfix",
+                            "fields": {
+                                "rect": {
+                                    "x": 190,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\armfix",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytearmrepair",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemoff",
+                            "fields": {
+                                "rect": {
+                                    "x": 330,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\gemedremove",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytegemmedremove",
+                                "sound": ""
+                            }
+                        },
+                    ]
+                },
+                {//2340 物品合成与重鑄
+                    "type": "Widget",
+                    "name": "YteWidgetItemCreateRecastA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2460
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetItemCreateRecastB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextItemCreateRecast",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteitemcreaterecast",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ItemtfImage",
+                                    "fields": {
+                                        "rect": { "x": 10, "y": -45, "scale": 0.35 },
+                                        "filename": "ytepic\\yteitemtf",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Mrinamu",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\mrinamu",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfmamurin",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Msss",
+                            "fields": {
+                                "rect": {
+                                    "x": 110,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\msss",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytetfmshldswdpom",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Mwpns",
+                            "fields": {
+                                "rect": {
+                                    "x": 260,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\mwpns",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesocmagwpn",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Mitem",
+                            "fields": {
+                                "rect": {
+                                    "x": 390,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\mitemrecast",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytemagitemrecas",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Ritem",
+                            "fields": {
+                                "rect": {
+                                    "x": 520,
+                                    "y": 40,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\ritemrecast",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteraritemrecas",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedColdRupture",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ -0.47, 0.2, 0.6, 0.0 ],
+								"tintTransform": [ 0.595, 0.96, 0.98, 0.40 ],
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteccr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedColdRuptureimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ -0.47, 0.2, 0.6, 0.0 ],
+								"tintTransform": [ 0.595, 0.96, 0.98, 0.40 ]
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedFlameRift",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecfr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedFlameRiftimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ 0.0, 0.25, 0.55, 0.0 ],
+								"tintTransform": [ 1.0, 0.0, 0.0, 0.5 ]
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedCrackoftheHeavens",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecoth",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedCrackoftheHeavensimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ 0.065, 0.4, 0.4, 0.0 ],
+								"tintTransform": [ 0.8, 0.68, 0.25, 0.8 ]
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedRottingFissure",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecrf",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedRottingFissureimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ 0.25, 0.25, -0.1, 0.0 ],
+								"tintTransform": [ 0.0, 1.0, 0.0, 0.3 ]
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedBoneBreak",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecbb",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedBoneBreakimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ 0.0, -0.5, 0.5, 0.0 ],
+								"tintTransform": [ 0.0, 0.0, 0.0, 0.0 ]
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedBlackCleft",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecbc",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedBlackCleftimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 240,
+                                    "scale": 0.5
+                                },
+                                "filename": "items\\misc\\charm\\charm_large",
+								"useAdvancedColoring": true,
+								"recolorRange": {
+									"hue": [0.05, 0.06 ],
+									"saturation": [0.5, 0.501],
+									"value": [0.585, 0.415]
+								},
+								"hsvTransform": [ 0.0, -0.55, -0.35, 0.0 ],
+								"tintTransform": [ 0.0, 0.0, 0.0, 0.0 ]
+                            }
+                        },
+                    ]
+                },
+                {//2720 手工藝品
+                    "type": "Widget",
+                    "name": "YteWidgetCraftedItemsA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2960
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetCraftedItemsB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextCraftedItems",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytecrafteditemstf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "CitemImage",
+                                    "fields": {
+                                        "rect": { "x": 10, "y": -40, "scale": 0.5 },
+                                        "filename": "ytepic\\ytecitem",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "CraftedItemsHelp",
+                            "fields": {
+                                "rect": {
+                                    "x": 5,
+                                    "y": 35,
+                                    "width": 620,
+                                    "height": 60,
+                                },
+                                "text": "@Ytemodhelp22",
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumLargeFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                        }
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "FocusableWidget",
+                                    "name": "Tooltip",
+                                    "fields": {
+                                        "fitToParent": true,
+                                        "tooltipString": "@Ytemodhelp23@Ytemodhelp24",
+                                        "tooltipStyle": "$YtemodLeftToolTipStyle"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amuhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 100,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\amuhit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpamu",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rinhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 240,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\rinhit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehprin",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gloveshit",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 380,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\gloveshit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpglv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Belthit",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 520,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\belthit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpblt",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootshit",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 660,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\bootshit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpbts",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 800,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\helmhit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehphlm",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 940,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\armhit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpamr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 1080,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\shldhit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpsld",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 1220,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpnhit",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytehpwpn",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amublo",
+                            "fields": {
+                                "rect": {
+                                    "x": 190,
+                                    "y": 100,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\amublo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblamu",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rinblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 190,
+                                    "y": 240,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\rinblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblrin",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Glovesblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 170,
+                                    "y": 380,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\glovesblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblglv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Beltblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 185,
+                                    "y": 520,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\beltblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblblt",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootsblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 660,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\bootsblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblbts",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 185,
+                                    "y": 800,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\helmblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblhlm",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 170,
+                                    "y": 940,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\armblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblamr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 1080,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\shldblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblsld",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 190,
+                                    "y": 1220,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpnblo",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipyteblwpn",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amucas",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 100,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\amucas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecaamu",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rincas",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 240,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\rincas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecarin",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Glovescas",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 380,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\glovescas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecaglv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Beltcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 520,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\beltcas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecablt",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootscas",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 660,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\bootscas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecabts",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 355,
+                                    "y": 800,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\helmcas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecahlm",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 355,
+                                    "y": 940,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\armcas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecaamr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 1080,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\shldcas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecasld",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpncas",
+                            "fields": {
+                                "rect": {
+                                    "x": 360,
+                                    "y": 1220,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpncas",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytecawpn",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amusafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 530,
+                                    "y": 100,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\amusafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesaamu",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rinsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 530,
+                                    "y": 240,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\rinsafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesarin",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Glovessafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 530,
+                                    "y": 380,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\glovessafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesaglv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Beltsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 525,
+                                    "y": 520,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\beltsafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesablt",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootssafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 525,
+                                    "y": 660,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\bootssafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesabts",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 550,
+                                    "y": 800,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\helmsafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesahlm",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 530,
+                                    "y": 940,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\armsafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesaamr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 510,
+                                    "y": 1080,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\shldsafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesasld",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 550,
+                                    "y": 1220,
+                                    "scale": 0.35
+                                },
+                                "filename": "ytepic\\wpnsafe",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$Tooltipytesawpn",
+                                "sound": ""
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih888",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4320, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "", 
+                    }
+                },
+            ]
+        },
+    ]
+}

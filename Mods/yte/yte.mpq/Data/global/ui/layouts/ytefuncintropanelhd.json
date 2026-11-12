@@ -1,0 +1,1378 @@
+{
+    "type": "SettingsPanel", "name": "YteFuncIntroPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "YteFih1",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytemodtexten", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih2",
+                    "fields": {
+                        "rect": { "x": 0, "y": 110, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete01", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch01",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih3",
+                    "fields": {
+                        "rect": { "x": 0, "y": 170, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete02@ytecyc0@scm", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih4",
+                    "fields": {
+                        "rect": { "x": 0, "y": 230, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete03@ytecyc0@xap", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih5",
+                    "fields": {
+                        "rect": { "x": 0, "y": 290, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete04@ytecyc1ㅧ⁴=@hp4", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih6",
+                    "fields": {
+                        "rect": { "x": 0, "y": 350, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete05@ytecyc0@scl", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih7",
+                    "fields": {
+                        "rect": { "x": 0, "y": 410, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete06@r07", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih8",
+                    "fields": {
+                        "rect": { "x": 0, "y": 470, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete07@ytecyc0@kit@Hiquality", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih9",
+                    "fields": {
+                        "rect": { "x": 0, "y": 530, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete08@ytecyc0@uit", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih10",
+                    "fields": {
+                        "rect": { "x": 0, "y": 600, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete09", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch02",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih11",
+                    "fields": {
+                        "rect": { "x": 0, "y": 660, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete10", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih12",
+                    "fields": {
+                        "rect": { "x": 0, "y": 720, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete11@gpm", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih13",
+                    "fields": {
+                        "rect": { "x": 0, "y": 790, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete12", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch03",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih14",
+                    "fields": {
+                        "rect": { "x": 0, "y": 850, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete13", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih15",
+                    "fields": {
+                        "rect": { "x": 0, "y": 910, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete14", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih16",
+                    "fields": {
+                        "rect": { "x": 0, "y": 970, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete15", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih17",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1030, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete16", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih18",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1090, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete17", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih19",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1150, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete18", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih20",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1210, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete19", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih21",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1270, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete20", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih22",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1330, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete21", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih23",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1390, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete22", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih24",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1450, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete23", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih25",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1510, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete24", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih26",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1570, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete25", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih27",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1630, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete26", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih28",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1700, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete27", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch04",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih29",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1760, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete28", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih30",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1820, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete29", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih31",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1880, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete30", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih32",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1940, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete31", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih33",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2000, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete32", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih34",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2060, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete33", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih35",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2120, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytete34", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih36",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2200, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytemodimageen", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih37",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2310, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie01", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch05",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih38",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2370, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie02", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih39",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2430, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie03", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih40",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2500, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie04", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch06",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih41",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2560, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie05", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih42",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2620, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie15", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih43",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2680, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie06", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih44",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2740, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie07", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih45",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2800, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie08", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih46",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2860, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie09", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih47",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2920, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie10", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih48",
+                    "fields": {
+                        "rect": { "x": 0, "y": 2980, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie11", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih49",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3050, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie12", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch07",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih50",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3110, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie13", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih51",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3170, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie14", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih52",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3230, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie16", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih53",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3290, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie17", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih54",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3350, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie18", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih55",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3420, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie19", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch08",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih56",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3480, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie20", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih57",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3540, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie21", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih58",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3600, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie22", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih59",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3660, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie23", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih60",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3720, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie24", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih61",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3790, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie25", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch09",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih62",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3850, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie26", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih63",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3910, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie27", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih64",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3970, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@yteie28", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih65",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4050, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytemodsounden", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih66",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4160, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytese01", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch10",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih67",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4220, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytese02", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih68",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4290, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytese03", 
+                    },
+					"children": [
+						{
+							"type": "ButtonWidget", "name": "Anch11",
+							"fields": {
+								"rect": { "x": 0, "y": 12,"scale": 0.6 },
+								"filename": "Lobby\\Final\\LobbyArrowSmallR",
+								"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih69",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4350, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytese04", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih70",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4430, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytemodfonten", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih71",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4540, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytefe01", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih72",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4620, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytemoddiyfuncpkg", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih73",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4730, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytediy01", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih74",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4790, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytediy02", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih75",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4850, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytediy03", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih76",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4910, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytediy04", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih77",
+                    "fields": {
+                        "rect": { "x": 0, "y": 4970, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytediy05", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih78",
+                    "fields": {
+                        "rect": { "x": 0, "y": 5030, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@ytediy09", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "ModFunDL",
+                    "fields": {
+                        "rect": { "x": 1200, "y": 4730 },
+                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+						"pressedFrame": 1,
+						"disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:OpenPanel:YtemodGoDownload",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "tooltipString": "@ytediy07",
+                        "textString": "@ytediy06", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih79",
+                    "fields": {
+                        "rect": { "x": 0, "y": 5040, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih80",
+                    "fields": {
+                        "rect": { "x": 0, "y": 5150, "width": 1800, "height": 60 },
+                        "style": {
+                            "fontColor": "$FontColorOrange",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@morefuncreadme", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "ModMoreFun",
+                    "fields": {
+                        "rect": { "x": 1200, "y": 5150 },
+                        "filename": "FrontEnd/HD/Final/FrontEnd_ButtonSmall",
+                        "focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonSmall_Hover",
+						"pressedFrame": 1,
+						"disabledFrame": 2,
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:OpenPanel:YtemodGoFuncintro",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "tooltipString": "@ytefuncintrotip1",
+                        "textString": "@ytemodfuncintro", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 600, "y": 5350 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:ClosePanel:YtemodInfo",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEMultiLineButtonText",
+                        "textString": "@close",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih81",
+                    "fields": {
+                        "rect": { "x": 0, "y": 5450, "width": 1800, "height": 60 },
+                        "text": " ", 
+                    }
+                }
+            ]
+        },
+    ]
+}

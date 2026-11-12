@@ -1,0 +1,832 @@
+{
+    "type": "LootFilterItemPanel", "name": "LootFilterItemPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$LootFilterItemTabRect",
+        "anchor": { "x": 0.5 },
+    },
+    "children": [
+		// Item List
+		{
+			"type": "LootFilterRuleDetailsRecyclingList", "name": "ItemList",
+			"fields": { 
+				"rect": { "x": 5, "y": 10, "width": 1687, "height": 970 },
+				"selectorName": "ItemListSelector",
+				"isHoverList": true,
+				"hasNestedFocusableWidgets": true,
+				"navigationWrapsList": false,
+				"horizontalItemPadding": 15,
+				"numItemColumns": 3,
+				"parentCategoryOffset": 0,
+				"subCategoryOffset": 94,
+				"itemOffset": 177,
+				"scrollControllerName": "ScrollBar"
+			},
+			"children": [
+				{
+					"type": "LootFilterRuleDetailsListItem", "name": "template",
+					"fields": {
+						"rect": { "x": 0, "y": 0, "width": 1687, "height": 106 },
+						"buttonLegendString": "@LootFilterToggleCheckbox",
+						"checkedTransparency": 1.0,
+						"uncheckedTransparency": 0.5,
+					},
+					"children": [
+						{
+							"type": "Widget", "name": "ParentCategoryTemplate",
+							"children": [
+								{
+									"type": "ImageWidget", "name": "Image",
+									"fields": {
+										"filename": "PANEL\\Loot_Filter\\Slot_Colap_4",
+									},
+								},
+								{
+									"type": "LootFilterTriStateCheckbox", "name": "FilterItemToggle",
+									"fields": {
+										"rect": { "x": 35, "y": 15, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"state0Frame": 0,
+										"state0PressedFrame": 2,
+										"state0HoveredFrame": 1,
+										"state0DisabledFrame": 3,
+										"state1Frame": 4,
+										"state1PressedFrame": 6,
+										"state1HoveredFrame": 5,
+										"state1DisabledFrame": 7,
+										"state2Frame": 8,
+										"state2PressedFrame": 10,
+										"state2HoveredFrame": 9,
+										"state2DisabledFrame": 11,
+									}
+								},
+								{
+									"type": "TextBoxWidget", "name": "Name",
+									"fields": {
+										"rect": { "x": 125, "y": 0, "width": 1000, "height": 96 },
+										"text": "CategoryName",
+										"style": "$StyleRuleSummaryButtonText",
+									}
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "CategoryExpandButton",
+									"fields": {
+										"rect": { "x": 1591, "y": 0 },
+										"sound": "cursor_menu_select_hd",
+										"filename": "PANEL\\Chronicle\\Btn_collapse",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget", "name": "SubCategoryTemplate",
+							"fields": {
+								"rect": { "x": 0, "y": 0, "width": 1598, "height": 106 },
+							},
+							"children": [
+								{
+									"type": "ImageWidget", "name": "Image",
+									"fields": {
+										"filename": "PANEL\\Loot_Filter\\Slot_Colap_0",
+									},
+								},
+								{
+									"type": "LootFilterTriStateCheckbox", "name": "FilterItemToggle",
+									"fields": {
+										"rect": { "x": 35, "y": 15, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"state0Frame": 0,
+										"state0PressedFrame": 2,
+										"state0HoveredFrame": 1,
+										"state0DisabledFrame": 3,
+										"state1Frame": 4,
+										"state1PressedFrame": 6,
+										"state1HoveredFrame": 5,
+										"state1DisabledFrame": 7,
+										"state2Frame": 8,
+										"state2PressedFrame": 10,
+										"state2HoveredFrame": 9,
+										"state2DisabledFrame": 11,
+									}
+								},
+								{
+									"type": "TextBoxWidget", "name": "Name",
+									"fields": {
+										"rect": { "x": 125, "y": 0, "width": 600, "height": 96 },
+										"text": "CategoryName",
+										"style": "$StyleRuleSummaryButtonText",
+									}
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "CategoryExpandButton",
+									"fields": {
+										"rect": { "x": 1498, "y": 0 },
+										"sound": "cursor_menu_select_hd",
+										"filename": "PANEL\\Chronicle\\Btn_collapse",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget", "name": "ItemTemplate",
+							"fields": {
+								"rect": { "x": 0, "y": 0, "width": 493, "height": 106 },
+							},
+							"children": [
+								{
+									"type": "ImageWidget", "name": "Image",
+									"fields": {
+										"filename": "PANEL\\Loot_Filter\\Slot_Colap_3",
+									},
+								},
+								{
+									"type": "LootFilterTriStateCheckbox", "name": "FilterItemToggle",
+									"fields": {
+										"rect": { "x": 35, "y": 15, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"state0Frame": 0,
+										"state0PressedFrame": 2,
+										"state0HoveredFrame": 1,
+										"state0DisabledFrame": 3,
+										"state1Frame": 4,
+										"state1PressedFrame": 6,
+										"state1HoveredFrame": 5,
+										"state1DisabledFrame": 7,
+										"state2Frame": 8,
+										"state2PressedFrame": 10,
+										"state2HoveredFrame": 9,
+										"state2DisabledFrame": 11,
+									}
+								},
+								{
+									"type": "TextBoxWidget", "name": "Name",
+									"fields": {
+										"rect": { "x": 119, "y": 3, "width": 365, "height": 90 },
+										"text": "ItemName",
+										//"style": "$StyleItemListButtonText",
+										"style": "$StyleLootFilterItemListButtonText",
+										"truncateWithEllipsis": true,
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Widget", "name": "ItemListSelector",
+				},
+				{
+					"type": "RuleDetailsListItemContainer", "name": "TopScrollViewItemsEquipment", 
+					"fields": {
+						"navigation": {
+							"up": { "panelBoundary":true },
+						},
+						"topWidgetName": "NormalRarityChbx",
+						"bottomWidgetName": "NormalQualityChbx",
+					},
+					"children": [
+						// Rarity
+						{
+							"type": "Widget", "name": "RarityContainer",
+							"fields": {
+								"rect": { "x": 0, "y": 0 },
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget", "name": "RarityTitle",
+									"fields": {
+										"text": "@LootFilterRarityTitle",
+										"rect": { "width": 350, "height": 65 },
+										"style": "$StyleSettingsTitle"
+									}
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "NormalRarityChbx",
+									"fields": {
+										"rect": { "x": 0, "y": 68, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:normal",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"right": { "name": "MagicRarityChbx" },
+											"down" : { "name": "InferiorRarityChbx" },
+											"up": { "panelBoundary":true },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										},
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NormalRarityDesc",
+											"fields": {
+												"text":  "@LootFilterNormalRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText",
+												"focusIndicatorPadding" : {
+													"left": 0,
+													"top": 0,
+													"right": 7,
+													"bottom": 0
+												}
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "InferiorRarityChbx",
+									"fields": {
+										"rect": { "x": 0, "y": 152, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:lowQuality",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"right": { "name": "RareRarityChbx" },
+											"down" : { "name": "SuperiorRarityChbx" },
+											"up" : { "name": "NormalRarityChbx" },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "InferiorRarityDesc",
+											"fields": {
+												"text":  "@LootFilterInferiorRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText",
+												"focusIndicatorPadding" : {
+													"left": 0,
+													"top": 0,
+													"right": 7,
+													"bottom": 0
+												}
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "SuperiorRarityChbx",
+									"fields": {
+										"rect": { "x": 0, "y": 236, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:hiQuality",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"right": { "name": "UniqueRarityChbx" },
+											"down" : { "name": "EthSockRarityChbx" },
+											"up" : { "name": "InferiorRarityChbx" },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SuperiorRarityDesc",
+											"fields": {
+												"text":  "@LootFilterSuperiorRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "EthSockRarityChbx",
+									"fields": {
+										"rect": { "x": 0, "y": 320, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateEthSocketedFilter",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"right": { "name": "SetRarityChbx" },
+											"down" : { "name": "NormalQualityChbx" },
+											"up" : { "name": "SuperiorRarityChbx" },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "EthSockRarityDesc",
+											"fields": {
+												"text":  "@LootFilterEtherealSocketed",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "MagicRarityChbx",
+									"fields": {
+										"rect": { "x": 800, "y": 68, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:magic",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"left": { "name": "NormalRarityChbx" },
+											"down" : { "name": "RareRarityChbx" },
+											"up" : { "panelBoundary": true },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "MagicRarityDesc",
+											"fields": {
+												"text":  "@LootFilterMagicRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "RareRarityChbx",
+									"fields": {
+										"rect": { "x": 800, "y": 152, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:rare",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"left": { "name": "InferiorRarityChbx" },
+											"down" : { "name": "UniqueRarityChbx" },
+											"up" : { "name": "MagicRarityChbx" },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "RareRarityDesc",
+											"fields": {
+												"text":  "@LootFilterRareRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "UniqueRarityChbx",
+									"fields": {
+										"rect": { "x": 800, "y": 236, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:unique",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"left": { "name": "SuperiorRarityChbx" },
+											"down" : { "name": "SetRarityChbx" },
+											"up" : { "name": "RareRarityChbx" },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "UniqueRarityDesc",
+											"fields": {
+												"text":  "@LootFilterUniqueRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "SetRarityChbx",
+									"fields": {
+										"rect": { "x": 800, "y": 320, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateRarityFilter:set",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"left": { "name": "EthSockRarityChbx" },
+											"down" : { "name": "EliteQualityChbx" },
+											"up" : { "name": "UniqueRarityChbx" },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SetRarityDesc",
+											"fields": {
+												"text":  "@LootFilterSetRarity",
+												"rect": { "x": 81, "y": 0, "width": 500, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+							]
+						},
+						// Quality
+						{
+							"type": "Widget", "name": "QualityContainer",
+							"fields": {
+								"rect": { "x": 0, "y": 419 },
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget", "name": "QualityTitle",
+									"fields": {
+										"text": "@LootFilterQualityTitle",
+										"rect": { "width": 350, "height": 65 },
+										"style": "$StyleSettingsTitle"
+									}
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "NormalQualityChbx",
+									"fields": {
+										"rect": { "x": 0, "y": 68, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateQualityFilter:normal",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"right": { "name": "ExceptionalQualityChbx" },
+											"up" : { "name": "EthSockRarityChbx" },
+											"down" : { "panelBoundary" : true },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NormalQualityDesc",
+											"fields": {
+												"text":  "@LootFilterNormalQuality",
+												"rect": { "x": 81, "y": 0, "width": 300, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "ExceptionalQualityChbx",
+									"fields": {
+										"rect": { "x": 400, "y": 68, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateQualityFilter:exceptional",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"right": { "name": "EliteQualityChbx" },
+											"left" : { "name": "NormalQualityChbx" },
+											"up" : { "name": "EthSockRarityChbx" },
+											"down" : { "panelBoundary" : true },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "ExceptionalQualityDesc",
+											"fields": {
+												"text":  "@LootFilterExceptionalQuality",
+												"rect": { "x": 81, "y": 0, "width": 300, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								},
+								{
+									"type": "ToggleButtonWidget", "name": "EliteQualityChbx",
+									"fields": {
+										"rect": { "x": 900, "y": 68, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:UpdateQualityFilter:elite",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"left" : { "name": "ExceptionalQualityChbx" },
+											"up" : { "name": "SetRarityChbx" },
+											"down" : { "panelBoundary" : true },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "EliteQualityDesc",
+											"fields": {
+												"text":  "@LootFilterEliteQuality",
+												"rect": { "x": 81, "y": 0, "width": 300, "height": 60 },
+												"style": "$StyleLFButtonText"
+											}
+										},
+									]
+								}
+							]
+						},
+						{
+							"type": "TextBoxWidget", "name": "EquipmentTitle",
+							"fields": {
+								"text": "@LootFilterEquipment",
+								"rect": {  "x": 0, "y": 585, "width": 350, "height": 65 },
+								"style": "$StyleSettingsTitle"
+							},
+						},
+					]
+				},
+                {
+					"type": "RuleDetailsListItemContainer", "name": "TopScrollViewItemsMisc",
+					"fields": {
+						"navigation": {
+							"up": { "panelBoundary":true },
+						},
+						"topWidgetName": "FilterGoldToggle",
+						"bottomWidgetName": "FilterGoldToggle",
+					},
+					"children": [
+						{
+							"type": "TextBoxWidget", "name": "GoldTitle",
+							"fields": {
+								"text":  "@LootFilterGoldTitle",
+								"rect": { "x": 0, "y": 0, "width": 350, "height": 65 },
+								"style": "$StyleSettingsTitle"
+							}
+						},
+						{
+							"type": "StackWidget", "name": "ProfileOptStack",
+							"fields": {
+								"rect": { "x": 0, "y": 68, "height": 100, "width": 1300, },
+                				"direction": "LeftRight",
+								"padding": 15,
+							},
+							"children": [
+								{
+									"type": "ToggleButtonWidget", "name": "FilterGoldToggle",
+									"fields": {
+										"rect": { "x": 0, "y": 0, "scale": 1.1 },
+										"filename": "PANEL\\Loot_Filter\\LootFilter_Large_List_Btn_Checkbox",
+										"untoggledFrame": 0,
+										"untoggledPressedFrame": 2,
+										"untoggledHoveredFrame": 1,
+										"untoggledDisabledFrame": 3,
+										"toggledFrame": 4,
+										"toggledPressedFrame": 6,
+										"toggledHoveredFrame": 5,
+										"onClickMessage": "LootFilterItemPanelMessage:ToggleGoldFilter",
+										"buttonLegendString": "@LootFilterToggleCheckbox",
+										"navigation": {
+											"up": { "panelBoundary":true },
+											"right": { "name": "GoldSliderWrapper" },
+											"down": { "panelBoundary":true },
+										},
+										"focusIndicatorPadding" : {
+											"left": 0,
+											"top": 0,
+											"right": 7,
+											"bottom": 0
+										}
+									},
+								},
+								{
+									"type": "TextBoxWidget", "name": "GoldDescription",
+									"fields": {
+										"text":  "@LootFilterShowGoldDesc",
+										"rect": { "x": 85, "y": 11, "width": 500, "height": 60 },
+										"style": "$StyleLFButtonText",
+										"fitToText": true,
+									}
+								},
+								{
+									"type": "Widget", "name": "spacer",
+									"fields": {
+										"rect": { "width": 60 },
+									},
+								},
+								// We need two wrappers for the gold slider lol.
+								// The first one ensures that the gold slider and controller wrapper is shifted by the stack widget
+								// The second one handles controller navigation. 
+								// We can't just have the gold slider be a child of controller wrapper, because we hide the controller wrapper
+								// when the slider is disabled, and this would cause the slider to be hidden instead of just disabled.
+								{
+									"type": "Widget", "name": "GoldSliderStackWrapper",
+									"fields": {
+										// This will get overriden by the stack widget
+										// But, if we leave this at 0, then the list widget freaks out because of the controller wrapper's -90 below.
+										// It ends up shifting all of the TopScrollViewItems to the left off screen during init, and the resizing / positioning doesn't fix it.
+										// Honestly don't quite understand why, but this is an easy fix to handle the init case. 
+										"rect": { "x": 800 },
+									},
+									"children": [
+										{
+											// This is the controller wrapper, it is dynamically resized in code to fit the slider + text.
+											"type": "ButtonWidget", "name": "GoldSliderWrapper",
+											"fields":
+											{
+												"rect": { "x" : -90, "y": -10, "width": 694, "height": 100 },
+												"buttonLegendString": "@EditValue",
+												"onClickMessage": "LootFilterItemPanelMessage:EditGoldSlider",
+												"navigation": {
+													"up": { "panelBoundary":true },
+													"left": { "name": "FilterGoldToggle" },
+													"down": { "panelBoundary":true },
+												},
+											}
+										},
+										{
+											"type": "SettingsSliderWidget", "name": "GoldSlider",
+											"fields": {
+												"rect": { "x" : 0, "y": 0, "width": 480, "height": 72 },
+												"focusIndicatorPadding": "$OptionsSliderFocusIndicatorPadding",
+												"focusIndicatorFilename": "$OptionsSliderFocusIndicatorFilename",
+												"isHorizontal": true,
+												"indicatorFilepath": "PauseMenu\\HorizontalIndicator",
+												"background": "$SettingsSliderBackground",
+												"leftButton": "$SettingsSliderLeftButtonFields",
+												"rightButton": "$SettingsSliderRightButtonFields",
+												"valueText": "$SettingsSliderValueFields",
+												"onUpdateMessage": "LootFilterItemPanelMessage:UpdateGoldValue",
+												"buttonLegendString": "@ControllerPromptModalAccept"
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SliderText",
+													"fields": {
+														"text":  "--",
+														"rect": { "x": 571, "y": 15, "width": 185, "height": 57 },
+														"style": "$StyleLFButtonText",
+														"fitToText": true
+													}
+												},
+											],
+										},
+									],
+								},
+							],
+						},
+						{
+							"type": "TextBoxWidget", "name": "MiscItemTitle",
+							"fields": {
+								"text":  "@LootFilterMiscItems",
+								"rect": { "x": 0, "y": 185, "width": 350, "height": 65 },
+								"style": "$StyleSettingsTitle"
+							}
+						},
+												{
+							"type": "Widget", "name": "PaddingBelowItemsTitle",
+							"fields": {
+								"rect": {  "x": 0, "y": 235, "width": 350, "height": 18 },
+							},
+						},
+					]
+				},
+			]
+		},
+		// Scroll Bar
+		{
+			"type": "ImageWidget", "name": "ScrollBarBackground",
+			"fields": {
+				"rect": { "x": 1710, "y": 110 },
+				"filename": "PANEL\\Loot_Filter\\LootFilter_Scrollbar"
+			}
+		},
+		{
+			"type": "ScrollControllerWidget", "name": "ScrollBar",
+			"fields": {
+				"rect": { "x": 1713, "y": 141, "width": 34, "height": 762 },
+				"upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn", // 0/2
+				"downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn", // 1/3
+				"barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator", // 4
+				"viewName": "ItemList"
+			}
+		}
+	]
+}

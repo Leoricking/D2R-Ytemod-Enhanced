@@ -1,0 +1,59 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/items/Paladin/holyshield/fx_holyshield.particles"
+            },
+            {
+                "path": "data/hd/vfx/particles/overlays/common/Shout/Shout_icon.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/graphic/battleS/battle_icon.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/graphic/battleS/battleS_glowmask.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/graphic/battleS/battleS_mask.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "shoutstart",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 992020576,
+            "components": [
+                //大吼效果圖標皮膚
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/common/Shout/Shout_icon.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 126.0,
+                        "y": 101.0,
+                        "z": 126.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

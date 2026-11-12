@@ -1,0 +1,1338 @@
+{
+    // Named globals.
+    "INT_MAX": 2147483647,
+	
+    "ToggleButtonFocusIndicatorPadding": { "left": 3,"top": 6, "right": 12, "bottom": 9 },
+
+    // Overridden in console profile.
+    // Defined here to allows to declare console scale in base panel layouts and automatically update to proper scale when on console
+    "ConsoleUIScale": 1.0,
+
+    // Anchor points.
+    "LeftPanelAnchor": { "x": 0.0, "y": 0.397 },
+    "RightPanelAnchor": { "x": 1.0, "y": 0.397 },
+    // In-game panel rects.
+    "LeftPanelRect": { "x": 236, "y": -651, "width": 1162, "height": 1507 }, 
+	"BigBankLeftPanelRect": { "x": 24, "y": -651, "width": 1374, "height": 1507 },
+    "RightPanelRect": { "x": -1394, "y": -651, "width": 1162, "height": 1507 }, 
+    "PanelClickCatcherRect": { "x": 0, "y": 0, "width": 1162, "height": 1507 },
+    "InGamePanelTitleRect" : { "x": 91, "y": 64, "width": 972, "height": 71 },
+    "ScrollSpeechWidth": 700,
+    "ScrollSpeechBorderWidth": 800,
+    "ScrollSpeechOffset": -400, // This is negative and half of the width; Used as the horizontal offset.
+    "QuestLogScrollingSpeechParentRect": { "x": 158, "y": 1015, "width": 850, "height": 330 },
+    "QuestLogScrollingTextWidth": 850,
+    "QuestLogScrollControllerRect": { "x": 0, "y": 0, "width": 26, "height": 332 },
+    "MessagePanelRect":{ "x": 1398, "y": -651 }, 
+    "MessagePanelTabBarRect":{ "x": 1431, "y": -486, "width": 800, "height": 121 },
+    "MessagePageRect":{ "x": 1510, "y": -380, "width": 650, "height": 1150 },
+    "AdvancedStatsPanelRect":{ "x": 1398, "y": -651 },
+    "LeftPanelMiniCubRect":{ "x": 1398, "y": -115 },
+    "VendorPanelRect": { "x": -2556, "y": -651, "width": 1162, "height": 1507 }, 
+
+    // Lobby panel rects.
+    "LobbyAnchor": {"x": 0.5},
+    "LeftLobbyRect": {"x": -1677, "y": 25},
+    "LeftLobbyRectNarrow": {"x": -1306},
+
+    "RightLobbyRect": {"x": 371, "y": 27},
+    "RightLobbySubPanelRect": {"x": 452, "y": 210},
+
+    "RightLobbyRectNarrow": {"x": 0},
+    "RightLobbySubPanelRectNarrow": { "x": 79, "y": 184},
+
+    // Speech scroll speed
+    "ScrollSpeechSpeed": -0.575,
+
+    // Colors.
+    "FontColorWhite": { "r": 240, "g": 240, "b": 240, "a": 255 },
+    "FontColorVeryLightGray": { "r": 240, "g": 240, "b": 240, "a": 255 },
+    "FontColorBlack": { "r": 0, "g": 0, "b": 0, "a": 255 },
+    "FontColorRed": { "r": 252, "g": 70, "b": 70, "a": 255 },
+    "FontColorGreen": { "r": 0, "g": 252, "b": 0, "a": 255 },
+    "FontColorBlue": { "r": 110, "g": 110, "b": 255, "a": 255 },
+    "FontColorLightGold": { "r": 255, "g": 246, "b": 227, "a": 255 }, // usage: button text, setting text labels
+    "FontColorGoldYellow" : { "r": 199, "g": 179, "b": 119, "a": 255 }, //Usage example: panel and option subtitles
+    "FontColorCurrencyGold" : {"r": 209, "g": 195, "b": 120, "a": 255}, // Usage Example: Gold text
+    "FontColorGold": "$FontColorGoldYellow",
+    "FontColorDarkGold": { "r": 120, "g": 98, "b": 47, "a": 255 },
+    "FontColorBeige" : { "r": 204, "g": 195, "b": 176, "a": 255 },
+    "FontColorGray": { "r": 99, "g": 99, "b": 99, "a": 255 },
+    "FontColorGrey": "$FontColorGray",
+    "FontColorOrange": { "r": 255, "g": 168, "b": 0, "a": 255 },
+    "FontColorDarkGreen": { "r": 0, "g": 128, "b": 0, "a": 255 },
+    "FontColorYellow": { "r": 255, "g": 255, "b": 100, "a": 255 },
+    "FontColorLightPurple": { "r": 192, "g": 128, "b": 242, "a": 255 },
+    "FontColorLightTeal": { "r": 124, "g": 221, "b": 204, "a": 255 },
+    "FontColorLightRed": { "r": 255, "g": 148, "b": 148, "a": 255 },
+    "FontColorLightYellow": { "r": 255, "g": 235, "b": 164, "a": 255 },
+    "FontColorLightBlue": { "r": 175, "g": 183, "b": 255, "a": 255 },
+    "FontColorLightGray": { "r": 148, "g": 148, "b": 148, "a": 255 },
+	"FontColorMoreLightGray": { "r": 191, "g": 191, "b": 191, "a": 255 },
+    "FontColorDarkGrayBlue":  { "r": 125, "g": 141, "b": 144, "a": 255 },
+    "FontColorDarkGrayGold" : { "r": 173, "g": 168, "b": 148, "a": 255 }, // Usage example: attribute points to spend
+    "FontColorTransparent": { "r": 0, "g": 0, "b": 0, "a": 0 },
+    "FontColorPartyOrange": { "r": 196, "g": 129, "b": 0, "a": 255 },
+    "FontColorPartyGreen": {"r": 79, "g": 194, "b": 56, "a": 255 },
+	"FontColorDesecrated": { "r": 154, "g": 72, "b": 252, "a": 255 },
+    "FontColorSocketedColor": { "r": 99, "g": 99, "b": 99, "a": 255 }, //Mod added
+    "FontColorEtherealColor": { "r": 145, "g": 150, "b": 158, "a": 255 }, //Mod added
+    "FontColorSteelBlue": { "r": 0, "g": 200, "b": 200, "a": 255 }, //Ytemod added
+
+    // Text color presets
+    "CarouselEnabledColor": "$FontColorLightGold",
+    "CarouselDisabledColor": "$FontColorGray",
+    "LightButtonTextColor" : "$FontColorLightGold",
+    "PanelTitleColor": "$FontColorGoldYellow",
+    "ModalDescriptionTextColor": "$FontColorLightGold",
+    "DarkButtonTextColor" : "$FontColorDarkGrayBlue",
+    "PanelNoteTextColor" : "$FontColorDarkGrayGold",
+    "GoldCurrencyTextColor": "$FontColorCurrencyGold",
+    "DescriptionTextColor": "$FontColorWhite",
+    "DescriptionTitleColor": "$FontColorWhite",
+    "TabsActiveTextColor": "$FontColorVeryLightGray",
+    "TabsInactiveTextColor": "$FontColorDarkGrayBlue",
+    "TabsActiveTextColorInGame" : "$FontColorVeryLightGray",
+    "CharacterListDetailsColor": "$FontColorGoldYellow",  //{ "r": 215, "g": 186, "b": 124, "a": 255 },
+    "TooltipBorderColor": [ 0.266, 0.266, 0.266, 1.0 ],
+
+    // Font sizes.
+    "HugeFontSize": 66,
+    "XExtraLargeFontSize": 56, // Usage Example: "play / continue" button
+    "ExtraLargeFontSize": 42,
+    "XLargeFontSize": 40,
+    "LargeFontSize": 38, // Usage: Primary Front End buttons ("Continue", "Single Player")
+    "XMediumLargeFontSize": 34, // Usage: Player name
+    "MediumLargeFontSize": 32, // Usage: Front end button ribbon buttons (CAPS), front end character select tabs
+    "XMediumFontSize": 28, // Usage:Secondary Action Center Buttons, Character list title and level text
+    "MediumFontSize": 26, // Usage : Settings field text
+    "SMediumFontSize": 26, //Ytemod added
+    "SmallFontSize": 22,
+    "XSmallFontSize": 21, //Ytemod added
+    "TooltipFontSize": 36,
+    "CinematicsFontSize": 32,
+    "AddFriendModalFontSize": 26, // Usage: AddFriendModal needs to be the same size in all profiles to support IME
+    "GameNameFilterFontSize": 28, // Usage: it needs to be the same size in all profiles
+    "QuestLogScrollingTextFontSize": 28,
+    "FixedXMediumFontSize": 30, // Usage: XMediumFontSize doesn't change the size in LV mode or in Asian languages.
+    "FixedMediumFontSize": 28,
+
+    // K&M LV-mode in-game panels are just scaled up, thus we need
+    // versions of fonts which can be used in panels.
+    "XMediumPanelFontSize": "$XMediumFontSize",
+    "MediumPanelFontSize": "$MediumFontSize",
+    "SmallPanelFontSize": "$SmallFontSize",
+
+    // Kerning
+    "DefaultSpacing" : { "kerning": 1.0 },
+    "ReducedSpacing" : { "kerning": 0.94 },
+    "MinimumSpacing" : { "kerning": 0.88 },
+    "LowResMinimumSpacing" : { "kerning": 0.88 },
+
+    // Recoloring.
+    "EmptyColorRange": {
+        "hue": [ 0.0, 0.0 ],
+        "saturation": [ 0.0, 0.0 ],
+        "value": [ 0.0, 0.0 ]
+    },
+
+    // Standard Styles.
+    "StyleCharacterModeSelectTitle":
+    {
+        "fontColor": "$FontColorGoldYellow",
+        "pointSize": "$MediumLargeFontSize",
+        "options": { "lineWrap": true },
+        "alignment": { "h": "left", "v": "center" },
+        "dropShadow": "$DefaultDropShadow"
+    },
+    "StyleCharacterModeSelectDescription":
+    {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$MediumFontSize",
+        "fontFace": "Formal",
+        "options": { "lineWrap": true },
+        "alignment": { "h": "left", "v": "top" },
+        "dropShadow": "$DefaultDropShadow"
+    },
+    "StylePartyPanelSmallHeading": {
+        "fontColor": "$FontColorGoldYellow",
+        "pointSize": "$SmallPanelFontSize",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle" },
+        "spacing": { "leading": 1.0 },
+        "dropShadow": "$DefaultDropShadow"
+    },
+    "StylePartyPanelGameInfo": {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$SmallPanelFontSize",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle" },
+        "spacing": { "leading": 1.0 },
+    },
+    "StyleButtonLegend": {
+        "fontColor": "$FontColorLightGray",
+        "pointSize": "$MediumFontSize",
+        "spacing": { "leading": 1.2, "kerning": 0.95 }
+    },
+    "StyleModalDialogTitle":
+    {
+        "fontColor": "$FontColorWhite",
+        "alignment": { "h": "center" },
+        "options": { "lineWrap": true, "newlineHandling": "standard" },
+        "pointSize": "$MediumLargeFontSize",
+        "spacing": "$ReducedSpacing"
+    },
+    "StyleModalDialogDescription":
+    {
+        "fontColor": "$ModalDescriptionTextColor",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "lineWrap": true, "newlineHandling": "standard", "pipeCharacterBehavior" : "handle" },
+        "pointSize": "$MediumFontSize",
+        "spacing": "$ReducedSpacing"
+    },
+    "StyleFEButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$MediumLargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+    },
+    "StyleCinematicsButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$CinematicsFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": { "kerning": 0.915 },
+    },
+    "StyleFEMultiLineButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$MediumLargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "lineWrap": true, "newlineHandling": "standard" },
+    },
+    "StyleTitleBlock": {
+        "fontColor": "$PanelTitleColor",
+        "pointSize": "$LargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "alignment": { "h": "center", "v": "center" },
+        "spacing": "$ReducedSpacing",
+    },
+    "StyleRewardsTitleBlock": {
+        "fontColor": "$PanelTitleColor",
+        "pointSize": "$LargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "alignment": { "h": "center", "v": "center" },
+        "spacing": "$ReducedSpacing",
+    },
+    "StyleGoldAmount": {
+        "fontColor": "$FontColorCurrencyGold",
+        "pointSize": "$XMediumLargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "alignment": { "h": "left", "v": "center" },
+    },
+    "AltStyleGoldAmount": {
+        "fontColor": "$FontColorCurrencyGold",
+        "pointSize": "$SmallPanelFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "alignment": {
+            "h": "left",
+            "v": "center"
+        }
+    },//国际服1
+    "StyleGoldMax": {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$SmallFontSize",
+        "alignment": { "h": "center", "v": "center" },
+    },
+    "StyleWeaponSwapTabs": {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$MediumLargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "alignment": { "h": "center", "v": "center" },
+    },
+    "StyleSkillTreeTabs" :
+    {
+        "options": { "lineWrap": true },
+        "pointSize": "$SmallPanelFontSize",
+        "alignment": { "h": "center", "v": "center" },
+        "fontColor": "$FontColorWhite"
+    },
+    "StyleChronicleItemList": {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$SmallPanelFontSize",
+        "alignment": { "h": "left", "v": "center" },
+    },
+    "StyleSettingsTitle": {
+        "fontColor": "$FontColorGoldYellow",
+        "pointSize": "$XLargeFontSize",
+        "alignment": { "h": "left", "v": "center" },
+    },
+    "StyleSettingsSubtitle": {
+        "fontColor": "$FontColorDarkGold",
+        "pointSize": "$LargeFontSize",
+        "alignment": { "h": "left", "v": "center" },
+    },
+    "StyleSettingsText": {
+        "fontColor": "$FontColorLightGold",
+        "pointSize": "$MediumFontSize",
+        "spacing" : "$ReducedSpacing",
+        "alignment": { "h": "left", "v": "center" },
+        "options": { "lineWrap": true },
+    },
+    "StyleSettingsCarousel": {
+        "pointSize": "$MediumFontSize",
+        "spacing" : "$ReducedSpacing",
+        "alignment": { "h": "center", "v": "center" },
+    },
+    "StyleSettingsLargeCarousel": {
+        "pointSize": "$MediumLargeFontSize",
+        "spacing" : "$ReducedSpacing",
+        "alignment": { "h": "center", "v": "center" },
+    },
+    "StyleSettingsNumeric": {
+        "fontFace": "Exocet",
+        "pointSize": "$MediumFontSize",
+        "fontColor": "$FontColorWhite",
+        "alignment": { "h": "center", "v": "center" },
+    },
+    "StyleScrollingSpeech": {
+        "fontFace": "Formal",
+        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+        "pointSize": "$MediumFontSize",
+        "alignment": { "h": "left" },
+        "options": { "newlineHandling": "standard", "lineWrap": true },
+    },
+    "StyleNotification": {
+        "fontFace": "Exocet",
+        "pointSize": "$MediumFontSize",
+        "fontColor": "$FontColorWhite",
+        "alignment": { "h": "center", "v": "center" },
+        "options": { "newlineHandling": "standard", "lineWrap": true },
+    },
+    "StyleVictoryText": {
+        "fontColor": "$FontColorDarkGold",
+        "alignment": { "h": "center", "v": "center" },
+        "pointSize": 96,
+        "options": { "newlineHandling": "standard" },
+        "dropShadow": {
+            "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 255 },
+            "offset": { "x": 8, "y": 8 },
+        },
+    },
+    "StyleNPCDialogueSize": "$MediumFontSize",
+
+    "DefaultDropShadow": {
+        "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 200 },
+        "offset": { "x": 3, "y": 3 },
+    },
+
+    "TooltipStyle": {
+        "fontStyle": {
+            "fontColor": "$FontColorWhite",
+            "pointSize": "$TooltipFontSize",
+            "alignment": { "h": "center", "v": "center" },
+            "options": { "pipeCharacterBehavior": "handle", "newlineHandling": "reversed" },
+        },
+        "padding": [ 20, 12, 20, 12 ],
+        "inGameTargetPadding": [ 0, 0, 0, 0 ], 
+        "drawBorder": false,
+        "centeredOnAnchor": true,
+        "hp": 0,
+        "backgroundColor": [ 0, 0, 0, 0.75 ],
+        // This color is used for in-game tooltip label backgrounds
+        "inGameBackgroundColor": [ 0, 0, 0, 0.6 ],
+        // This color is used for the show items selected label background
+        "inGameShowItemsSelectedBackgroundColor": [ 0, 0.25, 0.5, 1.0 ],
+        "substringColor": "$FontColorLightGray",
+        "healthColor": [ 0.31, 0, 0, 1.0 ],
+        "borderColor": "$TooltipBorderColor",
+        "DefaultColor": "$FontColorWhite",
+        "QuestColor": "$FontColorGoldYellow",
+        "RareColor": "$FontColorYellow",
+        "CraftedColor": "$FontColorOrange",
+        "TemperedColor": "$FontColorDarkGreen",
+        "MagicColor": "$FontColorBlue",
+        "SetColor": "$FontColorGreen",
+        "UniqueColor": "$FontColorGoldYellow",
+        "SocketedColor": "$FontColorSocketedColor", //Mod modified, default: FontColorGray
+        "EtherealColor": "$FontColorEtherealColor", //Mod modified, default: FontColorGray
+        "HealthPotionColor": "$FontColorWhite",
+        "ManaPotionColor": "$FontColorWhite",
+        "RejuvPotionColor": "$FontColorWhite",
+        "GoldColor": "$FontColorGray", //Ytemod modified, default: FontColorWhite
+        "RuneColor": "$FontColorOrange",
+        "EventItemsColor": "$FontColorOrange",
+		"DesecratedColor": "$FontColorDesecrated",
+    },
+
+    "SkillIconFilenames": [
+        "Spells/amazon/AmSkillicon",
+        "Spells/Sorceress/SoSkillicon",
+        "Spells/Necromancer/NeSkillicon",
+        "Spells/paladin/PaSkillicon",
+        "Spells/Barbarian/BaSkillicon",
+        "Spells/Druid/DrSkillicon",
+        "Spells/Assassin/AsSkillicon",
+        "Spells/Warlock/WaSkillicon",
+        "Spells/SubMenu/Skillicon"
+    ],
+
+    // HirablesPanel
+    "SecondSetIconOffset": { "x": 175 },
+
+    // SidePanel
+    "LeftSideSprite": "PANEL\\Docking_Bar\\SidePanel_L", 
+    "LeftSideRect": { },
+    "LeftSideRectImbuePanel": { "x": -236, "y": -205 },
+    "LeftSideRectHireMenu": { "x": -236, "y": -204 },
+    "LeftSideCatcherRect": { "x": 0, "y": 0, "width": 954, "height": 2160 },
+    "LeftHingeRect": { "x": -236, "y": 630 },
+    //"LeftHingeSprite": "PANEL\\Docking_Bar\\SidePanel_Hinge_L", //Ytemod modified, default: NO //
+    "RightSideSprite": "PANEL\\Docking_Bar\\SidePanel_R", 
+    "RightSideRect": { "x": -732 },
+    "RightSideCatcherRect": { "x": -732, "y": 0, "width": 954, "height": 2160 },
+    "RightHingeRect": { "x": 1076, "y": 630 },
+    //"RightHingeSprite": "PANEL\\Docking_Bar\\SidePanel_Hinge_R", //Ytemod modified, default: NO //
+
+    // Inventory
+    "ItemCellSize": { "x": 98, "y": 98 },
+
+    // Settings
+    "OptionsPanelWidth": 1730,
+    "OptionsPanelHeight": 1284,
+    "OptionsPanelRect": { "x": -865, "y": 400, "width": "$OptionsPanelWidth", "height": "$OptionsPanelHeight" },
+    "OptionsScrollBarRect": { "x": -31, "y": 29, "width": 26, "height": 1208 },
+    "OptionsScrollBarBackgroundRect": { "x": -20, "y": 0 },
+    "OptionsTableColumn1": { "width": 1000, "alignment": { "h": "fit", "v": "fit" } },
+    "OptionsTableColumn2": { "width": 700, "alignment": { "h": "center", "v": "center" } },
+    "OptionsTableRowHeight": 100,
+    "OptionsCarouselRect": { "width": 596, "height": 72 },
+    "OptionsCarouselFocusIndicatorPadding": { "left": 5, "right": 5 },
+    "OptionsDropDownRect": { "width": 625, "height": 56 },
+    "OptionsDropDownBackgroundRect": { "x": 0, "y": 0, "width": 625, "height": 56 },
+    "OptionsDropDownLeftCapOffset": { "x": 0, "y": 0 },
+    "OptionsDropDownRightCapOffset": { "x": 0, "y": 0 },
+    "OptionsNumericContainerRect": { "x": -5, "y": -22 },
+    "OptionsNumericRect": { "x": -20, "width": 60, "height": 44 },
+    "OptionsSliderRect": { "width": 480, "height": 72 },
+    "CalibrationTableColumn1": { "width": 700, "alignment": { "h": "fit", "v": "fit" } },
+    "OptionsSliderValueRect": { "x": -159, "y": 17, "width": 70, "height": 40 },
+    "ChronicleSearchBox": { "x": 1275, "y": -118, "width": 450, "height": 102 },
+    "ChronicleSearchInput": { "x": 40, "y": 0, "width": 400, "height": 102 },
+
+    // Options hover indicators
+    "OptionsSliderFocusIndicatorFilename": "Controller/HoverImages/Slider_Hover",
+    "OptionsDropDownFocusIndicatorFilename": "Controller/HoverImages/DropDown_Hover",
+    "OptionsToggleFocusIndicatorFilename": "Controller/HoverImages/CheckBox_Hover",
+    "OptionsNumInputFocusIndicatorFilename": "Controller/HoverImages/NumericInput_Hover",
+    "OptionsCarouselFocusIndicatorFilename": "Controller/HoverImages/Carousel_Hover",
+    "OptionsNumInputFocusIndicatorOffset": {"x": -15, "y": -1},
+
+    "OptionsSliderFocusIndicatorPadding": { "left": 3, "right": 3 },
+    "OptionsDividerRect": { "x": 0, "y": 90 },
+    "OptionsToggleRect": { "width": 70, "height": 70 },
+    "OptionsToggleFocusIndicatorPadding": { "left": 5, "right": 5 },
+
+    "SettingsSliderBackground": {
+        "rect": { "x": -310, "y": -30 },
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "filename": "PauseMenu\\HorizontalScroll",
+    },
+
+    "SettingsSliderLeftButtonFields": {
+        "rect": { "x": -60, "y": 14 },
+        "filename": "PauseMenu\\LeftArrow",
+        "hoveredFrame": 3,
+    },
+
+    "SettingsSliderRightButtonFields": {
+        "rect": { "x": 482, "y": 14 },
+        "filename": "PauseMenu\\RightArrow",
+        "hoveredFrame": 3,
+    },
+
+    "SettingsSliderValueFields": {
+        "rect": "$OptionsSliderValueRect",
+        "style": "$StyleSettingsNumeric",
+        "style": {
+            "alignment": { "h": "right" },
+        },
+    },
+
+    "SettingsSliderTooltipRect": { "x": -75, "y": 2, "width": 624, "height": 66 },
+
+    "SettingsNumericBackgroundRect": { "x": -40, "y": -10 },
+    "SettingsNumericBackgroundImage": "Lobby/CreateGame/NumberCounterSlot",
+    "SettingsNumericUpButtonFields": {
+        "rect": { "x": 69, "y": -5 },
+        "repeatDelayMS": 100,
+        "filename": "FrontEnd/HD/Final/FrontEnd_ScrollUpBtn",
+        "onClickMessage": "NumericInputTextBoxWidgetMessage:ScrollUp",
+        "hoveredFrame": 3,
+        "disabledFrame": 2,
+        "disabledTint": { "a": 1.0 }
+    },
+    "SettingsNumericDownButtonFields": {
+        "rect": { "x": 69, "y": 22 },
+        "repeatDelayMS": 100,
+        "filename": "FrontEnd/HD/Final/FrontEnd_ScrollDownBtn",
+        "onClickMessage": "NumericInputTextBoxWidgetMessage:ScrollDown",
+        "hoveredFrame": 3,
+        "disabledFrame": 2,
+        "disabledTint": { "a": 1.0 }
+    },
+
+    // Skills
+    "SkillHotkeyTextStyle": {
+        "fontColor": "$FontColorLightGold",
+        "dropShadow": {
+            "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 200 },
+            "offset": { "x": 4, "y": 4 },
+        },
+        "pointSize": "$MediumFontSize",
+        "alignment": { "h": "center" }, 
+    },
+    "SkillHotkeyTextAltStyle": {
+        "fontColor": "$FontColorLightGold",
+        "dropShadow": {
+            "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 200 },
+            "offset": { "x": 4, "y": 4 },
+        },
+        "pointSize": "$SmallFontSize",
+        "alignment": { "h": "right" },
+        "options": { "lineWrap": true },
+        "spacing": "$MinimumSpacing"
+    },
+    "SkillHotkeyTextRect": { "x": -4, "y": 3, "width": 132, "height": 124 },
+    "SkillQuantityTextStyle": {
+        "fontColor": "$FontColorBlue",
+        "dropShadow": {
+            "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 200 },
+            "offset": { "x": 4, "y": 4 },
+        },
+        "pointSize": "$MediumFontSize",
+        "alignment": { "h": "left" },
+    },
+    "SkillQuantityTextRect": { "x": 6, "y": 85 },
+    "SkillQuantityTextRectController": { "x": 6, "y": 6 },
+
+    // Cutscenes
+    "SubtitleConfiguration": {
+        "anchor": { "x": 0.5, "y": 0.8 },
+        "style": {
+            "pointSize": "$XExtraLargeFontSize",
+            "options": { "newlineHandling": "standard" },
+            "alignment": { "h": "center", "v": "center" },
+            "highlight": {
+                "endIndex": "$INT_MAX", // longer than any chunk of subtitle text
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 127 }
+            },
+        },
+    },
+    "HoldToSkipTextConfiguration": {
+        "anchor": { "x": 0.9, "y": 0.1 },
+        "style": {
+            "pointSize": "$ExtraLargeFontSize",
+            "alignment": { "h": "right", "v": "bottom" },
+        },
+        "text": "@MoviePlaybackHoldToSkip",
+    },
+    "HoldToSkipDurationMilliseconds": 500,
+    "HoldToSkipTextTimeoutMilliseconds": 5000,
+
+    // Account Linking
+    "AccountLinkingTileRect": { "x": -875, "y": 561, "width": 1750, "height": 930 },
+    "AccountLinkingActiveUserRect": { "x": 50 , "y": 10, "width": 1650, "height": 160 },
+    "AccountLinkingDescriptionRect": { "x": 50 , "y": 180, "width": 1650, "height": 160 },
+    "AccountLinkingUserCodeRect": { "x": 50 , "y": 390, "width": 1650, "height": 215 },
+    "AccountLinkingUrlRect": { "x": 50 , "y": 625, "width": 1650, "height": 110 },
+    "AccountLinkingOkButtonRect": { "x": -266, "y": 1330 },
+
+    //Switch handheld resized panels
+    "SettingsPanelAnchorRect": { "x": -975, "y": -953, "width": 1950, "height": 1763 },
+    "SettingsPanelBackgroundRect": { "x": -896, "y": 270, "width": "$OptionsPanelWidth", "height": "$OptionsPanelHeight" },
+    "SettingsPanelTabsRect": { "x": -865, "y": 282, "width": "$OptionsPanelWidth", "height": 121 },
+
+    //Tutorial Tooltips
+    "TutorialTooltipIntroRect" : { "x": 175, "y": 351, "width": 900, "height": 1150 },
+    "TutorialTooltipLocalRect" : { "x": 175, "y": 451, "width": 900, "height": 970 },
+    "TutorialTooltipTabsRect" : { "x": 175, "y": 351, "width": 900, "height": 575 },
+    "TutorialTooltipCreateNewRect" : { "x": 475, "y": 951, "width": 900, "height": 700 },
+    "TutorialTooltipDeleteRect" : { "x": 475, "y": 1351, "width": 900, "height": 575 },
+    "TutorialTooltipConvertRect" : { "x": 475, "y": 751, "width": 900, "height": 970 },
+
+    "TutorialTooltipChatRect" : { "x": 175, "y": 751, "width": 900, "height": 575 },
+    "TutorialTooltipChatArrowRect" : { "x": -1075, "y": 751, "width": 900, "height": 575 },
+    "TutorialTooltipCreateGameRect": { "x": -275, "y": 451, "width": 900, "height": 575 },
+    "TutorialTooltipGameName": { "x": -575, "y": 451, "width": 900, "height": 700 },
+    "TutorialTooltipJoinGame": { "x": 275, "y": 451, "width": 900, "height": 575 },
+    "TutorialTooltipLadder": { "x": 275, "y": 451, "width": 900, "height": 970 },
+
+    "TutorialTooltipConsoleIntroRect": { "x": -675, "y": 751, "width": 900, "height": 575 },
+    "TutorialTooltipConsoleTabsRect": { "x": -675, "y": 751, "width": 900, "height": 700 },
+    "TutorialTooltipConsoleOnlineRect": { "x": -1375, "y": 451, "width": 900, "height": 1150 },
+    "TutorialTooltipConsoleOfflineRect": { "x": -1375, "y": 451, "width": 900, "height": 1150 },
+    "TutorialTooltipConsoleSoloRect": { "x": -200, "y": 451, "width": 900, "height": 700 },
+    "TutorialTooltipConsoleGameCreatorRect": { "x": -1600, "y": 451, "width": 900, "height": 700 },
+    "TutorialTooltipConsoleGameListRect": { "x": -700, "y": 451, "width": 900, "height": 700 },
+
+    "TooltipConfirmSmall": { "x": 200, "y": 250 },
+    "TooltipDismissSmall": { "x": 200, "y": 400 },
+    "TooltipConfirmMed": { "x": 200, "y": 375 },
+    "TooltipDismissMed": { "x": 200, "y": 525 },
+    "TooltipConfirmLarge": { "x": 200, "y": 660 },
+    "TooltipDismissLarge": { "x": 200, "y": 820 },
+    "TooltipConfirmXL": { "x": 200, "y": 820 },
+    "TooltipDismissXL": { "x": 200, "y": 970 },
+
+    //Lobby Tooltips
+    "ChatRect": { "x": -1620, "y" : 190 },
+    "ChatNarrowRect": { "x": -1250, "y" : 165 },
+    "ChatArrowRect": { "x": -603, "y": 110 },
+    "ChatArrowNarrowRect": { "x": -232, "y": 90 },
+    "CreateGameRect": { "x": 440, "y": 105 },
+    "CreateGameNarrowRect": { "x": 70, "y": 80 },
+    "GameNameRect": { "x": 785, "y": 1235 },
+    "GameNameNarrowRect": { "x": 415, "y": 1205 },
+    "JoinGameRect": { "x": 825, "y": 105 },
+    "JoinGameNarrowRect": { "x": 455, "y": 80 },
+    "LadderRect": { "x": 1210, "y": 105 },
+    "LadderNarrowRect": { "x": 840, "y": 80 },
+
+    // Join game tweaks.
+    "JoinGamePlayerEntryHeight": 100,
+    "JoinGamePlayerNameHeight": 60,
+
+	// Loot filter options panel
+    "LootFilterOptionsPanelWidth": 1730,
+    "LootFilterOptionsPanelHeight": 1405,
+    "LootFilterOptionsPanelRect": { "x": -865, "y": 279, "width": "$LootFilterOptionsPanelWidth", "height": "$LootFilterOptionsPanelHeight" },
+	"LootFilterItemTabRect": { "x": -880, "y": 670, "width": 1770, "height": 1000 },
+	"LootFilterConfirmButtonX": 421,
+	"LootFilterSmallFontSize": "$SmallFontSize",
+	"LootFilterMediumFontSize": "$MediumFontSize",
+	"LootFilterMediumLargeFontSize": "$MediumLargeFontSize",
+	"StyleLFButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterMediumLargeFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+		"alignment": { "v": "center" },
+    },
+	"StyleLFButtonTextSmall":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterMediumFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": { "kerning": 0.88, "leading": 0.8 },
+		"alignment": { "v": "center", "h": "center" },
+		"options": { "lineWrap": true },
+    },
+	"StyleRuleSummaryButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterMediumFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+		"alignment": { "v": "center" },
+    },
+	"StyleItemListButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterMediumFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+		"alignment": { "v": "center" },
+    },
+	"StyleItemListButtonTextSmall":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterSmallFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+		"alignment": { "v": "center" },
+		"options": { "lineWrap": true },
+    },
+    "StyleFilterRuleListButtonTextSmall":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterSmallFontSize",
+        "dropShadow": "$DefaultDropShadow",
+        "spacing": "$MinimumSpacing",
+		"alignment": { "v": "center" },
+		"options": { "lineWrap": false },
+    },//国际服2
+	"StyleLootFilterAltTitle": {
+        "fontColor": "$FontColorGoldYellow",
+        "pointSize": "$LootFilterMediumFontSize",
+        "alignment": { "h": "left", "v": "center" },
+		"options": { "lineWrap": true },
+    },
+    "LF_ProfileDropdownWidth": 627,
+    "LF_ProfileDropdownBackgroundWidth": 625,
+
+    //Ytemod core program code
+	"StyleLootFilterItemListButtonText":
+    {
+        "fontColor": "$LightButtonTextColor",
+        "pointSize": "$LootFilterMediumFontSize",
+        "spacing": "$MinimumSpacing",
+		"alignment": { "h": "left", "v": "center" },
+		"options": { "lineWrap": true, "pipeCharacterBehavior" : "handle" },
+    },
+    "YtemodLeftToolTipStyle": {
+        "fontStyle": {
+        "pointSize": 30,
+        "alignment": {
+            "h": "left",
+            "v": "center"
+        },
+            "options": {
+                "newlineHandling": "standard"
+            }
+        }
+    },
+	"YtemodCharadvhelpRightstyle": {
+		"pointSize": "$MediumLargeFontSize",
+		"alignment": { "v": "center", "h": "right" },
+		"spacing": { "leading": 0.9 },
+		"options": { "pipeCharacterBehavior": "handle", "newlineHandling": "standard", "lineWrap": false },
+	},
+	"YtemodCharadvhelpLeftstyle": {
+		"pointSize": "$MediumLargeFontSize",
+		"alignment": { "v": "center", "h": "left" },
+		"spacing": { "leading": 0.9 },
+		"options": { "pipeCharacterBehavior": "handle", "newlineHandling": "standard", "lineWrap": false },
+	},
+	"YtemodCharadvhelpCenterstyle": {
+		"pointSize": "$MediumLargeFontSize",
+		"alignment": { "v": "center", "h": "center" },
+		"spacing": { "leading": 0.9 },
+		"options": { "pipeCharacterBehavior": "handle", "newlineHandling": "standard", "lineWrap": false },
+	},
+    "TalRashaSymboToolTipStyle": {
+        "fontStyle": {
+			"pointSize": "$TooltipFontSize",
+			"alignment": { "h": "center", "v": "center" },
+			"options": { "pipeCharacterBehavior": "handle", "newlineHandling": "reversed" },
+        },
+		"backgroundColor": [ 0, 0, 0, 0 ],
+    },
+	"TalRashaSymboTipTooltipOffset":{ "x": -300,"y": 760 },
+    //"rect": "$RuneWordFirstRuneRect"
+    "RuneWordFirstRuneRect": {
+        "x": 66,
+        "y": -8,
+        "scale": 0.78
+    },
+    //"rect": "$RuneWordSecondRuneRect"
+    "RuneWordSecondRuneRect": {
+        "x": 136,
+        "y": -8,
+        "scale": 0.78
+    },
+    //"rect": "$RuneWordThreeRuneRect"
+    "RuneWordThirdRuneRect": {
+        "x": 206,
+        "y": -8,
+        "scale": 0.78
+    },
+    //"rect": "$RuneWordFourRuneRect"
+    "RuneWordForthRuneRect": {
+        "x": 276,
+        "y": -8,
+        "scale": 0.78
+    },
+    //"rect": "$RuneWordFiveRuneRect"
+    "RuneWordFifthRuneRect": {
+        "x": 346,
+        "y": -8,
+        "scale": 0.78
+    },
+    //"rect": "$RuneWordSixRuneRect"
+    "RuneWordSixRuneRect": {
+        "x": 416,
+        "y": -8,
+        "scale": 0.78
+    },
+    //"rect": "$RuneWordNameWidgetRect"
+    "RuneWordNameWidgetRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 70,
+        "scale": 0.95
+    },
+    //"rect": "$BocRwItemNameWidgetRect"
+    "BocRwItemNameWidgetRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60,
+        //"scale": 0.95
+    },
+    //"rect": "$BocItemNameConsoleWidgetRect"
+    "BocItemNameConsoleWidgetRect": {
+        "x": 40,
+        "y": 0,
+        "width": 320,
+        "height": 60,
+        //"scale": 0.95
+    },
+    //"rect": "$BocItemNameWidgetRect"
+    "BocItemNameWidgetRect": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 60,
+        //"scale": 0.95
+    },
+    //"style": "$BocTextBoxWidgetStyle"
+    "BocTextBoxWidgetStyle": {
+        "pointSize": "$MediumLargeFontSize",
+        "alignment": {
+            "h": "left",
+            "v": "center"
+        },
+        "options": {
+            "pipeCharacterBehavior": "handle"
+        }
+    },
+    //"fields": "$RuneWordRunesWidgetRect"
+    "RuneWordRunesWidgetRect": {
+        "x": 250,
+        "y": -3,
+        "scale": 0.8
+    },
+    //"fields": "$RuneWordRunesConsoleWidgetRect"
+    "RuneWordRunesConsoleWidgetRect": {
+        "x": 350,
+        "y": -3,
+        "scale": 0.8
+    },
+    //"style": "$RuneWordTextBoxWidgetStyle"
+    "RuneWordTextBoxWidgetStyle": {
+        "pointSize": "$XMediumLargeFontSize",
+        "alignment": {
+            "h": "left",
+            "v": "center"
+        },
+        "options": {
+            "pipeCharacterBehavior": "handle"
+        }
+    },
+    "FileRune1": "items\\misc\\rune\\El_rune",
+    "TooltipRune1": "@r01\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +50@yte1k1p,\n@yte2k1j +1 @yte2k2j\n@StrGemX4 +15@yte1k1q,\n@yte2k1j +1 @yte2k2j\n@StrGemX1 +15@yte1k1q,\n@yte2k1j +1 @yte2k2j\n@StrGemX2 +15@yte1k1q,\n@yte2k1j +1 @yte2k2j\n\n@yte1k1e 11\n@ytedivider@ytestrdr@ytedr1m 4.3%@ytedr1t 23.2 @ytedr2t\n",
+    "FileRune2": "items\\misc\\rune\\Eld_rune",
+    "TooltipRune2": "@r02\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +75% @yte1k2x,\n+50 @yte1k3b\n@StrGemX4 @yte2k1u 15% @yte2k2u\n@StrGemX1 @yte2k1u 15% @yte2k2u\n@StrGemX2 @yte2k1k 7% @yte2k2k\n\n@yte1k1e 11\n@ytedivider@ytestrdr@ytedr1m 2.87%@ytedr1t 34.9 @ytedr2t\n@ytetran@r01L@ytex3\n",
+    "FileRune3": "items\\misc\\rune\\Tir_rune",
+    "TooltipRune3": "@r03\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +2 @yte1k3j\n@StrGemX4 +2 @yte1k3j\n@StrGemX1 +2 @yte1k3j\n@StrGemX2 +2 @yte1k3j\n\n@yte1k1e 13\n@ytedivider@ytestrdr@ytedr1m 10.75%@ytedr1t 9.3 @ytedr2t\n@ytetran@r02L@ytex3\n",
+    "FileRune4": "items\\misc\\rune\\Nef_rune",
+    "TooltipRune4": "@r04\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @ModStr1y\n@StrGemX4 +30 @yte1k3z\n@StrGemX1 +30 @yte1k3z\n@StrGemX2 +30 @yte1k3z\n\n@yte1k1e 13\n@ytedivider@ytestrdr@ytedr1m 7.17%@ytedr1t 13.9 @ytedr2t\n@ytetran@r03L@ytex3\n",
+    "FileRune5": "items\\misc\\rune\\Eth_rune",
+    "TooltipRune5": "@r05\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 -25% @yte1k3s\n@StrGemX4 @yte2k1n 15% @yte2k2n\n@StrGemX1 @yte2k1n 15% @yte2k2n\n@StrGemX2 @yte2k1n 15% @yte2k2n\n\n@yte1k1e 15\n@ytedivider@ytestrdr@ytedr1m 15.05%@ytedr1t 6.6 @ytedr2t\n@ytetran@r04L@ytex3\n",
+    "FileRune6": "items\\misc\\rune\\Ith_rune",
+    "TooltipRune6": "@r06\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +9 @yte1k1n\n@StrGemX4 +15% @yte1k2v\n@StrGemX1 +15% @yte1k2v\n@StrGemX2 +15% @yte1k2v\n\n@yte1k1e 15\n@ytedivider@ytestrdr@ytedr1m 10.03%@ytedr1t 10.0 @ytedr2t\n@ytetran@r05L@ytex3\n",
+    "FileRune7": "items\\misc\\rune\\Tal_rune",
+    "TooltipRune7": "@r07\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +75 @yte2k3a 5 @yte2k4a\n@StrGemX4 @yte1k1v +30%\n@StrGemX1 @yte1k1v +30%\n@StrGemX2 @yte1k1v +30%\n\n@yte1k1e 17\n@ytedivider@ytestrdr@ytedr1m 21.5%@ytedr1t 4.7 @ytedr2t\n@ytetran@r06L@ytex3\n",
+    "FileRune8": "items\\misc\\rune\\Ral_rune",
+    "TooltipRune8": "@r08\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k1w 5-30 @yte2k2w\n@StrGemX4 @yte1k1r +30%\n@StrGemX1 @yte1k1r +30%\n@StrGemX2 @yte1k1r +30%\n\n@yte1k1e 19\n@ytedivider@ytestrdr@ytedr1m 14.33%@ytedr1t 7.0 @ytedr2t\n@ytetran@r07L@ytex3\n",
+    "FileRune9": "items\\misc\\rune\\Ort_rune",
+    "TooltipRune9": "@r09\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-50 @yte2k2y\n@StrGemX4 @yte1k1t +30%\n@StrGemX1 @yte1k1t +30%\n@StrGemX2 @yte1k1t +30%\n\n@yte1k1e 21\n@ytedivider@ytestrdr@ytedr2m 21.5%@ytedr1t 4.7 @ytedr2t\n@ytetran@r08L@ytex3\n",
+    "FileRune10": "items\\misc\\rune\\Thul_rune",
+    "TooltipRune10": "@r10\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k1w 3-14 @yte2k2x\n@StrGemX4 @yte1k1s +30%\n@StrGemX1 @yte1k1s +30%\n@StrGemX2 @yte1k1s +30%\n\n@yte1k1e 23\n@ytedivider@ytestrdr@ytedr2m 14.33%@ytedr1t 7.0 @ytedr2t\n@ytetran@r09L@ytex3\n",
+    "FileRune11": "items\\misc\\rune\\Amn_rune",
+    "TooltipRune11": "@r11\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k1h 7% @yte2k2i\n@StrGemX4 @yte2k1d 14 @yte2k2d\n@StrGemX1 @yte2k1d 14 @yte2k2d\n@StrGemX2 @yte2k1d 14 @yte2k2d\n\n@yte1k1e 25\n@ytedivider@ytestrdr@ytedr2m 16.61%@ytedr1t 6.0 @ytedr2t\n@ytetran@r10L@ytex3n@gcy\n",
+    "FileRune12": "items\\misc\\rune\\Sol_rune",
+    "TooltipRune12": "@r12\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +9 @yte1k1o\n@StrGemX4 @yte1k2h 7\n@StrGemX1 @yte1k2h 7\n@StrGemX2 @yte1k2h 7\n\n@yte1k1e 27\n@ytedivider@ytestrdr@ytedr2m 11.08%@ytedr1t 9.0 @ytedr2t\n@ytetran@r11L@ytex3n@gcv\n",
+    "FileRune13": "items\\misc\\rune\\Shael_rune",
+    "TooltipRune13": "@r13\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k1o +20% @yte2k2o\n@StrGemX4 +20% @yte1k3c\n@StrGemX1 +20% @yte1k3c\n@StrGemX2 +20% @yte1k3f\n\n@yte1k1e 29\n@ytedivider@ytestrdr@ytedr2m 9.97%@ytedr1t 10.0 @ytedr2t\n@ytetran@r12L@ytex3n@gcb\n",
+    "FileRune14": "items\\misc\\rune\\Dol_rune",
+    "TooltipRune14": "@r14\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k3j +25% @yte2k4j\n@StrGemX4 @yte1k2f +7\n@StrGemX1 @yte1k2f +7\n@StrGemX2 @yte1k2f +7\n\n@yte1k1e 31\n@ytedivider@ytestrdr@ytedr2m 6.65%@ytedr1t 15.1 @ytedr2t\n@ytetran@r13L@ytex3n@gcr\n",
+    "FileRune15": "items\\misc\\rune\\Hel_rune",
+    "TooltipRune15": "@r15\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte1k2p -20%\n@StrGemX4 @yte1k2p -15%\n@StrGemX1 @yte1k2p -15%\n@StrGemX2 @yte1k2p -15%\n\n@ytedivider@ytestrdr@ytedr2m 5.54%@ytedr1t 18.1 @ytedr2t\n@ytetran@r14L@ytex3n@gcg\n",
+    "FileRune16": "items\\misc\\rune\\Io_rune",
+    "TooltipRune16": "@r16\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +10 @yte1k1k\n@StrGemX4 +10 @yte1k1k\n@StrGemX1 +10 @yte1k1k\n@StrGemX2 +10 @yte1k1k\n\n@yte1k1e 35\n@ytedivider@ytestrdr@ytedr2m 3.69%@ytedr1t 27.1 @ytedr2t\n@ytetran@r15L@ytex3n@gcw\n",
+    "FileRune17": "items\\misc\\rune\\Lum_rune",
+    "TooltipRune17": "@r17\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +10 @yte1k1l\n@StrGemX4 +10 @yte1k1l\n@StrGemX1 +10 @yte1k1l\n@StrGemX2 +10 @yte1k1l\n\n@yte1k1e 37\n@ytedivider@ytestrdr@ytedr3m 2.92%@ytedr1t 34.2 @ytedr2t\n@ytetran@r16L@ytex3n@gfy\n",
+    "FileRune18": "items\\misc\\rune\\Ko_rune",
+    "TooltipRune18": "@r18\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +10 @yte1k1j\n@StrGemX4 +10 @yte1k1j\n@StrGemX1 +10 @yte1k1j\n@StrGemX2 +10 @yte1k1j\n\n@yte1k1e 39\n@ytedivider@ytestrdr@ytedr3m 1.95%@ytedr1t 51.3 @ytedr2t\n@ytetran@r17L@ytex3n@gfv\n",
+    "FileRune19": "items\\misc\\rune\\Fal_rune",
+    "TooltipRune19": "@r19\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +10 @yte1k1i\n@StrGemX4 +10 @yte1k1i\n@StrGemX1 +10 @yte1k1i\n@StrGemX2 +10 @yte1k1i\n\n@yte1k1e 41\n@ytedivider@ytestrdr@ytedr3m 1.5%@ytedr1t 66.6 @ytedr2t\n@ytetran@r18L@ytex3n@gfb\n",
+    "FileRune20": "items\\misc\\rune\\Lem_rune",
+    "TooltipRune20": "@r20\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k3h 75% @yte2k4h\n@StrGemX4 @yte2k3h 50% @yte2k4h\n@StrGemX1 @yte2k3h 50% @yte2k4h\n@StrGemX2 @yte2k3h 50% @yte2k4h\n\n@yte1k1e 43\n@ytedivider@ytestrdr@ytedr3m 1.0%@ytedr1t 99.9 @ytedr2t\n@ytetran@r19L@ytex3n@gfr\n",
+    "FileRune21": "items\\misc\\rune\\Pul_rune",
+    "TooltipRune21": "@r21\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +75% @yte1k2w,\n+100 @yte1k3a\n@StrGemX4 +30% @yte1k2i\n@StrGemX1 +30% @yte1k2i\n@StrGemX2 +30% @yte1k2i\n\n@yte1k1e 45\n@ytedivider@ytestrdr@ytedr3m 0.76%@ytedr1t 131.3 @ytedr2t\n@ytetran@r20L@ytex3n@gfg\n",
+    "FileRune22": "items\\misc\\rune\\Um_rune",
+    "TooltipRune22": "@r22\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +25% @yte1k2s\n@StrGemX4 @yte2k1v +15 @yte2k2v\n@StrGemX1 @yte2k1v +15 @yte2k2v\n@StrGemX2 @yte2k1v +22 @yte2k2v\n\n@yte1k1e 47\n@ytedivider@ytestrdr@ytedr3m 0.51%@ytedr1t 197.0 @ytedr2t\n@ytetran@r21L@ytex2n@gfw\n",
+    "FileRune23": "items\\misc\\rune\\Mal_rune",
+    "TooltipRune23": "@r23\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @ModStr4a\n@StrGemX4 @yte1k2g 7\n@StrGemX1 @yte1k2g 7\n@StrGemX2 @yte1k2g 7\n\n@yte1k1e 49\n@ytedivider@ytestrdr@ytedr3m 0.52%@ytedr1t 193.1 @ytedr2t\n@ytetran@r22L@ytex2n@gsy\n",
+    "FileRune24": "items\\misc\\rune\\Ist_rune",
+    "TooltipRune24": "@r24\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k3i 30% @yte2k4i\n@StrGemX4 @yte2k3i 25% @yte2k4i\n@StrGemX1 @yte2k3i 25% @yte2k4i\n@StrGemX2 @yte2k3i 25% @yte2k4i\n\n@yte1k1e 51\n@ytedivider@ytestrdr@ytedr3m 0.35%@ytedr1t 289.6 @ytedr2t\n@ytetran@r23L@ytex2n@gsv\n",
+    "FileRune25": "items\\misc\\rune\\Gul_rune",
+    "TooltipRune25": "@r25\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 20% @yte1k5u\n@StrGemX4 @yte2k1t +5% @yte2k2t\n@StrGemX1 @yte2k1t +5% @yte2k2t\n@StrGemX2 @yte2k1t +5% @yte2k2t\n\n@yte1k1e 53\n@ytedividerl@ytestrdr@ytedr4m 0.0048%@ytedr1t 20,900 @ytedr2t\n@ytetran@r24L@ytex2n@gsb\n",
+    "FileRune26": "items\\misc\\rune\\Vex_rune",
+    "TooltipRune26": "@r26\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @yte2k1h 7% @yte2k2h\n@StrGemX4 @yte2k1p +5% @yte2k2p\n@StrGemX1 @yte2k1p +5% @yte2k2p\n@StrGemX2 @yte2k1p +5% @yte2k2p\n\n@yte1k1e 55\n@ytedividerl@ytestrdr@ytedr4m 0.0032%@ytedr1t 31,350 @ytedr2t\n@ytetran@r25L@ytex2n@gsr\n",
+    "FileRune27": "items\\misc\\rune\\Ohm_rune",
+    "TooltipRune27": "@r27\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +50% @yte1k4e\n@StrGemX4 @yte2k1q +5% @yte2k2q\n@StrGemX1 @yte2k1q +5% @yte2k2q\n@StrGemX2 @yte2k1q +5% @yte2k2q\n\n@yte1k1e 57\n@ytedividerl@ytestrdr@ytedr4m 0.0033%@ytedr1t 29,857 @ytedr2t\n@ytetran@r26L@ytex2n@gsg\n",
+    "FileRune28": "items\\misc\\rune\\Lo_rune",
+    "TooltipRune28": "@r28\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +20% @yte1k3t\n@StrGemX4 @yte2k1r +5% @yte2k2r\n@StrGemX1 @yte2k1r +5% @yte2k2r\n@StrGemX2 @yte2k1r +5% @yte2k2r\n\n@yte1k1e 59\n@ytedividerl@ytestrdr@ytedr4m 0.0022%@ytedr1t 44,786 @ytedr2t\n@ytetran@r27L@ytex2n@gsw\n",
+    "FileRune29": "items\\misc\\rune\\Sur_rune",
+    "TooltipRune29": "@r29\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @ModStr6d\n@StrGemX4 @yte2k1f 5% @yte2k2f\n@StrGemX1 @yte2k1f 5% @yte2k2f\n@StrGemX2 +50 @yte1k1m\n\n@yte1k1e 61\n@ytedividerl@ytestrdr@ytedr4m 0.0025%@ytedr1t 40,372 @ytedr2t\n@ytetran@r28L@ytex2n@gly\n",
+    "FileRune30": "items\\misc\\rune\\Ber_rune",
+    "TooltipRune30": "@r30\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 +20% @yte1k3h\n@StrGemX4 @yte1k6a 8%\n@StrGemX1 @yte1k6a 8%\n@StrGemX2 @yte1k6a 8%\n\n@yte1k1e 63\n@ytedividerl@ytestrdr@ytedr4m 0.0017%@ytedr1t 60,559 @ytedr2t\n@ytetran@r29L@ytex2n@gzv\n",
+    "FileRune31": "items\\misc\\rune\\Jah_rune",
+    "TooltipRune31": "@r31\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @ModStr3y\n@StrGemX4 @yte2k1e 5% @yte2k2e\n@StrGemX1 @yte2k1e 5% @yte2k2e\n@StrGemX2 +50 @yte1k2c\n\n@yte1k1e 65\n@ytedividerl@ytestrdr@ytedr4m 0.0018%@ytedr1t 54,227 @ytedr2t\n@ytetran@r30L@ytex2n@glb\n",
+    "FileRune32": "items\\misc\\rune\\Cham_rune",
+    "TooltipRune32": "@r32\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @ModStr3l +3\n@StrGemX4 @ModStr5z\n@StrGemX1 @ModStr5z\n@StrGemX2 @ModStr5z\n\n@yte1k1e 67\n@ytedividerl@ytestrdr@ytedr4m 0.0012%@ytedr1t 81,341 @ytedr2t\n@ytetran@r31L@ytex2n@glr\n",
+    "FileRune33": "items\\misc\\rune\\Zod_rune",
+    "TooltipRune33": "@r33\n@ytecyc0@ExInsertSockets\n\n@StrGemX3 @ModStre9s\n@StrGemX4 @ModStre9s\n@StrGemX1 @ModStre9s\n@StrGemX2 @ModStre9s\n\n@yte1k1e 69\n@ytedividerxl@ytestrdr@ytedr5m 0.00047%@ytedr1t 212,283 @ytedr2t\n@ytetran@r32L@ytex2n@glg\n",
+    "RuneUpWidgetRect": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.8
+    },
+    "EqualTextBoxWidgetStyle": {
+        "pointSize": "$MediumLargeFontSize",
+        "alignment": {
+            "h": "center",
+            "v": "center"
+        },
+        "options": {
+            "pipeCharacterBehavior": "handle"
+        },
+        "fontColor": "$FontColorGoldYellow",
+        "dropShadow": {
+            "shadowColor": "$FontColorGoldYellow",
+            "offset": {
+                "x": 3,
+                "y": 3
+            }
+        }
+    },
+    "RuneUpEqualTextBoxWidgetRect": {
+        "x": 75,
+        "y": 30,
+        "scale": 0.8
+    },
+    "RuneUpFirstItemRect": {
+        "x": 85,
+        "y": 0,
+        "scale": 0.8
+    },
+    "RuneUpSecondItemRect": {
+        "x": 155,
+        "y": 0,
+        "scale": 0.8
+    },
+    "RuneUpThirdItemRect": {
+        "x": 225,
+        "y": 0,
+        "scale": 0.8
+    },
+    "RuneUpForthItemRect": {
+        "x": 295,
+        "y": 0,
+        "scale": 0.8
+    },
+    "Fileytegy1": "items\\misc\\gem\\chipped_topaz",
+    "Tooltipytegy1": "@gcy\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-8 @yte2k2y\n@StrGemX4 @yte2k3i 9% @yte2k4i\n@StrGemX1 @yte2k3i 9% @yte2k4i\n@StrGemX2 @yte1k1t +12%\n",
+    "Fileytegy2": "items\\misc\\gem\\flawed_topaz",
+    "Tooltipytegy2": "@gfy\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-14 @yte2k2y\n@StrGemX4 @yte2k3i 13% @yte2k4i\n@StrGemX1 @yte2k3i 13% @yte2k4i\n@StrGemX2 @yte1k1t +16%\n\n@yte1k1e 5\n@ytedivider@ytetran@gcy@ytex3\n",
+    "Fileytegy3": "items\\misc\\gem\\topaz",
+    "Tooltipytegy3": "@gsy\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-22 @yte2k2y\n@StrGemX4 @yte2k3i 16% @yte2k4i\n@StrGemX1 @yte2k3i 16% @yte2k4i\n@StrGemX2 @yte1k1t +22%\n\n@yte1k1e 12\n@ytedivider@ytetran@gfy@ytex3\n",
+    "Fileytegy4": "items\\misc\\gem\\flawless_topaz",
+    "Tooltipytegy4": "@gly\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-30 @yte2k2y\n@StrGemX4 @yte2k3i 20% @yte2k4i\n@StrGemX1 @yte2k3i 20% @yte2k4i\n@StrGemX2 @yte1k1t +28%\n\n@yte1k1e 15\n@ytedivider@ytetran@gsy@ytex3\n",
+    "Fileytegy5": "items\\misc\\gem\\perfect_topaz",
+    "Tooltipytegy5": "@gpy\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-40 @yte2k2y\n@StrGemX4 @yte2k3i 24% @yte2k4i\n@StrGemX1 @yte2k3i 24% @yte2k4i\n@StrGemX2 @yte1k1t +40%\n\n@yte1k1e 18\n@ytedivider@ytetran@gly@ytex3\n",
+    "Fileytegv1": "items\\misc\\gem\\chipped_amethyst",
+    "Tooltipytegv1": "@gcv\n@ExInsertSockets\n\n@StrGemX3 +40 @yte1k1p\n@StrGemX4 +3 @yte1k1i\n@StrGemX1 +3 @yte1k1i\n@StrGemX2 +8 @yte1k1q\n",
+    "Fileytegv2": "items\\misc\\gem\\flawed_amethyst",
+    "Tooltipytegv2": "@gfv\n@ExInsertSockets\n\n@StrGemX3 +60 @yte1k1p\n@StrGemX4 +4 @yte1k1i\n@StrGemX1 +4 @yte1k1i\n@StrGemX2 +12 @yte1k1q\n\n@yte1k1e 5\n@ytedivider@ytetran@gcv@ytex3\n",
+    "Fileytegv3": "items\\misc\\gem\\amethyst",
+    "Tooltipytegv3": "@gsv\n@ExInsertSockets\n\n@StrGemX3 +80 @yte1k1p\n@StrGemX4 +6 @yte1k1i\n@StrGemX1 +6 @yte1k1i\n@StrGemX2 +18 @yte1k1q\n\n@yte1k1e 12\n@ytedivider@ytetran@gfv@ytex3\n",
+    "Fileytegv4": "items\\misc\\gem\\flawless_amethyst",
+    "Tooltipytegv4": "@gzv\n@ExInsertSockets\n\n@StrGemX3 +100 @yte1k1p\n@StrGemX4 +8 @yte1k1i\n@StrGemX1 +8 @yte1k1i\n@StrGemX2 +24 @yte1k1q\n\n@yte1k1e 15\n@ytedivider@ytetran@gsv@ytex3\n",
+    "Fileytegv5": "items\\misc\\gem\\perfect_amethyst",
+    "Tooltipytegv5": "@gpv\n@ExInsertSockets\n\n@StrGemX3 +150 @yte1k1p\n@StrGemX4 +10 @yte1k1i\n@StrGemX1 +10 @yte1k1i\n@StrGemX2 +30 @yte1k1q\n\n@yte1k1e 18\n@ytedivider@ytetran@gzv@ytex3\n",
+    "Fileytegb1": "items\\misc\\gem\\chipped_saphire",
+    "Tooltipytegb1": "@gcb\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 1-3 @yte2k2x\n@StrGemX4 +10 @yte1k1m\n@StrGemX1 +10 @yte1k1m\n@StrGemX2 @yte1k1s +12%\n",
+    "Fileytegb2": "items\\misc\\gem\\flawed_saphire",
+    "Tooltipytegb2": "@gfb\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 3-5 @yte2k2x\n@StrGemX4 +17 @yte1k1m\n@StrGemX1 +17 @yte1k1m\n@StrGemX2 @yte1k1s +16%\n\n@yte1k1e 5\n@ytedivider@ytetran@gcb@ytex3\n",
+    "Fileytegb3": "items\\misc\\gem\\saphire",
+    "Tooltipytegb3": "@gsb\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 4-7 @yte2k2x\n@StrGemX4 +24 @yte1k1m\n@StrGemX1 +24 @yte1k1m\n@StrGemX2 @yte1k1s +22%\n\n@yte1k1e 12\n@ytedivider@ytetran@gfb@ytex3\n",
+    "Fileytegb4": "items\\misc\\gem\\flawless_saphire",
+    "Tooltipytegb4": "@glb\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 6-10 @yte2k2x\n@StrGemX4 +31 @yte1k1m\n@StrGemX1 +31 @yte1k1m\n@StrGemX2 @yte1k1s +28%\n\n@yte1k1e 15\n@ytedivider@ytetran@gsb@ytex3\n",
+    "Fileytegb5": "items\\misc\\gem\\perfect_saphire",
+    "Tooltipytegb5": "@gpb\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 10-14 @yte2k2x\n@StrGemX4 +38 @yte1k1m\n@StrGemX1 +38 @yte1k1m\n@StrGemX2 @yte1k1s +40%\n\n@yte1k1e 18\n@ytedivider@ytetran@glb@ytex3\n",
+    "Fileytegr1": "items\\misc\\gem\\chipped_ruby",
+    "Tooltipytegr1": "@gcr\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 3-4 @yte2k2w\n@StrGemX4 +10 @yte1k2c\n@StrGemX1 +10 @yte1k2c\n@StrGemX2 @yte1k1r 12%\n",
+    "Fileytegr2": "items\\misc\\gem\\flawed_ruby",
+    "Tooltipytegr2": "@gfr\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 5-8 @yte2k2w\n@StrGemX4 +17 @yte1k2c\n@StrGemX1 +17 @yte1k2c\n@StrGemX2 @yte1k1r 16%\n\n@yte1k1e 5\n@ytedivider@ytetran@gcr@ytex3\n",
+    "Fileytegr3": "items\\misc\\gem\\ruby",
+    "Tooltipytegr3": "@gsr\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 8-12 @yte2k2w\n@StrGemX4 +24 @yte1k2c\n@StrGemX1 +24 @yte1k2c\n@StrGemX2 @yte1k1r 22%\n\n@yte1k1e 12\n@ytedivider@ytetran@gfr@ytex3\n",
+    "Fileytegr4": "items\\misc\\gem\\flawless_ruby",
+    "Tooltipytegr4": "@glr\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 10-16 @yte2k2w\n@StrGemX4 +31 @yte1k2c\n@StrGemX1 +31 @yte1k2c\n@StrGemX2 @yte1k1r 28%\n\n@yte1k1e 15\n@ytedivider@ytetran@gsr@ytex3\n",
+    "Fileytegr5": "items\\misc\\gem\\perfect_ruby",
+    "Tooltipytegr5": "@gpr\n@ExInsertSockets\n\n@StrGemX3 @yte2k1w 15-20 @yte2k2w\n@StrGemX4 +38 @yte1k2c\n@StrGemX1 +38 @yte1k2c\n@StrGemX2 @yte1k1r 40%\n\n@yte1k1e 18\n@ytedivider@ytetran@glr@ytex3\n",
+    "Fileytegg1": "items\\misc\\gem\\chipped_emerald",
+    "Tooltipytegg1": "@gcg\n@ExInsertSockets\n\n@StrGemX3 +10 @yte2k3a 3 @yte2k4a\n@StrGemX4 +3 @yte1k1j\n@StrGemX1 +3 @yte1k1j\n@StrGemX2 @yte1k1v 12%\n",
+    "Fileytegg2": "items\\misc\\gem\\flawed_emerald",
+    "Tooltipytegg2": "@gfg\n@ExInsertSockets\n\n@StrGemX3 +20 @yte2k3a 4 @yte2k4a\n@StrGemX4 +4 @yte1k1j\n@StrGemX1 +4 @yte1k1j\n@StrGemX2 @yte1k1v 16%\n\n@yte1k1e 5\n@ytedivider@ytetran@gcg@ytex3\n",
+    "Fileytegg3": "items\\misc\\gem\\emerald",
+    "Tooltipytegg3": "@gsg\n@ExInsertSockets\n\n@StrGemX3 +40 @yte2k3a 5 @yte2k4a\n@StrGemX4 +6 @yte1k1j\n@StrGemX1 +6 @yte1k1j\n@StrGemX2 @yte1k1v 22%\n\n@yte1k1e 12\n@ytedivider@ytetran@gfg@ytex3\n",
+    "Fileytegg4": "items\\misc\\gem\\flawless_emerald",
+    "Tooltipytegg4": "@glg\n@ExInsertSockets\n\n@StrGemX3 +60 @yte2k3a 6 @yte2k4a\n@StrGemX4 +8 @yte1k1j\n@StrGemX1 +8 @yte1k1j\n@StrGemX2 @yte1k1v 28%\n\n@yte1k1e 15\n@ytedivider@ytetran@gsg@ytex3\n",
+    "Fileytegg5": "items\\misc\\gem\\perfect_emerald",
+    "Tooltipytegg5": "@gpg\n@ExInsertSockets\n\n@StrGemX3 +100 @yte2k3a 7 @yte2k4a\n@StrGemX4 +10 @yte1k1j\n@StrGemX1 +10 @yte1k1j\n@StrGemX2 @yte1k1v 40%\n\n@yte1k1e 18\n@ytedivider@ytetran@glg@ytex3\n",
+    "Fileytegw1": "items\\misc\\gem\\chipped_diamond",
+    "Tooltipytegw1": "@gcw\n@ExInsertSockets\n\n@StrGemX3 +28% @yte1k2x\n@StrGemX4 +20 @yte1k1p\n@StrGemX1 +20 @yte1k1p\n@StrGemX2 @yte2k1v +6 @yte2k2v\n",
+    "Fileytegw2": "items\\misc\\gem\\flawed_diamond",
+    "Tooltipytegw2": "@gfw\n@ExInsertSockets\n\n@StrGemX3 +34% @yte1k2x\n@StrGemX4 +40 @yte1k1p\n@StrGemX1 +40 @yte1k1p\n@StrGemX2 @yte2k1v +8 @yte2k2v\n\n@yte1k1e 5\n@ytedivider@ytetran@gcw@ytex3\n",
+    "Fileytegw3": "items\\misc\\gem\\diamond",
+    "Tooltipytegw3": "@gsw\n@ExInsertSockets\n\n@StrGemX3 +44% @yte1k2x\n@StrGemX4 +60 @yte1k1p\n@StrGemX1 +60 @yte1k1p\n@StrGemX2 @yte2k1v +11 @yte2k2v\n\n@yte1k1e 12\n@ytedivider@ytetran@gfw@ytex3\n",
+    "Fileytegw4": "items\\misc\\gem\\flawless_diamond",
+    "Tooltipytegw4": "@glw\n@ExInsertSockets\n\n@StrGemX3 +54% @yte1k2x\n@StrGemX4 +80 @yte1k1p\n@StrGemX1 +80 @yte1k1p\n@StrGemX2 @yte2k1v +14 @yte2k2v\n\n@yte1k1e 15\n@ytedivider@ytetran@gsw@ytex3\n",
+    "Fileytegw5": "items\\misc\\gem\\perfect_diamond",
+    "Tooltipytegw5": "@gpw\n@ExInsertSockets\n\n@StrGemX3 +68% @yte1k2x\n@StrGemX4 +100 @yte1k1p\n@StrGemX1 +100 @yte1k1p\n@StrGemX2 @yte2k1v +19 @yte2k2v\n\n@yte1k1e 18\n@ytedivider@ytetran@glw@ytex3\n",
+    "Fileytegk1": "items\\misc\\gem\\chipped_skull",
+    "Tooltipytegk1": "@skc\n@ExInsertSockets\n\n@StrGemX3 @yte2k1h 2% @yte2k2i, @yte2k1h 1% @yte2k2h\n@StrGemX4 @yte2k1n 8%@yte2k2n, @yte1k2f +2\n@StrGemX1 @yte2k1n 8%@yte2k2n, @yte1k2f +2\n@StrGemX2 @yte2k1d 4 @yte2k2d\n",
+    "Fileytegk2": "items\\misc\\gem\\flawed_skull",
+    "Tooltipytegk2": "@skf\n@ExInsertSockets\n\n@StrGemX3 @yte2k1h 2% @yte2k2i, @yte2k1h 2% @yte2k2h\n@StrGemX4 @yte2k1n 8%@yte2k2n, @yte1k2f +3\n@StrGemX1 @yte2k1n 8%@yte2k2n, @yte1k2f +3\n@StrGemX2 @yte2k1d 8 @yte2k2d\n\n@yte1k1e 5\n@ytedividerl@ytetran@skc@ytex3\n",
+    "Fileytegk3": "items\\misc\\gem\\skull",
+    "Tooltipytegk3": "@sku\n@ExInsertSockets\n\n@StrGemX3 @yte2k1h 3% @yte2k2i, @yte2k1h 2% @yte2k2h\n@StrGemX4 @yte2k1n 12%@yte2k2n, @yte1k2f +3\n@StrGemX1 @yte2k1n 12%@yte2k2n, @yte1k2f +3\n@StrGemX2 @yte2k1d 12 @yte2k2d\n\n@yte1k1e 12\n@ytedividerl@ytetran@skf@ytex3\n",
+    "Fileytegk4": "items\\misc\\gem\\flawless_skull",
+    "Tooltipytegk4": "@skl\n@ExInsertSockets\n\n@StrGemX3 @yte2k1h 3% @yte2k2i, @yte2k1h 3% @yte2k2h\n@StrGemX4 @yte2k1n 12%@yte2k2n, @yte1k2f +3\n@StrGemX1 @yte2k1n 12%@yte2k2n, @yte1k2f +3\n@StrGemX2 @yte2k1d 16 @yte2k2d\n\n@yte1k1e 15\n@ytedividerl@ytetran@sku@ytex3\n",
+    "Fileytegk5": "items\\misc\\gem\\perfect_skull",
+    "Tooltipytegk5": "@skz\n@ExInsertSockets\n\n@StrGemX3 @yte2k1h 4% @yte2k2i, @yte2k1h 3% @yte2k2h\n@StrGemX4 @yte2k1n 19%@yte2k2n, @yte1k2f +5\n@StrGemX1 @yte2k1n 19%@yte2k2n, @yte1k2f +5\n@StrGemX2 @yte2k1d 20 @yte2k2d\n\n@yte1k1e 18\n@ytedividerl@ytetran@skl@ytex3\n",
+    "Tooltipytebaseitem": "@ytebaseitemtips1\n@ytebaseitemtips2\n@ytebaseitemtips3\n@ytebaseitemtips4\n@ytebaseitemtips5\n@ytebaseitemtips6",
+    "Tooltipytemagicitem": "@ytemagicitemtips1\n@ytemagicitemtips2\n@ytemagicitemtips3",
+    "Tooltipyterareitems": "@yterareitemstips1\n@yterareitemstips2\n@yterareitemstips3@yterareitemstips4",
+    "Tooltipytesetitem": "@ytesetitemtips1\n@ytesetitemtips2\n@ytesetitemtips3",
+    "Tooltipyteuniqueitem": "@yteuniqueitemtips1\n@yteuniqueitemtips2",
+    "Tooltipyteci0": "@ci0\n@ytecyc5[qlvl:24 / magiclvl: 3 / maxsoc:1-2-2]\n@yte1k1d@ytecyc0 20-30\n@yte2k1a 35\n@yte1k1e 16",
+    "Tooltipyteci1": "@ci1\n@ytecyc5[qlvl:52 / magiclvl: 8 / maxsoc:1-2-2]\n@yte1k1d@ytecyc0 30-40\n@yte2k1a 30\n@yte1k1e 39",
+    "Tooltipyteci2": "@ci2\n@ytecyc5[qlvl:70 / magiclvl: 13 / maxsoc:1-2-3]\n@yte1k1d@ytecyc0 40-50\n@yte2k1a 25\n@yte1k1e 52",
+    "Tooltipyteci3": "@ci3\n@ytecyc5[qlvl:85 / magiclvl: 18 / maxsoc:1-2-3]\n@yte1k1d@ytecyc0 50-60\n@yte2k1a 20\n@yte1k1e 64",
+    "Tooltipytexskusk": "@xsk\n@ytecyc5[qlvl:48 / maxsoc:2-2-3]\n@yte1k1d@ytecyc0 54-86\n@yte2k1a 20\n@yte1k1b 55\n@yte1k1e 25\n@ytedivider\n@usk\n@ytecyc5[qlvl:74 / maxsoc:2-2-3]\n@yte1k1d@ytecyc0 101-154\n@yte2k1a 20\n@yte1k1b 102\n@yte1k1e 55",
+    "Tooltipyteuh9": "@bhm\n@ytecyc5[qlvl:22 / maxsoc:2]\n@yte1k1d@ytecyc0 33-36\n@yte1k1b 25\n@ytedivider\n@xh9\n@ytecyc5[qlvl:50 / maxsoc:2]\n@yte1k1d@ytecyc0 60-125\n@yte2k1a 40\n@yte1k1b 58\n@yte1k1e 25\n@ytedivider\n@uh9\n@ytecyc5[qlvl:84 / maxsoc:2-2-3]\n@yte1k1d@ytecyc0 100-157\n@yte2k1a 40\n@yte1k1b 106\n@yte1k1e 63",
+    "Tooltipyteurn": "@urn\n@ytecyc5[qlvl:85 / maxsoc:2-2-3]\n@yte1k1d@ytecyc0 111-165\n@yte2k1a 50\n@yte1k1b 174\n@yte1k1e 66",
+    "Tooltipyteba6bab": "@ba6\n@ytecyc5[qlvl:33 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 55-68\n@yte2k1a 25\n@BarOnly\n@yte1k1b 58\n@yte1k1e 25\n@ytedivider\n@bab\n@ytecyc5[qlvl:60 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 102-147\n@yte2k1a 25\n@BarOnly\n@yte1k1b 106\n@yte1k1e 45",
+    "Tooltipyteba7bac": "@ba7\n@ytecyc5[qlvl:38 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 63-75\n@yte2k1a 35\n@BarOnly\n@yte1k1b 73\n@yte1k1e 29\n@ytedivider\n@bac\n@ytecyc5[qlvl:66 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 105-150\n@yte2k1a 35\n@BarOnly\n@yte1k1b 129\n@yte1k1e 49",
+    "Tooltipyteba8bad": "@ba8\n@ytecyc5[qlvl:44 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 78-90\n@yte2k1a 45\n@BarOnly\n@yte1k1b 88\n@yte1k1e 29\n@ytedivider\n@bad\n@ytecyc5[qlvl:73 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 111-156\n@yte2k1a 45\n@BarOnly\n@yte1k1b 151\n@yte1k1e 54",
+    "Tooltipyteba9bae": "@ba9\n@ytecyc5[qlvl:49 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 85-98\n@yte2k1a 50\n@BarOnly\n@yte1k1b 103\n@yte1k1e 32\n@ytedivider\n@bae\n@ytecyc5[qlvl:80 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 114-159\n@yte2k1a 50\n@BarOnly\n@yte1k1b 174\n@yte1k1e 60",
+    "Tooltipytebaabaf": "@baa\n@ytecyc5[qlvl:54 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 93-120\n@yte2k1a 55\n@BarOnly\n@yte1k1b 118\n@yte1k1e 40\n@ytedivider\n@baf\n@ytecyc5[qlvl:85 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 117-168\n@yte2k1a 55\n@BarOnly\n@yte1k1b 196\n@yte1k1e 65",
+    "Tooltipytedr6drb": "@dr6\n@ytecyc5[qlvl:35 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 52-62\n@yte2k1a 20\n@DruOnly\n@yte1k1b 44\n@yte1k1e 26\n@ytedivider\n@drb\n@ytecyc5[qlvl:62 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 101-145\n@yte2k1a 20\n@DruOnly\n@yte1k1b 86\n@yte1k1e 46",
+    "Tooltipytedr7drc": "@dr7\n@ytecyc5[qlvl:40 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 46-68\n@yte2k1a 20\n@DruOnly\n@yte1k1b 50\n@yte1k1e 30\n@ytedivider\n@drc\n@ytecyc5[qlvl:69 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 98-147\n@yte2k1a 20\n@DruOnly\n@yte1k1b 95\n@yte1k1e 51",
+    "Tooltipytedr8drd": "@dr8\n@ytecyc5[qlvl:46 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 67-81\n@yte2k1a 20\n@DruOnly\n@yte1k1b 56\n@yte1k1e 29\n@ytedivider\n@drd\n@ytecyc5[qlvl:76 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 107-152\n@yte2k1a 20\n@DruOnly\n@yte1k1b 104\n@yte1k1e 57",
+    "Tooltipytedr9dre": "@dr9\n@ytecyc5[qlvl:50 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 58-87\n@yte2k1a 20\n@DruOnly\n@yte1k1b 62\n@yte1k1e 32\n@ytedivider\n@dre\n@ytecyc5[qlvl:83 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 103-155\n@yte2k1a 20\n@DruOnly\n@yte1k1b 113\n@yte1k1e 62",
+    "Tooltipytedradrf": "@dra\n@ytecyc5[qlvl:55 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 73-98\n@yte2k1a 20\n@DruOnly\n@yte1k1b 65\n@yte1k1e 41\n@ytedivider\n@drf\n@ytecyc5[qlvl:85 / maxsoc:2-3-3]\n@yte1k1d@ytecyc0 109-159\n@yte2k1a 20\n@DruOnly\n@yte1k1b 118\n@yte1k1e 66",
+    "Tooltipytemaxmagicrin": "@ytecyc3@yterin\n@ytecyct[@yteprefix]@ytecyc3\n+120 @yte1k1m\n@yte2k1v +15 @yte2k2v\n@yte2k3i 15% @yte2k4i\n@ytecyct[@ytesuffix]@ytecyc3\n+20 @yte1k1j\n+20 @yte1k1i\n+10% @yte1k3e\n@yte2k1h 6% @yte2k2h\n@yte2k3i 25% @yte2k4i",
+    "Tooltipytemaxmagicamu": "@ytecyc3@yteamu\n@ytecyct[@yteprefix]@ytecyc3\n+2 @yte1k6w\n+3 @yte1k7c\n@yte2k1v +30 @yte2k2v\n@yte2k3i 15% @yte2k4i\n@ytecyct[@ytesuffix]@ytecyc3\n+100 @yte1k2c\n@yte1k2h 25\n+10% @yte1k3e\n@yte2k3h 80% @yte2k4h\n@yte2k3i 35% @yte2k4i",
+    "Tooltipytemaxmagicjew": "@ytecyc3@ytejew\n@ytecyct[@yteprefix]@ytecyc3\n@yte1k1s +30%\n@yte1k1r +30%\n@yte1k1t +30%\n@yte1k1v +30%\n@yte2k1v +15 @yte2k2v\n+40% @yte1k4e\n+15 @yte1k1n\n+8 @yte1k1o\n+50% @yte1k2w\n +50 @yte1k3a\n+3 @yte1k3j\n@ytecyct[@ytesuffix]@ytecyc3\n+9 @yte1k1j\n+9 @yte1k1i\n+7% @yte1k3c\n@yte2k1o +15% @yte2k2o\n+15 @yte1k1n\n+10 @yte1k1o\n@yte1k2p -15%",
+    "Tooltipytemaxmagiccm1": "@ytecyc3@cm1\n@ytecyct[@yteprefix]@ytecyc3\n+17 @yte1k1m\n+30 @yte1k1q\n@yte1k1s +11%\n@yte1k1r +11%\n@yte1k1t +11%\n@yte1k1v +11%\n@yte2k1v +5 @yte2k2v\n+3 @yte1k1n\n+20 @yte1k1p\n@yte2k1w 19-29 @yte2k2w\n@yte2k1w 1-71 @yte2k2y\n+175 @yte2k3a 6 @yte2k4a\n@ytecyct[@ytesuffix]@ytecyc3\n+2 @yte1k1j\n+2 @yte1k1i\n+20 @yte1k2c\n+5% @yte1k3c\n+1 @yte1k1n\n@yte2k1w 7-13 @yte2k2w\n@yte2k1w 1-28 @yte2k2y\n+50 @yte2k3a 6 @yte2k4a\n+3% @yte1k3d\n@yte2k3h 10% @yte2k4h\n@yte2k3i 7% @yte2k4i",
+    "Tooltipytemaxmagiccm2": "@ytecyc3@cm2\n@ytecyct[@yteprefix]@ytecyc3\n+34 @yte1k1m\n@yte2k1v +8 @yte2k2v\n+6 @yte1k1n\n+48 @yte1k1p\n@ytecyct[@ytesuffix]@ytecyc3\n+5 @yte1k1j\n+5 @yte1k1i\n+35 @yte1k2c\n+8% @yte1k3c\n+2 @yte1k1n\n@yte2k3h 22% @yte2k4h",
+    "Tooltipytemaxmagiccm3": "@ytecyc3@cm3\n@ytecyct[@yteprefix]@ytecyc3\n+1 @yte1k7c\n+59 @yte1k1m\n@yte1k1s +30%\n@yte1k1r +30%\n@yte1k1t +30%\n@yte1k1v +30%\n@yte2k1v +15 @yte2k2v\n+10 @yte1k1n\n+76 @yte1k1p\n+132 @yte1k1p\n@yte2k3i 12% @yte2k4i\n@ytecyct[@ytesuffix]@ytecyc3\n+6 @yte1k1j\n+6 @yte1k1i\n+45 @yte1k2c\n+12% @yte1k3c\n+4 @yte1k1n\n+7% @yte1k3d\n@yte2k3h 40% @yte2k4h",
+    "Tooltipytemaxrarerin": "@ytecyc9@yterin\n@ytecyct[@yteprefix]@ytecyc3\n+90 @yte1k1m\n@yte1k1s +30%\n@yte1k1r +30%\n@yte1k1t +30%\n@yte1k1v +30%\n@yte2k1v +11 @yte2k2v\n+120 @yte1k1p\n+1 @yte1k3j\n@yte2k3i 10% @yte2k4i\n@ytecyct[@ytesuffix]@ytecyc3\n+15 @yte1k1j\n+15 @yte1k1l\n+20 @yte1k1i\n+40 @yte1k2c\n@yte1k2f +9\n@yte2k1h 8% @yte2k2i\n@yte2k1h 6% @yte2k2h\n@yte1k2t 25%\n@ModStr4b\n+10% @yte1k3e\n+4 @yte1k1n\n+9 @yte1k1o\n+50 @yte2k3a 3 @yte2k4a\n5% @yte1k5u\n@yte2k1j +5 @yte2k2j\n@yte2k3h 40% @yte2k4h\n@yte2k3i 15% @yte2k4i\n@yte3k1g 2 @yte3k2e@skillname86@ModStre10e 25 @yte3k3g",
+    "Tooltipytemaxrareamu": "@ytecyc9@yteamu\n@ytecyct[@yteprefix]@ytecyc3\n+2 @yte1k6w\n+2 @yte1k7c\n+90 @yte1k1m\n@yte1k1s +40%\n@yte1k1r +40%\n@yte1k1t +40%\n@yte1k1v +40%\n@yte2k1v +20 @yte2k2v\n+20 @yte1k1p\n@yte2k3i 10% @yte2k4i\n@ytecyct[@ytesuffix]@ytecyc3\n+20 @yte1k1j\n+20 @yte1k1l\n+30 @yte1k1i\n+60 @yte1k2c\n@yte1k2f +15\n@yte2k1h 6% @yte2k2i\n@yte2k1h 8% @yte2k2h\n@yte1k2t 75%\n@ModStr4b\n+10% @yte1k3e\n+4 @yte1k1n\n+9 @yte1k1o\n+50 @yte2k3a 3 @yte2k4a\n5% @yte1k5u\n@yte2k1j +5 @yte2k2j\n@yte2k3h 80% @yte2k4h\n@yte2k3i 25% @yte2k4i\n@yte3k1g 2 @yte3k2e@skillname86@ModStre10e 25 @yte3k3g\n@yte3k1g 3 @yte3k2e@skillname54@ModStre10e 27 @yte3k3g",
+    "Tooltipytemaxrarejew": "@ytecyc9@ytejew\n@ytecyct[@yteprefix]@ytecyc3\n+15 @yte1k1m\n+40 @yte1k1q\n@yte1k1s +30%\n@yte1k1r +30%\n@yte1k1t +30%\n@yte1k1v +30%\n@yte2k1v +10 @yte2k2v\n+30% @yte1k4e\n+9 @yte1k1n\n+8 @yte1k1o\n+60 @yte1k1p\n+50% @yte1k2x\n+50 @yte1k3b\n+50% @yte1k2w\n +40 @yte1k3a\n+3 @yte1k3j\n+10 @yte1k1p\n@yte2k1j +1 @yte2k2j\n@yte2k3i 7% @yte2k4i\n@ytecyct[@ytesuffix]@ytecyc3\n+9 @yte1k1j\n+9 @yte1k1l\n+9 @yte1k1i\n+8 @yte1k2c\n@yte1k2f +4\n+7% @yte1k3c\n+9 @yte1k1n\n+10 @yte1k1o\n@yte2k3h 30% @yte2k4h\n@yte2k3i 10% @yte2k4i\n@yte1k2p -15%",
+    "Tooltipytetfyps": "@yps\n@ytetran@gpl + @ytechp@yteanyq\n",
+    "Tooltipytetfrvs": "@rvs\n@ytetran@ytechp@yteanyq@ytex3n@ytecmp@yteanyq@ytex3n@ytechig@yteanyt\n",
+    "Tooltipytetfrvl": "@rvl\n@ytetran@rvs@ytex3\n@yteor\n@ytechp@yteanyq@ytex3n@ytecmp@yteanyq@ytex3n@ytestdg@yteany\n",
+    "Tooltipytetfaqv": "@aqv\n@ytetran@ytecyc0@cqv@ytex2\n",
+    "Tooltipytetfcqv": "@cqv\n@ytetran@ytecyc0@aqv@ytex2\n",
+    "Tooltipytetfjav": "@jav\n@ytetran@ytecyc0@ytebspr@yteany + @aqv\n",
+    "Tooltipytetftax": "@tax\n@ytetran@ytecyc0@ytebaxe@yteany + @ytebdgr@yteany\n",
+    "Tooltipytetfmamurin": "@ytearandomm@yteamu\n@ytecyc5[ilvl = int(0.75*clvl)]@ytetran@ytemag @yterin@ytex3\n@ytedividerxl\n@ytehavea @Prismatic @yteprefix@ytemag @yteamu\n@yte2k1v +16-20 @yte2k2v\n@ytecyc5[ilvl=50]@ytetran@ytemag @yteamu@yteand@gpr + @gpb + @gpy + @gpg + @gpv + @gpw\n@ytedividerxl\n@ytearandomm@yterin\n@ytecyc5[ilvl = int(0.75*clvl)]@ytetran@ytemag @yteamu@ytex3\n@ytedividerxl\n@ytehavea @Garnet @yteprefix@ytemag @yterin\n@yte1k1r +21-30%\n@ytecyc5[ilvl=30]@ytetran@ytemag @yterin@yteand@gpr + @opm\n@ytedividerxl\n@ytehavea @Cobalt @yteprefix@ytemag @yterin\n@yte1k1s +21-30%\n@ytecyc5[ilvl=30]@ytetran@ytemag @yterin@yteand@gpb + @wms\n@ytedividerxl\n@ytehavea @Coral @yteprefix@ytemag @yterin\n@yte1k1t +21-30%\n@ytecyc5[ilvl=30]@ytetran@ytemag @yterin@yteand@gpy + @rvs\n@ytedividerxl\n@ytehavea @Jade @yteprefix@ytemag @yterin\n@yte1k1v +21-30%\n@ytecyc5[ilvl=30]@ytetran@ytemag @yterin@yteand@gpg + @yps\n",
+    "Tooltipytetfmshldswdpom": "@ytehavea @yteofspikes @ytesuffix@ytemag @ytebsld\n@yte2k1d 4-6 @yte2k2d\n@ytecyc5[ilvl=30]@ytetran@ytemag @ytebsld@yteand@spc@yteanyq + @sku@yteany @ytex2\n@ytedividerxl\n@ytehavea @yteoftheleech @ytesuffix@ytemag @ytebswd\n@yte2k1h 4-5% @yte2k2i\n@ytecyc5[ilvl=30]@ytetran@ytemag @ytebswd@yteand@ytechp@yteany x 4 + @gsr\n@ytedividerxl\n@ytehavea @Savage @yteprefix@ytemag @ytebpom\n+66-80% @yte1k4e\n@ytecyc5[ilvl=50]@ytetran@ytecyc0@ytebstv@yteanytnq + @kri@yteanyq + @ytebblt@yteanytnq + @gsw@yteanyq\n@yteytfmpomtips",
+    "Tooltipytewpnasoc": "@ytewpnasoc@ytesoc@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r11L@yteand@gpv@yteaddsockettips",
+    "Tooltipytearmasoc": "@ytearmasoc@ytesoc@ytebamr@yteand@ytecyc8@r07L@yteand@ytecyc8@r10L@yteand@gpy@yteaddsockettips",
+    "Tooltipytesldasoc": "@ytesldasoc@ytesoc@ytebsld@yteand@ytecyc8@r07L@yteand@ytecyc8@r11L@yteand@gpr@yteaddsockettips",
+    "Tooltipytehlmasoc": "@ytehlmasoc@ytesoc@ytebhlm@yteand@ytecyc8@r08L@yteand@ytecyc8@r10L@yteand@gpb@yteaddsockettips",
+    "Tooltipyterareasoc": "@yterareasoc@ytesoc@yterareitem@yteand@skz@ytex3 +@ytecyc4 ㆌ @yte4u2c@yterareasoctips",
+    "Tooltipytelqwpnupg": "@ytelqwpnupg@yteupg@ytelowq@ytebwpn@yteand@ytecyc8@r02L@yteand@ytechig@yteany@ytelqitemupgtips",
+    "Tooltipytelqarmupg": "@ytelqarmupg@yteupg@ytelowq@yteallarm@yteand@ytecyc8@r01L@yteand@ytechig@yteany@ytelqitemupgtips",
+    "Tooltipytewpnupg": "@ytewpnupg@yteupg@ytenor » @yteexc\n@ytecyc9@ytenor@yterar@ytebwpn@yteand@ytecyc8@r09L@yteand@ytecyc8@r11L@yteand@gpb\n@ytecyc4@ytenor@yteuni@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r12L@yteand@gpg\n@ytecyc2@ytenor@yteset@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r12L@yteand@gpg\n\n@ytecyct@yteexc » @yteeli\n@ytecyc9@yteexc@yterar@ytebwpn@yteand@ytecyc8@r19L@yteand@ytecyc8@r22L@yteand@gpb\n@ytecyc4@yteexc@yteuni@ytebwpn@yteand@ytecyc8@r17L@yteand@ytecyc8@r21L@yteand@gpg\n@ytecyc2@yteexc@yteset@ytebwpn@yteand@ytecyc8@r17L@yteand@ytecyc8@r21L@yteand@gpg@yteitemupgtips",
+    "Tooltipytearmupg": "@ytearmupg@yteupg@ytenor » @yteexc\n@ytecyc9@ytenor@yterar@yteallarm@yteand@ytecyc8@r08L@yteand@ytecyc8@r10L@yteand@gpv\n@ytecyc4@ytenor@yteuni@yteallarm@yteand@ytecyc8@r07L@yteand@ytecyc8@r13L@yteand@gpw\n@ytecyc2@ytenor@yteset@yteallarm@yteand@ytecyc8@r07L@yteand@ytecyc8@r13L@yteand@gpw\n\n@ytecyct@yteexc » @yteeli\n@ytecyc9@yteexc@yterar@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r21L@yteand@gpv\n@ytecyc4@yteexc@yteuni@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r20L@yteand@gpw\n@ytecyc2@yteexc@yteset@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r20L@yteand@gpw@yteitemupgtips",
+    "Tooltipytewpnrepair": "@ytewpnrepair@yterep@ytexdur@ytebwpn@yteand@ytecyc8@r09L\n@ytexdnc@ytebwpn@yteand@ytecyc8@r09L@yteand@ytechig@yteany@yteitemrepairtips",
+    "Tooltipytearmrepair": "@ytearmrepair@yterep@ytexdur@yteallarm@yteand@ytecyc8@r08L\n@ytexdnc@yteallarm@yteand@ytecyc8@r08L@yteand@yteflag@yteany@yteitemrepairtips",
+    "Tooltipytegemmedremove": "@ytegemmedremove@yterem@ytesocitem@yteand@ytecyc8@r15L@yteand@tsc@ytegemremovetips",
+    "Tooltipytesocmagwpn": "@ytehavea @ModStre8c @ytemag@ytebwpn\n@ytecyc5[ilvl=25, @ModStre8c 1-2]@ytetran@ytemag@ytebwpn@yteand@ytechig@yteany@ytex3\n@ytedividerxl\n@ytehavea @ModStre8c @ytemag@ytebwpn\n@ytecyc5[ilvl=30, @ModStre8c 1-2]@ytetran@ytemag@ytebwpn@yteand@ytefleg@yteany@ytex3\n@ytedividerxl\n@ytehavea @ModStre8c @ytemag@ytebwpn\n@ytecyc5[ilvl=30, @ModStre8c 1-2]@ytetran@ytecyco@ModStre8c@ytebwpn@yteand@ytestdg@yteany@ytex3\n",
+    "Tooltipytemagitemrecas": "@ytecyc3@yterecast@ytemagitem\n@ytecyc5[ilvl=ilvl]@ytetran@ytemagitem@yteand@ytepfg@yteany@ytex3\n@ytemagitemrecastips",
+    "Tooltipyteraritemrecas": "@ytecyc9@yterecast@yterareitem\n@ytecyc5[ilvl=int(0.4*clvl)+int(0.4*ilvl)]@ytetran@yterareitem@yteand@skz@ytecyc0 x 6\n@yteyteraritemrecastips\n@ytedividerxl\n@ytecyc9@yterecast@yterareitem\n@ytecyc5[ilvl=int(0.66*clvl)+int(0.66*ilvl)]@ytetran@yterareitem@yteand@skz@yteand@ytecyc4 ㆌ @yte4u2c\n",
+	"Tooltipyteaddsocqq": "@yteaddsocqq@ytewpnasoc@ytesoc@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r11L@yteand@gpv\n@ytedividerxl\n@ytearmasoc@ytesoc@ytebamr@yteand@ytecyc8@r07L@yteand@ytecyc8@r10L@yteand@gpy\n@ytedividerxl\n@ytesldasoc@ytesoc@ytebsld@yteand@ytecyc8@r07L@yteand@ytecyc8@r11L@yteand@gpr\n@ytedividerxl\n@ytehlmasoc@ytesoc@ytebhlm@yteand@ytecyc8@r08L@yteand@ytecyc8@r10L@yteand@gpb@yteaddsockettips",
+	"Tooltipyteitemupgqq": "@yteitemupgqq@ytewpnupg@yteupg@ytenor » @yteexc\n@ytecyc9@ytenor@yterar@ytebwpn@yteand@ytecyc8@r09L@yteand@ytecyc8@r11L@yteand@gpb\n@ytecyc4@ytenor@yteuni@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r12L@yteand@gpg\n@ytecyc2@ytenor@yteset@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r12L@yteand@gpg\n\n@ytecyct@yteexc » @yteeli\n@ytecyc9@yteexc@yterar@ytebwpn@yteand@ytecyc8@r19L@yteand@ytecyc8@r22L@yteand@gpb\n@ytecyc4@yteexc@yteuni@ytebwpn@yteand@ytecyc8@r17L@yteand@ytecyc8@r21L@yteand@gpg\n@ytecyc2@yteexc@yteset@ytebwpn@yteand@ytecyc8@r17L@yteand@ytecyc8@r21L@yteand@gpg\n@ytedividerxl\n@ytearmupg@yteupg@ytenor » @yteexc\n@ytecyc9@ytenor@yterar@yteallarm@yteand@ytecyc8@r08L@yteand@ytecyc8@r10L@yteand@gpv\n@ytecyc4@ytenor@yteuni@yteallarm@yteand@ytecyc8@r07L@yteand@ytecyc8@r13L@yteand@gpw\n@ytecyc2@ytenor@yteset@yteallarm@yteand@ytecyc8@r07L@yteand@ytecyc8@r13L@yteand@gpw\n\n@ytecyct@yteexc » @yteeli\n@ytecyc9@yteexc@yterar@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r21L@yteand@gpv\n@ytecyc4@yteexc@yteuni@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r20L@yteand@gpw\n@ytecyc2@yteexc@yteset@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r20L@yteand@gpw@yteitemupgtips",
+	"Tooltipyteitemrepairqq": "@yteitemfixqq@ytewpnrepair@yterep@ytexdur@ytebwpn@yteand@ytecyc8@r09L\n@ytexdnc@ytebwpn@yteand@ytecyc8@r09L@yteand@ytechig@yteany\n@ytedividerxl\n@ytearmrepair@yterep@ytexdur@yteallarm@yteand@ytecyc8@r08L\n@ytexdnc@yteallarm@yteand@ytecyc8@r08L@yteand@yteflag@yteany@yteitemrepairtips",
+	"Tooltipyterwqq": "   @yterwqq   • @yteihelm •\n@ytecyc4   27 @yte1r1b = @r09L + @r12L\n   35 @yte1r1g = @r13L + @r16L + @r07L\n   55 @yte1r1k = @r04L + @r21L + @r26L\n   @ytedividerxl\n   • @yteishield •\n@ytecyc4   25 @yte1r2b = @r07L + @r10L + @r09L + @r11L\n   57 @yte1r2f = @r26L + @r27L + @r24L + @r14L\n   65 @yte1r2h = @r26L + @r26L + @r28L + @r31L\n   @ytedividerxl\n   • @yteiarmor •\n@ytecyc4   17 @yte1r3a = @r07L + @r05L\n   39 @yte1r3e = @r13L + @r18L + @r02L\n   43 @yte1r3g = @r13L + @r10L + @r20L\n   47 @yte1r3k = @r13L + @r22L + @r10L\n   59 @yte1r3q = @r01L + @r12L + @r14L + @r28L\n   65 @yte1r3t = @r31L + @r06L + @r30L\n   @ytedividerxl\n   • @yteiweapon •\n@ytecyc4   19 @yte1r4c = @r03L + @r08L\n   25 @yte1r2b = @r07L + @r10L + @r09L + @r11L\n   27 @yte1r4k = @r08L + @r03L + @r07L + @r12L\n   39 @yte1r3e = @r13L + @r18L + @r02L\n   47 @yte1r4v = @r13L + @r22L + @r03L\n   49 @yte1r4w = @r13L + @r21L + @r23L + @r17L\n   53 @yte1r5a = @r23L + @r25L + @r11L\n   55 @yte1r5c = @r18L + @r26L + @r21L + @r10L\n   57 @yte1r5e = @r11L + @r08L + @r23L + @r24L + @r27L\n   59 @yte1r5g = @r05L + @r03L +@r28L + @r23L +@r08L\n   63 @yte1r5i = @r30L + @r03L + @r22L + @r23L + @r17L\n   63 @yte1r5k = @r30L + @r23L + @r30L + @r24L\n   65 @yte1r5o = @r27L + @r31L + @r20L + @r02L\n   67 @yte1r5w = @r32L + @r13L + @r22L\n   67 @yte1r5t = @r15L + @r27L + @r22L + @r28L + @r32L",
+	"Tooltipyteccr": "@yte4u3k\n@cm3@ytefixppt@ModItemMonColdSunder\n@yte1k1s -70%\n@yteranppt@yterandom1\n+5-15% @yte1k5p@ytevarsym1\n@yte2k3d -5-10% @yte2k4d@ytevarsym1\n@yterandom1\n+10-65 @yte1k2c@ytevarsym1\n+10-75 @yte1k1m@ytevarsym1\n@yterandom1\n+5-10% @yte1k3d@ytevarsym1\n+12-24% @yte1k3c@ytevarsym1\n+3-8 @yte1k5k@ytevarsym1\n@yterandom1\n@yte1k2h 5-10@ytevarsym1\n@yte1k2g 5-10@ytevarsym1\n@yterandom1\n@yte2k3i 14-25% @yte2k4i@ytevarsym1\n@yte2k3h 20-55% @yte2k4h@ytevarsym1\n@ytetran@yte4u3j@yteand@ytecyc8@r17L@yteand@gpb@yteand@ytexa2",
+	"Tooltipytecfr": "@yte4u3m\n@cm3@ytefixppt@ModItemMonFireSunder\n@yte1k1r -70%\n@yteranppt@yterandom1\n+5-15% @yte1k5o@ytevarsym1\n@yte2k3e -5-10% @yte2k4e@ytevarsym1\n@yterandom1\n+10-65 @yte1k2c@ytevarsym1\n+10-75 @yte1k1m@ytevarsym1\n@yterandom1\n+5-10% @yte1k3d@ytevarsym1\n+12-24% @yte1k3c@ytevarsym1\n+3-8 @yte1k5k@ytevarsym1\n@yterandom1\n@yte1k2h 5-10@ytevarsym1\n@yte1k2g 5-10@ytevarsym1\n@yterandom1\n@yte2k3i 14-25% @yte2k4i@ytevarsym1\n@yte2k3h 20-55% @yte2k4h@ytevarsym1\n@ytetran@yte4u3l@yteand@ytecyc8@r16L@yteand@gpr@yteand@ytexa4",
+	"Tooltipytecoth": "@yte4u3o\n@cm3@ytefixppt@ModItemMonLightSunder\n@yte1k1t -70%\n@yteranppt@yterandom1\n+5-15% @yte1k5q@ytevarsym1\n@yte2k3f -5-10% @yte2k4f@ytevarsym1\n@yterandom1\n+10-65 @yte1k2c@ytevarsym1\n+10-75 @yte1k1m@ytevarsym1\n@yterandom1\n+5-10% @yte1k3d@ytevarsym1\n+12-24% @yte1k3c@ytevarsym1\n+3-8 @yte1k5k@ytevarsym1\n@yterandom1\n@yte1k2h 5-10@ytevarsym1\n@yte1k2g 5-10@ytevarsym1\n@yterandom1\n@yte2k3i 14-25% @yte2k4i@ytevarsym1\n@yte2k3h 20-55% @yte2k4h@ytevarsym1\n@ytetran@yte4u3n@yteand@ytecyc8@r19L@yteand@gpy@yteand@ytexa3",
+	"Tooltipytecrf": "@yte4u3q\n@cm3@ytefixppt@ModItemMonPoisonSunder\n@yte1k1v -70%\n@yteranppt@yterandom1\n+5-15% @yte1k5r@ytevarsym1\n@yte2k3g -5-10% @yte2k4g@ytevarsym1\n@yterandom1\n+10-65 @yte1k2c@ytevarsym1\n+10-75 @yte1k1m@ytevarsym1\n@yterandom1\n+5-10% @yte1k3d@ytevarsym1\n+12-24% @yte1k3c@ytevarsym1\n+3-8 @yte1k5k@ytevarsym1\n@yterandom1\n@yte1k2h 5-10@ytevarsym1\n@yte1k2g 5-10@ytevarsym1\n@yterandom1\n@yte2k3i 14-25% @yte2k4i@ytevarsym1\n@yte2k3h 20-55% @yte2k4h@ytevarsym1\n@ytetran@yte4u3p@yteand@ytecyc8@r18L@yteand@gpg@yteand@ytexa1",
+	"Tooltipytecbb": "@yte4u3s\n@cm3@ytefixppt@ModItemMonPhysicalSunder\n@yte1k6e +10%\n@yteranppt@yterandom1\n+75-100% @yte1k4e@ytevarsym1\n@yte2k3n -5-10% @yte2k4n@ytevarsym1\n@yterandom1\n+10-65 @yte1k2c@ytevarsym1\n+10-75 @yte1k1m@ytevarsym1\n@yterandom1\n+5-10% @yte1k3d@ytevarsym1\n+12-24% @yte1k3c@ytevarsym1\n+3-8 @yte1k5k@ytevarsym1\n@yterandom1\n@yte1k2h 5-10@ytevarsym1\n@yte1k2g 5-10@ytevarsym1\n@yterandom1\n@yte2k3i 14-25% @yte2k4i@ytevarsym1\n@yte2k3h 20-55% @yte2k4h@ytevarsym1\n@ytetran@yte4u3r@yteand@ytecyc8@r21L@yteand@gpv@yteand@ytexa5",
+	"Tooltipytecbc": "@yte4u3u\n@cm3@ytefixppt@ModItemMonMagicSunder\n@yte1k1u -45%\n@yteranppt@yterandom1\n+5-15% @yte1k7d@ytevarsym1\n@yte2k3m -5-10% @yte2k4m@ytevarsym1\n@yterandom1\n+10-65 @yte1k2c@ytevarsym1\n+10-75 @yte1k1m@ytevarsym1\n@yterandom1\n+5-10% @yte1k3d@ytevarsym1\n+12-24% @yte1k3c@ytevarsym1\n+3-8 @yte1k5k@ytevarsym1\n@yterandom1\n@yte1k2h 5-10@ytevarsym1\n@yte1k2g 5-10@ytevarsym1\n@yterandom1\n@yte2k3i 14-25% @yte2k4i@ytevarsym1\n@yte2k3h 20-55% @yte2k4h@ytevarsym1\n@ytetran@yte4u3t@yteand@ytecyc8@r23L@yteand@gpw@yteand\n@ytexa3@yteand@ytexa4@yteand@ytexa5",
+    "Tooltipytehpamu": "@ytehitpower\n@ytecrafted @yteamu@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n@yte2k3j +5-15% @yte2k4j@ytevarsym1\n@yte2k1d 3-10 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yteamu@yteand@ytecyc8@r10L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehprin": "@ytehitpower\n@ytecrafted @yterin@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n+1-5 @yte1k1j@ytevarsym1\n@yte2k1d 3-6 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yterin@yteand@ytecyc8@r11L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehpglv": "@ytehitpower\n@ytecrafted @ytebglv@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n@ModStr1y\n@yte2k1d 3-7 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @mgl / @xmg / @umg@yteand@ytecyc8@r09L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehpblt": "@ytehitpower\n@ytecrafted @ytebblt@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n+5-10% @yte1k2v@ytevarsym1\n@yte2k1d 3-7 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @tbl / @ztb / @utc@yteand@ytecyc8@r07L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehpbts": "@ytehitpower\n@ytecrafted @ytebbts@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n+25-60 @yte1k3z@ytevarsym1\n@yte2k1d 3-7 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @mbt / @xmb / @umb@yteand@ytecyc8@r08L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehphlm": "@ytehitpower\n@ytecrafted @ytebhlm@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n+25-50 @yte1k3z@ytevarsym1\n@yte2k1d 3-7 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @fhl / @xhl / @uhl@yteand@ytecyc8@r06L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehpamr": "@ytehitpower\n@ytecrafted @ytebamr@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n+10-20% @yte1k3c@ytevarsym1\n@yte2k1d 3-10 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @fld / @xld / @uld@yteand@ytecyc8@r04L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehpsld": "@ytehitpower\n@ytecrafted @ytebsld@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n@yte2k1k 5-10% @yte2k2k@ytevarsym1\n@yte2k1d 3-10 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @gts / @xts / @uts@yteand@ytecyc8@r05L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipytehpwpn": "@ytehitpower\n@ytecrafted @ytebwpn@ytefixppt@yte4k1f 5% @yte4k2f 4 @yte3k2e@skillname44@yte4k4f\n+35-60% @yte1k4e@ytevarsym1\n@yte2k1d 3-7 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @ytebclb / @ytebhmr / @ytebmac / @ytebspt / @ytebstv / @ytebwnd@yteand@ytecyc8@r03L@yteand@gpb@yteand@ytejew@yteany\n",
+    "Tooltipyteblamu": "@yteblood\n@ytecrafted @yteamu@ytefixppt+5-10% @yte1k3d@ytevarsym1\n@yte2k1h 1-4% @yte2k2i@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yteamu@yteand@ytecyc8@r11L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblrin": "@yteblood\n@ytecrafted @yterin@ytefixppt@yte2k1h 1-4% @yte2k2i@ytevarsym1\n+1-5 @yte1k1i@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yterin@yteand@ytecyc8@r12L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblglv": "@yteblood\n@ytecrafted @ytebglv@ytefixppt@yte2k1h 1-3% @yte2k2i@ytevarsym1\n+5-10% @yte1k3h@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @vgl / @xvg / @uvg@yteand@ytecyc8@r04L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblblt": "@yteblood\n@ytecrafted @ytebblt@ytefixppt@yte2k1h 1-3% @yte2k2i@ytevarsym1\n+5-10% @yte1k2s@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @mbl / @zmb / @umc@yteand@ytecyc8@r07L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblbts": "@yteblood\n@ytecrafted @ytebbts@ytefixppt@yte2k1h 1-3% @yte2k2i@ytevarsym1\n@yte1k2f +5-10@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @tbt / @xtb / @utb@yteand@ytecyc8@r05L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblhlm": "@yteblood\n@ytecrafted @ytebhlm@ytefixppt@yte2k1h 1-4% @yte2k2i@ytevarsym1\n+5-10% @yte1k3t@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @hlm / @xlm / @ulm@yteand@ytecyc8@r08L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblamr": "@yteblood\n@ytecrafted @ytebamr@ytefixppt@yte2k1h 1-3% @yte2k2i@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1\n+1-3 @yte1k4b@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @plt / @xlt / @ult@yteand@ytecyc8@r10L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblsld": "@yteblood\n@ytecrafted @ytebsld@ytefixppt@yte2k1h 1-4% @yte2k2i@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1\n@yte2k1d 4-7 @yte2k2d@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @spk / @xpk / @upk@yteand@ytecyc8@r06L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipyteblwpn": "@yteblood\n@ytecrafted @ytebwpn@ytefixppt+35-60% @yte1k4e@ytevarsym1\n@yte2k1h 1-4% @yte2k2i@ytevarsym1\n+10-20 @yte1k2c@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @ytebaxe@yteand@ytecyc8@r09L@yteand@gpr@yteand@ytejew@yteany\n",
+    "Tooltipytecaamu": "@ytecaster\n@ytecrafted @yteamu@ytefixppt+5-10% @yte1k3e@ytevarsym1\n+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yteamu@yteand@ytecyc8@r08L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecarin": "@ytecaster\n@ytecrafted @yterin@ytefixppt+1-5 @yte1k1l@ytevarsym1\n+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yterin@yteand@ytecyc8@r11L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecaglv": "@ytecaster\n@ytecrafted @ytebglv@ytefixppt+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1\n+1-3 @yte1k3j@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @lgl / @xlg / @ulg@yteand@ytecyc8@r09L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecablt": "@ytecaster\n@ytecrafted @ytebblt@ytefixppt+5-10% @yte1k3e@ytevarsym1\n+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @vbl / @zvb / @uvc@yteand@ytecyc8@r06L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecabts": "@ytecaster\n@ytecrafted @ytebbts@ytefixppt+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1\n@yte2k1f 2-5% @yte2k2f@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @lbt / @xlb / @ulb@yteand@ytecyc8@r10L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecahlm": "@ytecaster\n@ytecrafted @ytebhlm@ytefixppt@yte2k1h 1-4% @yte2k2h@ytevarsym1\n+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @msk / @xsk / @usk@yteand@ytecyc8@r04L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecaamr": "@ytecaster\n@ytecrafted @ytebamr@ytefixppt+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-12% @yte2k2n@ytevarsym1\n+1-3 @yte1k3j@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @ltp / @xtp / @utp@yteand@ytecyc8@r07L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecasld": "@ytecaster\n@ytecrafted @ytebsld@ytefixppt@yte2k1k 5-10% @yte2k2k@ytevarsym1\n+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @sml / @xml / @uml@yteand@ytecyc8@r05L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytecawpn": "@ytecaster\n@ytecrafted @ytebwpn@ytefixppt+10-20 @yte1k1m@ytevarsym1\n@yte2k1n 4-10% @yte2k2n@ytevarsym1\n@yte2k1f 1-5% @yte2k2f@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @ytebspt / @ytebstv / @ytebwnd@yteand@ytecyc8@r03L@yteand@gpv@yteand@ytejew@yteany\n",
+    "Tooltipytesaamu": "@ytesafety\n@ytecrafted @yteamu@ytefixppt@yte2k1k 1-10% @yte2k2k@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yteamu@yteand@ytecyc8@r10L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesarin": "@ytesafety\n@ytecrafted @yterin@ytefixppt+1-5 @yte1k1k@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @yterin@yteand@ytecyc8@r11L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesaglv": "@ytesafety\n@ytecrafted @ytebglv@ytefixppt+10-30% @yte1k2i@ytevarsym1\n@yte1k1s +5-10%@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @hgl / @xhg / @uhg@yteand@ytecyc8@r08L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesablt": "@ytesafety\n@ytecrafted @ytebblt@ytefixppt+10-30% @yte1k2i@ytevarsym1\n@yte1k1v +5-10%@ytevarsym1\n@yte1k2h 3-9@ytevarsym1\n@yte1k2g 2-5@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @lbl / @zlb / @ulc@yteand@ytecyc8@r07L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesabts": "@ytesafety\n@ytecrafted @ytebbts@ytefixppt+10-30% @yte1k2i@ytevarsym1\n@yte1k1r +5-10%@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @hbt / @xhb / @uhb@yteand@ytecyc8@r09L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesahlm": "@ytesafety\n@ytecrafted @ytebhlm@ytefixppt+10-30% @yte1k2i@ytevarsym1\n@yte1k1t +5-10%@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @crn / @xrn / @urn@yteand@ytecyc8@r06L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesaamr": "@ytesafety\n@ytecrafted @ytebamr@ytefixppt+10-30% @yte1k2i@ytevarsym1\n@ModStr4b\n@yte1k2h 3-9@ytevarsym1\n@yte1k2g 2-5@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @brs / @xrs / @urs@yteand@ytecyc8@r05L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesasld": "@ytesafety\n@ytecrafted @ytebsld@ytefixppt+10-30% @yte1k2i@ytevarsym1\n@yte1k1u +5-10%@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @kit / @xit / @uit@yteand@ytecyc8@r04L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipytesawpn": "@ytesafety\n@ytecrafted @ytebwpn@ytefixppt+5-10% @yte1k2i@ytevarsym1\n@yte1k2h 1-4@ytevarsym1\n@yte1k2g 1-2@ytevarsym1@yteranppt@yteranpresuf\n@ytetran@ytemag @ytebspr / @ytebjav@yteand@ytecyc8@r12L@yteand@gpg@yteand@ytejew@yteany\n",
+    "Tooltipyte1u1a": "@yte1u1a\n@cap\n@ytecyc5[qlvl:4]\n@yte1k1d 17-19\n@yte2k1a 12\n@yte1k1e 3@ytecyc3\n+30% @yte1k4e\n+30 @yte1k1p\n+14 @yte1k1q\n+15 @yte1k2c\n+15 @yte1k1m@un1u1a",
+    "Tooltipyte1u1b": "@yte1u1b\n@hlm\n@ytecyc5[qlvl:19]\n@yte1k1d 25-28\n@yte2k1a 24\n@yte1k1b 26\n@yte1k1e 14@ytecyc3\n@ModStr6d\n+10 @yte1k1q\n+100 @yte1k3z\n@yte1k1t +15%\n@yte2k1l 7 @yte2k2l",
+    "Tooltipyte1u1c": "@yte1u1c\n@skp\n@ytecyc5[qlvl:20]\n@yte1k1d 8-11\n@yte2k1a 18\n@yte1k1b 15\n@yte1k1e 15@ytecyc3\n+1 @yte1k2r\n@yte2k3h 75% @yte2k4h\n@yte2k1x@yte2k3i 25-50% @yte2k4i@ytevarsym1@un1u1c",
+    "Tooltipyte1u1d": "@yte1u1d\n@fhl\n@ytecyc5[qlvl:23]\n@yte1k1d 45-60\n@yte2k1a 30\n@yte1k1b 41\n@yte1k1e 17@ytecyc3\n+8 @yte1k1n\n+30-50% @yte1k2i@ytevarsym1\n+10-20 @yte1k1q@ytevarsym1\n@yte2k1v +15 @yte2k2v\n@yte1k2h 7\n@yte2k1j -2 @yte2k2j@un1u1d",
+    "Tooltipyte1u1e": "@yte1u1e\n@msk\n@ytecyc5[qlvl:27]\n@yte1k1d 34-52\n@yte2k1a 20\n@yte1k1b 23\n@yte3k2c@yte1k1e 20@ytecyc3\n+50% @yte1k2x\n@yte2k3j +50% @yte2k4j\n+25 @yte1k1q\n+20 @yte1k1i\n@yte2k1v +10 @yte2k2v",
+    "Tooltipyte1u1f": "@yte1u1f\n@bhm\n@ytecyc5[qlvl:28]\n@yte1k1d 33-36\n@yte2k1a 40\n@yte1k1b 25\n@yte1k1e 21@ytecyc3\n+1 @yte1k2m\n+80 @yte2k3a 8 @yte2k4a\n@yte2k1h 5% @yte2k2i\n+10 @yte1k1m\n@yte1k1v +25%",
+    "Tooltipyte1u1g": "@yte1u1g\n@ghm\n@ytecyc5[qlvl:34]\n@yte1k1d 64\n@yte2k1a 40\n@yte1k1b 63\n@yte1k1e 25@ytecyc3\n@yte2k3j +25% @yte2k4j\n@ModStr1y\n+80% @yte1k2i\n@yte1k2g 2\n@yte2k1d 3 @yte2k2d\n+35% @yte1k2v",
+    "Tooltipyte1u1h": "@yte1u1h\n@xap\n@ytecyc5[qlvl:36]\n@yte1k1d 108\n@yte2k1a 12\n@yte1k1b 20\n@yte1k1e 28@ytecyc3\n+1 @yte1k2r\n+15% @yte1k3d\n+100% @yte1k2i\n+20 @yte1k1k\n+20 @yte1k1l\n@yte1k2f +6-12@ytevarsym1@un1u1h",
+    "Tooltipyte1u1i": "@yte1u1i\n@crn\n@ytecyc5[qlvl:39]\n@yte1k1d 99-113\n@yte2k1a 50\n@yte1k1b 55\n@yte1k1e 29@ytecyc3\n+50% @yte1k2x\n+50-100 @yte1k3b@yte2k1x@ytevarsym1\n@yte2k1h 5% @yte2k2i\n+3 @yte1k6b@skillname69@NecOnly\n+30-60% @yte1k2i@ytevarsym1\n+40 @yte1k1q\n@yte1k1v +50%\n@ModStr4b",
+    "Tooltipyte1u1j": "@yte1u1j\n@xkp\n@ytecyc5[qlvl:39]\n@yte1k1d 163-201\n@yte2k1a 18\n@yte1k1b 43\n@yte1k1e 31@ytecyc3\n+30% @yte1k3c\n+160-220% @yte1k2i@ytevarsym1\n+15 @yte1k1k\n@yte1k1s +20-40%@ytevarsym1\n@yte1k1t +20-40%@ytevarsym1\n@yte1k1r +20-50%@ytevarsym1\n@yte1k6a 10%@un1u1j",
+    "Tooltipyte1u1k": "@yte1u1k\n@xlm\n@ytecyc5[qlvl:43]\n@yte1k1d 219-248\n@yte2k1a 24\n@yte1k1b 59\n@yte1k1e 35@ytecyc3\n@yte2k1o +10% @yte2k2o\n+10% @yte1k3c\n@yte2k1h 5% @yte2k2h\n@yte2k1h 5% @yte2k2i\n+200-240% @yte1k2i@ytevarsym1\n@yte2k3i 30-50% @yte2k4i@ytevarsym1@un1u1k",
+    "Tooltipyte1u1l": "@yte1u1l\n@xhl\n@ytecyc5[qlvl:46]\n@yte1k1d (77-273)-(86-282)\n@yte2k1a 30\n@yte1k1b 82\n@yte1k1e 38@ytecyc3\n@yte4k1f 6% @yte4k2f 3 @yte3k2e@skillname71@yte4k4f\n@yte2k1h 5% @yte2k2h\n+2-198 @yte1k1q@ModStre9c [2*clvl]\n@yte1k1r +20-40%@ytevarsym1\n@ModStr5z\n@yte2k1j -4 @yte2k2j\n@yte3k1g 5 @yte3k2e@Skillname265@ModStre10e 30 @yte3k3g",
+    "Tooltipyte1u1m": "@yte1u1m\n@xh9\n@ytecyc5[qlvl:49]\n@yte1k1d 252\n@yte2k1a 40\n@yte1k1b 58\n@yte1k1e 41@ytecyc3\n@yte2k1w 6-22 @yte2k2x\n@yte2k1h 6-8% @yte2k2h@ytevarsym1\n@yte2k1h 6-8% @yte2k2i@ytevarsym1\n+100% @yte1k2i\n@yte2k1u 15% @yte2k2u\n@yte1k6a 15-20%@ytevarsym1\n@yte1k2g 10-15@ytevarsym1@un1u1m",
+    "Tooltipyte1u1n": "@yte1u1n\n@xsk\n@ytecyc5[qlvl:49]\n@yte1k1d 243-278\n@yte2k1a 20\n@yte1k1b 55\n@yte1k2z@yte1k1e 41@ytecyc3\n@ModStr4a\n@yte1k5v 20%\n+180-220% @yte1k2i@ytevarsym1\n@yte1k1t +15%\n+20 @yte1k3m\n@yte2k1l 25 @yte2k2l@un1u1n",
+    "Tooltipyte1u1o": "@yte1u1o\n@baa\n@ytecyc5[qlvl:50]\n@yte1k1d 302-363\n@yte2k1a 55\n@BarOnly\n@yte1k1b 118\n@yte1k1e 42@ytecyc3\n+2 @yte1k4v@BarOnly\n+2 @yte1k2o\n+30% @yte1k3c\n20% @yte1k5u\n@yte2k1h 3-6% @yte2k2i@ytevarsym1\n+150-200% @yte1k2i@ytevarsym1\n+20 @yte1k1i\n+20 @yte1k1j\n@yte2k1v +30 @yte2k2v@un1u1o",
+    "Tooltipyte1u1p": "@yte1u1p\n@dra\n@ytecyc5[qlvl:50]\n@yte1k1d 247-297\n@yte2k1a 20\n@DruOnly\n@yte1k1b 65\n@yte1k1e 42@ytecyc3\n+2 @yte1k5f@DruOnly\n+2 @yte1k5x\n+30% @yte1k3c\n20% @yte1k5u\n+150-200% @yte1k2i@ytevarsym1\n+20 @yte1k1i\n+20 @yte1k1l\n@yte2k1v +30 @yte2k2v\n+5 @yte1k3j@un1u1p",
+    "Tooltipyte1u1q": "@yte1u1q\n@xhm\n@ytecyc5[qlvl:52]\n@yte1k1d 247-297\n@yte2k1a 40\n@yte1k1b 115\n@yte1k1e 44@ytecyc3\n+1-2 @yte1k2k@ytevarsym1\n+20% @yte1k3d\n+20% @yte1k3c\n+150-200% @yte1k2i@ytevarsym1\n+2-4 @yte1k3j@un1u1q",
+    "Tooltipyte1u1r": "@yte1u1r\n@xrn\n@ytecyc5[qlvl:57]\n@yte1k1d 296-342\n@yte2k1a 50\n@yte1k1b 103\n@yte1k1e 49@ytecyc3\n@yte2k1h 9-12% @yte2k2i@ytevarsym1\n+160-200% @yte1k2i@ytevarsym1\n+25 @yte1k1j\n+50 @yte1k2c\n+35 @yte1k1m\n@yte1k1r +33%\n@yte2k3h 80-100% @yte2k4h@ytevarsym1@un1u1r",
+    "Tooltipyte1u1s": "@yte1u1s\n@bad\n@ytecyc5[qlvl:69]\n@yte1k1d 345-408\n@yte2k1a 45\n@BarOnly\n@yte1k1b 151\n@yte1k1e 61@ytecyc3\n+1-3 @yte1k4y@BarOnly@ytevarsym1\n+1-3 @yte1k5a@BarOnly@ytevarsym1\n+1-3 @yte1k4v@BarOnly@ytevarsym1\n@yte2k1o +10% @yte2k2o\n@yte2k1h 3-6% @yte2k2i@ytevarsym1\n+120-160% @yte1k2i@ytevarsym1\n@yte2k1d 55-77 @yte2k2d@ytevarsym1",
+    "Tooltipyte1u1t": "@yte1u1t\n@ulm\n@ytecyc5[qlvl:70]\n@yte1k1d 300-345\n@yte2k1a 24\n@yte1k1b 109\n@yte1k1e 62@ytecyc3\n@yte2k1h 4-8% @yte2k2h@ytevarsym1\n+100-130% @yte1k2i@ytevarsym1\n@yte1k2f +10-18@ytevarsym1\n+5-11 @yte1k3k@ytevarsym1",
+    "Tooltipyte1u1u": "@yte1u1u\n@uap\n@ytecyc5[qlvl:69]\n@yte1k1d 98-141\n@yte2k1a 12\n@yte1k1b 50\n@yte1k1e 62@ytecyc3\n+2 @yte1k2r\n+2 @yte1k5k\n+1-148 @yte1k2c@ModStre9c [1.5*clvl]\n+1-148 @yte1k1m@ModStre9c [1.5*clvl]\n@yte1k6a 10%\n@yte2k3i 50% @yte2k4i@un1u1u",
+    "Tooltipyte1u1v": "@yte1u1v\n@drb\n@ytecyc5[qlvl:71]\n@yte1k1d 335-350\n@yte2k1a 20\n@DruOnly\n@yte1k1b 86\n@yte1k1e 63@ytecyc3\n+2-4 @yte1k5f@DruOnly@yte3k2c@ytevarsym1\n60-120% @yte1k5u@ytevarsym1\n@yte2k1h 7-10% @yte2k2i@ytevarsym1\n+33% @yte1k2s\n+1-2 @yte1k6b@Skillname233@DruOnly@ytevarsym1\n+130-140% @yte1k2i@ytevarsym1@un1u1v",
+    "Tooltipyte1u1w": "@yte1u1w\n@uh9\n@ytecyc5[qlvl:73]\n@yte1k1d 350-477\n@yte2k1a 40\n@yte1k1b 106\n@yte1k1e 65@ytecyc3\n+10% @yte1k3h\n@ModStr1y\n+250-320 @yte1k1q@ytevarsym1\n+25-35 @yte1k1i@ytevarsym1\n@yte1k1a 1-2 @ModStre10f@ytevarsym1@un1u1w",
+    "Tooltipyte1u1x": "@yte1u1x\n@drd\n@ytecyc5[qlvl:75]\n@yte1k1d 413-443\n@yte2k1a 20\n@DruOnly\n@yte1k1b 104\n@yte1k1e 67@ytecyc3\n+1-2 @yte1k5x@ytevarsym1\n+20% @yte1k3c\n+170-190% @yte1k2i@ytevarsym1\n@yte2k1t +10% @yte2k2t\n@yte1k1r +30-40%@ytevarsym1\n+9-14 @yte1k3m@ytevarsym1\n@yte1k3q +15-25%@ytevarsym1@un1u1x",
+    "Tooltipyte1u1y": "@yte1u1y\n@uhm\n@ytecyc5[qlvl:75]\n@yte1k1d 304-352\n@yte2k1a 40\n@yte1k2z@yte1k1b 96\n@yte1k1e 67@ytecyc3\n+2 @yte1k2r\n+8-15% @yte1k5p@ytevarsym1\n+90-120% @yte1k2i@ytevarsym1\n+10-20 @yte1k1j@ytevarsym1\n+5-9 @yte1k3q@ytevarsym1\n@ModStr4b\n@yte1k2p -50%@un1u1y",
+    "Tooltipyte1u1z": "@yte1u1z\n@uhm\n@ytecyc5[qlvl:77]\n@yte1k1d 396\n@yte2k1a 60\n@yte1k1b 192\n@yte1k1e 73@ytecyc3\n+60% @yte1k2i\n+140 @yte1k1q\n+15 @yte1k1i\n+15 @yte1k1k\n@yte2k1v +50 @yte2k2v\n@yte2k1j -4 @yte2k2j@un1u1z",
+    "Tooltipyte1u2a": "@yte1u2a\n@dre\n@ytecyc5[qlvl:82]\n@yte1k1d 343-390\n@yte2k1a 20\n@DruOnly\n@yte1k1b 113\n@yte1k1e 74@ytecyc3\n+3 @yte1k5g@DruOnly\n@yte2k3e -10-20% @yte2k4e@ytevarsym1\n+7 @yte1k6b@Skillname222\n+120-150% @yte1k2i@ytevarsym1\n+20-30 @yte1k1l@ytevarsym1\n@yte2k1v +15-25 @yte2k2v@ytevarsym1@un1u2a",
+    "Tooltipyte1u2b": "@yte1u2b\n@ci3\n@ytecyc5[qlvl:84]\n@yte1k1d 150-260\n@yte2k1a 20\n@yte1k1e 76@ytecyc3\n+1 @yte1k2r\n+25% @yte1k3e\n@yte2k3f -15-20% @yte2k4f@ytevarsym1\n+10-15% @yte1k5q@ytevarsym1\n+100-200 @yte1k1q@ytevarsym1@un1u2b",
+    "Tooltipyte1u2c": "@yte1u2c\n@ci2\n@ytecyc5[qlvl:85]\n@yte1k1d 90-170\n@yte2k1a 25\n@yte1k1e 77@ytecyc3\n+20% @yte1k3c\n+50-120 @yte1k1q@ytevarsym1\n@yte2k1v 50-70 @yte2k2v@ytevarsym1\n@ModStr5z@un1u2c",
+    "Tooltipyte1u2d": "@yte1u2d\n@bae\n@ytecyc5[qlvl:85]\n@yte1k1d 384-432\n@yte2k1a 50\n@BarOnly\n@yte1k1b 174\n@yte1k1e 77@ytecyc3\n+1 @yte1k5a@yte3k2c@BarOnly\n+2 @yte1k2o\n+20% @yte1k3c\n+1-2 @yte1k6b@skillname155@BarOnly@ytevarsym1\n+1-2 @yte1k6b@skillname149@BarOnly@ytevarsym1\n+140-170% @yte1k2i@ytevarsym1\n@yte1k2f +15-23@ytevarsym1@un1u2d",
+    "Tooltipyte1u2e": "@yte1u2e\n@bac\n@ytecyc5[qlvl:85]\n@yte1k1d 332-377\n@yte2k1a 35\n@BarOnly\n@yte1k1b 129\n@yte1k1e 79@ytecyc3\n+2-3 @yte1k4y@BarOnly@ytevarsym1\n+3-6 @yte1k6b@Skillname233@ytevarsym1\n+3-6 @yte1k6b@Skillname225@ytevarsym1\n+3-6 @yte1k6b@Skillname224@ytevarsym1\n+120-150% @yte1k2i@ytevarsym1\n+8-15 @yte1k1i@ytevarsym1\n+8-15 @yte1k1j@ytevarsym1\n+8-15 @yte1k1k@ytevarsym1\n@yte3k1g 15 @yte3k2e@Skillname238@ModStre10e 18 @yte3k3g@un1u2e",
+    "Tooltipyte1u2f": "@yte1u2f\n@urn\n@ytecyc5[qlvl:86]\n@yte1k1d 349-399\n@yte1k1b 174\n@yte1k1e 82@ytecyc3\n@ModStre9s\n+1 @yte1k2r\n+30% @yte1k3c\n+50% @yte1k2i\n+100-150 @yte1k1q@ytevarsym1\n@yte2k1v +20-30 @yte2k2v@ytevarsym1\n@yte1k6a 10-15%@ytevarsym1\n@yte1k1a 1-2 @ModStre10f@ytevarsym1@un1u2f",
+    "Tooltipyte1u2g": "@yte1u2g\n@usk\n@ytecyc5[qlvl:85]\n@yte1k1d 310-387\n@yte2k1a 20\n@yte1k1b 102\n@yte1k1e 83@ytecyc3\n@yte4k1f 15% @yte4k2f 15 @yte3k2e@skillname92@yte4k4f\n+2 @yte1k2r\n@yte2k1o +20% @yte2k2o\n@yte2k1h 8-10% @yte2k2i@ytevarsym1\n+100-150% @yte1k2i@ytevarsym1\n+25-30 @yte1k1i@ytevarsym1\n@yte2k1t +10% @yte2k2t\n@yte1k1r -30%\n@yte1k1v +70%\n@yte3k1g 3 @yte3k2e@Skillname279@ModStre10e 20 @yte3k3g@un1u2g",
+    "Tooltipyte2u1a": "@yte2u1a\n@ssd\n@ytecyc5[qlvl:3]\n@yte3k1a 9 @yte3k2a 14 @yte2k2c\n@yte2k1a 24 \n@yte1k1e 2\n@yte1k6m 0]@ytecyc3\n+100% @yte1k4e\n+5 @yte1k1o\n20% @yte1k5u\n+25% @yte1k3h\n+25 @yte1k1q\n@yte2k1j +2 @yte2k2j@un2u1a",
+    "Tooltipyte2u1b": "@yte2u1b\n@scm\n@ytecyc5[qlvl:10]\n@yte3k1a 3 @yte3k2a (9-10) @yte2k2c\n@yte2k1a 22\n@yte1k1c 21\n@yte1k1e 7\n@yte1k6m -20]@ytecyc3\n@yte2k1o +15% @yte2k2o\n+60-80% @yte1k4e@ytevarsym1\n@yte2k1h 15% @yte2k2i\n+33% @yte1k2s\n+15 @yte1k2c\n@yte2k1v +15 @yte2k2v\n@yte2k1j +4 @yte2k2j",
+    "Tooltipyte2u1c": "@yte2u1c\n@sbr\n@ytecyc5[qlvl:14]\n@yte3k1a 7 @yte3k2a 19 @yte2k2c\n@yte2k1a 32\n@yte1k1c 25\n@yte1k1b 25\n@yte1k1e 10\n@yte1k6m -10]@ytecyc3\n+50% @yte1k4e\n@yte2k1w 3-7 @yte2k4b\n@ModStr3y\n@yte2k1h 7% @yte2k2h\n+10 @yte1k1i\n+10 @yte1k1j",
+    "Tooltipyte2u1d": "@yte2u1d\n@flc\n@ytecyc5[qlvl:18]\n@yte3k1a (14-18) @yte3k2a (27-34) @yte2k2c\n@yte2k1a 32\n@yte1k1b 33\n@yte1k1e 13\n@yte1k6m 20]@ytecyc3\n@yte2k1o +25% @yte2k2o\n+60-100% @yte1k4e@ytevarsym1\n@yte2k1w 3-5 @yte2k2x\n+20 @yte1k1q\n+30 @yte1k1m\n@yte2k1j +3 @yte2k2j",
+    "Tooltipyte2u1e": "@yte2u1e\n@bsd\n@ytecyc5[qlvl:23]\n@yte3k1a (12-15) @yte3k2a (25-30) @yte2k2c\n@yte2k1a 32\n@yte1k1b 48\n@yte1k1e 17\n@yte1k6m 0]@ytecyc3\n@yte2k1o +10% @yte2k2o\n+80-120% @yte1k4e@ytevarsym1\n+100 @yte1k1p\n@yte2k1w (10-12)-(15-25) @yte2k2w@ytevarsym1\n@ModStr1y\n+12 @yte1k1i",
+    "Tooltipyte2u1f": "@yte2u1f\n@lsd\n@ytecyc5[qlvl:30]\n@yte3k1a 5 @yte3k2a (32-34) @yte2k2c\n@yte2k1a 44\n@yte1k1c 39\n@yte1k1b 55\n@yte1k1e 22\n@yte1k6m -10]@ytecyc3\n+2 @yte1k2q\n+70-80% @yte1k4e@ytevarsym1\n@yte2k1w 25-75 @yte2k2w\n@yte2k1w 28-56 @yte2k3a 6 @yte2k4a\n@yte2k1h 5% @yte2k2h\n@yte2k1h 5% @yte2k2i@un2u1f",
+    "Tooltipyte2u1g": "@yte2u1g\n@wsd\n@ytecyc5[qlvl:39]\n@yte3k1a (13-14) @yte3k2a (34-36) @yte2k2c\n@yte2k1a 44\n@yte1k1c 45\n@yte1k1b 71\n@yte1k1e 29\n@yte1k6m 0]@ytecyc3\n+1 @yte1k2r\n@yte2k1o +20% @yte2k2o\n+20% @yte1k3c\n+70-80% @yte1k4e@ytevarsym1\n+60 @yte1k1p\n@yte1k2t 50%",
+    "Tooltipyte2u1h": "@yte2u1h\n@9ss\n@ytecyc5[qlvl:38]\n@yte3k1a 31 @yte3k2a 97 @yte2k2c\n@yte2k1a 54\n@yte1k1b 25\n@yte1k1e 30\n@yte1k6m 0]@ytecyc3\n@yte2k1o +20% @yte2k2o\n+140% @yte1k4e\n@yte2k1w 12-45 @yte2k4b\n+90 @yte1k1p\n@yte2k1h 8% @yte2k2i\n+1-3 @yte1k6b@skillname151@BarOnly@ytevarsym1\n+2-4 @yte1k6b@skillname127@BarOnly@ytevarsym1\n@yte2k1u 10% @yte2k2u@un2u1h",
+    "Tooltipyte2u1i": "@yte2u1i\n@9sm\n@ytecyc5[qlvl:39]\n@yte3k1a (24-28) @yte3k2a (63-73) @yte2k2c\n@yte2k1a 72\n@yte1k1c 52\n@yte1k1b 25\n@yte1k1e 31\n@yte1k6m -30]@ytecyc3\n@yte2k1o +20% @yte2k2o\n+200-250% @yte1k4e@ytevarsym1\n@yte2k1h 6% @yte2k2h\n+50% @yte1k3t\n@ModStr6d@yte1k4l\n@yte1k5v 30%@un2u1i",
+    "Tooltipyte2u1j": "@yte2u1j\n@9sb\n@ytecyc5[qlvl:41]\n@yte3k1a (59-61) @yte3k2a (97-102) @yte2k2c\n@yte2k1a 32\n@yte1k1c 58\n@yte1k1b 58\n@yte1k1e 33\n@yte1k6m -10]@ytecyc3\n+3 @yte1k2q\n+140-160% @yte1k4e@ytevarsym1\n@yte2k1w 35-40 @yte2k4b\n@ModStr3y\n@yte2k1p +10% @yte2k2p\n@yte1k1r +25%\n@yte3k1g 6 @yte3k2e@skillname62@ModStre10e 36 @yte3k3g@un2u1j",
+    "Tooltipyte2u1k": "@yte2u1k\n@9fc\n@ytecyc5[qlvl:43]\n@yte3k1a (25-35) @yte3k2a (56-77) @yte2k2c\n@yte2k1a 32\n@yte1k1c 42\n@yte1k1b 70\n@yte1k1e 35\n@yte1k6m 20]@ytecyc3\n+60-120% @yte1k4e@ytevarsym1\n+5-15 @yte1k1j@ytevarsym1\n+15 @yte1k1m\n@yte2k3h 2-247% @yte2k4h@ModStre9c [2.5*clvl]\n@yte2k3i 1-99% @yte2k4i@ModStre9c [1*clvl]\n@yte1k1a 2 @ModStre10f@un2u1k",
+    "Tooltipyte2u1l": "@yte2u1l\n@9cr\n@ytecyc5[qlvl:45]\n@yte3k1a (26-32) @yte3k2a (70-87) @yte2k2c\n@yte2k1a 60\n@yte1k1c 60\n@yte1k1b 85\n@yte1k1e 37\n@yte1k6m 0]@ytecyc3\n@yte2k1o +30% @yte2k2o\n+100-150% @yte1k4e@ytevarsym1\n@yte2k1w 50-120 @yte2k2z\n@yte1k2g 7-12@ytevarsym1\n@yte3k1f 5 @yte3k2f@un2u1l",
+    "Tooltipyte2u1m": "@yte2u1m\n@9bs\n@ytecyc5[qlvl:47]\n@yte3k1a 40 @yte3k2a (86-184) @yte2k2c\n@yte2k1a 32\n@yte1k1c 43\n@yte1k1b 92\n@yte1k1e 39\n@yte1k6m 0]@ytecyc3\n+150% @yte1k4e\n+1-99 @yte1k1n@ModStre9c [1*clvl]\n+1-148% @yte1k3t@ModStre9c [1.5*clvl]\n@ModStr4a\n+15 @yte1k1i@un2u1m",
+    "Tooltipyte2u1n": "@yte2u1n\n@9ls\n@ytecyc5[qlvl:49]\n@yte3k1a 35 @yte3k2a 150 @yte2k2c\n@yte2k1a 44\n@yte1k1c 79\n@yte1k1b 103\n@yte1k1e 41\n@yte1k6m -10]@ytecyc3\n@yte4k1e 5% @yte4k2e 4 @yte3k2e@skillname92@yte4k4e\n+150% @yte1k4e\n@yte2k1w 10-45 @yte2k4b\n+300 @yte2k3a 8 @yte2k4a\n +5 @yte1k6b@Skillname239@DruOnly\n@yte1k1v +45%",
+    "Tooltipyte2u1o": "@yte2u1o\n@9wd\n@ytecyc5[qlvl:50]\n@yte3k1a (54-63) @yte3k2a (129-150) @yte2k2c\n@yte2k1a 144\n@yte1k1c 88\n@yte1k1b 127\n@yte1k1e 42\n@yte1k6m 0]@ytecyc3\n+2 @yte1k2l\n+200-250% @yte1k4e@ytevarsym1\n50% @yte1k5u\n+75 @yte1k1q\n+16 @yte1k1i\n+12 @yte1k1j\n+8 @yte1k1k",
+    "Tooltipyte2u1p": "@yte2u1p\n@7cr\n@ytecyc5[qlvl:66]\n@yte3k1a (87-103) @yte3k2a (117-135) @yte2k2c\n@yte1k1c 136\n@yte1k1b 25\n@yte1k1e 58\n@yte1k6m -30]@ytecyc3\n@yte4k1d 5% @yte4k2d 14-20 @yte3k2e@skillname53@yte4k4d@ytevarsym1\n@yte2k1o +20% @yte2k2o\n+150-200% @yte1k4e@ytevarsym1\n@yte2k1w 10-30 @yte2k4b\n@ModStr3y\n@yte2k1w 60-120 @yte2k2z\n@yte2k1w 1-200 @yte2k2y\n@yte2k1h 5-7% @yte2k2h@ytevarsym1\n@yte1k3m +25%\n@yte2k1j +7 @yte2k2j@un2u1p",
+    "Tooltipyte2u1q": "@yte2u1q\n@7sb\n@ytecyc5[qlvl:69]\n@yte3k1a (102-118) @yte3k2a (139-162) @yte2k2c\n@yte2k1a 32\n@yte1k1c 122\n@yte1k1b 109\n@yte1k1e 61\n@yte1k6m -10]@ytecyc3\n+210-260% @yte1k4e@ytevarsym1\n@yte2k1h 10-15% @yte2k2i@ytevarsym1\n+50% @yte1k2s\n+7-13 @yte1k5l@ytevarsym1\n@yte3k1g 15 @yte3k2e@skillname85@ModStre10e 9 @yte3k3g",
+    "Tooltipyte2u1r": "@yte2u1r\n@7sm\n@ytecyc5[qlvl:73]\n@yte3k1a (75-88) @yte3k2a (133-156) @yte2k2c\n@yte2k1a 22\n@yte1k1c 95\n@yte1k1b 138\n@yte1k1e 65\n@yte1k6m -20]@ytecyc3\n+190-240% @yte1k4e@ytevarsym1\n+100-150% @yte1k2w@ytevarsym1\n+200-300 @yte1k3a@ytevarsym1\n@yte2k1w 250-500 @yte2k2w\n@yte2k1h 3-6% @yte2k2h@ytevarsym1\n+3-7 @yte1k3m@ytevarsym1\n@yte1k1a 1-2 @ModStre10f@ytevarsym1",
+    "Tooltipyte2u1s": "@yte2u1s\n@7ls\n@ytecyc5[qlvl:78]\n@yte3k1a (14-16) @yte3k2a (215-254) @yte2k2c\n@yte2k1a 44\n@yte1k1c 109\n@yte1k1b 99\n@yte1k1e 70\n@yte1k6m -10]@ytecyc3\n@yte2k1o +25% @yte2k2o\n+180-230% @yte1k4e@ytevarsym1\n@yte2k1w 237-486 @yte2k2x\n+7-14 @yte1k6b@Skillname231@ytevarsym1\n@ModStr3l +3\n@yte1k3q +7-15%@ytevarsym1\n@ModStr4b@un2u1s",
+    "Tooltipyte2u1t": "@yte2u1t\n@7cr\n@ytecyc5[qlvl:87]\n@yte3k1a (102-114) @yte3k2a (115-129) @yte2k2c\n@yte1k1c 136\n@yte1k1b 25\n@yte1k1e 85\n@yte1k6m -30]@ytecyc3\n@yte3k1e 10-13 @yte3k2e@skillname119@yte3k3e@ytevarsym1\n+1 @yte1k2r\n@yte2k1o +30% @yte2k2o\n+230-270% @yte1k4e@ytevarsym1\n@yte2k1w 250-500 @yte2k2z\n@yte2k1w 250-500 @yte2k2x\n+5-10 @yte1k5k@ytevarsym1\n@yte2k1j +3 @yte2k2j@un2u1t",
+    "Tooltipyte2u2a": "@yte2u2a\n@2hs\n@ytecyc5[qlvl:16]\n@yte3k1a 4 @yte3k2a 18 @yte2k2c@yte1k6v\n@yte3k1b 16 @yte3k2a 34 @yte2k2c\n@yte2k1a 44\n@yte1k1c 27\n@yte1k1b 35\n@yte1k1e 12\n@yte1k6m 0]@yte2k1x@ytecyc3\n+100% @yte1k4e\n@yte2k1w 10-30 @yte2k2x\n@yte2k1h 9% @yte2k2h\n@yte2k1h 9% @yte2k2i\n@yte1k1s +20%\n@yte2k1j -2 @yte2k2j@un2u2a",
+    "Tooltipyte2u2b": "@yte2u2b\n@clm\n@ytecyc5[qlvl:26]\n@yte3k1a (8-10) @yte3k2a (20-24) @yte2k2c@yte1k6v\n@yte3k1b (22-26) @yte3k2a (51-60) @yte2k2c\n@yte2k1a 50\n@yte1k1b 47\n@yte1k1e 19\n@yte1k6m 10]@ytecyc3\n@yte2k1o +10% @yte2k2o\n+70-100% @yte1k4e@ytevarsym1\n@yte2k1h 4-10% @yte2k2h@ytevarsym1\n@yte2k1h 4% @yte2k2i\n@yte2k1v +5 @yte2k2v",
+    "Tooltipyte2u2c": "@yte2u2c\n@gis\n@ytecyc5[qlvl:31]\n@yte3k1a (5-6) @yte3k2a (28-32) @yte2k2c@yte1k6v\n@yte3k1b (16-18) @yte3k2a (50-56) @yte2k2c\n@yte2k1a 50\n@yte1k1c 34\n@yte1k1b 56\n@yte1k1e 23\n@yte1k6m 0]@ytecyc3\n+80-100% @yte1k4e@ytevarsym1\n+100-150 @yte1k1p@ytevarsym1\n@yte2k1w 6-(20-40) @yte2k2w@ytevarsym1\n+6 @yte1k6b@skillname102@PalOnly\n+20 @yte1k1m",
+    "Tooltipyte2u2d": "@yte2u2d\n@bsw\n@ytecyc5[qlvl:35]\n@yte3k1a (10-11) @yte3k2a (28-30) @yte2k2c@yte1k6v\n@yte3k1b (30-32) @yte3k2a (42-44) @yte2k2c\n@yte2k1a 40\n@yte1k1b 62\n@yte1k1e 26\n@yte1k6m 10]@ytecyc3\n+50-60% @yte1k4e@ytevarsym1\n+50 @yte1k1p\n+113 @yte2k3a 6 @yte2k4a\n@ModStr4a\n@yte1k1v +50%",
+    "Tooltipyte2u2e": "@yte2u2e\n@flb\n@ytecyc5[qlvl:35]\n@yte3k1a (16-18) @yte3k2a (42-45) @yte2k2c@yte1k6v\n@yte3k1b (23-26) @yte3k2a (61-67) @yte2k2c\n@yte2k1a 50\n@yte1k1c 49\n@yte1k1b 70\n@yte1k1e 26\n@yte1k6m -10]@ytecyc3\n+80-100% @yte1k4e@ytevarsym1\n+15 @yte1k1n\n@yte2k1h 6% @yte2k2h\n+80% @yte1k2s",
+    "Tooltipyte2u2f": "@yte2u2f\n@gsd\n@ytecyc5[qlvl:39]\n@yte3k1a (24-26) @yte3k2a (40-44) @yte2k2c@yte1k6v\n@yte3k1b (50-55) @yte3k2a (84-92) @yte2k2c\n@yte2k1a 50\n@yte1k1c 60\n@yte1k1b 100\n@yte1k1e 29\n@yte1k6m 10]@ytecyc3\n+100-120% @yte1k4e@ytevarsym1\n@ModStr6d\n+10 @yte1k1i\n@yte1k2h 3\n@yte1k2g 3\n@yte2k3h 100% @yte2k4h",
+    "Tooltipyte2u2g": "@yte2u2g\n@92h\n@ytecyc5[qlvl:50]\n@yte3k1a (20-24) @yte3k2a (67-78) @yte2k2c@yte1k6v\n@yte3k1b (46-54) @yte3k2a (104-120) @yte2k2c\n@yte2k1a 44\n@yte1k1c 61\n@yte1k1b 73\n@yte1k1e 42\n@yte1k6m 0]@ytecyc3\n+20% @yte1k3d\n@yte2k1o +50% @yte2k2o\n+160-200% @yte1k4e@ytevarsym1\n@yte1k5v 35%\n@yte2k1m -70 @yte2k2m\n@yte1k6a 10%",
+    "Tooltipyte2u2h": "@yte2u2h\n@9cm\n@ytecyc5[qlvl:51]\n@yte3k1a (29-33) @yte3k2a (69-78) @yte2k2c@yte1k6v\n@yte3k1b (59-67) @yte3k2a (140-158) @yte2k2c\n@yte2k1a 50\n@yte1k1c 14\n@yte1k1b 64\n@yte1k1e 43\n@yte1k6m 10]@ytecyc3\n@yte4k1e 5% @yte4k2e 3 @yte3k2e@skillname64@yte4k4e\n+130-160% @yte1k4e@yte1k4l@ytevarsym1\n@yte2k1w 50-140 @yte2k2x\n@ModStr3l +2\n+20 @yte1k1i\n@yte1k2p -30%",
+    "Tooltipyte2u2i": "@yte2u2i\n@9gs\n@ytecyc5[qlvl:52]\n@yte3k1a (25-30) @yte3k2a (92-111) @yte2k2c@yte1k6v\n@yte3k1b (47-57) @yte3k2a (145-174) @yte2k2c\n@yte1k4l@yte2k1a 50\n@yte1k1c 71\n@yte1k1b 104\n@yte1k1e 44\n@yte1k6m 0]@ytecyc3\n@yte4k1e 6% @yte4k2e 1 @yte3k2e@skillname66@yte4k4e\n+150-200% @yte1k4e@ytevarsym1\n+7-742% @yte1k2x@ModStre9c [7.5*clvl]\n+10-990 @yte1k3b@ModStre9c [10*clvl]\n+250 @yte2k3a 6 @yte2k4a\n@yte1k1v +50%@un2u2i",
+    "Tooltipyte2u2j": "@yte2u2j\n@9b9\n@ytecyc5[qlvl:53]\n@yte3k1a (35-42) @yte3k2a (100-120) @yte2k2c@yte1k6v\n@yte3k1b (97-117) @yte3k2a (150-180) @yte2k2c\n@yte2k1a 40\n@yte1k1c 20\n@yte1k1b 113\n@yte1k1e 45\n@yte1k6m 10]@ytecyc3\n@yte4k1e 6% @yte4k2e 7 @yte3k2e@skillname121@yte4k4e\n+2 @yte1k4t@PalOnly\n+2 @yte1k4u@PalOnly\n+150-200% @yte1k4e@ytevarsym1\n@yte2k1w 1-240 @yte2k2y\n+30 @yte1k1q\n@yte2k1r +10% @yte2k2r\n@yte2k1l 15 @yte2k2l\n@yte2k1j +2 @yte2k2j",
+    "Tooltipyte2u2k": "@yte2u2k\n@9fb\n@ytecyc5[qlvl:54]\n@yte3k1a (41-49) @yte3k2a (77-91) @yte2k2c@yte1k6v\n@yte3k1b (63-75) @yte3k2a (118-140) @yte2k2c\n@yte2k1a 50\n@yte1k1c 94\n@yte1k1b 125\n@yte1k1e 46\n@yte1k6m -10]@ytecyc3\n@yte4k1e 10% @yte4k2e 6 @yte3k2e@skillname47@yte4k4e\n+120-160% @yte1k4e@ytevarsym1\n@yte2k1w 50-200 @yte2k2w\n@yte1k1r +40%\n+10 @yte1k3k\n@yte3k1g 10 @yte3k2e@skillname52@ModStre10e 45 @yte3k3g\n@yte3k1g 10 @yte3k2e@skillname51@ModStre10e 20 @yte3k3g",
+    "Tooltipyte2u2l": "@yte2u2l\n@9gd\n@ytecyc5[qlvl:55]\n@yte3k1a (64-67) @yte3k2a (108-112) @yte2k2c@yte1k6v\n@yte3k1b (126-131) @yte3k2a (216-224) @yte2k2c\n@yte2k1a 50\n@yte1k1c 55\n@yte1k1b 85\n@yte1k1e 48\n@yte1k6m 10]@ytecyc3\n+20% @yte1k3c\n@yte2k1k 20% @yte2k2k\n+170-180% @yte1k4e@ytevarsym1\n+5-495 @yte1k1q@ModStre9c [5*clvl]\n+200 @yte1k4a\n+100 @yte1k3z\n@yte2k1v +20 @yte2k2v\n+30% @yte1k2v\n@yte1k2p -50%",
+    "Tooltipyte2u2m": "@yte2u2m\n@7b7\n@ytecyc5[qlvl:75]\n@yte3k1a (97-114) @yte3k2a (251-289) @yte2k2c@yte1k6v\n@yte3k1b (228-278) @yte3k2a (332-390) @yte2k2c\n@yte1k1c 103\n@yte1k1b 163\n@yte1k1e 69\n@yte1k6m -10]@ytecyc3\n@yte4k1e 8% @yte4k2e 3 @yte3k2e@skillname72@yte4k4e\n@ModStre9s\n+180-250% @yte1k4e@ytevarsym1\n@yte2k1w 30-100 @yte2k4b\n40% @yte1k5u\n@yte2k1h 5-7% @yte2k2i@ytevarsym1\n@yte2k1e 20% @yte2k2e@un2u2m",
+    "Tooltipyte2u2n": "@yte2u2n\n@7gs\n@ytecyc5[qlvl:79]\n@yte3k1a (40-51) @yte3k2a (202-255) @yte2k2c@yte1k6v\n@yte3k1b (148-187) @yte3k2a (318-401) @yte2k2c\n@yte2k1a 50\n@yte1k1c 87\n@yte1k1b 185\n@yte1k1e 71\n@yte1k6m 0]@ytecyc3\n@yte4k1e 12% @yte4k2e 16 @yte3k2e@Skillname226@yte4k4e\n+3 @yte1k2q\n+170-240% @yte1k4e@ytevarsym1\n@yte2k1w 233-482 @yte2k2w\n+12-18 @yte1k6b@skillname41@ytevarsym1\n+10-20 @yte1k1i@ytevarsym1\n+5-10 @yte1k1k@ytevarsym1\n@yte1k3k +20-30%@ytevarsym1@un2u2n",
+    "Tooltipyte2u2o": "@yte2u2o\n@7gd\n@ytecyc5[qlvl:85]\n@yte3k1a (62-87) @yte3k2a (164-474) @yte2k2c@yte1k6v\n@yte3k1b (145-203) @yte3k2a (289-649) @yte2k2c\n@yte1k1c 110\n@yte1k1b 189\n@yte1k1e 81\n@yte1k6m 5]@ytecyc3\n@ModStre9s\n+150-250% @yte1k4e@ytevarsym1\n+2-247 @yte1k1n@ModStre9c [2.5*clvl]\n50% @yte1k5u\n+20 @yte1k5k\n+80 @yte1k2c@un2u2o",
+    "Tooltipyte4u1a": "@yte4u1a\n@yteamu\n@ytecyc5[qlvl:14]\n@yte1k1e 10@ytecyc3\n+20% @yte1k3c\n@yte2k1w 3-6 @yte2k2w\n@yte2k1p 10% @yte2k2p\n@yte1k1r +50%\n@yte2k1j +3 @yte2k2j",
+    "Tooltipyte4u1b": "@yte4u1b\n@yteamu\n@ytecyc5[qlvl:20]\n@yte1k1e 15@ytecyc3\n+1 @yte1k2r\n@yte2k1w (1-2)-(3-5) @yte2k2x@ytevarsym1\n@yte2k1h 3-7% @yte2k2i@ytevarsym1\n+10-40 @yte1k3z@ytevarsym1\n@yte2k1j +1-5 @yte2k2j@ytevarsym1@un4u1b",
+    "Tooltipyte4u1c": "@yte4u1c\n@yteamu\n@ytecyc5[qlvl:34]\n@yte1k1e 25@ytecyc3\n10% @yte1k5u\n+10% @yte1k2i\n+10 @yte1k1q\n+10 @yte1k5k\n@yte2k1v +10 @yte2k2v@un4u1c",
+    "Tooltipyte4u1d": "@yte4u1d\n@yteamu\n@ytecyc5[qlvl:55]\n@yte1k1e 47@ytecyc3\n@yte4k1f 10% @yte4k2f 2 @yte3k2e@skillname76@yte4k4f\n+12 @yte1k5k\n@yte2k1v +15-25 @yte2k2v@ytevarsym1",
+    "Tooltipyte4u1e": "@yte4u1e\n@yteamu\n@ytecyc5[qlvl:58]\n@yte1k1e 50@ytecyc3\n+30% @yte1k3d\n@yte2k1o +20% @yte2k2o\n+100 @yte1k1q\n+100 @yte1k3z\n+25 @yte1k1j@un4u1e",
+    "Tooltipyte4u1f": "@yte4u1f\n@yteamu\n@ytecyc5[qlvl:58]\n@yte1k1e 50@ytecyc3\n@yte2k1h 11-15% @yte2k2h@ytevarsym1\n@yte2k1h 3-6% @yte2k2i@ytevarsym1\n+45 @yte1k1m\n@yte1k2g 10\n+10% @yte1k2v\n@yte2k1j -2 @yte2k2j",
+    "Tooltipyte4u1g": "@yte4u1g\n@yteamu\n@ytecyc5[qlvl:60]\n@yte1k1e 60@ytecyc3\n@yte4k1e 5% @yte4k2e 2 @yte3k2e@skillname66@yte4k4e\n20% @yte1k5u\n+40 @yte2k3a 4 @yte2k4a\n@yte1k1v +75%\n@yte2k1d 5 @yte2k2d\n@yte2k1j +3 @yte2k2j@un4u1g",
+    "Tooltipyte4u1h": "@yte4u1h\n@yteamu\n@ytecyc5[qlvl:73]\n@yte1k1e 65@ytecyc3\n@yte4k1e 2% @yte4k2e 13-20 @yte3k2e@skillname56@yte4k4e@ytevarsym1\n+2 @yte1k2q\n@yte2k1w 24-48 @yte2k2w\n@yte1k2f +10\n+0-74 @yte1k4m@ModStre9c [0.75*clvl]\n@yte2k1j +4 @yte2k2j@un4u1h",
+    "Tooltipyte4u1i": "@yte4u1i\n@yteamu\n@ytecyc5[qlvl:73]\n@yte1k1e 65@ytecyc3\n+1 @yte1k2r\n@yte2k1o +20% @yte2k2o\n@yte2k1w 1-30 @yte2k2y\n+0-37% @yte1k3t@ModStre9c [0.375*clvl]\n@yte1k1t +35%\n@yte2k1l 15 @yte2k2l@un4u1i",
+    "Tooltipyte4u1j": "@yte4u1j\n@yteamu\n@ytecyc5[qlvl:73]\n@yte1k1e 65@ytecyc3\n+2 @yte1k2r\n+1-2 @yte1k4t@PalOnly@ytevarsym1\n+25-50% @yte1k2w@ytevarsym1\n+150-250 @yte1k3a@ytevarsym1\n+25-50% @yte1k2x@ytevarsym1\n+150-250 @yte1k3b@ytevarsym1\n@yte2k1j +2 @yte2k2j@un4u1j",
+    "Tooltipyte4u1k": "@yte4u1k\n@yteamu\n@ytecyc5[qlvl:80]\n@yte1k1e 67@ytecyc3\n+2 @yte1k2r\n+5 @yte1k5k\n@yte2k1v +20-30 @yte2k2v@ytevarsym1@un4u1k",
+    "Tooltipyte4u1l": "@yte4u1l\n@yteamu\n@ytecyc5[qlvl:85]\n@yte1k1e 81@ytecyc3\n+400-450 @yte1k1p@ytevarsym1\n+300-350 @yte1k1q@ytevarsym1\n@yte2k1v +25-35 @yte2k2v@ytevarsym1\n@yte3k1g 22 @yte3k2e@skillname90@ModStre10e 11 @yte3k3g\n@yte3k1g 12 @yte3k2e@skillname76@ModStre10e 20 @yte3k3g",
+    "Tooltipyte1s1s": "@yte1s1s\n@yteptset\n+5 @yte1k1i [2]\n+50 @yte1k2c [3]\n@ytecpset\n+2-198 @yte1k2a@ModStre9c [2*clvl]\n+5 @yte1k1i\n+50 @yte1k2c\n@ModStr5z@se1s1s",
+    "Tooltipyte1s1a": "@yte1s1a\n@qui\n@ytecyc5[qlvl:3]\n@yte1k1d 45(48-342)-51(54-348)\n@yte2k1a 20\n@yte1k1b 12\n@yte1k1e 2@ytecyc3\n+275-325% @yte1k2i@ytevarsym1\n@yte2k1v +10 @yte2k2v@ytecyc2\n@yte1k1s +15% [3]\n+3-297 @yte1k1q@ModStre9c [3*clvl][2]@se1s1a",
+    "Tooltipyte1s1b": "@yte1s1b\n@tgl\n@ytecyc5[qlvl:3]\n@yte1k1d 9-11\n@yte2k1a 18\n@yte1k1b 45\n@yte1k1e 2@ytecyc3\n@yte2k1o +10% @yte2k2o\n+20 @yte1k2c@ytecyc2\n+10 @yte1k1j [3]\n+50 @yte1k1p [2]",
+    "Tooltipyte1s1c": "@yte1s1c\n@vbl\n@ytecyc5[qlvl:3]\n@yte1k1d 33\n@yte1k6h\n@yte2k1a 14\n@yte1k1e 2@ytecyc3\n+30 @yte1k1q\n@yte1k1s +40%@ytecyc2\n@yte1k1s +10% [3]\n@yte2k3i 40% @yte2k4i [2]",
+    "Tooltipyte1s1d": "@yte1s1d\n@swb\n@ytecyc5[qlvl:3]\n@yte3k1b 9 @yte3k2a 21 @yte2k2c\n@yte1k6q 0]\n@yte1k1c 55\n@yte1k1b 35\n@yte1k1e 2@ytecyc3\n+50% @yte1k4e\n20% @yte1k5u@ytecyc2\n@yte2k1w 20-30 @yte2k2x [3]\n+8-792 @yte1k1p@ModStre9c [8*clvl][2]",
+    "Tooltipyte1s2s": "@yte1s2s\n@yteptset\n@yte2k1d 5 @yte2k2d [2]\n@ytecpset\n+5 @yte1k1n\n@yte1k1t +25%\n@ModStr5z\n@yte2k1d 5 @yte2k2d@se1s2s",
+    "Tooltipyte1s2a": "@yte1s2a\n@buc\n@ytecyc5[qlvl:4]\n@yte1k1d 4(6-251)-6(8-253)\n@yte1k5t 30%@yte4k2g\n@yte1k5t 25%@yte4k3g\n@yte1k5t 20%@yte4k4g\n@yte3k1c 1 @yte3k2a 3 @yte3k3c\n@yte2k1a 12\n@yte1k1b 12\n@yte1k1e 3@ytecyc3\n+10 @yte1k1i\n@yte1k2h 2@ytecyc2\n+2-247 @yte1k1q@ModStre9c [2.5*clvl][2]@se1s2a",
+    "Tooltipyte1s2b": "@yte1s2b\n@mbt\n@ytecyc5[qlvl:4]\n@yte1k1d 8-9\n@yte3k1h 6 @yte3k2a 12 @yte3k3h\n@yte2k1a 16\n@yte1k1b 30\n@yte1k1e 3@ytecyc3\n+20% @yte1k3d\n@yte1k1r +25%@ytecyc2\n+10-990 @yte1k1p@ModStre9c [10*clvl][2]@se1s2b",
+    "Tooltipyte1s2c": "@yte1s2c\n@mbl\n@ytecyc5[qlvl:4]\n@yte1k1d 5(7-252)\n@yte1k6i\n@yte2k1a 16\n@yte1k1b 25\n@yte1k1e 3@ytecyc3\n+20 @yte1k2c\n@yte1k1s +20%@ytecyc2\n+2-247 @yte1k1q@ModStre9c [2.5*clvl][2]",
+    "Tooltipyte1s3s": "@yte1s3s\n@yteptset\n+50 @yte1k2c [2]\n@ytecpset\n@yte2k1w 5-9 @yte2k3a 3 @yte2k4a\n+75 @yte1k1q\n+50 @yte1k2c\n@yte1k2t 75%",
+    "Tooltipyte1s3a": "@yte1s3a\n@hlm\n@ytecyc5[qlvl:5]\n@yte1k1d 30-33\n@yte2k1a 24\n@yte1k1b 26\n@yte1k1e 3@ytecyc3\n+15 @yte1k1q\n@yte1k1r +25%@ytecyc2\n+48-792 @yte1k1p@ModStre9c [8*clvl][2]",
+    "Tooltipyte1s3b": "@yte1s3b\n@spl\n@ytecyc5[qlvl:5]\n@yte1k1d 90(93-387)-95(98-392)\n@yte2k1a 30\n@yte1k1b 51\n@yte1k1e 3@ytecyc3\n+1 @yte1k2o\n@yte1k2g 2@ytecyc2\n+3-297 @yte1k1q@ModStre9c [3*clvl][2]",
+    "Tooltipyte1s3c": "@yte1s3c\n@2ax\n@ytecyc5[qlvl:5]\n@yte3k1a 5(7) @yte3k2a 13(19) @yte2k2c\n@yte1k6l 10]\n@yte2k1a 24\n@yte1k1b 43\n@yte1k1e 3@ytecyc3\n30% @yte1k5u\n@yte2k1h 5% @yte2k2h@ytecyc2\n+50% @yte1k4e [2]",
+    "Tooltipyte1s4s": "@yte1s4s\n@yteptset\n+50 @yte1k1q [2]\n@ytecpset\n@yte2k1o +20% @yte2k2o\n@yte2k1h 6% @yte2k2h\n+35% @yte1k3h\n+100 @yte1k1q",
+    "Tooltipyte1s4a": "@yte1s4a\n@sml\n@ytecyc5[qlvl:6]\n@yte1k1d 25-27\n@yte1k5t 35%@yte4k2g\n@yte1k5t 30%@yte4k3g\n@yte1k5t 25%@yte4k4g\n@yte3k1c 2 @yte3k2a 3 @yte3k3c\n@yte2k1a 16\n@yte1k1b 22\n@yte1k1e 4@ytecyc3\n+17 @yte1k1q\n@yte1k2t 75%@ytecyc2\n@yte2k1v +15 @yte2k2v [2]",
+    "Tooltipyte1s4b": "@yte1s4b\n@mgl\n@ytecyc5[qlvl:6]\n@yte1k1d 8-9\n@yte2k1a 16\n@yte1k1b 25\n@yte1k1e 4@ytecyc3\n@yte1k5v 25%\n@ModStr1y@ytecyc2\n+10-990 @yte1k1p@ModStre9c [10*clvl][2]@se1s4b",
+    "Tooltipyte1s4c": "@yte1s4c\n@lsd\n@ytecyc5[qlvl:6]\n@yte3k1a 3 @yte3k2a 19(20-142) @yte2k2c\n@yte1k6m -10]\n@yte2k1a 44\n@yte1k1c 39\n@yte1k1b 55\n@yte1k1e 4@ytecyc3\n30% @yte1k5u\n+50% @yte1k3t@ytecyc2\n+1-123 @yte1k1n@ModStre9c [1.25*clvl][2]",
+    "Tooltipyte1s5s": "@yte1s5s\n@yteptset\n+8 @yte2k3a 3 @yte2k4a [2]\n@ytecpset\n+1 @yte1k2m\n20% @yte1k5u\n+8 @yte2k3a 3 @yte2k4a\n@yte2k1h 6% @yte2k2h\n+20% @yte1k2s\n@yte2k1f 20% @yte2k2f\n@ModStr5z@se1s5s",
+    "Tooltipyte1s5a": "@yte1s5a\n@cap\n@ytecyc5[qlvl:7]\n@yte1k1d 3(5-201)-5(7-203)\n@yte2k1a 12\n@yte1k1e 5@ytecyc3\n@yte2k1v +10 @yte2k2v\n+20% @yte1k2v@ytecyc2\n+2-198 @yte1k1q@ModStre9c [2*clvl][2]@se1s5a",
+    "Tooltipyte1s5b": "@yte1s5b\n@tbl\n@ytecyc5[qlvl:7]\n@yte1k1d 31\n@yte1k6i\n@yte2k1a 18\n@yte1k1b 45\n@yte1k1e 5@ytecyc3\n+25 @yte1k1q\n+20 @yte1k2c@ytecyc2\n@ModStr4b [3]\n@yte1k1v +25% [2]",
+    "Tooltipyte1s5c": "@yte1s5c\n@gwn\n@ytecyc5[qlvl:7]\n@yte3k1a 13 @yte3k2a 14 @yte2k2c\n@yte1k6r 0]\n@yte2k1a 15\n@yte1k1e 5@ytecyc3\n+1 @yte1k2m\n +8 @yte1k1o\n+50% @yte1k2x@ytecyc2\n+10-990 @yte1k1p@ModStre9c [10*clvl][2]",
+    "Tooltipyte1s6s": "@yte1s6s\n@yteptset\n@yte2k1h 8% @yte2k2i [2]\n@ytecpset\n+10 @yte1k1o\n40% @yte1k5u\n@yte2k1h 8% @yte2k2i\n@yte2k1v +25@yte2k2v@se1s6s",
+    "Tooltipyte1s6a": "@yte1s6a\n@lgl\n@ytecyc5[qlvl:8]\n@yte1k1d 2-3\n@yte2k1a 12\n@yte1k1e 6@ytecyc3\n@yte1k1v +50%\n@yte1k2t 75%@ytecyc2\n@yte2k1o +30% @yte2k2o [2]@se1s6a",
+    "Tooltipyte1s6b": "@yte1s6b\n@lbl\n@ytecyc5[qlvl:8]\n@yte1k1d 22\n@yte1k6h\n@yte2k1a 12\n@yte1k1e 6@ytecyc3\n+20 @yte1k1q\n@ModStr5z@ytecyc2\n@yte2k1v +15@yte2k2v [2]@se1s6b",
+    "Tooltipyte1s6c": "@yte1s6c\n@wsd\n@ytecyc5[qlvl:8]\n@yte3k1a 10 @yte3k2a 25 @yte2k2c\n@yte1k6m 0]\n@yte2k1a 44\n@yte1k1c 45\n@yte1k1b 71\n@yte1k1e 6@ytecyc3\n+25% @yte1k4e\n@yte2k1h 4% @yte2k2i@ytecyc2\n@yte2k1w 25-75 @yte2k2x [2]",
+    "Tooltipyte1s7s": "@yte1s7s\n@yteptset\n@yte2k1h 10% @yte2k2i [2]\n+100 @yte1k1q [3]\n@ytecpset\n+24 @yte1k1w\n@yte2k1h 10% @yte2k2i\n+100 @yte1k1q\n+20 @yte1k1m\n@yte1k1r +12%\n@yte1k2h 7\n@yte2k1d 12 @yte2k2d",
+    "Tooltipyte1s7a": "@yte1s7a\n@ghm\n@ytecyc5[qlvl:9]\n@yte1k1d 55-60\n@yte2k1a 40\n@yte1k1b 63\n@yte1k1e 6@ytecyc3\n+25 @yte1k1q\n+30 @yte1k1m@ytecyc2\n+8-792 @yte1k1p@ModStre9c [8*clvl][2]",
+    "Tooltipyte1s7b": "@yte1s7b\n@gth\n@ytecyc5[qlvl:9]\n@yte1k1d 170\n@yte2k1a 55\n@yte1k1b 70\n@yte1k1e 6@ytecyc3\n+25% @yte1k2i\n@yte1k1t +30%@ytecyc2\n@yte2k1d 20 @yte2k2d [2]",
+    "Tooltipyte1s7c": "@yte1s7c\n@tow\n@ytecyc5[qlvl:9]\n@yte1k1d 22-25\n@yte1k5t 74%@yte4k2g\n@yte1k5t 69%@yte4k3g\n@yte1k5t 64%@yte4k4g\n@yte3k1c 1 @yte3k2a 5 @yte3k3c\n@yte2k1a 60\n@yte1k1b 75\n@yte1k1e 6@ytecyc3\n+1 @yte1k2r\n@yte2k1k 20% @yte2k2k",
+    "Tooltipyte1s7d": "@yte1s7d\n@hgl\n@ytecyc5[qlvl:9]\n@yte1k1d 12-15\n@yte2k1a 24\n@yte1k1b 60\n@yte1k1e 6@ytecyc3\n+20 @yte1k1p\n+10 @yte1k1i@ytecyc2\n@yte2k1o +30% @yte2k2o [2]@se1s7d",
+    "Tooltipyte1s7e": "@yte1s7e\n@hbt\n@ytecyc5[qlvl:9]\n@yte1k1d 12-15\n@yte3k1h 10 @yte3k2a 20 @yte3k3h\n@yte2k1a 24\n@yte1k1b 70\n@yte1k1e 6@ytecyc3\n+20% @yte1k3d\n@yte1k1s +40%@ytecyc2\n@yte2k3i 50% @yte2k4i [3]\n+50 @yte1k1p [2]@se1s7e",
+    "Tooltipyte1s7f": "@yte1s7f\n@hbl\n@ytecyc5[qlvl:9]\n@yte1k1d 8(10-206)-11(13-209)\n@yte1k6j\n@yte2k1a 24\n@yte1k1b 60\n@yte1k1e 6@ytecyc3\n+20 @yte1k2c\n@yte1k1r +20%@ytecyc2\n+2-198 @yte1k1q@ModStre9c [2*clvl][2]",
+    "Tooltipyte1s8s": "@yte1s8s\n@yteptset\n+10 @yte1k1i [2]\n+10 @yte1k1j [3]\n@ytecpset\n+20% @yte1k3d\n@yte2k1k 30% @yte2k2k\n35% @yte1k5u\n@yte2k1h 5% @yte2k2i\n+10 @yte1k1i\n+10 @yte1k1j\n@yte2k1v +10 @yte2k2v",
+    "Tooltipyte1s8a": "@yte1s8a\n@fhl\n@ytecyc5[qlvl:11]\n@yte1k1d 23-26\n@yte2k1a 30\n@yte1k1b 41\n@yte1k1e 8@ytecyc3\n+6 @yte1k1j\n@yte1k2h 2@ytecyc2\n@yte2k1v +8 @yte2k2v [2]",
+    "Tooltipyte1s8b": "@yte1s8b\n@brs\n@ytecyc5[qlvl:11]\n@yte1k1d 105(107-303)-108(110-306)\n@yte2k1a 50\n@yte1k1b 30\n@yte1k1e 8@ytecyc3\n+40 @yte1k1q\n@yte1k2g 2@ytecyc2\n+2-198 @yte1k1q@ModStre9c [2*clvl][2]",
+    "Tooltipyte1s8c": "@yte1s8c\n@gts\n@ytecyc5[qlvl:11]\n@yte1k1d 70-75\n@yte1k5t 46%@yte4k2g\n@yte1k5t 41%@yte4k3g\n@yte1k5t 36%@yte4k4g\n@yte3k1c 2 @yte3k2a 6 @yte3k3c\n@yte2k1a 40\n@yte1k1b 60\n@yte1k1e 8@ytecyc3\n+40 @yte1k1q\n@yte2k1l 4 @yte2k2l@ytecyc2\n@yte2k1v +8 @yte2k2v [2]",
+    "Tooltipyte1s8d": "@yte1s8d\n@bsd\n@ytecyc5[qlvl:11]\n@yte3k1a 17 @yte3k2a 18 @yte2k2c\n@yte1k6m 0]\n@yte2k1a 32\n@yte1k1b 48\n@yte1k1e 8@ytecyc3\n@yte2k1o +20% @yte2k2o\n+10 @yte1k1o@ytecyc2\n+5-495 @yte1k1p@ModStre9c [5*clvl][2]",
+    "Tooltipyte1s9s": "@yte1s9s\n@yteptset\n@yte1k1r +25% [2]\n@ytecpset\n25% @yte1k5u\n+200% @yte1k2x\n+50 @yte1k1q\n+15 @yte1k1i\n@yte1k1t +25%\n@yte1k1r +25%",
+    "Tooltipyte1s9a": "@yte1s9a\n@lrg\n@ytecyc5[qlvl:13]\n@yte1k1d 27-29\n@yte1k5t 57%@yte4k2g\n@yte1k5t 52%@yte4k3g\n@yte1k5t 47%@yte4k4g\n@yte3k1c 2 @yte3k2a 4 @yte3k3c\n@yte2k1a 24\n@yte1k1b 34\n@yte1k1e 9@ytecyc3\n@yte2k1k 15% @yte2k2k\n+15 @yte1k1q@ytecyc2\n@yte1k1v +25-26% [ㆁ]@ytevarsym2\n+21-22 @yte1k1m [ㆋ]@ytevarsym2",
+    "Tooltipyte1s9b": "@yte1s9b\n@gsc\n@ytecyc5[qlvl:13]\n@yte3k1a 8 @yte3k2a (36-140) @yte2k2c\n@yte1k6k 10]\n@yte2k1a 60\n@yte1k1b 37\n@yte1k1e 9@ytecyc3\n+17-23 @yte1k1n@ytevarsym1\n+1-99 @yte1k1n@ModStre9c [1*clvl]\n+75 @yte1k1p\n+50% @yte1k2x",
+    "Tooltipyte1s9c": "@yte1s9c\n@yteamu\n@ytecyc5[qlvl:13]\n@yte1k1e 9@ytecyc3\n@yte1k2f +4\n@yte2k1n 40% @yte2k2n@ytecyc2\n+25 @yte1k1q [F]\n@yte1k1s +25% [2]@se1s9c",
+    "Tooltipyte1r1a": "@yte1r1a\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r04L@r03L@RuneQuote\n@yte1k1e 13@ytecyc3\n+50% @yte1k2i\n+10 @yte1k1q\n+30 @yte1k3z\n+5 @yte1k1i\n+2 @yte1k3j\n@yte2k3h -33% @yte2k4h\n@yte2k1j -3 @yte2k2j\n@yte3k1g 13 @yte3k2e@Skillname265@ModStre10e 9 @yte3k3g\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@bhm\n@yteinterim@hlm / @msk / @yteother@ytenor@yteihelm\n@yteruneworth\n@rw1r1a",
+    "Tooltipyte1r1b": "@yte1r1b\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r09L@r12L@RuneQuote\n@yte1k1e 27@ytecyc3\n+1 @yte1k2r\n+10 @yte1k1l\n@yte1k1t +30%\n@yte1k2h 7\n+2 @yte1k3j\n@yte2k1j +2 @yte2k2j\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm2\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@xh9 / @xsk / @yteexc@yteclass@yteihelm\n@yteinterim@yteother@ytenor@yteor@yteexc@yteihelm\n@yteruneworth\n@rw1r1b",
+    "Tooltipyte1r1c": "@yte1r1c\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r04L@r12L@r06L@RuneQuote\n@yte1k1e 27@ytecyc3\n+75% @yte1k2i\n+30 @yte1k3z\n+10 @yte1k1k\n+10 @yte1k1l\n+33 @yte1k1m\n@yte1k2h 7\n@yte1k2g 3\n+15% @yte1k2v\n@yte2k1j +5 @yte2k2j\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n@ytethebest@xsk / @yteexc@yteclass@yteihelm\n@yteinterim@yteother@ytenor@yteor@yteexc@yteihelm\n@yteruneworth\n@rw1r1c",
+    "Tooltipyte1r1d": "@yte1r1d\n@ytelonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r13L@r16L@r09L@RuneQuote\n@yte1k1e 35@ytecyc3\n+20% @yte1k3c\n+75-100% @yte1k2i@ytevarsym1\n+10 @yte1k1k\n@yte2k1e 5% @yte2k2e\n@yte1k1t +40-60%@ytevarsym1\n@yte1k3m +10-15%@ytevarsym1\n@yte2k2a@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xsk / @yteexc@yteclass@yteihelm\n@yteinterim@yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1d",
+    "Tooltipyte1r1e": "@yte1r1e\n@ytelonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r13L@r16L@r08L@RuneQuote\n@yte1k1e 35@ytecyc3\n+20% @yte1k3c\n+75-100% @yte1k2i@ytevarsym1\n+10 @yte1k1k\n@yte2k1e 5% @yte2k2e\n@yte1k1r +40-60%@ytevarsym1\n@yte1k3k +10-15%@ytevarsym1\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xsk / @yteexc@yteclass@yteihelm\n@yteinterim@yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1e",
+    "Tooltipyte1r1f": "@yte1r1f\n@ytelonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r13L@r16L@r10L@RuneQuote\n@yte1k1e 35@ytecyc3\n+20% @yte1k3c\n+75-100% @yte1k2i@ytevarsym1\n+10 @yte1k1k\n@yte2k1e 5% @yte2k2e\n@yte1k1s +40-60%@ytevarsym1\n@yte1k3q +10-15%@ytevarsym1\n@ModStr5z\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xsk / @yteexc@yteclass@yteihelm\n@yteinterim@yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1f",
+    "Tooltipyte1r1g": "@yte1r1g\n@ytelonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r13L@r16L@r07L@RuneQuote\n@yte1k1e 35@ytecyc3\n@yte3k1e 1 @yte3k2e@skillname109@yte3k3e\n+20% @yte1k3c\n+75-100% @yte1k2i@ytevarsym1\n+10 @yte1k1k\n@yte2k1e 5% @yte2k2e\n@yte1k1v +40-60%@ytevarsym1\n@yte1k2t 50%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@urn / @uh9 / @usk\n@yteinterim@yteother@yteexc@yteor@yteeli@yteihelm\n@yteruneworth\n@rw1r1g",
+    "Tooltipyte1r1h": "@yte1r1h\n@ytelonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r13L@r16L@r12L@RuneQuote\n@yte1k1e 35@ytecyc3\n+20% @yte1k3c\n@yte2k1h 4-6% @yte2k2i@ytevarsym1\n+75-100% @yte1k2i@ytevarsym1\n+10 @yte1k1k\n@yte2k1e 5% @yte2k2e\n@yte1k2f +30\n@yte1k2h 7\n@yte1k6a 10-15%@ytevarsym1\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@xsk / @yteexc@yteclass@yteihelm\n@yteinterim@yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1h",
+    "Tooltipyte1r1i": "@yte1r1i\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r21L@r06L@r02L@RuneQuote\n@yte1k1e 45@ytecyc3\n+33% @yte1k4c\n15-25% @yte1k5u@ytevarsym1\n@yte2k1h 4-8% @yte2k2h@ytevarsym1\n+30% @yte1k2i\n+10 @yte1k1l\n@yte2k1u 15% @yte2k2u\n@ModStr5z\n+5 @yte1k3j\n+15% @yte1k2v\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@uh9 / @usk \n         @bab / @bac\n@yteinterim@xsk / @xrn / @yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1i",
+	"Tooltipyte1rln": "@yte1rln\n@yterotwonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r24L@r08L@r16L@RuneQuote\n@yte1k1e 51@ytecyc3\n@yte4k1f 5% @yte4k2f 10 @yte3k2e@LethargySigilName@yte4k4f\n+1 @yte1k2r\n+20% @yte1k3e\n+30-50% @yte1k2i@ytevarsym1\n@yte2k3i 20-40% @yte2k4i@ytevarsym1\n+1-5 @yte1k5l@ytevarsym1\n@yte1k1r +30%\n+10 @yte1k1k\n@yte3soc\n@ytedividerxl\n@yteiass\n\n@yteusefulindex\n\n@ytebrecomm\n@ytethebest@uh9 / @usk \n@yteinterim@xsk / @xrn / @yteother@yteexc@yteihelm\n@yteruneworth\n",
+    "Tooltipyte1r1j": "@yte1r1j\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r20L@r24L@r16L@RuneQuote\n@yte1k1e 51@ytecyc3\n@yte4k1e 11% @yte4k2e 18 @yte3k2e@skillname81@yte4k4e\n@yte4k1f 1% @yte4k2f 50 @yte3k2e@Runeword22@yte4k4f\n@yte4k1f 6% @yte4k2f 14 @yte3k2e@Skillname274@yte4k4f\n@yte4k1f 14% @yte4k2f 13 @yte3k2e@skillname77@yte4k4f\n+2 @yte1k2r\n+261 @yte1k1q\n+10 @yte1k1k\n@yte2k3h 50% @yte2k4h\n@yte2k3i 25% @yte2k4i\n@yte3k1g 17 @yte3k2e@skillname86@ModStre10e 60 @yte3k3g\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@uh9 / @usk \n                 @bab / @yteeli@ytedrhlm\n@yteinterim@xsk / @xrn / @yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1j",
+    "Tooltipyte1r1k": "@yte1r1k\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r04L@r21L@r26L@RuneQuote\n@yte1k1e 55@ytecyc3\n@yte3k1e 4-8 @yte3k2e@skillname100@yte3k3e@ytevarsym1\n+3 @yte1k2q\n@yte2k3e -10-15% @yte2k4e@ytevarsym1\n+30% @yte1k2i\n+30 @yte1k3z\n+50-75 @yte1k1m@ytevarsym1\n@yte2k1p +5% @yte2k2p\n@ModStr4b\n@yte1k2t 50%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@uh9 / @usk /@yteeli@ytedrhlm\n@yteinterim@xsk / @xrn / @yteother@yteexc@yteihelm\n@yteruneworth\n@rw1r1k",
+    "Tooltipyte1r1lh": "@yte1r1l\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r16L@r31L@r21L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1f 10% @yte4k2f 15 @yte3k2e@skillname81@yte4k4f\n@yte3k1e 15 @yte3k2e@skillname118@yte3k3e\n+20-30% @yte1k3c@ytevarsym1\n+30% @yte1k2i\n+150-220 @yte1k1q@ytevarsym1\n+10 @yte1k1k\n@yte2k1e 5% @yte2k2e\n+0-61 @yte1k1m@ModStre9c [0.625*clvl]\n@yte2k1v +5-20 @yte2k2v@ytevarsym1\n@yte2k3i 12-25% @yte2k4i@ytevarsym1\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@uh9 / @usk\n@yteruneworth\n@rw1r1l",
+    "Tooltipyte1r1m": "@yte1r1m\n@ytelonly\n@ytecyc5@ytebhlm\n@ytecyc4@RuneQuote@r16L@r32L@r19L@RuneQuote\n@yte1k1e 67@ytecyc3\n@yte1k7a\n30% @yte1k5u\n@yte2k1e 40% @yte2k2e\n\n@yte1k7b\n@yte2k1o +25% @yte2k2o\n@yte1k6a 20%\n\n+5 @yte1k5f@DruOnly\n+25% @yte1k3h\n+50-80% @yte1k2i@ytevarsym1\n+10 @yte1k1i\n+10 @yte1k1k\n@yte2k1v +10 @yte2k2v\n@ModStr5z\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@yteeli@ytedrhlm / @bab / @bac\n@yteruneworth\n@rw1r1m",
+    "Tooltipyte1r2a": "@yte1r2a\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r08L@r09L@r07L@RuneQuote\n@yte1k1e 21@ytecyc3\n+50% @yte1k2i\n@yte1k1s +43%\n@yte1k1t +48%\n@yte1k1r +48%\n@yte1k1v +48%\n+10% @yte1k2v\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@kit / @ytenor@ytebpsld\n@yteruneworth\n@rw1r2a",
+    "Tooltipyte1r2bs": "@yte1r2b\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r07L@r10L@r09L@r11L@RuneQuote\n@yte1k1e 25@ytecyc3\n+2 @yte1k2r\n+25-35% @yte1k3e@ytevarsym1\n+55% @yte1k3c\n+250 @yte1k3z\n+22 @yte1k1k\n+89-112 @yte1k1m@ytevarsym1\n@yte1k1s +35%\n@yte1k1t +35%\n@yte1k1v +35%\n+3-8 @yte1k3o@ytevarsym1\n@yte2k1d 14 @yte2k2d\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@uit / @pab\n@yteinterim@yteother@ytebpsld\n@yteruneworth\n@rw1r2bs",
+    "Tooltipyte1r2c": "@yte1r2c\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r13L@r05L@RuneQuote\n@yte1k1e 29@ytecyc3\n+40% @yte1k3f\n@yte2k1k 20% @yte2k2k\n@yte2k1n 15% @yte2k2n\n@yte2k1v +25 @yte2k2v\n@ModStr5z\n@yte2k3h 50% @yte2k4h\n@yte2k3i 25% @yte2k4i\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@xsh / @pa7 / @ne5\n@yteinterim@bsh / @yteother@ytenor@yteclass@yteishield\n@yteruneworth\n@rw1r2c",
+    "Tooltipyte1r2d": "@yte1r2d\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r05L@r17L@RuneQuote\n@yte1k1e 37@ytecyc3\n+1 @yte1k2r\n+10% @yte1k3e\n+20% @yte1k3f\n+60-100% @yte1k2i@ytevarsym1\n+10 @yte1k1l\n@yte2k1n 15% @yte2k2n\n@yte2k3h 50% @yte2k4h\n@yte2k3i 20% @yte2k4i@yte3k1d\n@yte2k1j +3 @yte2k2j\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@xsh / @ne9\n@yteinterim@bsh / @yteother@ytenor@yteor@yteexc@ytenesld\n@yteruneworth\n@rw1r2d",
+    "Tooltipyte1r2e": "@yte1r2e\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r18L@r18L@r23L@RuneQuote\n@yte1k1e 49@ytecyc3\n+20% @yte1k3c\n+20% @yte1k3f\n@yte2k1k 20% @yte2k2k\n+130-160% @yte1k2i@ytevarsym1\n+250 @yte1k3z\n+20 @yte1k1j\n@yte2k1v +50-70 @yte2k2v@yte2k2a@ytevarsym1\n@yte1k2g 7\n@yte3k1g 12 @yte3k2e@skillname17@ModStre10e 60 @yte3k3g\n@yte1k5y@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@ush / @pab\n@yteinterim@xit / @paa\n@yteruneworth\n@rw1r2e",
+    "Tooltipyte1r2f": "@yte1r2f\n@ytecyc5@ytebpsld\n@ytecyc4@RuneQuote@r26L@r27L@r24L@r14L@RuneQuote\n@yte1k1e 57@ytecyc3\n@yte4k1e 15% @yte4k2e 5 @yte3k2e@skillname82@yte4k4e\n@yte3k1e 13-16 @yte3k2e@skillname104@yte3k3e@ytevarsym1\n+2 @yte1k4u@PalOnly\n+30% @yte1k3f\n@ModStr3l\n+220-260% @yte1k2i@ytevarsym1\n@yte1k2f +7\n@yte2k1q +5% @yte2k2q\n@yte2k1p +5% @yte2k2p\n@yte2k3i 25% @yte2k4i\n@yte3k1f 4 @yte3k2f\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@paf / @pab\n@yteruneworth\n@rw1r2f",
+    "Tooltipyte1r2gs": "@yte1r2g\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r29L@r28L@r12L@RuneQuote\n@yte1k1e 61@ytecyc3\n@yte4k1e 12% @yte4k2e 15 @yte3k2e@skillname62@yte4k4e\n@yte4k1f 20% @yte4k2f 18 @yte3k2e@Skillname279@yte4k4f\n@yte3k1e 14 @yte3k2e@skillname102@yte3k3e\n+360 @yte1k1q\n+230 @yte1k3z\n+3-5 @yte1k5k@ytevarsym1\n+0-37 @yte1k1i@ModStre9c [0.375*clvl]\n+50 @yte1k1m\n@yte2k1r +5% @yte2k2r\n@yte1k2h 7\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@pab\n@yteruneworth\n@rw1r2g",
+    "Tooltipyte1r1ls": "@yte1r1l\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r16L@r31L@r21L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1f 10% @yte4k2f 15 @yte3k2e@skillname81@yte4k4f\n@yte3k1e 15 @yte3k2e@skillname118@yte3k3e\n+20-30% @yte1k3c@ytevarsym1\n+30% @yte1k2i\n+150-220 @yte1k1q@ytevarsym1\n+10 @yte1k1k\n+50 @yte1k2c\n+0-61 @yte1k1m@ModStre9c [0.625*clvl]\n@yte2k1v +5-20 @yte2k2v@ytevarsym1\n@yte2k3i 12-25% @yte2k4i@ytevarsym1\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@ush / @pab\n@yteruneworth\n@rw1r1l",
+    "Tooltipyte1r2hs": "@yte1r2h\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r26L@r26L@r28L@r31L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1b 40 @yte3k2e@skillname46@yte4k4b\n@yte4k1e 40% @yte4k2e 22 @yte3k2e@Skillname226@yte4k4e\n@yte3k1e 10-15 @yte3k2e@skillname124@yte3k3e@ytevarsym1\n+350-400% @yte1k4e@ytevarsym1\n@yte2k3e -28% @yte2k4e\n+350-400 @yte1k3z@ytevarsym1\n+50 @yte1k2c\n@yte2k1r +5% @yte2k2r\n@yte2k1p +10% @yte2k2p\n+15-21 @yte1k3k@ytevarsym1\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@uit\n@yteruneworth\n@rw1r2hs",
+    "Tooltipyte1r2i": "@yte1r2i\n@yterotwonly\n@ytecyc5@ytebsld\n@ytecyc4@RuneQuote@r14L@r25L@RuneQuote\n@yte1k1e 53@ytecyc3\n@yte4k1f 5% @yte4k2f 10 @yte3k2e@RingOfFireName@yte4k4f\n+10% @yte1k3d\n+30% @yte1k3f\n+20-40 @yte1k2c@ytevarsym1\n+20-40 @yte1k1m@ytevarsym1\n@yte2k1v +20-35 @yte2k2v@ytevarsym1\n+75-100% @yte1k2i@ytevarsym1\n@yte1k2f +7\n@yte2k1t +5% @yte2k2t\n@yte2soc\n@ytedividerxl\n@yteiass\n\n@yteusefulindex\n\n@ytebrecomm\n\n@yteruneworth\n",
+	"Tooltipyte1r3a": "@yte1r3a\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r07L@r05L@RuneQuote\n@yte1k1e 17@ytecyc3\n+25% @yte1k3d\n+25% @yte1k3e\n+25% @yte1k3c\n+6 @yte1k1j\n@yte2k1n 15% @yte2k2n\n+15 @yte1k4d\n@yte1k1v +30%\n@yte1k2g 3\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm2\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@ltp / @xtp\n@yteinterim@brs / @yteother@yteexc@yteiarmor\n@yteruneworth\n@rw1r3a",
+    "Tooltipyte1r3b": "@yte1r3b\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r15L@r11L@r04L@RuneQuote\n@yte1k1e 25@ytecyc3\n@yte4k1e 10% @yte4k2e 1 @yte3k2e@skillname137@yte4k4e\n@yte4k1f 3% @yte4k2f 1 @yte3k2e@skillname130@yte4k4f\n+2 @yte1k2o\n+30 @yte1k3z\n@yte1k2f +10\n@yte2k1d 14 @yte2k2d\n@yte1k2p -15%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@xtp\n@yteinterim@ltp / @yteother@yteexc@yteiarmor\n@yteruneworth\n@rw1r3b",
+    "Tooltipyte1r3c": "@yte1r3c\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r13L@r10L@r11L@RuneQuote\n@yte1k1e 29@ytecyc3\n@yte4k1e 2% @yte4k2e 15 @yte3k2e@skillname32@yte4k4e\n@yte4k1f 4% @yte4k2f 5 @yte3k2e@skillname17@yte4k4f\n+2 @yte1k2k\n+20% @yte1k3c\n+2 @yte1k6b@skillname9\n@yte1k1s +30%\n@yte2k1d 14 @yte2k2d\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@xtp\n@yteinterim@ltp / @yteother@yteexc@yteiarmor\n@yteruneworth\n@rw1r3c",
+    "Tooltipyte1r3u": "@yte1r3u\n@yterotwonly\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r15L@r13L@r08L@RuneQuote\n@yte1k1e 29@ytecyc3\n@yte4k1e 10% @yte4k2e 15 @yte3k2e@MiasmaChainName@yte4k4e\n@yte4k1f 2% @yte4k2f 10 @yte3k2e@PsychicWardName@yte4k4f\n+2 @yte1k7i\n+40-60% @yte1k4e@ytevarsym1\n+20% @yte1k3c\n@yte1k1r +30%\n@yte1k2p -15%\n@yte3soc\n@ytedividerxl\n@yteiass\n\n@yteusefulindex\n\n@ytebrecomm\n@ytethebest@xtp\n@yteinterim@ltp / @yteother@yteexc@yteiarmor\n@yteruneworth\n",
+	"Tooltipyte1r3d": "@yte1r3d\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r04L@r17L@RuneQuote\n@yte1k1e 37@ytecyc3\n+20% @yte1k3c\n+75% @yte1k2i\n+280 @yte1k3z\n+10 @yte1k1l\n@yte2k1v +50 @yte2k2v\n@yte2k1j -1 @yte2k2j\n@yte3k1g 6 @yte3k2e@skillname72@ModStre10e 18 @yte3k3g\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@xtp\n@yteinterim@yteother@yteexc@yteiarmor\n@yteruneworth\n@rw1r3d",
+    "Tooltipyte1r3ea": "@yte1r3e\n@ytelonly\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r13L@r18L@r02L@RuneQuote\n@yte1k1e 39@ytecyc3\n+65% @yte1k3d\n@yte2k1o +40% @yte2k2o\n+20% @yte1k3c\n+6 @yte1k6b@skillname29\n+10 @yte1k1j\n@yte2k1u 50% @yte2k2u\n@yte2k1v +10 @yte2k2v\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@xtp / @uui\n@yteinterim@yteother@yteexc@yteiarmor\n@yteruneworth\n@rw1r3ea",
+    "Tooltipyte1r3f": "@yte1r3f\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r15L@r17L@r19L@RuneQuote\n@yte1k1e 41@ytecyc3\n+20% @yte1k4e\n+25 @yte1k1i\n+15 @yte1k1j\n+20 @yte1k1k\n+50 @yte1k2c\n@yte2k1v +30 @yte2k2v\n@yte1k2p -15%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@xtp / @uui / @uea\n@yteinterim@yteother@yteexc@yteiarmor\n@yteruneworth\n@rw1r3f",
+    "Tooltipyte1r3g": "@yte1r3g\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r13L@r10L@r20L@RuneQuote\n@yte1k1e 43@ytecyc3\n@yte4k1e 25% @yte4k2e 15 @yte3k2e@Skillname279@yte4k4e\n@yte4k1f 5% @yte4k2f 15 @yte3k2e@Skillname268@yte4k4f\n+2 @yte1k5w\n@yte2k1o +45% @yte2k2o\n+20% @yte1k3c\n@yte1k1s +30%\n@yte2k3h 50% @yte2k4h\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@xtp / @utp \n     @uar / @uth\n@yteinterim@yteother@yteeli@yteiarmor\n@yteruneworth\n@rw1r3g",
+    "Tooltipyte1r3h": "@yte1r3h\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r20L@r18L@r03L@RuneQuote\n@yte1k1e 43@ytecyc3\n+10 @yte1k1j\n+2 @yte1k3j\n@yte2k3h 300% @yte2k4h\n@yte2k3i 100% @yte2k4i\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@xtp / @utp / @uea\n@yteruneworth\n@rw1r3h",
+    "Tooltipyte1r3i": "@yte1r3i\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r21L@r08L@r12L@RuneQuote\n@yte1k1e 45@ytecyc3\n@yte4k1e 5% @yte4k2e 15 @yte3k2e@skillname47@yte4k4e\n@yte4k1f 5% @yte4k2f 15 @yte3k2e@skillname46@yte4k4f\n+2 @yte1k2n\n+1 @yte1k6b@skillname37\n+30% @yte1k2i@yte3k1d\n@yte1k1r +30%\n@yte1k2h 7\n@yte3soc\n@ytedividerxl\n@yte1k5y@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xtp\n@yteruneworth\n@rw1r3i",
+    "Tooltipyte1r3j": "@yte1r3j\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r12L@r22L@r22L@RuneQuote\n@yte1k1e 47@ytecyc3\n@yte4k1e 15% @yte4k2e 10 @yte3k2e@skillname84@yte4k4e\n@yte4k1f 15% @yte4k2f 10 @yte3k2e@skillname68@yte4k4f\n+2 @yte1k2m\n+100-150 @yte1k1m@ytevarsym1\n@yte2k1v +30 @yte2k2v\n@yte1k2h 7\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xtp / @uui / @uea\n@yteruneworth\n@rw1r3j",
+    "Tooltipyte1r3k": "@yte1r3k\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r13L@r22L@r10L@RuneQuote\n@yte1k1e 47@ytecyc3\n+40% @yte1k3c\n+10-20% @yte1k4e@ytevarsym1\n@yte2k1w 37-133 @yte2k2x\n+15% @yte1k3h\n+33% @yte1k2s\n+150-200% @yte1k2i@ytevarsym1\n@yte2k1u -20% @yte2k2u\n@yte1k1s +45%\n@yte1k1t +15%\n@yte1k1r +15%\n@yte1k1v +15%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@utp\n@yteruneworth\n@rw1r3k",
+    "Tooltipyte1r3l": "@yte1r3l\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r19L@r22L@r21L@RuneQuote\n@yte1k1e 47@ytecyc3\n@yte4k1f 15% @yte4k2f 3 @yte3k2e@skillname71@yte4k4f\n+10% @yte1k3c\n+200-260% @yte1k2i@ytevarsym1\n+10 @yte1k1i\n@yte2k1v +45 @yte2k2v\n@ModStr4b\n+5% @yte1k2v\n@yte2k1j -3 @yte2k2j\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@uui\n@yteruneworth\n@rw1r3l",
+    "Tooltipyte1r3m": "@yte1r3m\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r13L@r22L@r21L@r17L@RuneQuote\n@yte1k1e 47@ytecyc3\n+60% @yte1k3c\n+250-290% @yte1k2i@ytevarsym1\n+300 @yte1k3z\n+16 @yte1k1i\n+16 @yte1k1k\n+10 @yte1k1l\n@yte2k1v +15 @yte2k2v\n@yte3k1g 16 @yte3k2e@Skillname230@ModStre10e 80 @yte3k3g\n@yte3k1g 16 @yte3k2e@skillname75@ModStre10e 16 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@uui\n@yteruneworth\n@rw1r3m",
+    "Tooltipyte1r3n": "@yte1r3n\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r23L@r03L@RuneQuote\n@yte1k1e 49@ytecyc3\n+25% @yte1k3c\n+140-170% @yte1k2i@ytevarsym1\n@yte2k1v +25-35 @yte2k2v@ytevarsym1\n@yte1k2h 3\n@yte1k2g 17\n+2 @yte1k3j\n@yte2k1j +1 @yte2k2j\n@yte3k1f 4 @yte3k2f\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@uui\n@yteruneworth\n@rw1r3n",
+    "Tooltipyte1r3o": "@yte1r3o\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r09L@r23L@r06L@RuneQuote\n@yte1k1e 49@ytecyc3\n@yte4k1e 5% @yte4k2e 15 @yte3k2e@Skillname241@yte4k4e\n@yte4k1f 5% @yte4k2f 15 @yte3k2e@Skillname236@yte4k4f\n+2 @yte1k5x\n+100-150 @yte1k1m@ytevarsym1\n@yte1k1t +30%\n@yte1k2g 7\n+15% @yte1k2v\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xtp\n@yteruneworth\n@rw1r3o",
+    "Tooltipyte1r3p": "@yte1r3p\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r08L@r25L@r02L@RuneQuote\n@yte1k1e 53@ytecyc3\n@yte4k1e 100% @yte4k2e 5 @yte3k2e@skillname101@yte4k4e\n+2 @yte1k2l\n+50% @yte1k2x\n+100-150 @yte1k2c@ytevarsym1\n@yte2k1u 15% @yte2k2u\n@yte2k1t +5% @yte2k2t\n@yte1k1r +30%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@xtp\n@yteruneworth\n@rw1r3p",
+    "Tooltipyte1r3qa": "@yte1r3q\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r01L@r12L@r14L@r28L@RuneQuote\n@yte1k1e 59@ytecyc3\n@yte4k1f 20% @yte4k2f 15 @yte3k2e@skillname60@yte4k4f\n+25% @yte1k3e\n+300% @yte1k4e\n+200% @yte1k2i\n+15 @yte1k1q\n+1-148 @yte1k2c@ModStre9c [1(+0.125)-1.5*clvl]@ytevarsym1\n@yte1k2f +7\n@yte2k1r +5% @yte2k2r\n@yte2k1v +25-30 @yte2k2v@ytevarsym1\n@yte1k2h 7\n+12% @yte1k2v\n@yte2k1j +1 @yte2k2j\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@utp / @uth / @uar\n@yteruneworth\n@rw1r3qa",
+    "Tooltipyte1r3r": "@yte1r3r\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r08L@r27L@r29L@r05L@RuneQuote\n@yte1k1e 61@ytecyc3\n@yte3k1e 15-21 @yte3k2e@skillname103@yte3k3e@ytevarsym1\n+50% @yte1k3c\n+25-50% @yte1k5r@ytevarsym1\n+300 @yte1k1q\n@yte2k1f 5% @yte2k2f\n@yte2k1n 15% @yte2k2n\n@yte2k1q +5% @yte2k2q\n@yte1k1r +30%\n@yte1k1v +100%\n+13 @yte1k5l\n@yte3k1g 13 @yte3k2e@Skillname247@ModStre10e 33 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@utp\n@yteruneworth\n@rw1r3r",
+    "Tooltipyte1r2ga": "@yte1r2g\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r29L@r28L@r12L@RuneQuote\n@yte1k1e 61@ytecyc3\n@yte4k1e 12% @yte4k2e 15 @yte3k2e@skillname62@yte4k4e\n@yte4k1f 20% @yte4k2f 18 @yte3k2e@Skillname279@yte4k4f\n@yte3k1e 14 @yte3k2e@skillname102@yte3k3e\n+360 @yte1k1q\n+230 @yte1k3z\n+3-5 @yte1k5k@ytevarsym1\n+0-38 @yte1k1i@ModStre9c [0.375*clvl]\n@yte2k1f 5% @yte2k2f\n@yte2k1r +5% @yte2k2r\n@yte1k2h 7\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@utp\n@yteruneworth\n@rw1r2g",
+    "Tooltipyte1r3s": "@yte1r3s\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r14L@r22L@r30L@r24L@RuneQuote\n@yte1k1e 63@ytecyc3\n+2 @yte1k2r\n+200% @yte1k2w\n+100% @yte1k2x\n@yte2k1h 8% @yte2k2i\n+70% @yte1k2i\n+20 @yte1k1i\n@yte2k1v +65 @yte2k2v\n@yte1k6a 8%\n@yte2k3i 25% @yte2k4i\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@utp / @uea / @uui\n@yteruneworth\n@rw1r3s",
+    "Tooltipyte1r3t": "@yte1r3t\n@ytecyc5@ytebamr\n@ytecyc4@RuneQuote@r31L@r06L@r30L@RuneQuote\n@yte1k1e 65@ytecyc3\n+2 @yte1k2r\n+45% @yte1k3d\n+1 @yte1k6b@skillname54\n+750-775 @yte1k1q@ytevarsym1\n+0-74 @yte1k1i@ModStre9c [0.75*clvl]\n@yte2k1e 5% @yte2k2e\n@yte1k6a 8%\n+15% @yte1k2v\n@yte2k3i 1-99%@ModStre9c [1*clvl]\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@xtp / @utp / @uui\n@yteruneworth\n@rw1r3t",
+    "Tooltipyte1r4a": "@yte1r4a\n@ytecyc5@ytebswd / @ytebaxe / @ytebmac\n@ytecyc4@RuneQuote@r03L@r01L@RuneQuote\n@yte1k1e 13@ytecyc3\n@yte2k1o +25% @yte2k2o\n+20% @yte1k4e\n+3 @yte1k1o\n+3 @yte1k1n\n+50 @yte1k1p\n+50% @yte1k2s\n+2 @yte1k3j\n@yte2k1j +1 @yte2k2j\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@scm / @fla / @wax\n@yteruneworth\n@rw1r4a",
+    "Tooltipyte1r4b": "@yte1r4b\n@ytebmel\n@ytecyc4@RuneQuote@r06L@r01L@r05L@RuneQuote\n@yte1k1e 15@ytecyc3\n+33% @yte1k4e\n+9 @yte1k1n\n-25% @yte1k3s\n+50 @yte1k1p\n+100% @yte1k2s\n@ModStr4a\n@yte2k1m -100 @yte2k2m\n@yte1k2j -5\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@fla / @hal\n@yteruneworth\n@rw1r4b",
+    "Tooltipyte1r4c": "@yte1r4c\n@ytecyc5@ytebstv\n@ytecyc4@RuneQuote@r03L@r08L@RuneQuote\n@yte1k1e 19@ytecyc3\n+3 @yte1k2q\n@yte2k1w 5-30 @yte2k2w\n+3 @yte1k6b@skillname41@SorOnly\n+3 @yte1k6b@skillname37@SorOnly\n+3 @yte1k6b@skillname36@SorOnly\n+2-198 @yte1k1q@ModStre9c [2*clvl]\n@yte1k1s +33%\n+2 @yte1k3j\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm2\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@sst / @lst\n@yteruneworth\n@rw1r4c",
+    "Tooltipyte1r4d": "@yte1r4d\n@ytecyc5@ytebspt\n@ytecyc4@RuneQuote@r05L@r08L@r09L@r07L@RuneQuote\n@yte1k1e 24@ytecyc3\n+60% @yte1k4e\n+10 @yte1k1n\n-25% @yte1k3s\n@yte2k1w 5-30 @yte2k2w\n@yte2k1w 21-110 @yte2k2y\n+75 @yte2k3a 5 @yte2k4a\n+3 @yte1k6b@skillname118@PalOnly\n@yte2k1r +5% @yte2k2r\n@yte1k1t +60%\n@yte3k1g 7 @yte3k2e@skillname53@ModStre10e 60 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest+3 @yte1k6b@skillname118[Staff mods]@wsp\n@yteruneworth\n@rw1r4d",
+    "Tooltipyte1r4e": "@yte1r4e\n@ytebmis\n@ytecyc4@RuneQuote@r09L@r05L@RuneQuote\n@yte1k1e 21@ytecyc3\n@yte4k1f 7% @yte4k2f 1 @yte3k2e@Skillname241@yte4k4f\n+25% @yte1k3d\n@yte2k1o +25% @yte2k2o\n+33% @yte1k4e\n-25% @yte1k3s\n+66 @yte1k1p\n@yte2k1w 1-50 @yte2k2y\n+25 @yte1k1q\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@8hb\n@yteinterim@cbw / @hbw\n@yteruneworth\n@rw1r4e",
+    "Tooltipyte1r4f": "@yte1r4f\n@ytecyc5@ytebclw\n@ytecyc4@RuneQuote@r07L@r09L@r10L@RuneQuote\n@yte1k1e 23@ytecyc3\n+30% @yte1k3f\n+40-80% @yte1k4e@ytevarsym1\n10% @yte1k5u\n@yte2k1w 12-32 @yte2k2w\n@yte2k1w 1-50 @yte2k2y\n@yte2k1w 3-14 @yte2k2x\n+75 @yte2k3a 5 @yte2k4a\n+6 @yte1k1i\n+6 @yte1k1j\n@yte2k1v +15 @yte2k2v\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@9tw / @9lw\n@yteinterim@btl / @clw\n@yteruneworth\n@rw1r4f",
+    "Tooltipyte1r4g": "@yte1r4g\n@ytebmis\n@ytecyc4@RuneQuote@r03L@r07L@r11L@RuneQuote\n@yte1k1e 25@ytecyc3\n@yte3k1e 15 @yte3k2e@skillname103@yte3k3e\n@yte2k1o +35% @yte2k2o\n+320-380% @yte1k2w@ytevarsym1\n+280% @yte1k2x\n+75 @yte2k3a 5 @yte2k4a\n@yte2k1h 8% @yte2k2i\n@ModStr4a\n+5-10 @yte1k5k@ytevarsym1\n+2 @yte1k3j\n@yte1k5m 15%\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@hbw\n@yteruneworth\n@rw1r4g",
+    "Tooltipyte1r4h": "@yte1r4h\n@ytecyc5@ytebswd / @ytebspt\n@ytecyc4@RuneQuote@r11L@r08L@r10L@RuneQuote\n@yte1k1e 25@ytecyc3\n+100% @yte1k4e\n+150 @yte1k1p\n+100% @yte1k2w\n+100 @yte1k3a\n+50% @yte1k2x\n+100 @yte1k3b\n@yte2k1w 5-30 @yte2k2w\n@yte2k1w 3-14 @yte2k2x\n@yte2k1h 7% @yte2k2i\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte1ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r2bw": "@yte1r2b\n@ytecyc5@ytebswd\n@ytecyc4@RuneQuote@r07L@r10L@r09L@r11L@RuneQuote\n@yte1k1e 25@ytecyc3\n+2 @yte1k2r\n+25-35% @yte1k3e@ytevarsym1\n+55% @yte1k3c\n@yte2k1w 1-50 @yte2k2y\n@yte2k1w 3-14 @yte2k2x\n+75 @yte2k3a 5 @yte2k4a\n@yte2k1h 7% @yte2k2i\n+250 @yte1k3z\n+22 @yte1k1k\n+89-112 @yte1k1m@ytevarsym1\n+3-8 @yte1k3o@ytevarsym1\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm2\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@crs\n@yteruneworth\n@rw1r2bw",
+    "Tooltipyte1r4i": "@yte1r4i\n@ytebmel\n@ytecyc4@RuneQuote@r11L@r03L@RuneQuote\n@yte1k1e 25@ytecyc3\n+35% @yte1k4e\n@yte2k1h 7% @yte2k2i\n+25% @yte1k3h\n+20 @yte1k1i\n+10 @yte1k1k\n+2 @yte1k3j\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@9sm / @9br\n@yteinterim@scm / @brn\n@yteruneworth\n@rw1r4i",
+    "Tooltipyte1r4j": "@yte1r4j\n@ytebmel\n@ytecyc4@RuneQuote@r11L@r01L@r06L@r03L@r12L@RuneQuote\n@yte1k1e 27@ytecyc3\n+1 @yte1k2r\n+160% @yte1k4e\n+9 @yte1k1o\n+9 @yte1k1n\n+250 @yte1k1p\n@yte2k1h 7% @yte2k2i\n+25% @yte1k3t\n+10 @yte1k1i\n@yte1k2f +10\n+2 @yte1k3j\n@yte2k1j +1 @yte2k2j\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@9fb / @9fl / @9ws\n@yteinterim@wsp\n@yteruneworth\n@rw1r4j",
+    "Tooltipyte1r4k": "@yte1r4k\n@ytecyc5@ytebpom / @ytebstv / @ytebmis\n@ytecyc4@RuneQuote@r08L@r03L@r07L@r12L@RuneQuote\n@yte1k1e 27@ytecyc3\n@yte3k1e 12-17 @yte3k2e@skillname120@yte3k3e@ytevarsym1\n+35% @yte1k3e\n+200-260% @yte1k4e@ytevarsym1\n+9 @yte1k1o\n180-250% @yte1k5u@ytevarsym1\n@yte2k1w 5-30 @yte2k2w\n+75 @yte2k3a 5 @yte2k4a\n+1-6 @yte1k6b@skillname9@ytevarsym1\n+5 @yte1k5k\n+2 @yte1k3j\n@yte2k3i 23% @yte2k4i\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte1ji  @ytefarm2  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@yteeli@ytebpom / @8hb / @8cb\n@6ws / @6cs / @6bs\n@yteinterim@ytenor@yteor@yteexc@ytebpom / @cbw\n@yteruneworth\n@rw1r4k",
+    "Tooltipyte1r4l": "@yte1r4l\n@ytecyc5@ytebmac / @ytebclb / @ytebhmr\n@ytecyc4@RuneQuote@r10L@r16L@r04L@RuneQuote\n@yte1k1e 35@ytecyc3\n@yte2k1o +15% @yte2k2o\n+120% @yte1k4e\n+200 @yte1k1p\n@yte2k1w 3-14 @yte2k2x\n+40% @yte1k3h\n@ModStr1y\n+10 @yte1k1k\n@yte1k2g 2\n@yte3k1g 4 @yte3k2e@skillname74@ModStre10e 12 @yte3k3g\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@9fl\n@yteinterim@fla\n@yteruneworth\n@rw1r4l",
+    "Tooltipyte1r4m": "@yte1r4m\n@ytecyc5@ytebwnd\n@ytecyc4@RuneQuote@r14L@r16L@RuneQuote\n@yte1k1e 35@ytecyc3\n+3 @yte1k4w@NecOnly\n+20% @yte1k3e\n+2 @yte1k6b@skillname84@NecOnly\n+4 @yte1k6b@skillname69@NecOnly\n+3 @yte1k6b@skillname68@NecOnly\n@yte2k3j +25% @yte2k4j\n+10 @yte1k1k\n+13 @yte1k1m\n@yte1k2g 4\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest+3 @yte1k6b@skillname84[Staff mods]@ytebwnd\n                +3 @yte1k6b@skillname92[Staff mods]@ytebwnd\n@yteruneworth\n@rw1r4m",
+    "Tooltipyte1r4n": "@yte1r4n\n@ytecyc5@ytebstv\n@ytecyc4@RuneQuote@r17L@r16L@r12L@r05L@RuneQuote\n@yte1k1e 37@ytecyc3\n+3 @yte1k2n\n+33% @yte1k3e\n+9 @yte1k1o\n-25% @yte1k3s\n+3 @yte1k6b@skillname58@SorOnly\n+2 @yte1k6b@skillname42@SorOnly\n+50% @yte1k2i\n+10 @yte1k1k\n+10 @yte1k1l\n@yte2k1f 20% @yte2k2f\n@yte4k3c@yte1k2g 7\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest+3 @yte1k6b@skillname58[Staff mods]@ytebstv\n@yteruneworth\n@rw1r4n",
+    "Tooltipyte1r4o": "@yte1r4o\n@ytebmis\n@ytecyc4@RuneQuote@r03L@r06L@r12L@r18L@RuneQuote\n@yte1k1e 39@ytecyc3\n@yte3k1e 10 @yte3k2e@skillname115@yte3k3e\n+200-275% @yte1k4e@ytevarsym1\n+9 @yte1k1o\n+9 @yte1k1n\n@yte2k1w 55-160 @yte2k2w\n@yte2k1w 55-160 @yte2k2y\n@yte2k1w 55-160 @yte2k2x\n+2-6 @yte1k6b@skillname32@ytevarsym1\n+10 @yte1k1j\n@yte2k1n 20% @yte2k2n\n+2 @yte1k3j\n@yte2k1j +2 @yte2k2j\n@yte3k1g 20 @yte3k2e@skillname95@ModStre10e 25 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@amb / @8cb / @8hb\n@yteinterim@hbw\n@yteruneworth\n@rw1r4o",
+    "Tooltipyte1r4p": "@yte1r4p\n@ytebmis\n@ytecyc4@RuneQuote@r13L@r18L@r04L@RuneQuote\n@yte1k1e 39@ytecyc3\n+3 @yte1k4s@AmaOnly\n@yte2k1o +20% @yte2k2o\n+50% @yte1k4e\n+300% @yte1k2x\n+3 @yte1k6b@skillname17@AmaOnly\n+3 @yte1k6b@skillname13@AmaOnly\n+3 @yte1k6b@skillname9@AmaOnly\n@ModStr1y\n+10 @yte1k1j\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@amb\n@yteinterim@am6\n@yteruneworth\n@rw1r4p",
+    "Tooltipyte1r6b": "@yte1r6b\n@ytelonly\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r13L@r18L@r02L@RuneQuote\n@yte1k1e 39@ytecyc3\n@yte4k1e 5% @yte4k2e 1 @yte3k2e@Skillname259@yte4k4e\n@yte3k1e 1 @yte3k2e@skillname122@yte3k3e\n@yte2k1o +30% @yte2k2o\n+180-200% @yte1k4e@ytevarsym1\n+75% @yte1k2x\n+50 @yte1k3b\n+10 @yte1k1j\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@amb / @hbw\n             @7cr / @7la\n@yteruneworth\n@rw1r3ew",
+    "Tooltipyte1r4q": "@yte1r4q\n@ytecyc5@ytebpom / @ytebspr\n@ytecyc4@RuneQuote@r15L@r18L@r10L@r05L@r19L@RuneQuote\n@yte1k1e 41@ytecyc3\n@yte4k1c 30% @yte4k2c 21 @yte3k2e@skillname52@yte4k4c\n+40% @yte1k3c\n+370% @yte1k4e\n-25% @yte1k3s\n@yte2k1w 3-14 @yte2k2x\n@yte2k3e -25% @yte2k4e\n+40% @yte1k3h\n+200-300 @yte1k1q@ytevarsym1\n+10 @yte1k1i\n+10 @yte1k1j\n@yte2k1v +20-30 @yte2k2v@ytevarsym1\n@yte1k2p -20%\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7s8 / @7wc / @7h7\n@yteinterim@9wc\n@yteruneworth\n@rw1r4q",
+    "Tooltipyte1r4r": "@yte1r4r\n@ytecyc5@ytebswd\n@ytecyc4@RuneQuote@r19L@r16L@r06L@r02L@r01L@r15L@RuneQuote\n@yte1k1e 41@ytecyc3\n@yte4k1e 18% @yte4k2e 18 @yte3k2e@skillname137@yte4k4e\n+3 @yte1k4v@BarOnly\n@yte2k1o +20-30% @yte2k2o@ytevarsym1\n+300-350% @yte1k4e@ytevarsym1\n+9 @yte1k1n\n+50 @yte1k1p\n+75% @yte1k2x\n+50 @yte1k3b\n@yte2k1h 8-10% @yte2k2i@ytevarsym1\n@ModStr4a\n+10 @yte1k1i\n+10 @yte1k1k\n@yte1k2h 8\n@yte2k1j +1 @yte2k2j\n@yte1k2p -20%\n@yte6soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@7cr / @7gd\n@yteruneworth\n@rw1r4r",
+    "Tooltipyte1r4s": "@yte1r4s\n@ytecyc5@ytebswd / @ytebspt / @ytebhmr\n@ytecyc4@RuneQuote@r11L@r20L@r18L@RuneQuote\n@yte1k1e 43@ytecyc3\n@yte4k1e 20% @yte4k2e 15 @yte3k2e@skillname87@yte4k4e\n@yte3k1e 16-18 @yte3k2e@skillname119@yte3k3e@ytevarsym1\n-50% @yte1k3s\n@yte2k1w 150-210 @yte2k2w\n@yte2k1w 130-180 @yte2k2x\n@yte2k2a@yte2k1h 7% @yte2k2i\n@ModitemSMRIP\n+200-250 @yte1k3z@ytevarsym1\n+10 @yte1k1j\n@yte2k3h 75% @yte2k4h\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@7cr\n@yteruneworth\n@rw1r4s",
+    "Tooltipyte1r4t": "@yte1r4t\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r14L@r09L@r02L@r20L@RuneQuote\n@yte1k1e 43@ytecyc3\n@yte2k1o +25% @yte2k2o\n+160-210% @yte1k4e@ytevarsym1\n50-80% @yte1k5u@ytevarsym1\n+75% @yte1k2x\n+50 @yte1k3b\n@yte2k1w 1-50 @yte2k2y\n+1 @yte1k6b@skillname152\n+1 @yte1k6b@skillname106\n@ModStr6d +10\n@yte2k3j +25% @yte2k4j\n@yte2k3h 75% @yte2k4h\n@yte3k1g 3 @yte3k2e@Skillname237@ModStre10e 12 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytefarm1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@7cr\n@yteruneworth\n@rw1r4t",
+    "Tooltipyte1r4u": "@yte1r4u\n@ytecyc5@ytebswd / @ytebmac\n@ytecyc4@RuneQuote@r20L@r18L@r01L@r02L@RuneQuote\n@yte1k1e 43@ytecyc3\n@yte4k1e 15% @yte4k2e 13 @yte3k2e@skillname64@yte4k4e\n@yte4k1e 18% @yte4k2e 20 @yte3k2e@skillname45@yte4k4e\n+50 @yte1k1p\n+220-350% @yte1k2w@ytevarsym1\n+280-300% @yte1k2x@ytevarsym1\n+50 @yte1k3b\n@yte2k1w 100-220 @yte2k2x\n@yte2k2a@yte2k3d -24% @yte2k4d\n+10 @yte1k1j\n@ModStr5z\n@yte2k3h 75% @yte2k4h\n@yte2k1j +1 @yte2k2j\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte2ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r4v": "@yte1r4v\n@ytecyc5@ytebswd / @ytebaxe / @ytebpom\n@ytecyc4@RuneQuote@r13L@r22L@r03L@RuneQuote\n@yte1k1e 47@ytecyc3\n@yte4k1e 10% @yte4k2e 17 @yte3k2e@skillname53@yte4k4e\n@yte4k1e 7% @yte4k2e 13 @yte3k2e@skillname42@yte4k4e\n@yte2k1o +20% @yte2k2o\n+180-220% @yte1k4e@ytevarsym1\n@ModStr3y\n@yte2k3f -35% @yte2k4f\n+25% @yte1k2s\n+9-11 @yte1k3o@ytevarsym1\n+2 @yte1k3j\n@yte3k1g 18 @yte3k2e@Skillname228@ModStre10e 30 @yte3k3g\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@crs / @7cr\n@yteruneworth\n@rw1r4v",
+    "Tooltipyte1r4w": "@yte1r4w\n@ytecyc5@ytebswd / @ytebaxe / @ytebmac\n@ytecyc4@RuneQuote@r13L@r21L@r23L@r17L@RuneQuote\n@yte1k1e 49@ytecyc3\n@yte4k1e 30% @yte4k2e 20 @yte3k2e@skillname93@yte4k4e\n@ModStre9s\n@yte2k1o +50% @yte2k2o\n+210-340% @yte1k4e@ytevarsym1\n+75% @yte1k2w\n+100 @yte1k3a\n@ModStr4a\n+10 @yte1k1l\n+10-15 @yte1k3o@ytevarsym1\n@yte3k1g 16 @yte3k2e@Skillname237@ModStre10e 20 @yte3k3g\n@yte3k1g 17 @yte3k2e@skillname90@ModStre10e 14 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte2ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7wa / @72a / @7ax / @7fl\n         @7ba / @7la / @7gs / @7fb\n@yteruneworth\n@rw1r4w",
+    "Tooltipyte1r4x": "@yte1r4x\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r07L@r14L@r23L@RuneQuote\n@yte1k1e 49@ytecyc3\n@ModStr3y\n+273 @yte2k3a 6 @yte2k4a\n@yte2k1h 7% @yte2k2h\n@ModStr4a\n@yte2k3j +25% @yte2k4j\n@yte3k1g 13 @yte3k2e@skillname92@ModStre10e 11 @yte3k3g@yte3k2d\n@yte3k1g 15 @yte3k2e@skillname83@ModStre10e 27 @yte3k3g\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte2ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r4y": "@yte1r4y\n@ytecyc5@ytebswd / @ytebaxe\n@ytecyc4@RuneQuote@r23L@r22L@r25L@r19L@RuneQuote\n@yte1k1e 53@ytecyc3\n@yte2k1o +30% @yte2k2o\n+230-270% @yte1k4e@ytevarsym1\n-25% @yte1k3s\n20% @yte1k5u\n+33% @yte1k3h\n+50% @yte1k2s\n+1 @yte1k6b@skillname111\n@ModStr4a\n+10 @yte1k1i\n@yte2k3h 40% @yte2k4h\n@yte4soc\n@ytedividerxl\n@yte2k2a@yteiass\n@yte3ji\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@7cr / @7wa / @7ga\n@yteruneworth\n@rw1r4y",
+    "Tooltipyte1r4z": "@yte1r4z\n@ytecyc5@ytebspt / @ytebpom\n@ytecyc4@RuneQuote@r15L@r18L@r20L@r25L@RuneQuote\n@yte1k1e 53@ytecyc3\n@yte4k1e 20% @yte4k2e 16 @yte3k2e@Skillname246@yte4k4e\n@yte4k1d 16% @yte4k2d 21 @yte3k2e@skillname64@yte4k4d\n20% @yte1k5u\n@yte2k1w 160-250 @yte2k2z\n@yte2k1w 60-180 @yte2k2w\n+5-10 @yte1k5k@ytevarsym1\n+10 @yte1k1j\n+38% @yte1k2v\n@yte2k3h 75% @yte2k4h\n@yte3k1g 15 @yte3k2e@skillname76@ModStre10e 40 @yte3k3g\n@yte1k2p -20%\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r5a": "@yte1r5a\n@ytenlonly\n@ytecyc5@ytebclw\n@ytecyc4@RuneQuote@r23L@r25L@r11L@RuneQuote\n@yte1k1e 53@ytecyc3\n@yte1k6f\n+2@yte1k5j@AssOnly\n@yte2k1o +20% @yte2k2o\n+200-250% @yte1k4e@ytevarsym1\n20% @yte1k5u\n@yte2k1h 7% @yte2k2i\n+8-15% @yte1k5p@ytevarsym1\n+8-15% @yte1k5q@ytevarsym1\n+8-15% @yte1k5o@ytevarsym1\n@ModStr4a\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest+3 @yte1k6b@Skillname281[Staff mods]@7tw\n          +3 @yte1k6b@Skillname281[Staff mods]@9tw\n@yteruneworth\n@rw1r5a",
+    "Tooltipyte1r5b": "@yte1r5b\n@ytecyc5@ytebswd / @ytebaxe\n@ytecyc4@RuneQuote@r15L@r01L@r26L@r09L@r25L@RuneQuote\n@yte1k1e 55@ytecyc3\n@ModStre9s\n@yte4k1d 25% @yte4k2d 18 @yte3k2e@skillname55@yte4k4d\n@yte4k1a 44 @yte3k2e@skillname53@yte4k4a\n+300-385% @yte1k4e@ytevarsym1\n20% @yte1k5u\n+50 @yte1k1p\n@yte2k1w 1-50 @yte2k2y\n@yte2k1h 7% @yte2k2h\n+50% @yte1k3h\n+0-49% @yte1k3t@ModStre9c [0.5*clvl]\n@yte2k1j +1 @yte2k2j\n@yte3k1g 22 @yte3k2e@skillname85@ModStre10e 15 @yte3k3g\n@yte1k2p -20%\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@7wa / @7fb\n@yteruneworth\n@rw1r5b",
+    "Tooltipyte1r5c": "@yte1r5c\n@ytecyc5@ytebmac / @ytebstv\n@ytecyc4@RuneQuote@r18L@r26L@r21L@r10L@RuneQuote\n@yte1k1e 55@ytecyc3\n+3 @yte1k2r\n+40% @yte1k3e\n+75% @yte1k2w\n+100 @yte1k3a\n@yte2k1w 3-14 @yte2k2x\n@yte2k1h 7% @yte2k2h\n+10 @yte1k1j\n@yte1k2f +20\n@yte2k1f 15% @yte2k2f\n@yte2k1v +30-40 @yte2k2v@ytevarsym1\n@yte3k1g 4 @yte3k2e@Skillname227@ModStre10e 25 @yte3k3g\n@yte3k1g 14 @yte3k2e@Skillname222@ModStre10e 60 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@fla\n@yteruneworth\n@rw1r5c",
+    "Tooltipyte1r5d": "@yte1r5d\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r14L@r02L@r15L@r24L@r03L@r26L@RuneQuote\n@yte1k1e 55@ytecyc3\n+2 @yte1k2r\n@yte2k1o +20% @yte2k2o\n+20% @yte1k3c\n+200% @yte1k4e\n+75% @yte1k2x\n+50 @yte1k3b\n@yte2k1h 11% @yte2k2h\n@ModStr6d +33\n@yte2k3j +25% @yte2k4j\n@yte2k1v +75 @yte2k2v\n+2 @yte1k3j\n@yte2k3i 30% @yte2k4i\n@yte1k2p -20%\n@yte6soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@7cr\n@yteruneworth\n@rw1r5d",
+    "Tooltipyte1r5e": "@yte1r5e\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r11L@r08L@r23L@r24L@r27L@RuneQuote\n@yte1k1e 57@ytecyc3\n+1 @yte1k2r\n@yte2k1o +40% @yte2k2o\n+250-290% @yte1k4e@ytevarsym1\n@yte2k1w 5-30 @yte2k2w\n@yte2k1h 7% @yte2k2i\n+2-6 @yte1k6b@skillname155@ytevarsym1\n+1-6 @yte1k6b@skillname149@ytevarsym1\n+1-4 @yte1k6b@skillname146@ytevarsym1\n@ModStr4a\n@yte1k2f +12\n@yte2k3i 30% @yte2k4i\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@crs / @fla\n          @ytebstv / @ytebspt\n@yteruneworth\n@rw1r5e",
+    "Tooltipyte1r6c": "@yte1r6c\n@yterotwonly\n@ytecyc5@ytebdgr\n@ytecyc4@RuneQuote@r11L@r13L@r27L@RuneQuote\n@yte1k1e 57@ytecyc3\n@yte4k1f 13% @yte4k2f 1 @yte3k2e@DeathSigilName@yte4k4f\n@yte2k1o +40% @yte2k2o\n+250-320% @yte1k4e@ytevarsym1\n+150-250% @yte1k2w@ytevarsym1\n200-260% @yte1k5u@ytevarsym1\n+3-5 @yte1k5l@ytevarsym1\n@ModitemSMRIP\n@yte2k1h 7% @yte2k2i\n@yte3soc\n@ytedividerxl\n@yteiass\n\n@yteusefulindex\n\n@ytebrecomm\n\n@yteruneworth\n",
+	"Tooltipyte1r5f": "@yte1r5f\n@ytecyc5@ytebclw\n@ytecyc4@RuneQuote@r19L@r27L@r22L@RuneQuote\n@yte1k1e 57@ytecyc3\n@yte4k1e 9% @yte4k2e 11 @yte3k2e@skillname64@yte4k4e\n@yte4k1e 11% @yte4k2e 9 @yte3k2e@skillname38@yte4k4e\n@yte2k1o +35% @yte2k2o\n+290-340% @yte1k4e@ytevarsym1\n@yte2k1w 216-471 @yte2k2z\n+25% @yte1k2s\n+1 @yte1k6b@skillname151\n+10 @yte1k1i\n+15 @yte1k4b\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@7ar / @7qr\n@yteruneworth\n@rw1r5f",
+    "Tooltipyte1r3qw": "@yte1r3q\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r01L@r12L@r14L@r28L@RuneQuote\n@yte1k1e 59@ytecyc3\n@yte4k1f 20% @yte4k2f 15 @yte3k2e@skillname60@yte4k4f\n+25% @yte1k3e\n+300% @yte1k4e\n+9 @yte1k1o\n+50 @yte1k1p\n+20% @yte1k3t\n@yte2k3j +25% @yte2k4j\n+200% @yte1k2i\n+1-148 @yte1k2c@ModStre9c  [1(+0.125)-1.5*clvl]@ytevarsym1\n@yte2k1v +25-30 @yte2k2v@ytevarsym1\n+12% @yte1k2v\n@yte2k1j +1 @yte2k2j\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@7ws / @7wa\n@yteruneworth\n@rw1r3qw",
+    "Tooltipyte1r5g": "@yte1r5g\n@ytecyc5@ytebswd / @ytebaxe\n@ytecyc4@RuneQuote@r05L@r03L@r28L@r23L@r08L@RuneQuote\n@yte1k1e 59@ytecyc3\n@yte4k1e 35% @yte4k2e 15 @yte3k2e@Skillname279@yte4k4e\n@yte2k1o +30-40% @yte2k2o@ytevarsym1\n@yte1k3g +340-400@ytevarsym1\n@ModStr3y\n-25% @yte1k3s\n+1-185% @yte1k2w@ModStre9c [1.875*clvl]\n@yte2k1w 5-30 @yte2k2w\n@yte2k3g -20-25% @yte2k4g@ytevarsym1\n+20% @yte1k3t\n@ModStr4a\n+10-15 @yte1k5l@ytevarsym1\n+2 @yte1k3j\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@7cr / @7wa / @9fb\n@yteruneworth\n@rw1r5g",
+    "Tooltipyte1r5h": "@yte1r5h\n@ytebmel\n@ytecyc4@RuneQuote@r29L@r01L@RuneQuote\n@yte1k1e 61@ytecyc3\n@yte4k1e 10% @yte4k2e 9 @yte3k2e@Skillname246@yte4k4e\n+20% @yte1k3d\n@yte2k1o +40% @yte2k2o\n+15% @yte1k3c\n+120-160% @yte1k4e@ytevarsym1\n-50% @yte1k3s\n+50 @yte1k1p\n@ModStr6d\n@yte2k1j +1 @yte2k2j\n@yte3k1g 13 @yte3k2e@Skillname241@ModStre10e 127 @yte3k3g\n@yte2soc\n@ytedividerxl\n@yteiass\n@yte3ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r5i": "@yte1r5i\n@ytecyc5@ytebaxe / @ytebspt / @ytebhmr\n@ytecyc4@RuneQuote@r30L@r03L@r22L@r23L@r17L@RuneQuote\n@yte1k1e 63@ytecyc3\n@yte3k1e 9 @yte3k2e@skillname122@yte3k3e\n@yte2k1o +40% @yte2k2o\n+240-270% @yte1k4e@ytevarsym1\n+20% @yte1k3h\n+25% @yte1k2s\n+3 @yte1k6b@Skillname229\n+3 @yte1k6b@yte4k3c@Skillname225\n@ModStr4a\n+25-40 @yte1k1i@ytevarsym1\n+10 @yte1k1l\n+2 @yte1k3j\n@yte3k1g 13 @yte3k2e@Skillname248@ModStre10e 5 @yte3k3g\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7wa / @2ax\n@yteruneworth\n@rw1r5i",
+    "Tooltipyte1r5j": "@yte1r5j\n@ytebmel\n@ytecyc4@RuneQuote@r11L@r30L@r24L@r12L@r29L@RuneQuote\n@yte1k1e 63@ytecyc3\n@ModStre9s\n+260-310% @yte1k4e@ytevarsym1\n+9 @yte1k1o\n@yte2k1h 7% @yte2k2i\n+20% @yte1k3h\n@ModStr6d\n@yte1k5v 33%\n@yte1k2f +16\n@yte2k1n 16% @yte2k2n\n@ModStr5z\n@yte2k3i 30% @yte2k4i\n@yte3k1g 8 @yte3k2e@skillname95@ModStre10e 88 @yte3k3g\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r5j",
+    "Tooltipyte1r5k": "@yte1r5k\n@ytecyc5@ytebpom / @ytebspr\n@ytecyc4@RuneQuote@r30L@r23L@r30L@r24L@RuneQuote\n@yte1k1e 63@ytecyc3\n@yte4k1c 50% @yte4k2c 20 @yte3k2e@skillname53@yte4k4c\n@yte3k1e 12 @yte3k2e@skillname123@yte3k3e\n+35% @yte1k3d\n+255-325% @yte1k4e@ytevarsym1\n@yte2k3f -45-55% @yte2k4f@ytevarsym1\n+40% @yte1k3h\n@ModStr4a\n+0-49 @yte1k1k@ModStre9c [0.5*clvl]\n@yte2k3i 30% @yte2k4i\n@yte3k1g 21 @yte3k2e@Skillname236@ModStre10e 30 @yte3k3g\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte5star\n@ytebrecomm\n@ytethebest@7s8 / @7wc\n           @7br / @amd\n@yteruneworth\n@rw1r5k",
+    "Tooltipyte1r5l": "@yte1r5l\n@ytebmis\n@ytecyc4@RuneQuote@r21L@r17L@r30L@r23L@RuneQuote\n@yte1k1e 63@ytecyc3\n@yte4k1e 30% @yte4k2e 1 @yte3k2e@skillname87@yte4k4e\n@yte4k1e 5% @yte4k2e 10 @yte3k2e@skillname82@yte4k4e\n+375% @yte1k2w\n+100 @yte1k3a\n+250-300% @yte1k2x@ytevarsym1\n@yte2k1w 85-120 @yte2k2z\n@yte2k1w 41-240 @yte2k2y\n+20% @yte1k3h\n@yte3k2d@ModStr4a\n+10 @yte1k1l\n@ModStr5z\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@amb\n@yteruneworth\n@rw1r5l",
+    "Tooltipyte1r5m": "@yte1r5m\n@ytebmis\n@ytecyc4@RuneQuote@r31L@r28L@r23L@r25L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1e 100% @yte4k2e 18 @yte3k2e@skillname84@yte4k4e\n@yte4k1f 35% @yte4k2f 14 @yte3k2e@skillname66@yte4k4f\n@ModStr6i [lv.15]\n+260-340% @yte1k4e@ytevarsym1\n@ModStr3y\n20% @yte1k5u\n+280-330% @yte1k2w@ytevarsym1\n+20% @yte1k3h\n@ModStr4a\n@ModStr1y\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@amb / @6cb /@hbw\n@yteruneworth\n@rw1r5m",
+    "Tooltipyte1r5n": "@yte1r5n\n@ytecyc5@ytebswd / @ytebpom\n@ytecyc4@RuneQuote@r26L@r28L@r30L@r31L@r18L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1e 23% @yte4k2e 12 @yte3k2e@Skillname245@yte4k4e\n@yte4k1e 5% @yte4k2e 23 @yte3k2e@Skillname230@yte4k4e\n@yte4k1d 15% @yte4k2d 22 @yte3k2e@skillname48@yte4k4d\n@yte4k1a 45 @yte3k2e@skillname56@yte4k4a\n+350% @yte1k4e\n@ModStr3y\n@yte2k1w 100-180 @yte2k2z\n@yte2k1h 7% @yte2k2h\n+20% @yte1k3h\n+20% @yte1k3t\n@ModStr4a\n+10 @yte1k1j\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r5o": "@yte1r5o\n@ytebmis\n@ytecyc4@RuneQuote@r27L@r31L@r20L@r02L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte3k1e 12-15 @yte3k2e@skillname122@yte3k3e@ytevarsym1\n+1-2 @yte1k2r@ytevarsym1\n+330% @yte1k4e\n@ModStr3y\n300% @yte1k5u\n+75% @yte1k2x\n+50 @yte1k3b\n@yte2k1v +15 @yte2k2v\n10% @yte1k5n@Returned\n@yte2k3h 75% @yte2k4h\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@amc / @amb / @6lb\n@yteruneworth\n@rw1r5o",
+    "Tooltipyte1r5p": "@yte1r5p\n@ytecyc5@ytebaxe / @ytebhmr\n@ytecyc4@RuneQuote@r19L@r27L@r09L@r31L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte2k1o +30% @yte2k2o\n+320-370% @yte1k4e@ytevarsym1\n@ModStr3y\n@yte2k1w 180-200 @yte2k2z\n@yte2k1w 50-200 @yte2k2w\n@yte2k1w 51-250 @yte2k2y\n@yte2k1w 50-200 @yte2k2x\n@yte2k1h 12% @yte2k2i\n@ModStr4a\n+10 @yte1k1i\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @yteuseless2\n@yteusefulindex\n@yte0star\n@ytebrecomm\n - \n@yteruneworth\n@rw1r4h",
+    "Tooltipyte1r5q": "@yte1r5q\n@ytebmel\n@ytecyc4@RuneQuote@r31L@r25L@r05L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte2k1o +40% @yte2k2o\n+209% @yte1k4e\n@ModStr3y\n-25% @yte1k3s\n20% @yte1k5u\n@yte2k1h 6% @yte2k2i\n+33% @yte1k3t\n+66% @yte1k2s\n+5 @yte1k6b@skillname147@BarOnly\n@ModStr4a\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte1star\n@ytebrecomm\n@ytethebest@7ar / @7qr\n@yteruneworth\n@rw1r5q",
+    "Tooltipyte1r5r": "@yte1r5r\n@ytebmis\n@ytecyc4@RuneQuote@r11L@r13L@r31L@r28L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1b 40 @yte3k2e@skillname59@yte4k4b\n@yte4k1e 25% @yte4k2e 22 @yte3k2e@skillname44@yte4k4e\n@yte3k1e 18 @yte3k2e@skillname114@yte3k1d@yte3k3e\n@yte2k1o +20% @yte2k2o\n+140-210% @yte1k4e@ytevarsym1\n@ModStr3y\n@yte2k1h 7% @yte2k2i\n@yte2k3d -20% @yte2k4d\n+25-30% @yte1k5p@ytevarsym1\n+20% @yte1k3t\n@yte2k3h 3-309% @yte2k4h@ModStre9c [3.125*clvl]\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@amb\n@yteruneworth\n@rw1r5r",
+    "Tooltipyte1r5s": "@yte1r5s\n@ytecyc5@ytebswd / @ytebaxe / @ytebhmr\n@ytecyc4@RuneQuote@r31L@r23L@r31L@r29L@r31L@r30L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1e 10% @yte4k2e 18 @yte3k2e@skillname82@yte4k4e\n@yte4k1d 20% @yte4k2d 20 @yte3k2e@skillname38@yte4k4d\n@yte4k1f 6% @yte4k2f 11 @yte3k2e@Skillname268@yte4k4f\n@yte3k1e 17 @yte3k2e@skillname98@yte3k3e\n+330-375% @yte1k4e@ytevarsym1\n@ModStr3y\n+60-70% @yte1k3h@ytevarsym1\n@ModStr4a\n@ModStr6d\n@yte2k3i 0-49% @yte2k4i@ModStre9c [0.5*clvl]\n@yte6soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7cr\n@yteruneworth\n@rw1r5s",
+    "Tooltipyte1r2hw": "@yte1r2h\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r26L@r26L@r28L@r31L@RuneQuote\n@yte1k1e 65@ytecyc3\n@yte4k1b 40 @yte3k2e@skillname46@yte4k4b\n@yte4k1e 40% @yte4k2e 22 @yte3k2e@Skillname226@yte4k4e\n@yte3k1e 10-15 @yte3k2e@skillname124@yte3k3e@ytevarsym1\n+350-400% @yte1k4e@ytevarsym1\n@ModStr3y\n@yte2k1h 14% @yte2k2h\n@yte2k3e -28% @yte2k4e\n+20% @yte1k3t\n+350-400 @yte1k3z@ytevarsym1\n+15-21 @yte1k3k@ytevarsym1\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@7cr / @amb\n@yteruneworth\n@rw1r2hs",
+    "Tooltipyte1r5t": "@yte1r5t\n@ytecyc5@ytebaxe / @ytebhmr / @ytebpom\n@ytecyc4@RuneQuote@r15L@r27L@r22L@r28L@r32L@RuneQuote\n@yte1k1e 67@ytecyc3\n@yte4k1e 5% @yte4k2e 18 @yte3k2e@Skillname245@yte4k4e\n@yte3k1e 12 @yte3k2e@skillname114@yte3k3e\n+2 @yte1k2r\n@yte2k1o +45% @yte2k2o\n+330-370% @yte1k4e@ytevarsym1\n@yte2k3d-40-60% @yte2k4d@ytevarsym1\n+20% @yte1k3t\n+25% @yte1k2s\n@ModStr4a\n@ModStr3l +3\n@yte1k2p -20%\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7wa / @2ax\n@yteruneworth\n@rw1r5t",
+    "Tooltipyte1r5u": "@yte1r5u\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r29L@r32L@r11L@r28L@RuneQuote\n@yte1k1e 67@ytecyc3\n@yte4k1b 36 @yte3k2e@skillname46@yte4k4b\n@yte4k1a 48 @yte3k2e@skillname56@yte4k4a\n@yte3k1e 16 @yte3k2e@skillname102@yte3k3e\n@yte2k1o +33% @yte2k2o\n+280-330% @yte1k4e@ytevarsym1\n@ModStr3y\n@yte2k1h 7% @yte2k2i\n@yte2k3e -20% @yte2k4e\n+20% @yte1k3t\n@ModStr6d\n@ModStr3l +3\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@7cr / @amb\n@yteruneworth\n@rw1r5u",
+    "Tooltipyte1r5v": "@yte1r5v\n@ytebmis\n@ytecyc4@RuneQuote@r32L@r13L@r25L@r10L@r06L@RuneQuote\n@yte1k1e 67@ytecyc3\n@yte3k1e 8-12 @yte3k2e@skillname113@yte3k3e@ytevarsym1\n+3 @yte1k2r\n@yte2k1o +20% @yte2k2o\n+100% @yte1k4c\n+325-375% @yte1k4e@ytevarsym1\n+9 @yte1k1n\n20% @yte1k5u\n@yte2k1w 3-14 @yte2k2x\n@ModStr3l +3\n+24 @yte1k1k\n@yte2k1v +40 @yte2k2v\n@yte5soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte2star\n@ytebrecomm\n@ytethebest@amb / @amc\n@yteruneworth\n@rw1r5v",
+    "Tooltipyte1r5w": "@yte1r5w\n@ytecyc5@ytebswd / @ytebdgr / @ytebclw\n@ytecyc4@RuneQuote@r32L@r13L@r22L@RuneQuote\n@yte1k1e 67@ytecyc3\n@yte4k1e 25% @yte4k2e 15 @yte3k2e@skillname92@yte4k4e\n@yte4k1f 20% @yte4k2f 12 @yte3k2e@skillname91@yte4k4f\n@yte3k1e 13-17 @yte3k2e@skillname109@yte3k3e@ytevarsym1\n+1-2 @yte1k2r@ytevarsym1\n@yte2k1o +20% @yte2k2o\n+220-320% @yte1k4e@ytevarsym1\n@yte2k3g -23% @yte2k4g\n+0-37% @yte1k3t@ModStre9c [0.375*clvl]\n+25% @yte1k2s\n@ModStr3l +3\n@yte3soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7cr / @7wd\n@yteruneworth\n@rw1r5w",
+    "Tooltipyte1r5x": "@yte1r5x\n@ytecyc5@ytebpom / @ytebspr\n@ytecyc4@RuneQuote@r32L@r29L@r16L@r28L@RuneQuote\n@yte1k1e 67@ytecyc3\n@yte4k1f 25% @yte4k2f 17 @yte3k2e@skillname51@yte4k4f\n@yte3k1e 16-20 @yte3k2e@skillname113@yte3k3e@ytevarsym1\n260-300% @yte1k5u@ytevarsym1\n+1-99% @yte1k2w@ModStre9c [1*clvl]\n@yte2k1w 50-280 @yte2k2y\n+20% @yte1k3t\n@ModStr6d\n@ModStr3l +3\n+10 @yte1k1k\n@yte1k2f +8\n@yte2k3h 1-185% @yte2k4h@ModStre9c [1.875*clvl]\n@yte4soc\n@ytedividerxl\n@yteiass\n@yte3ji\n@yteusefulindex\n@yte3star\n@ytebrecomm\n@ytethebest@7wc / @7s8 / @7br\n@yteruneworth\n@rw1r5x",
+    "Tooltipyte1r5y": "@yte1r5y\n@ytecyc5@ytebwpn\n@ytecyc4@RuneQuote@r26L@r15L@r01L@r02L@r33L@r05L@RuneQuote\n@yte1k1e 69@ytecyc3\n@ModStre9s\n@yte4k1c 50% @yte4k2c 20 @yte3k2e@skillname92@yte4k4c\n@yte2k1o +60% @yte2k2o\n+350-400% @yte1k4e@ytevarsym1\n-25% @yte1k3s\n+50 @yte1k1p\n+200% @yte1k2x\n+50 @yte1k3b\n@yte2k1h 7% @yte2k2h\n@yte2k1h 12-15% @yte2k2i@ytevarsym1\n@ModStr4a\n+30 @yte1k5k\n@yte2k1j +1 @yte2k2j\n@yte1k2p -20%\n@yte6soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@7gd / @7wa / @6ws\n                @7p7 / @7h7 / @6lw\n@yteruneworth\n@rw1r5y",
+    "Tooltipyte1r5z": "@yte1r5z\n@ytecyc5@ytebstv\n@ytecyc4@RuneQuote@r33L@r24L@r20L@r17L@r16L@r04L@RuneQuote\n@yte1k1e 69@ytecyc3\n@ModStre9s\n@yte4k1f 24% @yte4k2f 10 @yte3k2e@skillname72@yte4k4f\n+4 @yte1k2r\n+65% @yte1k3e\n+60% @yte1k3c\n@ModStr1y\n+10 @yte1k1k\n+10 @yte1k1l\n@yte2k1e 15-25% @yte2k2e@ytevarsym1\n@yte2k1n 15-30% @yte2k2n@ytevarsym1\n@yte2k1v +60-70 @yte2k2v@ytevarsym1\n@yte2k3h 75% @yte2k4h\n@yte2k3i 30% @yte2k4i\n@yte6soc\n@ytedividerxl\n@yteiass\n@yte3ji  @ytehot1\n@yteusefulindex\n@yte4star\n@ytebrecomm\n@ytethebest@6ws / @8ws / @wst\n@yteruneworth\n@rw1r5z",
+	"Tooltipyte1r6a": "@yte1r6a\n@yterotwonly\n@ytecyc5@ytebdgr\n@ytecyc4@RuneQuote@r10L@r33L@r24L@RuneQuote\n@yte1k1e 69@ytecyc3\n@ModStre9s\n+2 @yte1k2r\n+40% @yte1k3e\n+10-15% @yte1k7d@ytevarsym1\n+1-3 @yte1k6b@AbyssName@ytevarsym1\n+8-12 @yte1k5k@ytevarsym1\n@yte3k1g 4 @yte3k2e@skillname87@ModStre10e 35 @yte3k3g\n@yte2k1w 3-14 @yte2k2x\n@yte2k3i 30% @yte2k4i\n@yte3soc\n@ytedividerxl\n@yteiass\n\n@yteusefulindex\n\n@ytebrecomm\n\n@yteruneworth\n",
+}

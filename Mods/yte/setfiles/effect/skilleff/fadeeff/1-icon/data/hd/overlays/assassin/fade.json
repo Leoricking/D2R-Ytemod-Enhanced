@@ -1,0 +1,62 @@
+﻿{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/missiles/high_priest_lightning/highpriestlightning_fx.particles"
+            },
+            {
+                "path": "data/hd/vfx/particles/overlays/common/baal_on_throne/baalshield.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/gradient/T_FX_flame_gradient.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/gradient/T_FX_flame_gradient_09.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "baal_on_throne",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 2381333979,
+            "components": []
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 992020576,
+            "components": [
+                //페이드 이펙트 아이콘 스킨
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/common/fade/fade_icon.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 126.0,
+                        "y": 98.0,
+                        "z": 126.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

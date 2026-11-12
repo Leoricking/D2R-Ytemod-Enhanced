@@ -1,0 +1,199 @@
+{
+    "basedOn": "ChronicleBaseListPanelHD.json",
+    "type": "ChronicleSetsListPanel", "name": "ChronicleSetsListPanel",
+    "children": [
+		{
+            "type": "GrowableImageWidget", "name": "InputBackground",
+			"children": [
+				{
+					"type": "InputTextBoxWidget", "name": "SearchInput",
+				}
+			],
+        },
+		{
+			"type": "StackWidget", "name": "QualityStack",
+			"children": [
+				{
+					"type": "ToggleButtonWidget", "name": "NormalQualityCheck",
+				},
+				{
+					"type": "TextBoxWidget", "name": "NormalQualityText",
+				},
+				{
+					"type": "Widget", "name": "spacer",
+				},
+				{
+					"type": "ToggleButtonWidget", "name": "ExceptionalQualityCheck",
+				},
+				{
+					"type": "TextBoxWidget", "name": "ExceptionalQualityText",
+				},
+				{
+					"type": "Widget", "name": "spacer",
+				},
+				{
+					"type": "ToggleButtonWidget", "name": "EliteQualityCheck",
+				},
+				{
+					"type": "TextBoxWidget", "name": "EliteQualityText",
+				},
+			]
+		},
+		{
+			"type": "DropdownListWidget", "name": "FilterRules",
+		},
+        {
+            "type": "ImageWidget", "name": "TypeScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "TypeScrollController",
+                }
+            ]
+        },
+        {
+            "type": "FocusableListContainerWidget", "name": "TabScrollViewContainer",
+            "children": [
+                {
+                    "type": "ChronicleRecyclingListWidget", "name": "TabListContainer",
+                    "children": [
+                        {
+                            "type": "ChronicleCategoryListItem", "name": "CategoryTabTemplate",
+                            "children": [
+                                {
+                                    "type":"Widget", "name":"StandaloneCategoryContainerWidget",
+                                    "children":[
+                                        {
+                                            "type": "ToggleButtonWidget", "name": "CategoryButton",
+                                            "children":[
+                                                {
+                                                    "type":"TextBoxWidget", "name": "CategoryText",
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "TabListSelector"
+                        }
+                    ]
+                },
+            ]
+        },
+                
+        {
+            "type": "ImageWidget", "name": "ItemScrollBarBackground",
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ItemScrollController",
+                }
+            ]
+        },
+        {
+            "type": "FocusableListContainerWidget", "name": "ItemScrollViewContainer",
+            "children": [
+                { 
+                    "type": "ChronicleRecyclingListWidget", "name": "ItemListContainer",
+                    "children": [
+                        {
+                            "type": "ChronicleItemListItem", "name": "ItemSlotTemplate",                            
+                            "children": [
+                                {
+                                    "type": "ImageWidget", "name": "ItemSlotBackground_Subtab_Locked",
+                                    "children":[
+                                        {
+                                            "type": "Widget", "name": "ItemSpriteContainer",
+                                            "children":[
+                                                {
+                                                    "type": "ImageWidget", "name": "ItemSprite",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotText",
+											"fields": {
+												"style": {
+													"options": { "lineWrap": true, "pipeCharacterBehavior": "handle" },
+												},
+											}
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "ItemSlotBackground_Subtab_Unlocked",
+                                    "children":[
+                                        {
+                                            "type": "Widget", "name": "ItemSpriteContainer",
+                                            "children":[
+                                                {
+                                                    "type": "ImageWidget", "name": "ItemSprite",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotText",
+											"fields": {
+												"style": {
+													"options": { "lineWrap": true, "pipeCharacterBehavior": "handle" },
+												},
+											}
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotSpawnerName",
+                                        },
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotTimestamp",
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ImageWidget", "name": "TabSlotBackground",
+                                    "children":[
+                                        {
+                                            "type": "TextBoxWidget", "name": "ItemSlotText",
+											"fields": {
+												"style": {
+													"alignment": { "h": "center", "v": "center" },
+													"options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+												},
+											}
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ToggleButtonWidget", "name": "TabExpandButton",
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "ItemListSelector"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "CompletionContainer",
+            "children":[
+                {
+                    "type":"TextBoxWidget", "name": "CompletionText",
+                },
+                {
+                    "type":"ImageWidget", "name": "FillBg",
+                },
+                {
+                    "type": "ProgressBarWidget", "name": "ChronicleCompletionProgressBar",
+                }
+            ]
+        },
+        {
+            "type": "ToggleButtonWidget", "name": "RewardsButton",
+            "children":[
+                {
+                    "type":"TextBoxWidget", "name": "RewardsButtonText"
+                }
+            ]
+        }
+    ]
+}

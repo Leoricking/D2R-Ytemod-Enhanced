@@ -1,0 +1,112 @@
+{
+	//"basedOn": "DdbconsolefolderHD.json",
+    "type": "UKComplianceModal", "name": "Ddbconsolefolder",
+    "fields": {
+		"drawTint": false,
+		"priority": 10,
+        "anchor": { "x": 0.5, "y": 1 },
+        "isDismissable": true,//false
+		"defaultWidget": "BocButton"
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "BGClickCatcher",
+            "fields": {
+                "rect": { "x": -310, "y": -400, "width": 626, "height": 98 }
+            }
+        },
+		{
+			"type": "NineTileImageWidget", "name": "YteTitleBox",
+			"fields": {
+				"rect": { "x": -310, "y": -400, "width": 626, "height": 98 },
+				"filename": "PANEL/TooltipBorder/TooltipBorder",
+				"backgroundColor": [ 0.0, 0.0, 0.0, 0.60 ],
+				"tileScale": 0.3,
+			},
+			"children": [
+				{
+					"type": "ButtonWidget",
+					"name": "ItemupdateButton",
+					"fields":
+					{
+						"rect": { "x": 40, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\iupbtn",
+						"tooltipString": "$Tooltipyteitemupgqq",
+						"hoveredFrame": 2,
+						"pressedFrame": 1,
+						"navigation": {
+							"left": { "name": "RwButton" },
+							"right": { "name": "FixButton" },
+						}
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "FixButton",
+					"fields":
+					{
+						"rect": { "x": 157, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\fixbtn",
+						"tooltipString": "$Tooltipyteitemrepairqq",
+						"hoveredFrame": 2,
+						"pressedFrame": 1,
+						"navigation": {
+							"left": { "name": "ItemupdateButton" },
+							"right": { "name": "BocButton" },
+						}
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "BocButton",
+					"fields":
+					{
+						"rect": { "x": 274, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\bocbtn",
+						"tooltipString": "@0sc",
+						"onClickMessage": "PanelManager:TogglePanel:OnlineGameSettingsPanel",
+						"hoveredFrame": 2,
+						"pressedFrame": 1,
+						"navigation": {
+							"left": { "name": "FixButton" },
+							"right": { "name": "AddsocktsButton" },
+						}
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "AddsocktsButton",
+					"fields":
+					{
+						"rect": { "x": 391, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\adsocbtn",
+						"tooltipString": "$Tooltipyteaddsocqq",
+						"hoveredFrame": 2,
+						"pressedFrame": 1,
+						"navigation": {
+							"left": { "name": "BocButton" },
+							"right": { "name": "RwButton" },
+						}
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "RwButton",
+					"fields":
+					{
+						"rect": { "x": 508, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\rwbtn",
+						"tooltipString": "$Tooltipyterwqq",
+						"tooltipStyle": "$YtemodLeftToolTipStyle",
+						"hoveredFrame": 2,
+						"pressedFrame": 1,
+						"navigation": {
+							"left": { "name": "AddsocktsButton" },
+							"right": { "name": "ItemupdateButton" },
+						}
+					}
+				},
+			]
+		},
+    ]
+}

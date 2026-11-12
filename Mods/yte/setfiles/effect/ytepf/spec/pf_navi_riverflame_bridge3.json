@@ -1,0 +1,155 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [],
+    "skeletons": [],
+    "animations": [],
+    "textures": [],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "Prefab",
+  "name": "pf_navi_riverflame_bridge3",
+  "entities": [
+
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 992020577,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/ajae_light/particles/ajae_light_r01.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 124,
+            "y": 20,
+            "z": 217
+          },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 992020577,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/ajae_light/particles/ajae_light_r01.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 64,
+            "y": 20,
+            "z": 147
+          },
+          "orientation": {
+            "x": 0.3548,
+            "y": 0.0,
+            "z": 0.3548,
+            "w": -0.865
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 992020577,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/ajae_light/particles/ajae_light_r01.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 84,
+            "y": 20,
+            "z": 67
+          },
+          "orientation": {
+            "x": 0.5,
+            "y": 0.0,
+            "z": 0.5,
+            "w": -0.7071
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 992020577,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/ajae_light/particles/ajae_light_r01.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position": {
+            "x": 144,
+            "y": 20,
+            "z": 42
+          },
+          "orientation": {
+            "x": 0.3548,
+            "y": 0.0,
+            "z": 0.3548,
+            "w": -0.865
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    }
+]
+}

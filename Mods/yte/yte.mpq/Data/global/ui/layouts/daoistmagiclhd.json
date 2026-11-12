@@ -1,0 +1,119 @@
+{
+	"type": "Panel", "name": "DaoistMagicl",
+    "fields": {
+		"drawTint": false,
+		"priority": 110,
+        "anchor": { "x": 0.5, "y": 1 },
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "BGClickCatcher",
+            "fields": {
+                "rect": { "x": -16, "y": -310, "width": 818, "height": 98 }
+            }
+        },
+		{
+			"type": "NineTileImageWidget", "name": "YteTitleBox",
+			"fields": {
+				"rect": { "x": -16, "y": -310, "width": 818, "height": 98 },
+				"filename": "PANEL/TooltipBorder/TooltipBorder",
+				"backgroundColor": [ 0.0, 0.0, 0.0, 0.60 ],
+				"tileScale": 0.3,
+			},
+			"children": [
+				{
+					"type": "ButtonWidget",
+					"name": "MiniHealthBar",
+					"fields":
+					{
+						"rect": { "x": 30, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\minihpbtn",
+						"tooltipString": "@yteminihp",
+						"onClickMessage": "PanelManager:TogglePanel:FuncMiniHPBar",
+						"hoveredFrame": 2,
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "CharStatsData",
+					"fields":
+					{
+						"rect": { "x": 144, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\charstbtn",
+						"tooltipString": "@ytecharstats",
+						"onClickMessage": "PanelManager:TogglePanel:FuncCharStats",
+						"hoveredFrame": 2,
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "WpnSwap",
+					"fields":
+					{
+						"rect": { "x": 258, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\wpnbtnb",
+						"tooltipString": "@yteweaponswapbtnstr",
+						"onClickMessage": "PanelManager:TogglePanel:UI_New_WeaponSwap",
+						"hoveredFrame": 2,
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "HireStatsData",
+					"fields":
+					{
+						"rect": { "x": 372, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\hirestbtn",
+						"tooltipString": "@ytehirestats",
+						"onClickMessage": "PanelManager:TogglePanel:FuncHireStats",
+						"hoveredFrame": 2,
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "FriendsListBtn",
+					"fields":
+					{
+						"rect": { "x": 486, "y": 13, "scale": 0.8 },
+						"filename": "Lobby\\Final\\Friends_Button",
+						"tooltipString": "@ytefriendslistbtn",
+						"onClickMessage": "PanelManager:TogglePanel:FriendsListButton",
+						"hoveredFrame": 2,
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "EmergencyBank",
+					"fields":
+					{
+						"rect": { "x": 600, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\stashbtn",
+						"tooltipString": "@ytetempstash",
+						"onClickMessage": "PanelManager:TogglePanel:FuncBank",
+						"hoveredFrame": 2,
+					}
+				},
+				{
+					"type": "ButtonWidget",
+					"name": "MiniCube",
+					"fields":
+					{
+						"rect": { "x": 714, "y": 13, "scale": 0.8 },
+						"filename": "Ytepic\\Funcbtn\\cubebtn",
+						"tooltipString": "@mod51096gameguidetxt1",
+						"onClickMessage": "PanelManager:TogglePanel:FuncMiniCube",
+						"hoveredFrame": 2,
+					}
+				},
+			]
+		},
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 5,
+                "message": "PanelManager:ClosePanel:DaoistMagicl"
+            }
+        }
+    ]
+}

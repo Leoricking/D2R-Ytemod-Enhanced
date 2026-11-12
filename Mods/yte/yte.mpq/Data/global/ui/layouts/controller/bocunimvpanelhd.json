@@ -1,0 +1,2323 @@
+{
+    "basedOn": "BocUniMVPanelHD.json",
+    "type": "SettingsPanel", "name": "BocUniMVPanel",
+    "fields": {
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5, "y": 0 },
+        "defaultWidget": "Yteamulet"
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                        //"focusOnMouseOver": false,
+                        //"focusIndicatorVisible": false,
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "YteTitleBox",
+                    "fields": {
+                        "rect": { "x": 220, "y": 30, "width": 1200, "height": 92 },
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.2, 0.1, 0.0, 0.20 ],
+                        "tileScale": 1.0,
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "Title",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 1200, "height": 92 },
+                                    "style": {
+                                        "fontColor": "$FontColorGoldYellow",
+                                        "alignment": { "h": "center", "v": "center" },
+                                        "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                                        "pointSize": "$LargeFontSize",
+                                        "spacing": "$DefaultSpacing",
+                                    },
+                                    "text": "@yteunimisc",
+                            }
+                        },
+                    ]
+                },
+                {//160  護身符
+                    "type": "Widget",
+                    "name": "YteWidgetAmuletA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 160
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetAmuletB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextAmulet",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteiamulet",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "Yteamulet",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "Ytering" },
+											//"up": { "name": "Anch001" },
+											"down": { "name": "Uam01" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {//40  y+60
+                            "type": "Widget",
+                            "name": "YteUam01",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 40
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam01",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Yteamulet" },
+											"down": { "name": "Uam02" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "10 @yte4u1a",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam02",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 100
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam02",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam01" },
+											"down": { "name": "Uam03" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "15 @yte4u1b",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam03",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 160
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam03",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam02" },
+											"down": { "name": "Uam04" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "25 @yte4u1c",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam04",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 220
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam04",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam03" },
+											"down": { "name": "Uam05" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "47 @yte4u1d",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam05",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 280
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam05",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam04" },
+											"down": { "name": "Uam06" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "50 @yte4u1e",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam06",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 340
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam06",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam05" },
+											"down": { "name": "Uam07" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "50 @yte4u1f",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam07",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 400
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam07",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam06" },
+											"down": { "name": "Uam08" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "54 @yte4u1m",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam08",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 460
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam08",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam07" },
+											"down": { "name": "Uam09" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "60 @yte4u1g",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam09",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 520
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam09",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam08" },
+											"down": { "name": "Uam10" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "65 @yte4u1h",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam10",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 580
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam10",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam09" },
+											"down": { "name": "Uam11" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "65 @yte4u1i",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam11",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 640
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam11",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam10" },
+											"down": { "name": "Uam12" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "65 @yte4u1j",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam12",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 700
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam12",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam11" },
+											"down": { "name": "Uam13" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "67 @yte4u1k",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUam13",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 760
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uam13",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytering" },
+											"up": { "name": "Uam12" },
+											"down": { "name": "Ytering" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "81 @yte4u1l",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {//1010  戒指
+                    "type": "Widget",
+                    "name": "YteWidgetRingA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1070
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetRingB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextRing",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteiring",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "Ytering",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Yteamulet" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uam12" },
+											"down": { "name": "Uri01" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {//40  y+60
+                            "type": "Widget",
+                            "name": "YteUri01",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 40
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri01",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Ytering" },
+											"down": { "name": "Uri02" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "  7 @yte4u2a",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri02",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 100
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri02",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri01" },
+											"down": { "name": "Uri03" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "15 @yte4u2b",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri03",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 160
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri03",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri02" },
+											"down": { "name": "Uri04" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "29 @yte4u2c",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri04",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 220
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri04",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri03" },
+											"down": { "name": "Uri05" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "45 @yte4u2d",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri05",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 280
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri05",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri04" },
+											"down": { "name": "Uri06" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "45 @yte4u2e",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri06",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 340
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri06",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri05" },
+											"down": { "name": "Uri07" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "50 @yte4u2j",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri07",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 400
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri07",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri06" },
+											"down": { "name": "Uri08" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "50 @yte4u2k",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri08",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 460
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri08",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri07" },
+											"down": { "name": "Uri09" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "58 @yte4u2f",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri09",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 520
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri09",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri08" },
+											"down": { "name": "Uri10" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "60 @yte4u2g",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri10",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 580
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri10",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri09" },
+											"down": { "name": "Uri11" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "69 @yte4u2h",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUri11",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 640
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uri11",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytecharm" },
+											"up": { "name": "Uri10" },
+											"down": { "name": "Ytecharm" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "76 @yte4u2i",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {//1680  咒符
+                    "type": "Widget",
+                    "name": "YteWidgetCharmA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1860
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetCharmB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextCharm",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteicharm",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "Ytecharm",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytering" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uri09" },
+											"down": { "name": "Uch01" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {//40  y+60
+                            "type": "Widget",
+                            "name": "YteUch01",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 40
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch01",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Ytecharm" },
+											"down": { "name": "Uch02" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "62 @yte4u3a",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch02",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 100
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch02",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch01" },
+											"down": { "name": "Uch03" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "70 @yte4u3b",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch03",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 160
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch03",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch02" },
+											"down": { "name": "Uch04" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3c",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch04",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 220
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch04",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch03" },
+											"down": { "name": "Uch05" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3d",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch05",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 280
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch05",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch04" },
+											"down": { "name": "Uch06" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3e",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch06",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 340
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch06",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch05" },
+											"down": { "name": "Uch07" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3f",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch07",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 400
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch07",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch06" },
+											"down": { "name": "Uch08" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3g",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch08",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 460
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch08",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch07" },
+											"down": { "name": "Uch09" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3h",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUch09",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 520
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uch09",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Ytejewel" },
+											"up": { "name": "Uch08" },
+											"down": { "name": "Ytejewel" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u3i",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {//2350  珠寶
+                    "type": "Widget",
+                    "name": "YteWidgetJewelA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2530
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetJewelB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextJewel",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteijewel",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "Ytejewel",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytecharm" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uch09" },
+											"down": { "name": "Uje01" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {//40  y+60
+                            "type": "Widget",
+                            "name": "YteUje01",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 40
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje01",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Ytejewel" },
+											"down": { "name": "Uje02" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4a",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje02",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 100
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje02",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje01" },
+											"down": { "name": "Uje03" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4b",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje03",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 160
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje03",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje02" },
+											"down": { "name": "Uje04" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4c",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje04",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 220
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje04",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje03" },
+											"down": { "name": "Uje05" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4d",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje05",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 280
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje05",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje04" },
+											"down": { "name": "Uje06" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4e",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetC",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 340
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje06",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje05" },
+											"down": { "name": "Uje07" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4f",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje07",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 400
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje07",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje06" },
+											"down": { "name": "Uje08" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4g",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje08",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 460
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje08",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje07" },
+											"down": { "name": "Uje09" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "49 @yte4u4h",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje09",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 520
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje09",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje08" },
+											"down": { "name": "Uje10" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u4i",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje10",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 580
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje10",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje09" },
+											"down": { "name": "Uje11" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u4j",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje11",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 640
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje11",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje10" },
+											"down": { "name": "Uje12" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u4k",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje12",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 700
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje12",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje11" },
+											"down": { "name": "Uje13" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u4l",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje13",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 760
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje13",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje12" },
+											"down": { "name": "Uje14" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u4m",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "YteUje14",
+                            "fields": {
+                                "rect": {
+                                    "x": 10,
+                                    "y": 820,
+                                    "height": 70,
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget",
+									"name": "Uje14",
+									"fields": {
+										"rect": {
+											"x": -25,
+											"y": 5,
+											"scale": 0.87
+										},
+										"filename": "PANEL\\message\\tab2",
+										"focusIndicatorFilename": "PANEL/message/tab2",
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "Ytejewel" },
+											"right": { "name": "Close" },
+											"up": { "name": "Uje13" },
+											"down": { "name": "Close" }
+										}
+									}
+								},
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTitleA",
+                                    "fields": {
+                                        "rect": "$BocItemNameConsoleWidgetRect",
+                                        "text": "75 @yte4u4n",
+                                        "style": "$BocTextBoxWidgetStyle"
+                                    },
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih888",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3450, "width": 1800, "height": 60 },
+                    }
+                },
+            ]
+        },
+    ]
+}

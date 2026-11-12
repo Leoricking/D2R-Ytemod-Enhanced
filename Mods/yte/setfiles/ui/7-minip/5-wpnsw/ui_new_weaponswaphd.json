@@ -1,0 +1,57 @@
+{
+    "type": "PlayerInventoryPanel", "name": "UI_New_WeaponSwap",
+    "fields": {
+        "priority": -10,
+        "rect": { "x": 20, "y": -500 },
+        "anchor": {
+            "x": 0.5,
+            "y": 1
+        },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "background_right_arm_selected",
+            "fields": {
+                "rect": { "x": -72, "y": 0, "scale": 0.65 },
+                "filename": "PANEL\\Inventory\\weapon_swap",/*   此行开头加 // 可以屏蔽主手图标显示   */
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "background_right_arm",
+            "fields": {
+                "rect": { "x": -72, "y": 0, "scale": 0.65 },
+                "filename": "PANEL\\Inventory\\weapon_swap",/*   此行开头加 // 可以屏蔽副手图标显示   */
+                "frame": 1,
+            },
+			//      /*  //去除最前面的双斜杠以及倒数第四行的最前面的双斜杠可以屏蔽文字提示！需要同时去除！
+			"children": [
+				{
+					"type": "NineTileImageWidget", "name": "WeaponSwapTip",
+					"fields": {
+						"rect": { "x": -480, "y": -180, "width": 780, "height": 70, "scale": 1.5 },
+						"filename": "PANEL/TooltipBorder/TooltipBorder0",
+						"backgroundColor": [ 0.0, 0.0, 0.0, 0.50 ],
+						"tileScale": 0.35,
+					},
+					"children": [
+						{
+							"type": "TextBoxWidget", "name": "Title",
+							"fields": {
+								"rect": { "x": 0, "y": 4, "width": 780, "height": 70 },
+								"style": {
+									"fontColor": "$FontColorGreen",
+									"alignment": { "h": "center", "v": "center" },
+									"options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+									"pointSize": "$LargeFontSize",
+									"spacing": "$DefaultSpacing",
+								},
+								"text": "@yteweaponswaptipstr", 
+							}
+						},
+					]
+				},
+			]
+			//       */    //去除最前面的双斜杠以及倒数第 26 行最前面的双斜杠可以屏蔽文字提示！需要同时去除！
+        },
+    ]
+}

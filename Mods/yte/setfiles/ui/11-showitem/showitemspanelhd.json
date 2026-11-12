@@ -1,0 +1,17 @@
+{
+  "type": "ShowItemsPanel", "name": "ShowItemsPanel",
+  "fields": {
+    "priority": -10,
+        "anchor": { "x": 1, "y": 1 },
+    "showDurationMilliseconds": 10000,
+  },
+  "children": [
+	{
+		"type": "ImageWidget", "name": "showitems_icon",
+		"fields": {
+			"rect": { "x": -65, "y": -65, "scale": 1.5 },
+			"filename": "PANEL\\Party\\EyeBTN",
+		}
+	}
+  ]
+}

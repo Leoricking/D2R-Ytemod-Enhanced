@@ -1,0 +1,63 @@
+{
+    "type": "HoradricCubePanel", "name": "MiniCubeLayoutsd",
+    "fields": {
+        "priority": 10,
+        "rect": { "x": -320, "y": -240, "width": 87, "height": 115 },
+        "anchor": { "x": 1, "y": 0.5 },
+    },
+    "children": [
+	
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+            "fields": {
+                //"rect": { "width": 320, "height": 432 }
+            },
+        },
+		
+        {
+            "type": "GridImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\supertransmogrifier",
+				"rect": { "x": 229, "y": 252 },
+                //"frames": 4,
+                //"rows": 2,
+            },
+        },
+		/*
+        {
+            "type": "ButtonWidget", "name": "convert",
+            "fields": {
+                //"rect": { "x": 144, "y": 260 },
+				"rect": { "x": 288, "y": 372 },
+                "filename": "PANEL\\miniconvert",
+                "tooltipString": "@strUiMenu2",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "HoradricCubePanelMessage:Convert",
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                //"rect": { "x": 275, "y": 383 },
+				"rect": { "x": 288, "y": 220 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "PanelManager:ClosePanel:MiniCubeLayoutsd",
+            },
+        },
+		*/
+        {
+            "type": "InventoryGridWidget", "name": "grid",
+            "fields": {
+                //"rect": { "x": 118, "y": 139 },
+				"rect": { "x": 232, "y": 255 },
+                "cellCount": { "x": 3, "y": 4 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+    ]
+}

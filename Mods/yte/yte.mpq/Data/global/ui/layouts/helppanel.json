@@ -1,0 +1,472 @@
+{
+    "type": "HelpPanel", "name": "HelpPanel",
+    "fields": {
+        "rect": { "x": -390, "y": 30, "width": 780, "height": 480 },
+        "anchor": { "x": 0.5, "y": 0.0 },
+        "priority": 300
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "fitToParent": true
+            }
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageTitle",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 780, "height": 35 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.8 ]
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "fitToParent": true,
+                        "text": "@0scmsgp",
+                        "style": {
+                            "fontColor": { "r": 199, "g": 179, "b": 119, "a": 255 },
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard" }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 36, "width": 780, "height": 400 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.8 ]
+            },
+            "children": [
+                {
+                    "type": "ScrollViewWidget", "name": "ScrollView",
+                    "fields": {
+                        "fitToParent": true,
+                        "isHoverList": false,
+                        "direction": "vertical",
+                        "scrollControllerName": "ScrollBar",
+                    },
+                    "children": [
+                        {
+                            "type": "ListItemWidget", "name": "MessageaTemplate",
+                            "fields": {
+                                "rect": { "x": 10, "y": 10, "width": 725, "height": 4000 },
+                                "focusOnMouseOver": false,
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 350, "height": 20 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecubemain",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 30, "width": 350, "height": 20 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytegemstf",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 70, "width": 325, "height": 20 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yterunestf",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 90, "width": 325, "height": 160 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecyc8@r02L@ytetran@r01L@ytex3\n@r03L@ytetran@r02L@ytex3\n@r04L@ytetran@r03L@ytex3\n@r05L@ytetran@r04L@ytex3\n@r06L@ytetran@r05L@ytex3\n@r07L@ytetran@r06L@ytex3\n@r08L@ytetran@r07L@ytex3\n@r09L@ytetran@r08L@ytex3\n@r10L@ytetran@r09L@ytex3",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 255, "width": 325, "height": 100 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecyc8@r11L@ytetran@r10L@ytex3n@gcy\n@ytecyc8@r12L@ytetran@r11L@ytex3n@gcv\n@ytecyc8@r13L@ytetran@r12L@ytex3n@gcb\n@ytecyc8@r14L@ytetran@r13L@ytex3n@gcr\n@ytecyc8@r15L@ytetran@r14L@ytex3n@gcg\n@ytecyc8@r16L@ytetran@r15L@ytex3n@gcw",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 365, "width": 325, "height": 100 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecyc8@r17L@ytetran@r16L@ytex3n@gfy\n@ytecyc8@r18L@ytetran@r17L@ytex3n@gfv\n@ytecyc8@r19L@ytetran@r18L@ytex3n@gfb\n@ytecyc8@r20L@ytetran@r19L@ytex3n@gfr\n@ytecyc8@r21L@ytetran@r20L@ytex3n@gfg\n@ytecyc8@r22L@ytetran@r21L@ytex2n@gfw",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 475, "width": 325, "height": 100 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecyc8@r23L@ytetran@r22L@ytex2n@gsy\n@ytecyc8@r24L@ytetran@r23L@ytex2n@gsv\n@ytecyc8@r25L@ytetran@r24L@ytex2n@gsb\n@ytecyc8@r26L@ytetran@r25L@ytex2n@gsr\n@ytecyc8@r27L@ytetran@r26L@ytex2n@gsg\n@ytecyc8@r28L@ytetran@r27L@ytex2n@gsw",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 580, "width": 325, "height": 85 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecyc8@r29L@ytetran@r28L@ytex2n@gly\n@ytecyc8@r30L@ytetran@r29L@ytex2n@gzv\n@ytecyc8@r31L@ytetran@r30L@ytex2n@glb\n@ytecyc8@r32L@ytetran@r31L@ytex2n@glr\n@ytecyc8@r33L@ytetran@r32L@ytex2n@glg",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 700, "width": 325, "height": 160 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytesocketsadd\n[@ytewpnasoc]\n@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r11L@yteand@gpv\n[@ytearmasoc]\n@ytebamr@yteand@ytecyc8@r07L@yteand@ytecyc8@r10L@yteand@gpy\n[@ytesldasoc]\n@ytebsld@yteand@ytecyc8@r07L@yteand@ytecyc8@r11L@yteand@gpr\n[@ytehlmasoc]\n@ytebhlm@yteand@ytecyc8@r08L@yteand@ytecyc8@r10L@yteand@gpb\n@ytecyc9[@yterareasoc]\n@yterareitem@yteand@skz@ytex3@yteand@ytecyc4@yte4u2c",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 900, "width": 325, "height": 160 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yteitemupg\n[@ytewpnupg]\n@ytenor - @yteexc\n@ytecyc9@ytenor@yterar@ytebwpn@yteand@ytecyc8@r09L@yteand@ytecyc8@r11L@yteand@gpb\n@ytecyc4@ytenor@yteuni@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r12L@yteand@gpg\n@ytecyc2@ytenor@yteset@ytebwpn@yteand@ytecyc8@r08L@yteand@ytecyc8@r12L@yteand@gpg\n@yteexc - @yteeli\n@ytecyc9@yteexc@yterar@ytebwpn@yteand@ytecyc8@r19L@yteand@ytecyc8@r22L@yteand@gpb\n@ytecyc4@yteexc@yteuni@ytebwpn@yteand@ytecyc8@r17L@yteand@ytecyc8@r21L@yteand@gpg\n@ytecyc2@yteexc@yteset@ytebwpn@yteand@ytecyc8@r17L@yteand@ytecyc8@r21L@yteand@gpg",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 1070, "width": 325, "height": 160 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "[@ytearmupg]\n@ytenor - @yteexc\n@ytecyc9@ytenor@yterar@yteallarm@yteand@ytecyc8@r08L@yteand@ytecyc8@r10L@yteand@gpv\n@ytecyc4@ytenor@yteuni@yteallarm@yteand@ytecyc8@r07L@yteand@ytecyc8@r13L@yteand@gpw\n@ytecyc2@ytenor@yteset@yteallarm@yteand@ytecyc8@r07L@yteand@ytecyc8@r13L@yteand@gpw\n@yteexc - @yteeli\n@ytecyc9@yteexc@yterar@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r21L@yteand@gpv\n@ytecyc4@yteexc@yteuni@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r20L@yteand@gpw\n@ytecyc2@yteexc@yteset@yteallarm@yteand@ytecyc8@r18L@yteand@ytecyc8@r20L@yteand@gpw",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 1240, "width": 325, "height": 160 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yteitemfix\n[@ytewpnrepair]\n@ytexdur@ytebwpn@yteand@ytecyc8@r09L\n@ytexdnc@ytebwpn@yteand@ytecyc8@r09L@yteand@ytechig\n[@ytearmrepair]\n@ytexdur@yteallarm@yteand@ytecyc8@r08L\n@ytexdnc@yteallarm@yteand@ytecyc8@r08L@yteand@yteflag\n[@ytegemmedremove]\n@ytesocitem@yteand@ytecyc8@r15L@yteand@tsc",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 1400, "width": 325, "height": 130 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yteitemcreaterecast\n@ytecyc3[@yterecast@ytemagitem]@ytecyc5\n@ytemagitem@yteand@ytepfg@ytex3\n@ytecyc9[@yterecast@yterareitem]\n@yterareitem@yteand@skz@ytecyc0 x 6\n@yterareitem@yteand@skz@yteand@ytecyc4@yte4u2c",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 1610, "width": 325, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecrafteditemstf\n@ytehitpower\n@ytemag@amu@yteand@ytecyc8@r10L@yteand@gpb@yteand@jew\n\n@ytemag@rin@yteand@ytecyc8@r11L@yteand@gpb@yteand@jew\n\n@ytemag@mgl/@xmg/@umg\n@yteand@ytecyc8@r09L@yteand@gpb@yteand@jew\n\n@ytemag@tbl/@ztb/@utc\n@yteand@ytecyc8@r07L@yteand@gpb@yteand@jew\n\n@ytemag@mbt/@xmb/@umb\n@yteand@ytecyc8@r08L@yteand@gpb@yteand@jew\n\n@ytemag@fhl/@xhl/@uhl\n@yteand@ytecyc8@r06L@yteand@gpb@yteand@jew\n\n@ytemag@fld/@xld/@uld\n@yteand@ytecyc8@r04L@yteand@gpb@yteand@jew\n\n@ytemag@gts/@xts/@uts\n@yteand@ytecyc8@r05L@yteand@gpb@yteand@jew\n\n@ytemag@ytebclb/@ytebhmr/@ytebmac/@ytebspt/@ytebstv/@ytebwnd\n@yteand@ytecyc8@r03L@yteand@gpb@yteand@jew",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 2080, "width": 325, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yteblood\n@ytemag@amu@yteand@ytecyc8@r11L@yteand@gpr@yteand@jew\n\n@ytemag@rin@yteand@ytecyc8@r12L@yteand@gpr@yteand@jew\n\n@ytemag@vgl/@xvg/@uvg\n@yteand@ytecyc8@r04L@yteand@gpr@yteand@jew\n\n@ytemag@mbl/@zmb/@umc\n@yteand@ytecyc8@r07L@yteand@gpr@yteand@jew\n\n@ytemag@tbt/@xtb/@utb\n@yteand@ytecyc8@r05L@yteand@gpr@yteand@jew\n\n@ytemag@hlm/@xlm/@ulm\n@yteand@ytecyc8@r08L@yteand@gpr@yteand@jew\n\n@ytemag@plt/@xlt/@ult\n@yteand@ytecyc8@r10L@yteand@gpr@yteand@jew\n\n@ytemag@spk/@xpk/@upk\n@yteand@ytecyc8@r06L@yteand@gpr@yteand@jew\n\n@ytemag@ytebaxe@yteand@ytecyc8@r09L@yteand@gpr@yteand@jew",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 2540, "width": 330, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytecaster\n@ytemag@amu@yteand@ytecyc8@r08L@yteand@gpv@yteand@jew\n\n@ytemag@rin@yteand@ytecyc8@r11L@yteand@gpv@yteand@jew\n\n@ytemag@lgl/@xlg/@ulg\n@yteand@ytecyc8@r09L@yteand@gpv@yteand@jew\n\n@ytemag@vbl/@zvb/@uvc\n@yteand@ytecyc8@r06L@yteand@gpv@yteand@jew\n\n@ytemag@lbt/@xlb/@ulb\n@yteand@ytecyc8@r10L@yteand@gpv@yteand@jew\n\n@ytemag@msk/@xsk/@usk\n@yteand@ytecyc8@r04L@yteand@gpv@yteand@jew\n\n@ytemag@ltp/@xtp/@utp@yteand@ytecyc8@r07L@yteand@gpv@yteand@jew\n\n@ytemag@sml/@xml/@uml\n@yteand@ytecyc8@r05L@yteand@gpv@yteand@jew\n\n@ytemag@ytebspt/@ytebstv/@ytebwnd@yteand@ytecyc8@r03L@yteand@gpv@yteand@jew",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessageaText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 3000, "width": 325, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@ytesafety\n@ytemag@amu@yteand@ytecyc8@r10L@yteand@gpg@yteand@jew\n\n@ytemag@rin@yteand@ytecyc8@r11L@yteand@gpg@yteand@jew\n\n@ytemag@hgl/@xhg/@uhg\n@yteand@ytecyc8@r08L@yteand@gpg@yteand@jew\n\n@ytemag@lbl/@zlb/@ulc\n@yteand@ytecyc8@r07L@yteand@gpg@yteand@jew\n\n@ytemag@hbt/@xhb/@uhb\n@yteand@ytecyc8@r09L@yteand@gpg@yteand@jew\n\n@ytemag@crn/@xrn/@urn\n@yteand@ytecyc8@r06L@yteand@gpg@yteand@jew\n\n@ytemag@brs/@xrs/@urs\n@yteand@ytecyc8@r05L@yteand@gpg@yteand@jew\n\n@ytemag@kit/@xit/@uit\n@yteand@ytecyc8@r04L@yteand@gpg@yteand@jew\n\n@ytemag@ytebspr/@ytebjav@yteand@ytecyc8@r12L@yteand@gpg@yteand@jew",
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "ListItemWidget", "name": "MessagebTemplate",
+                            "fields": {
+                                "rect": { "x": 380, "y": 10, "width": 725, "height": 4000 },
+                                "focusOnMouseOver": false,
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 0, "width": 350, "height": 20 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yterunewords",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 35, "width": 350, "height": 250 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "• @yteihelm •\n@yte1r1a = @r04L@r03L\n@yte1r1b = @r09L@r12L\n@yte1r1c = @r04L@r12L@r06L\n@yte1r1d = @r13L@r16L@r09L@ytelonly\n@yte1r1e = @r13L@r16L@r08L@ytelonly\n@yte1r1f = @r13L@r16L@r10L@ytelonly\n@yte1r1g = @r13L@r16L@r07L@ytelonly\n@yte1r1h = @r13L@r16L@r12L@ytelonly\n@yte1r1i = @r21L@r06L@r02L\n@yte1r1j = @r20L@r24L@r16L\n@yte1r1k = @r04L@r21L@r26L\n@yte1r1l = @r16L@r31L@r21L\n@yte1r1m = @r16L@r32L@r19L@ytelonly\n",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 300, "width": 350, "height": 150 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "• @yteishield •\n@yte1r2a = @r08L@r09L@r07L\n@yte1r2b = @r07L@r10L@r09L@r11L\n@yte1r2c = @r13L@r05L\n@yte1r2d = @r05L@r17L\n@yte1r2e = @r18L@r18L@r23L\n@yte1r2f@ytecyc5[@ytebpsld]@ytecyc4 = @r26L@r27L@r24L@r14L\n@yte1r2g = @r29L@r28L@r12L\n@yte1r1l = @r16L@r31L@r21L\n@yte1r2h = @r26L@r26L@r28L@r31L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 520, "width": 350, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "• @yteiarmor •\n@yte1r3a = @r07L@r05L\n@yte1r3b = @r15L@r11L@r04L\n@yte1r3c = @r13L@r10L@r11L\n@yte1r3d = @r04L@r17L\n@yte1r3e = @r13L@r18L@r02L@ytelonly\n@yte1r3f = @r15L@r17L@r19L\n@yte1r3g = @r13L@r10L@r20L\n@yte1r3h = @r20L@r18L@r03L\n@yte1r3i = @r21L@r08L@r12L\n@yte1r3j = @r12L@r22L@r22L\n@yte1r3k = @r13L@r22L@r10L\n@yte1r3l = @r19L@r22L@r21L\n@yte1r3m = @r13L@r22L@r21L@r17L\n@yte1r3n = @r23L@r03L\n@yte1r3o = @r09L@r23L@r06L\n@yte1r3p = @r08L@r25L@r02L\n@yte1r3q = @r01L@r12L@r14L@r28L\n@yte1r3r = @r08L@r27L@r29L@r05L\n@yte1r2g = @r29L@r28L@r12L\n@yte1r3s = @r14L@r22L@r30L@r24L\n@yte1r3t = @r31L@r06L@r30L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 1030, "width": 350, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "• @yteiweapon •\n@yte1r4a @ytecyc5[@ytebswd / @ytebaxe / @ytebmac]\n@ytecyc4@r03L@r01L\n\n@yte1r4b @ytecyc5[@ytebmel]\n@ytecyc4@r06L@r01L@r05L\n\n@yte1r4c @ytecyc5[@ytebstv]\n@ytecyc4@r03L@r08L\n\n@yte1r4d @ytecyc5[@ytebspt]\n@ytecyc4@r05L@r08L@r09L@r07L\n\n@yte1r4e @ytecyc5[@ytebmis]\n@ytecyc4@r09L@r05L\n\n@yte1r4f @ytecyc5[@ytebclw]\n@ytecyc4@r07L@r09L@r10L\n\n@yte1r4g @ytecyc5[@ytebmis]\n@ytecyc4@r03L@r07L@r11L\n\n@yte1r4h @ytecyc5[@ytebswd / @ytebspt]\n@ytecyc4@r11L@r08L@r10L\n\n@yte1r2b @ytecyc5[@ytebswd]\n@ytecyc4@r07L@r10L@r09L@r11L\n\n@yte1r4i @ytecyc5[@ytebmel]\n@ytecyc4@r11L@r03L\n\n@yte1r4j @ytecyc5[@ytebmel]\n@ytecyc4@r11L@r01L@r06L@r03L@r12L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 1630, "width": 350, "height": 260 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yte1r4k @ytecyc5[@ytebpom / @ytebstv / @ytebmis]\n@ytecyc4@r08L@r03L@r07L@r12L\n\n@yte1r4l @ytecyc5[@ytebmac / @ytebclb / @ytebhmr]\n@ytecyc4@r10L@r16L@r04L\n\n@yte1r4m @ytecyc5[@ytebwnd]\n@ytecyc4@r14L@r16L\n\n@yte1r4n @ytecyc5[@ytebstv]\n@ytecyc4@r17L@r16L@r12L@r05L\n\n@yte1r4o @ytecyc5[@ytebmis]\n@ytecyc4@r03L@r06L@r12L@r18L\n\n@yte1r4p @ytecyc5[@ytebmis]\n@ytecyc4@r13L@r18L@r04L\n\n@yte1r3e @ytecyc5[@ytebwpn]@ytelonly\n@ytecyc4@r13L@r18L@r02L\n\n@yte1r4q @ytecyc5[@ytebpom / @ytebspr]\n@ytecyc4@r15L@r18L@r10L@r05L@r19L\n\n@yte1r4r @ytecyc5[@ytebswd]\n@ytecyc4@r19L@r16L@r06L@r02L@r01L@r15L\n\n@yte1r4s @ytecyc5[@ytebswd / @ytebspt / @ytebhmr]\n@ytecyc4@r11L@r20L@r18L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 2130, "width": 350, "height": 330 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yte1r4t @ytecyc5[@ytebwpn]\n@ytecyc4@r14L@r09L@r02L@r20L\n\n@yte1r4u @ytecyc5[@ytebswd / @ytebmac]\n@ytecyc4@r20L@r18L@r01L@r02L\n\n@yte1r4v @ytecyc5[@ytebswd / @ytebaxe / @ytebpom]\n@ytecyc4@r13L@r22L@r03L\n\n@yte1r4w @ytecyc5[@ytebswd / @ytebaxe / @ytebmac]\n@ytecyc4@r13L@r21L@r23L@r17L\n\n@yte1r4x @ytecyc5[@ytebwpn]\n@ytecyc4@r07L@r14L@r23L\n\n@yte1r4y @ytecyc5[@ytebswd / @ytebaxe]\n@ytecyc4@r23L@r22L@r25L@r19L\n\n@yte1r4z @ytecyc5[@ytebspt / @ytebpom]\n@ytecyc4@r15L@r18L@r20L@r25L\n\n@yte1r5a @ytecyc5[@ytebclw]@ytelonly\n@ytecyc4@r23L@r25L@r11L\n\n@yte1r5b @ytecyc5[@ytebswd / @ytebaxe]\n@ytecyc4@r15L@r01L@r26L@r09L@r25L\n\n@yte1r5c @ytecyc5[@ytebmac / @ytebstv]\n@ytecyc4@r18L@r26L@r21L@r10L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 2680, "width": 350, "height": 310 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yte1r5d @ytecyc5[@ytebwpn]\n@ytecyc4@r14L@r02L@r15L@r24L@r03L@r26L\n\n@yte1r5e @ytecyc5[@ytebwpn]\n@ytecyc4@r11L@r08L@r23L@r24L@r27L\n\n@yte1r5f @ytecyc5[@ytebclw]\n@ytecyc4@r19L@r27L@r22L\n\n@yte1r3q @ytecyc5[@ytebwpn]\n@ytecyc4@r01L@r12L@r14L@r28L\n\n@yte1r5g @ytecyc5[@ytebswd / @ytebaxe]\n@ytecyc4@r05L@r03L@r28L@r23L@r08L\n\n@yte1r5h @ytecyc5[@ytebmel]\n@ytecyc4@r29L@r01L\n\n@yte1r5i @ytecyc5[@ytebaxe / @ytebspt / @ytebhmr]\n@ytecyc4@r30L@r03L@r22L@r23L@r17L\n\n@yte1r5j @ytecyc5[@ytebmel]\n@ytecyc4@r11L@r30L@r24L@r12L@r29L\n\n@yte1r5k @ytecyc5[@ytebpom / @ytebspr]\n@ytecyc4@r30L@r23L@r30L@r24L\n\n@yte1r5l @ytecyc5[@ytebmis]\n@ytecyc4@r21L@r17L@r30L@r23L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 3230, "width": 350, "height": 290 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yte1r5m @ytecyc5[@ytebmis]\n@ytecyc4@r31L@r28L@r23L@r25L\n\n@yte1r5n @ytecyc5[@ytebswd / @ytebpom]\n@ytecyc4@r26L@r28L@r30L@r31L@r18L\n\n@yte1r5o @ytecyc5[@ytebmis]\n@ytecyc4@r27L@r31L@r20L@r02L\n\n@yte1r5p @ytecyc5[@ytebaxe / @ytebhmr]\n@ytecyc4@r19L@r27L@r09L@r31L\n\n@yte1r5q @ytecyc5[@ytebmel]\n@ytecyc4@r31L@r25L@r05L\n\n@yte1r5r @ytecyc5[@ytebmis]\n@ytecyc4@r11L@r13L@r31L@r28L\n\n@yte1r5s @ytecyc5[@ytebswd / @ytebaxe / @ytebhmr]\n@ytecyc4@r31L@r23L@r31L@r29L@r31L@r30L\n\n@yte1r2h @ytecyc5[@ytebwpn]\n@ytecyc4@r26L@r26L@r28L@r31L\n\n@yte1r5t @ytecyc5[@ytebaxe / @ytebhmr / @ytebpom]\n@ytecyc4@r15L@r27L@r22L@r28L@r32L\n\n@yte1r5u @ytecyc5[@ytebwpn]\n@ytecyc4@r29L@r32L@r11L@r28L",
+                                    }
+                                },
+                                {
+                                    "type": "TextBoxWidget", "name": "MessagebText",
+                                    "fields": {
+                                        "rect": { "x": 0, "y": 3630, "width": 350, "height": 300 },
+										"style": {
+											"fontColor": "$FontColorWhite",
+											"pointSize": 16,
+											"alignment": { "h": "left", "v": "center" },
+											"options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "standard", "lineWrap": true},
+										},
+										"text": "@yte1r5v @ytecyc5[@ytebmis]\n@ytecyc4@r32L@r13L@r25L@r10L@r06L\n\n@yte1r5w @ytecyc5[@ytebswd / @ytebdgr / @ytebclw]\n@ytecyc4@r32L@r13L@r22L\n\n@yte1r5x @ytecyc5[@ytebpom / @ytebspr]\n@ytecyc4@r32L@r29L@r16L@r28L\n\n@yte1r5y @ytecyc5[@ytebwpn]\n@ytecyc4@r26L@r15L@r01L@r02L@r33L@r05L\n\n@yte1r5z @ytecyc5[@ytebstv]\n@ytecyc4@r33L@r24L@r20L@r17L@r16L@r04L",
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+                { 
+                    "type": "NineTileImageWidget", "name": "ScrollBarBackground",
+                    "fields": {
+                        "rect": { "x": 760, "y": 15, "width": 12, "height": 370 },
+                        "filename": "MENU/slider_background",
+                        "tileFrames": "$NineTileNoFrames",
+                        "tileFrames": { "center": 0 }
+                    }
+                },
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollBar",
+                    "fields": { 
+                        "rect": { "x": 760, "y": 15, "width": 12, "height": 370 },
+                        "upArrowFilepath": "MENU/slider_up_button",
+                        "downArrowFilepath": "MENU/slider_down_button",
+                        "barFilepath": "MENU/slider_bar",
+                        "viewName": "ScrollView",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "NineTileImageWidget", "name": "MessageCancelBorder",
+            "fields": {
+                "rect": { "x": 0, "y": 444, "width": 780, "height": 25 },
+                "filename": "MENU/boxpieces",
+                "tileFrames": "$NineTileBoxPiecesFrames",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.5 ]
+            },
+            "children": [
+				{
+					"type": "ButtonWidget", "name": "Close",
+					"fields": {
+						"rect": { "x": 375, "y": -4 },
+						"onClickMessage": "PanelManager:ClosePanel:HelpPanel",
+						"filename": "panel\\buysellbtn",
+						"normalFrame": 10,
+						"pressedFrame": 11,
+						"tooltipString": "@strClose",
+						"tooltipOffset": { "x": 0, "y": -3 },
+					}
+				},
+            ]
+        },
+    ]
+}

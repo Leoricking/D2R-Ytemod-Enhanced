@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [],
+    "skeletons": [],
+    "animations": [],
+    "textures": [],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "Prefab",
+  "name": "pf_navi_waypoint_short",
+  "entities": [
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":75.0,"y":20.0,"z":75.0},"orientation":{"x":0.2634,"y":0.0,"z":0.2634,"w":0.928},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":78.0,"y":20.0,"z":36.0},"orientation":{"x":0.5,"y":0.0,"z":0.5,"w":0.7071},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":55.0,"y":20.0,"z":-10.0},"orientation":{"x":0.651,"y":0.0,"z":0.651,"w":0.39},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":8.0,"y":20.0,"z":-27.0},"orientation":{"x":0.7071,"y":0.0,"z":0.7071,"w":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":-15.0,"y":30.0,"z":-13.0},"orientation":{"x":0.659,"y":0.0,"z":0.659,"w":-0.381},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":-30.0,"y":20.0,"z":12.0},"orientation":{"x":0.5,"y":0.0,"z":0.5,"w":-0.7071},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":-9.0,"y":20.0,"z":60.0},"orientation":{"x":0.277,"y":0.0,"z":0.277,"w":-0.92},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+{"type":"Entity","name":"entity_portal_light","id":9999999777,"components":[{"type":"TransformDefinitionComponent","name":"transform_portal_light","position":{"x":39.5,"y":20.0,"z":87.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_portal_light","filename":"data/hd/vfx/particles/missiles/light_beams/fx_light_beams_missiles.particles","hardKillOnDestroy":false}]},
+
+  ]
+}

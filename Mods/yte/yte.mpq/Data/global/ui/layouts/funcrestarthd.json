@@ -1,0 +1,32 @@
+{
+    "type": "TooltipsPanel", "name": "FuncRestart",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+    },
+    "children": [
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:TogglePanel:PauseLayout"
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "autoconfirm",
+            "fields": {
+                "time": 0,
+				"message": "PanelManager:TogglePanel:RestartGame"
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:ClosePanel:FuncRestart"
+            }
+        }
+    ]
+}

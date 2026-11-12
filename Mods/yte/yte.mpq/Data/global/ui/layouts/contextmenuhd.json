@@ -1,0 +1,97 @@
+{
+    "type": "ContextMenu", "name": "ContextMenu",
+    "fields": {
+		"rect": { "x": 0, "y": 0, "width": 769, "height": 1040 },
+        "defaultWidget": "OptionsList",
+        "drawTint": false,
+        "priority": 2000000001,
+		"wideSlotFileName": "Lobby\\ContextMenuSlotsWide",
+		"normalSlotFileName": "Lobby\\ContextMenuSlots",
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "TitleImage",
+            "fields": {
+				"rect": { "x": -2, "y": 0, "width": 771, "height": 104 },
+				"filename": "Lobby\\ContextMenuSlotsWide",
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "fitToParent": true,
+                        "style": {
+							"fontFace": "BlizzardGlobal",
+                            "pointSize": "$XMediumFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                        },
+                        "useAltStyleIfDoesntFit": true,
+                        "altStyle": {
+                            "fontFace": "BlizzardGlobal",
+                            "pointSize": "$SmallFontSize",
+                            "spacing": "$ReducedSpacing",
+                            "alignment": { "h": "center", "v": "center" },
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "RecyclingListWidget", "name": "OptionsList",
+            "fields": { 
+				"rect": { "x": 0, "y": 104, "width": 769, "height": 1040 },
+                "itemSelectionMessage": "ContextMenuMessage:SelectMenuItem",
+                "selectorName": "ContextListSelector",
+                "isHoverList": true,
+            },
+            "children": [
+                {
+                    "type": "HoverListItemWidget", "name": "template",
+                    "fields": {
+						"rect": { "x": -2, "y": 0, "width": 771, "height": 104 },
+                        "baseColor": "$FontColorGold",
+                        "hoveredColor": "$FontColorWhite",
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "Image",
+                            "fields": {
+								"filename": "Lobby\\ContextMenuSlotsWide",
+                            },
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "TextBox",
+                            "fields": {
+                                "fitToParent": true,
+                                "style": {
+                                    "fontFace": "BlizzardGlobal",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                },
+								"useAltStyleIfDoesntFit": true,
+								"altStyle": {
+									"pointSize": "$LootFilterSmallFontSize",
+									"alignment": { "h": "center", "v": "center" },
+								}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "Widget", "name": "ContextListSelector",
+                }
+            ]
+        },
+         // TODO: Place holder:: REMOVE/use updated art
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+            "fields": { 
+                "rect": { "x": 0, "y": 0, "width": 0, "height": 0 },
+                "upArrowFilepath": "FrontEnd\\ScrollUp", // 0/2
+                "downArrowFilepath": "FrontEnd\\ScrollDown", // 1/3
+                "barFilepath": "FrontEnd\\ScrollBar", // 4
+                "viewName": "OptionsList"
+            }
+        },
+    ]
+}

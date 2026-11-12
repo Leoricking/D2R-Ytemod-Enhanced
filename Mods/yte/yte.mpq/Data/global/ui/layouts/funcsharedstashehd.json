@@ -1,0 +1,112 @@
+{
+    "type": "TooltipsPanel", "name": "FuncSharedStashe",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+    },
+    "children": [
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashLeft",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashRight",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashRight",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashRight",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+				"message": "BankPanelMessage:SharedStashRight",
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 0,
+                "message": "PanelManager:ClosePanel:FuncSharedStashe"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "PausePanel", "name": "FuncEsc",
+    "fields": {
+        "priority": 9001,
+        "fitToParent": true,
+    },
+    "children": [
+		{
+			"type": "TimerWidget","name": "exitgame1",
+			"fields": {"time": 0,"message": "PausePanelMessage:ExitGame"}
+		}
+    ]
+}

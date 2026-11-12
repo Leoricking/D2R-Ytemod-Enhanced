@@ -1,0 +1,3365 @@
+{
+    "type": "UKComplianceModal", "name": "AdvancedStatsPanelHelp",
+    "fields": {
+        "drawTint": false,
+        "anchor": "$LeftPanelAnchor",
+		"rect": { "x": 1160, "y": -651, "width": 1570, "height": 1500 },
+        "priority": 100,
+        "isDismissable": true,
+    },
+    "children": [
+		{
+			"type": "ImageWidget", "name": "Background",
+			"fields": {
+				"filename": "\\PANEL\\Message\\csabg",
+			},
+		},
+		{
+			"type": "ClickCatcherWidget", "name": "catcher",
+			"fields": {
+				"rect": { "width": 1570, "height": 1500 },
+			}
+		},
+		{
+			"type": "TextBoxWidget", "name": "Title",
+			"fields": {
+				"rect": { "x": 0, "y": 45, "width": 1570, "height": 103 },
+				"text": "@charbreakpointsstr",
+				"style": "$StyleTitleBlock",
+			},
+		},
+		{
+			"type": "ImageWidget", "name": "ScrollBarBackground",
+			"fields": {
+				"rect": { "x": -110, "y": 170 },
+				"anchor": { "x": 1.0 },
+				"filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_ScrollBar",
+			},
+			"children": [
+				{
+					"type": "ScrollControllerWidget", "name": "ScrollController",
+					"fields": {
+						"rect": { "x": -30, "y": 30, "width": 26, "height": 1192 },
+						"anchor": { "x": 1.0 },
+						"upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+						"downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+						"barFilepath": "PauseMenu\\VerticalIndicator",
+						"viewName": "ScrollView",
+						"wheelScrollSound": "cursor_scroll_hd",
+						"buttonScrollSound": "cursor_scroll_hd",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 160,"scale": 0.4},
+						"filename": "hireables\\paladinicon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -100,"y": 330,"scale": 0.4},
+						"filename": "hireables\\necromancericon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 330,"scale": 0.4},
+						"filename": "hireables\\warlockicon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 530,"scale": 0.4},
+						"filename": "hireables\\barbarianicon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 630,"scale": 0.4},
+						"filename": "hireables\\amazonicon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 780,"scale": 0.4},
+						"filename": "hireables\\assassinicon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 875,"scale": 0.4},
+						"filename": "hireables\\druidicon",
+					}
+				},
+				{
+					"type": "ImageWidget",
+					"name": "anchbtn",
+					"fields": {
+						"rect": {"x": -55,"y": 1145,"scale": 0.4},
+						"filename": "hireables\\act2hireableicon",
+					}
+				},
+			]
+		},
+		{
+			"type": "ScrollViewWidget", "name": "ScrollView",
+			"fields": {
+				"rect": { "x": 30, "y": 150, "width": 1490, "height": 1287 },
+				"scrollControllerName": "ScrollController",
+			},
+			"children": [
+				{//200  魔法使
+					"type": "Widget",
+					"name": "YteWidgetSorA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 100
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetSorB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextSor",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@Sorceress",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteSorbtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\sorceressicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetSorFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "SorFcr01Title",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SorFcr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFcr11Title",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytesorskillfcr",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n23% @yte3dots\n35% @yte3dots\n52% @yte3dots\n78% @yte3dots\n117% @yte3dots\n194% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 19\n@yte3dots 18\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@yteotherspells",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n9% @yte3dots\n20% @yte3dots\n37% @yte3dots\n63% @yte3dots\n105% @yte3dots\n200% @yte3dots\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetSorFhr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 596
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "SorFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SorFhr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 558 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n9% @yte3dots\n14% @yte3dots\n20% @yte3dots\n30% @yte3dots\n42% @yte3dots\n60% @yte3dots\n86% @yte3dots\n142% @yte3dots\n280% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 558 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "SorFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SorFhr02Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 558 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n27% @yte3dots\n48% @yte3dots\n86% @yte3dots\n200% @yte3dots\n\n\n\n",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 558 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n\n\n\n",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//2600  圣骑士
+					"type": "Widget",
+					"name": "YteWidgetPalA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 1480
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetPalB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextPal",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@Paladin",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YtePalbtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\paladinicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgePalFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "PalFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "PalFcr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytepalskillfcr",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 374 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n39% @yte3dots\n86% @yte3dots\n\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 374 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 19\n@yte3dots 18\n@yte3dots 17\n\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@yteotherspells",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 374 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n9% @yte3dots\n18% @yte3dots\n30% @yte3dots\n48% @yte3dots\n75% @yte3dots\n125% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 374 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetPalFhr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 564
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "PalFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "PalFhr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@yteispear / @yteistaves",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n3% @yte3dots\n7% @yte3dots\n13% @yte3dots\n20% @yte3dots\n32% @yte3dots\n48% @yte3dots\n75% @yte3dots\n129% @yte3dots\n280% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@yteother@ytebwpn",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n27% @yte3dots\n48% @yte3dots\n86% @yte3dots\n200% @yte3dots\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetPalFbr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 1196
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "PalFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "PalFbr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytepalskillfbr",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 282 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n86% @yte3dots\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 282 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 2\n@yte3dots 1\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytenormally",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 282 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n13% @yte3dots\n32% @yte3dots\n86% @yte3dots\n600% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 282 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n@yte3dots 2\n@yte3dots 1",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//2600  死灵法师
+					"type": "Widget",
+					"name": "YteWidgetNecA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 3178
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetNecB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextNec",
+									"fields": {
+										"rect": {
+											"x": 360,
+											"y": 0
+										},
+										"text": "@Necromancer/@Warlock(@ytenormally)",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteNecbtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\necromancericon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteWarbtn",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\warlockicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetNecFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "NecFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NecFcr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytenormally",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n9% @yte3dots\n18% @yte3dots\n30% @yte3dots\n48% @yte3dots\n75% @yte3dots\n125% @yte3dots\n\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytenecvampire",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n6% @yte3dots\n11% @yte3dots\n18% @yte3dots\n24% @yte3dots\n35% @yte3dots\n48% @yte3dots\n65% @yte3dots\n86% @yte3dots\n120% @yte3dots\n180% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 23\n@yte3dots 22\n@yte3dots 21\n@yte3dots 20\n@yte3dots 19\n@yte3dots 18\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetNecFhr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 748
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "NecFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NecFhr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytenormally",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n10% @yte3dots\n16% @yte3dots\n26% @yte3dots\n39% @yte3dots\n56% @yte3dots\n86% @yte3dots\n152% @yte3dots\n377% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytenecvampire",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n2% @yte3dots\n6% @yte3dots\n10% @yte3dots\n16% @yte3dots\n24% @yte3dots\n34% @yte3dots\n48% @yte3dots\n72% @yte3dots\n117% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetNecFbr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 1380
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "NecFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NecFbr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 466 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n6% @yte3dots\n13% @yte3dots\n20% @yte3dots\n32% @yte3dots\n52% @yte3dots\n86% @yte3dots\n174% @yte3dots\n600% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 466 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  野蠻人
+					"type": "Widget",
+					"name": "YteWidgetBarA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 5184
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetBarB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextBar",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@Barbarian",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteBarbtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\barbarianicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetBarFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "BarFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "BarFcr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 374 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n9% @yte3dots\n20% @yte3dots\n37% @yte3dots\n63% @yte3dots\n105% @yte3dots\n200% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 374 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "BarFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 600, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "BarFhr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 374 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n27% @yte3dots\n48% @yte3dots\n86% @yte3dots\n200% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 374 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgeBarFbr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 504
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "BarFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "BarFbr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 328 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n9% @yte3dots\n20% @yte3dots\n42% @yte3dots\n86% @yte3dots\n280% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 328 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n@yte3dots 2",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  亞馬遜
+					"type": "Widget",
+					"name": "YteWidgetAmaA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 6176
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetAmaB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextAma",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@Amazon",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteAmabtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\amazonicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetAmaFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AmaFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AmaFcr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 466 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n14% @yte3dots\n22% @yte3dots\n32% @yte3dots\n48% @yte3dots\n68% @yte3dots\n99% @yte3dots\n152% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 466 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 19\n@yte3dots 18\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "AmaFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 600, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AmaFhr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 466 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n6% @yte3dots\n13% @yte3dots\n20% @yte3dots\n32% @yte3dots\n52% @yte3dots\n86% @yte3dots\n174% @yte3dots\n600% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 466 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetAmaFbr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 596
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AmaFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AmaFbr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@yte1hswpn",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n4% @yte3dots\n6% @yte3dots\n11% @yte3dots\n15% @yte3dots\n23% @yte3dots\n29% @yte3dots\n40% @yte3dots\n56% @yte3dots\n80% @yte3dots\n120% @yte3dots\n200% @yte3dots\n480% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@yteother@ytebwpn",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n13% @yte3dots\n32% @yte3dots\n86% @yte3dots\n600% @yte3dots\n\n\n\n\n\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n@yte3dots 2\n@yte3dots 1\n\n\n\n\n\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  刺客
+					"type": "Widget",
+					"name": "YteWidgetAssA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 7642
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetAssB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextAss",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@assassinstr",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteAssbtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\assassinicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetAssFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AssFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AssFcr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 420 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n8% @yte3dots\n16% @yte3dots\n27% @yte3dots\n42% @yte3dots\n65% @yte3dots\n102% @yte3dots\n174% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 420 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "AssFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 600, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AssFhr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 300, "height": 420 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n27% @yte3dots\n48% @yte3dots\n86% @yte3dots\n200% @yte3dots\n",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 300, "y": 60, "width": 300, "height": 420 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetAssFbr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 550
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AssFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AssFbr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 282 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytebreakpoints    \n0% @yte3dots\n13% @yte3dots\n32% @yte3dots\n86% @yte3dots\n600% @yte3dots",
+														"style": "$YtemodCharadvhelpRightstyle",
+													}
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 282 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "    @yteframes\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n@yte3dots 2\n@yte3dots 1",
+														"style": "$YtemodCharadvhelpLeftstyle",
+													}
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  德魯伊
+					"type": "Widget",
+					"name": "YteWidgetDruA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 8634
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetDruB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextDru",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@druidstr",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteDrubtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\druidicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetDruFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "DruFcr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruhuman",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n4% @yte3dots\n10% @yte3dots\n19% @yte3dots\n30% @yte3dots\n46% @yte3dots\n68% @yte3dots\n99% @yte3dots\n163% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 18\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFcr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 400, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFcr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruwolf",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n6% @yte3dots\n14% @yte3dots\n26% @yte3dots\n40% @yte3dots\n60% @yte3dots\n95% @yte3dots\n157% @yte3dots\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFcr13Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 800, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFcr13Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedrubear",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr25Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr25Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n26% @yte3dots\n40% @yte3dots\n63% @yte3dots\n99% @yte3dots\n163% @yte3dots\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr26Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr26Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetDruFhr1",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 702
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "DruFhr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruhuman-@yte1hswpn",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n3% @yte3dots\n7% @yte3dots\n13% @yte3dots\n19% @yte3dots\n29% @yte3dots\n42% @yte3dots\n63% @yte3dots\n99% @yte3dots\n174% @yte3dots\n456% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruhuman-@yteother@ytebwpn",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n10% @yte3dots\n16% @yte3dots\n26% @yte3dots\n39% @yte3dots\n56% @yte3dots\n86% @yte3dots\n152% @yte3dots\n377% @yte3dots\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetDruFhr2",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 1380
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFhr02Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "VipHeaderText",
+											"fields": {
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr13Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr13Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruwolf",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr25Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr25Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n9% @yte3dots\n20% @yte3dots\n42% @yte3dots\n86% @yte3dots\n280% @yte3dots\n\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr26Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr26Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n@yte3dots 2\n\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr14Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 600, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr14Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedrubear",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr27Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr27Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n10% @yte3dots\n16% @yte3dots\n24% @yte3dots\n37% @yte3dots\n54% @yte3dots\n86% @yte3dots\n152% @yte3dots\n360% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr28Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 512 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr28Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetDruFbr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 2012
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFbr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.0, 0.0, 0.3, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "DruFbr01Text",
+											"fields": {
+												"text": "@ytecyc4@yte1k3f-FBR",
+												"fitToParent": true,
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFbr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFbr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruhuman",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n6% @yte3dots\n13% @yte3dots\n20% @yte3dots\n32% @yte3dots\n52% @yte3dots\n86% @yte3dots\n174% @yte3dots\n600% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFbr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 400, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFbr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedruwolf",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n27% @yte3dots\n48% @yte3dots\n86% @yte3dots\n200% @yte3dots\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFbr13Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 800, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFbr13Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "@ytedrubear",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr25Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr25Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n10% @yte3dots\n16% @yte3dots\n27% @yte3dots\n40% @yte3dots\n65% @yte3dots\n109% @yte3dots\n223% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr26Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 466 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr26Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//傭兵
+					"type": "Widget",
+					"name": "YteWidgetHireA",
+					"fields": {
+						"rect": {
+							"x": 0,
+							"y": 11332
+						}
+					},
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetHireB",
+							"fields": {
+								"rect": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextHire",
+									"fields": {
+										"rect": {
+											"x": 240,
+											"y": 0
+										},
+										"text": "@MiniPanelHire",
+										"style": {
+											"fontColor": "$FontColorGoldYellow",
+											"pointSize": "$MediumLargeFontSize",
+											"alignment": {
+												"h": "left",
+												"v": "center"
+											}
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteHirebtn",
+									"fields": {
+										"rect": {
+											"x": 120,
+											"y": -70,
+											"scale": 0.8
+										},
+										"filename": "hireables\\act2hireableicon",
+										"hoveredFrame": 0,
+										"pressedFrame": 0,
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+									"fields": {
+										"rect": {
+											"x": 105,
+											"y": 30,
+											"scale": 0.74
+										},
+										"filename": "PauseMenu\\Divider"
+									}
+								}
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetHirFhr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 70
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "HirFhr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 1200, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "HirFhr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "A1",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n6% @yte3dots\n11% @yte3dots\n20% @yte3dots\n32% @yte3dots\n52% @yte3dots\n86% @yte3dots\n168% @yte3dots\n600% @yte3dots\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr12Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 400, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr12Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "A2",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr23Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr23Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n9% @yte3dots\n14% @yte3dots\n20% @yte3dots\n30% @yte3dots\n42% @yte3dots\n60% @yte3dots\n86% @yte3dots\n142% @yte3dots\n280% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr24Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr24Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr13Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 800, "y": 60, "width": 400, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr13Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "A5",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr25Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 200, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr25Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n7% @yte3dots\n15% @yte3dots\n27% @yte3dots\n48% @yte3dots\n86% @yte3dots\n200% @yte3dots\n\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr26Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 200, "y": 60, "width": 200, "height": 558 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr26Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5\n@yte3dots 4\n@yte3dots 3\n\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{
+							"type": "Widget",
+							"name": "YteWidgetHirFcr",
+							"fields": {
+								"rect": {
+									"x": 120,
+									"y": 748
+								}
+							},
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "HirFcr01Tile",
+									"fields": {
+										"backgroundColor": [ 0.2, 0.0, 0.2, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 0, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "HirFcr01Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3e-FCR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFcr11Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFcr11Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "A3",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFcr21Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFcr21Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n8% @yte3dots\n15% @yte3dots\n26% @yte3dots\n39% @yte3dots\n58% @yte3dots\n86% @yte3dots\n138% @yte3dots\n\n\n\n\n",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFcr22Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFcr22Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 18\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n\n\n\n\n",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "HirFhr02Tile",
+									"fields": {
+										"backgroundColor": [ 0.3, 0.0, 0.0, 0.50 ],
+										"tileScale": 1.0,
+										"rect": { "x": 600, "y": 0, "width": 600, "height": 60 },
+									},
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "HirFhr02Text",
+											"fields": {
+												"fitToParent": true,
+												"text": "@ytecyc4@yte1k3c-FHR",
+												"style": "$YtemodCharadvhelpCenterstyle",
+											}
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr14Tile",
+											"fields": {
+												"backgroundColor": [ 0.0, 0.30, 0.30, 0.50 ],
+												"tileScale": 1.0,
+												"rect": { "x": 0, "y": 60, "width": 600, "height": 60 },
+											},
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr14Text",
+													"fields": {
+														"fitToParent": true,
+														"text": "A3",
+														"style": "$YtemodCharadvhelpCenterstyle",
+													}
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr27Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 0, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr27Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "@ytebreakpoints    \n0% @yte3dots\n5% @yte3dots\n8% @yte3dots\n13% @yte3dots\n18% @yte3dots\n24% @yte3dots\n32% @yte3dots\n46% @yte3dots\n63% @yte3dots\n86% @yte3dots\n133% @yte3dots\n232% @yte3dots\n600% @yte3dots",
+																"style": "$YtemodCharadvhelpRightstyle",
+															}
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr28Tile",
+													"fields": {
+														"backgroundColor": [ 0.05, 0.20, 0.20, 0.50 ],
+														"tileScale": 1.0,
+														"rect": { "x": 300, "y": 60, "width": 300, "height": 650 },
+													},
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr28Text",
+															"fields": {
+																"fitToParent": true,
+																"text": "    @yteframes\n@yte3dots 17\n@yte3dots 16\n@yte3dots 15\n@yte3dots 14\n@yte3dots 13\n@yte3dots 12\n@yte3dots 11\n@yte3dots 10\n@yte3dots 9\n@yte3dots 8\n@yte3dots 7\n@yte3dots 6\n@yte3dots 5",
+																"style": "$YtemodCharadvhelpLeftstyle",
+															}
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{
+					"type": "TextBoxWidget", "name": "YteFih888",
+					"fields": {
+						"rect": { "x": 0, "y": 12850, "width": 1800, "height": 60 },
+					}
+				},
+			]
+		},
+		{
+			"type": "ButtonWidget", "name": "CloseButton",
+			"fields": {
+				"anchor": { "x": 1.0 },
+				"rect": { "x": -80, "y": 10 },
+				"filename": "PANEL\\closebtn_4x",
+				"hoveredFrame": 3,
+				"onClickMessage": "PanelManager:ClosePanel:AdvancedStatsPanelHelp",
+				"tooltipString": "@strClose",
+				"sound": "cursor_close_window_hd",
+				"acceptsEscKeyEverywhere": true
+			},
+		},
+    ]
+}

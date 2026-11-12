@@ -1,0 +1,686 @@
+{
+    "type": "SettingsPanel", "name": "YteDiyGuidePanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "UIDiySetting",
+                    "fields": {
+                        "rect": { "x": 1550, "y": 50 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_Cog",
+                        "focusIndicatorFilename": "Controller/HoverImages/Cog_Hover",
+                        "hoveredFrame": 2,
+                        "onClickMessage": "PanelManager:OpenPanel:YtemodGoYtemodSettings",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "tooltipString": "開打Ytemod設置器",
+                        "textString": "",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "P00",
+                    "fields": {
+                        "rect": { "x": 0, "y": 30, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "當前模組文本設置如下：\n（設置請點擊“齒輪”按鈕，打開設置器文件夾，通過設置器程序設置。）", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes00",
+                    "fields": {
+                        "rect": { "x": 0, "y": 130, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "文本設置", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+				/*
+                {
+                    "type": "TextBoxWidget", "name": "Tes01",
+                    "fields": {
+                        "rect": { "x": 50, "y": 250, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "字體：准圓中文+經典英文", 
+                    }
+                },
+				*/
+                {
+                    "type": "TextBoxWidget", "name": "Tes02",
+                    "fields": {
+                        "rect": { "x": 50, "y": 300, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "翻譯版本：@modtextlng", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes03",
+                    "fields": {
+                        "rect": { "x": 50, "y": 350, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "物品圖標：@yteificon", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes04",
+                    "fields": {
+                        "rect": { "x": 50, "y": 400, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "變量吐槽：@ytetevaroa", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes05",
+                    "fields": {
+                        "rect": { "x": 50, "y": 450, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "中文物品加注英文：@modtextenh3", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes06",
+                    "fields": {
+                        "rect": { "x": 50, "y": 500, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "中文技能加注英文：@modtextenh2", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes07",
+                    "fields": {
+                        "rect": { "x": 50, "y": 550, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "中文屬性加注英文縮寫：@modtextenh1", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes08",
+                    "fields": {
+                        "rect": { "x": 50, "y": 600, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "中文重要詞綴名稱標記：@ytevamark", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Tes09",
+                    "fields": {
+                        "rect": { "x": 50, "y": 650, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "物品過濾：@moditemfilterplan", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis00",
+                    "fields": {
+                        "rect": { "x": 0, "y": 730, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "其他功能設置狀態請通過設置器查看", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+				/*
+                {
+                    "type": "TextBoxWidget", "name": "Uis00",
+                    "fields": {
+                        "rect": { "x": 0, "y": 730, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "UI界面設置", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis01",
+                    "fields": {
+                        "rect": { "x": 50, "y": 850, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "前面板界面：緊凑佈局", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis02",
+                    "fields": {
+                        "rect": { "x": 50, "y": 900, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "功能面板界面：去挂飾佈局", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis03",
+                    "fields": {
+                        "rect": { "x": 50, "y": 950, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "赫拉迪姆方塊界面：與物品欄合并佈局", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis04",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1000, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "傳送平臺界面：居中顯示佈局", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis05",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1050, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "商店界面：與物品欄并列佈局", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis06",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1100, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "隊友/傭兵圖標：隊友圖標上置/傭兵圖標下置", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis07",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1150, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "迷你方塊①：開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis08",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1200, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "迷你方塊②：開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis09",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1250, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "迷你角色屬性看板：開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis10",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1300, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "迷你傭兵生命值/經驗值看板：開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis11",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1350, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "武器切換提示圖標：開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis12",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1400, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "游戲窗口左上好友列表按鈕：關閉", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Uis13",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1450, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "手柄模式主界面快捷退出游戲按鈕：關閉", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs00",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1530, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "特效顯示設置", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs01",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1650, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "小站光綫：長光綫", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs02",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1700, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "入口/任務點光綫：長光綫", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs03",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1750, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "特別綫路光綫：", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs04",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1800, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "A1野外/A3庫拉特斯/A4野外地圖交界入口指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs05",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1850, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "A2秘法聖殿召喚者方位額外神秘符文指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs06",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1900, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "A2賢者之谷小站塔拉夏古墓方位指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs07",
+                    "fields": {
+                        "rect": { "x": 50, "y": 1950, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "A4火焰之河至混沌魔殿綫路指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs08",
+                    "fields": {
+                        "rect": { "x": 50, "y": 2000, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "A5苦痛之廳上出口至小站及下入口三點式指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs09",
+                    "fields": {
+                        "rect": { "x": 50, "y": 2050, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "重點場景光圈指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs10",
+                    "fields": {
+                        "rect": { "x": 50, "y": 2100, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "重點怪物光圈指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs11",
+                    "fields": {
+                        "rect": { "x": 50, "y": 2150, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "重要物品光圈指引： 開啓", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Efs12",
+                    "fields": {
+                        "rect": { "x": 50, "y": 2200, "width": 1800, "height": 50 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "野蠻人波特效： 刺客聚氣特效", 
+                    }
+                },
+
+                {
+                    "type": "TextBoxWidget", "name": "Efs00",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1530, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "特效顯示設置", 
+                    },
+					"children": [
+						{
+							"type": "ImageWidget", "name": "Divider",
+							"fields": {
+								"rect": "$OptionsDividerRect",
+								"filename": "PauseMenu\\Divider",
+							}
+						},
+					]
+                },
+				*/
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 600, "y": 1100 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:ClosePanel:YtemodInfo",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEMultiLineButtonText",
+                        "textString": "@close", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "P32",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1120, "width": 1800, "height": 60 },
+                        "text": "", 
+                    }
+                }
+            ]
+        },
+    ]
+}

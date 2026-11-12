@@ -1,0 +1,115 @@
+{
+    "type": "TooltipsPanel", "name": "FuncMiniHPBar",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "rect": { "x": -170, "y": -430, "width": 200, "height": 200 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "HealthBarBG",
+            "fields": {
+                "filename": "PANEL/HUD_102/minihp_bg",
+                "rect": { "x": 0, "y": 0, "scale": 0.8 },
+            },
+        },
+        {
+            "type": "AttributeBallWidget", "name": "HealthBar",
+            "fields": {
+                "rect": { "x": 0, "y": 0, "width": 155, "height": 150, "scale": 0.8 },
+                "attribute": "health",
+                "minLiquidHeight": 2,
+                "maxSmoothingSeconds": 1.0,
+                "jumpSmoothingSeconds": 0.25,
+                "smoothDecrease": false,
+                "potionPreviewTransparency": 0.35,
+                "poisonHsvTransform": [ 0.3, 0.0, 0.0, 0.0 ]
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ValueDisplay",
+                    "fields": {
+                        "anchor": { "x": 0.5 },
+                        "rect": { "x": 124, "y": 18 },
+						"style": {
+							"pointSize": "$XMediumLargeFontSize",
+							"fontColor": "$FontColorRed",
+							"alignment": {
+								"v": "center",
+								"h": "left"
+							},
+							"spacing": "$MinimumSpacing",
+                            "dropShadow": "$DefaultDropShadow",
+                            "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle" },
+						}
+                    }
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "BallImage",
+                    "fields": {
+                        "filename": "PANEL/HUD_102/minihp_life",
+						"transparency": 0.1,
+                        "fps": 1, 
+						"loop": false,
+                        "useAdvancedColoring": true,
+                       "hsvTransform": [ -0.3333, -0.05, -0.5, 0.0 ],
+                    },
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "ManaBarBG",
+            "fields": {
+                "filename": "PANEL/HUD_102/minimp_bg",
+                "rect": { "x": 32, "y": 34, "scale": 0.8 },
+            },
+        },
+        {
+            "type": "AttributeBallWidget", "name": "ManaBar",
+            "fields": {
+                "rect": { "x": 32, "y": 34, "width": 105, "height": 103, "scale": 0.8 },
+                "attribute": "mana",
+                "maxSmoothingSeconds": 1.0,
+                "jumpSmoothingSeconds": 0.25,
+                "potionPreviewTransparency": 0.5,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "ValueDisplay",
+                    "fields": {
+                        "anchor": { "x": 0.5 },
+                        "rect": { "x": 111, "y": 22 },
+						"style": {
+							"pointSize": "$XMediumLargeFontSize",
+							"fontColor": "$FontColorBlue",
+							"alignment": {
+								"v": "center",
+								"h": "left"
+							},
+							"spacing": "$MinimumSpacing",
+                            "dropShadow": "$DefaultDropShadow",
+                            "options": { "newlineHandling": "standard", "pipeCharacterBehavior" : "handle" },
+						}
+                    }
+                },
+                {
+                    "type": "AnimatedImageWidget", "name": "BallImage",
+                    "fields": {
+                        "filename": "PANEL/HUD_102/minimp_mana",
+						"transparency": 0.1,
+                        "fps": 1,
+						"loop": false,
+                        "useAdvancedColoring": true,
+                        "hsvTransform": [ -0.3333, -0.05, -0.05, 0.0 ],
+                    },
+                }
+            ]
+        },
+		{
+			"type": "ClickCatcherWidget", "name": "click_catcher",
+			"fields": {
+				"rect": { "x": 0, "y": 0, "width": 155, "height": 150 }
+			}
+		}
+    ]
+}

@@ -1,0 +1,3419 @@
+{
+    "basedOn": "BocCubeVPanelHD.json",
+    "type": "SettingsPanel", "name": "BocCubeVPanel",
+    "fields": {
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5, "y": 0 },
+        "defaultWidget": "GemImage"
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                        //"focusOnMouseOver": false,
+                        //"focusIndicatorVisible": false,
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "YteTitleBox",
+                    "fields": {
+                        "rect": { "x": 220, "y": 30, "width": 1200, "height": 92 },
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.2, 0.0, 0.2, 0.20 ],
+                        "tileScale": 1.0,
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "Title",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 1200, "height": 92 },
+                                    "style": {
+                                        "fontColor": "$FontColorGoldYellow",
+                                        "alignment": { "h": "center", "v": "center" },
+                                        "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                                        "pointSize": "$LargeFontSize",
+                                        "spacing": "$DefaultSpacing",
+                                    },
+                                    "text": "@ytecubemain",
+                            }
+                        },
+                    ]
+                },
+                {//160 寶石合成
+                    "type": "Widget",
+                    "name": "YteWidgetGemA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 160
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetGemB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextGem",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytegemstf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "GemImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "RuneImage" },
+											//"up": { "name": "Anch001" },
+											"down": { "name": "Gemgy1" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy1",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 40,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Anch001" },
+									"right": { "name": "Gemgv1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgy2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv1",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 40,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgy1" },
+									"right": { "name": "Gemgb1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgv2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb1",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 40,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgv1" },
+									"right": { "name": "Gemgr1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgb2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr1",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 40,
+                                    "scale": 1.1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgb1" },
+									"right": { "name": "Gemgg1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgr2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg1",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 40,
+                                    "scale": 1.1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgr1" },
+									"right": { "name": "Gemgw1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgg2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw1",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 40,
+                                    "scale": 1.1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgg1" },
+									"right": { "name": "Gemgk1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgw2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk1",
+                            "fields": {
+                                "rect": {
+                                    "x": 680,
+                                    "y": 40,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgw1" },
+									//"right": { "name": "Gemgk1" },
+									"up": { "name": "GemImage" },
+									"down": { "name": "Gemgk2" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy2",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 140,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Gemgw1" },
+									"right": { "name": "Gemgv2" },
+									"up": { "name": "Gemgy1" },
+									"down": { "name": "Gemgy3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv2",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 140,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgy2" },
+									"right": { "name": "Gemgb2" },
+									"up": { "name": "Gemgv1" },
+									"down": { "name": "Gemgv3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb2",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 140,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgv2" },
+									"right": { "name": "Gemgr2" },
+									"up": { "name": "Gemgb1" },
+									"down": { "name": "Gemgb3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr2",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 140,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgb2" },
+									"right": { "name": "Gemgg2" },
+									"up": { "name": "Gemgr1" },
+									"down": { "name": "Gemgr3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg2",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 140,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgr2" },
+									"right": { "name": "Gemgw2" },
+									"up": { "name": "Gemgg1" },
+									"down": { "name": "Gemgg3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw2",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 140,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgg2" },
+									"right": { "name": "Gemgk2" },
+									"up": { "name": "Gemgw1" },
+									"down": { "name": "Gemgw3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk2",
+                            "fields": {
+                                "rect": {
+                                    "x": 680,
+                                    "y": 150,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgw2" },
+									//"right": { "name": "Gemgk2" },
+									"up": { "name": "Gemgk1" },
+									"down": { "name": "Gemgk3" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy3",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 250,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Gemgw2" },
+									"right": { "name": "Gemgv3" },
+									"up": { "name": "Gemgy2" },
+									"down": { "name": "Gemgy4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv3",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 250,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgy3" },
+									"right": { "name": "Gemgb3" },
+									"up": { "name": "Gemgv2" },
+									"down": { "name": "Gemgv4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb3",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 250,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgv3" },
+									"right": { "name": "Gemgr3" },
+									"up": { "name": "Gemgb2" },
+									"down": { "name": "Gemgb4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr3",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 250,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgb3" },
+									"right": { "name": "Gemgg3" },
+									"up": { "name": "Gemgr2" },
+									"down": { "name": "Gemgr4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg3",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 250,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgr3" },
+									"right": { "name": "Gemgw3" },
+									"up": { "name": "Gemgg2" },
+									"down": { "name": "Gemgg4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw3",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 250,
+                                    "scale": 1
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgg3" },
+									"right": { "name": "Gemgk3" },
+									"up": { "name": "Gemgw2" },
+									"down": { "name": "Gemgw4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk3",
+                            "fields": {
+                                "rect": {
+                                    "x": 680,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgw3" },
+									//"right": { "name": "Gemgk3" },
+									"up": { "name": "Gemgk2" },
+									"down": { "name": "Gemgk4" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy4",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 370,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Gemgw3" },
+									"right": { "name": "Gemgv4" },
+									"up": { "name": "Gemgy3" },
+									"down": { "name": "Gemgy5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv4",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 370,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgy4" },
+									"right": { "name": "Gemgb4" },
+									"up": { "name": "Gemgv3" },
+									"down": { "name": "Gemgv5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb4",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 370,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgv4" },
+									"right": { "name": "Gemgr4" },
+									"up": { "name": "Gemgb3" },
+									"down": { "name": "Gemgb5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr4",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 370,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgb4" },
+									"right": { "name": "Gemgg4" },
+									"up": { "name": "Gemgr3" },
+									"down": { "name": "Gemgr5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg4",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 370,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgr4" },
+									"right": { "name": "Gemgw4" },
+									"up": { "name": "Gemgg3" },
+									"down": { "name": "Gemgg5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw4",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 370,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgg4" },
+									"right": { "name": "Gemgk4" },
+									"up": { "name": "Gemgw3" },
+									"down": { "name": "Gemgw5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk4",
+                            "fields": {
+                                "rect": {
+                                    "x": 680,
+                                    "y": 370,
+                                    "scale": 0.90
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgw4" },
+									//"right": { "name": "Gemgk4" },
+									"up": { "name": "Gemgk3" },
+									"down": { "name": "Gemgk5" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgy5",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 480,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Gemgw4" },
+									"right": { "name": "Gemgv5" },
+									"up": { "name": "Gemgy4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgv5",
+                            "fields": {
+                                "rect": {
+                                    "x": 130,
+                                    "y": 480,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgy5" },
+									"right": { "name": "Gemgb5" },
+									"up": { "name": "Gemgv4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgb5",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 480,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgv5" },
+									"right": { "name": "Gemgr5" },
+									"up": { "name": "Gemgb4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgr5",
+                            "fields": {
+                                "rect": {
+                                    "x": 350,
+                                    "y": 480,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgb5" },
+									"right": { "name": "Gemgg5" },
+									"up": { "name": "Gemgr4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgg5",
+                            "fields": {
+                                "rect": {
+                                    "x": 460,
+                                    "y": 480,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgr5" },
+									"right": { "name": "Gemgw5" },
+									"up": { "name": "Gemgg4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgw5",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 480,
+                                    "scale": 0.9
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgg5" },
+									"right": { "name": "Gemgk5" },
+									"up": { "name": "Gemgw4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemgk5",
+                            "fields": {
+                                "rect": {
+                                    "x": 680,
+                                    "y": 480,
+                                    "scale": 0.90
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gemgw5" },
+									//"right": { "name": "Gemgk5" },
+									"up": { "name": "Gemgk4" },
+									"down": { "name": "RuneImage" }
+								}
+                            }
+                        },
+
+                    ]
+                },
+                {//690 符文合成
+                    "type": "Widget",
+                    "name": "YteWidgetRuneA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 810
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetRuneB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextRune",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yterunestf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "RuneImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "GemImage" },
+											"right": { "name": "RvlImage" },
+											"up": { "name": "Gemgy5" },
+											"down": { "name": "Rune01" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune01",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "GemImage" },
+									"right": { "name": "Rune02" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune09" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune02",
+                            "fields": {
+                                "rect": {
+                                    "x": 120,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune01" },
+									"right": { "name": "Rune03" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune10" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune03",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune02" },
+									"right": { "name": "Rune04" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune11" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune04",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune03" },
+									"right": { "name": "Rune05" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune12" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune05",
+                            "fields": {
+                                "rect": {
+                                    "x": 420,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune04" },
+									"right": { "name": "Rune06" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune13" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune06",
+                            "fields": {
+                                "rect": {
+                                    "x": 520,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune05" },
+									"right": { "name": "Rune07" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune14" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune07",
+                            "fields": {
+                                "rect": {
+                                    "x": 620,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune06" },
+									"right": { "name": "Rune08" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune15" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune08",
+                            "fields": {
+                                "rect": {
+                                    "x": 720,
+                                    "y": 60,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune07" },
+									//"right": { "name": "Rune08" },
+									"up": { "name": "RuneImage" },
+									"down": { "name": "Rune16" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune09",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Rune07" },
+									"right": { "name": "Rune10" },
+									"up": { "name": "Rune01" },
+									"down": { "name": "Rune17" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune10",
+                            "fields": {
+                                "rect": {
+                                    "x": 120,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune09" },
+									"right": { "name": "Rune11" },
+									"up": { "name": "Rune02" },
+									"down": { "name": "Rune18" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune11",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune10" },
+									"right": { "name": "Rune12" },
+									"up": { "name": "Rune03" },
+									"down": { "name": "Rune19" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune12",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune11" },
+									"right": { "name": "Rune13" },
+									"up": { "name": "Rune04" },
+									"down": { "name": "Rune20" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune13",
+                            "fields": {
+                                "rect": {
+                                    "x": 420,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune12" },
+									"right": { "name": "Rune14" },
+									"up": { "name": "Rune05" },
+									"down": { "name": "Rune21" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune14",
+                            "fields": {
+                                "rect": {
+                                    "x": 520,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune13" },
+									"right": { "name": "Rune15" },
+									"up": { "name": "Rune06" },
+									"down": { "name": "Rune22" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune15",
+                            "fields": {
+                                "rect": {
+                                    "x": 620,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune14" },
+									"right": { "name": "Rune16" },
+									"up": { "name": "Rune07" },
+									"down": { "name": "Rune23" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune16",
+                            "fields": {
+                                "rect": {
+                                    "x": 720,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune15" },
+									//"right": { "name": "Rune16" },
+									"up": { "name": "Rune08" },
+									"down": { "name": "Rune24" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune17",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Rune15" },
+									"right": { "name": "Rune18" },
+									"up": { "name": "Rune09" },
+									"down": { "name": "Rune25" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune18",
+                            "fields": {
+                                "rect": {
+                                    "x": 120,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune17" },
+									"right": { "name": "Rune19" },
+									"up": { "name": "Rune10" },
+									"down": { "name": "Rune26" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune19",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune18" },
+									"right": { "name": "Rune20" },
+									"up": { "name": "Rune11" },
+									"down": { "name": "Rune27" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune20",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune19" },
+									"right": { "name": "Rune21" },
+									"up": { "name": "Rune12" },
+									"down": { "name": "Rune28" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune21",
+                            "fields": {
+                                "rect": {
+                                    "x": 420,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune20" },
+									"right": { "name": "Rune22" },
+									"up": { "name": "Rune13" },
+									"down": { "name": "Rune29" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune22",
+                            "fields": {
+                                "rect": {
+                                    "x": 520,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune21" },
+									"right": { "name": "Rune23" },
+									"up": { "name": "Rune14" },
+									"down": { "name": "Rune30" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune23",
+                            "fields": {
+                                "rect": {
+                                    "x": 620,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune22" },
+									"right": { "name": "Rune24" },
+									"up": { "name": "Rune15" },
+									"down": { "name": "Rune31" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune24",
+                            "fields": {
+                                "rect": {
+                                    "x": 720,
+                                    "y": 260,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune23" },
+									//"right": { "name": "Rune24" },
+									"up": { "name": "Rune16" },
+									"down": { "name": "Rune32" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune25",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Rune23" },
+									"right": { "name": "Rune26" },
+									"up": { "name": "Rune17" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune26",
+                            "fields": {
+                                "rect": {
+                                    "x": 120,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune25" },
+									"right": { "name": "Rune27" },
+									"up": { "name": "Rune18" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune27",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune26" },
+									"right": { "name": "Rune28" },
+									"up": { "name": "Rune19" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune28",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune27" },
+									"right": { "name": "Rune29" },
+									"up": { "name": "Rune20" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune29",
+                            "fields": {
+                                "rect": {
+                                    "x": 420,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune28" },
+									"right": { "name": "Rune30" },
+									"up": { "name": "Rune21" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune30",
+                            "fields": {
+                                "rect": {
+                                    "x": 520,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune29" },
+									"right": { "name": "Rune31" },
+									"up": { "name": "Rune22" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune31",
+                            "fields": {
+                                "rect": {
+                                    "x": 620,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune30" },
+									"right": { "name": "Rune32" },
+									"up": { "name": "Rune23" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune32",
+                            "fields": {
+                                "rect": {
+                                    "x": 720,
+                                    "y": 360,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rune31" },
+									//"right": { "name": "Rune32" },
+									"up": { "name": "Rune24" },
+									"down": { "name": "Rune33" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune33",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 460,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Rune31" },
+									//"right": { "name": "Rune32" },
+									"up": { "name": "Rune25" },
+									"down": { "name": "RvlImage" }
+								}
+                            }
+                        }
+                    ]
+                },
+                {//1180 消耗品合成
+                    "type": "Widget",
+                    "name": "YteWidgetConsumablesA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1420
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetConsumablesB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextConsumables",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteconsumablestf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "RvlImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "RuneImage" },
+											"right": { "name": "ToaImage" },
+											"up": { "name": "Rune33" },
+											"down": { "name": "Yps" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Yps",
+                            "fields": {
+                                "rect": {
+                                    "x": 20,
+                                    "y": 103,
+                                    "scale": 0.8
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Rune31" },
+									"right": { "name": "Rvs" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rvs",
+                            "fields": {
+                                "rect": {
+                                    "x": 120,
+                                    "y": 103,
+                                    "scale": 0.8
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Yps" },
+									"right": { "name": "Rvl" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rvl",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 101,
+                                    "scale": 0.80
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rvs" },
+									"right": { "name": "Aqv" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Aqv",
+                            "fields": {
+                                "rect": {
+                                    "x": 385,
+                                    "y": 60,
+                                    "scale": 0.4
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rvl" },
+									"right": { "name": "Cqv" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Cqv",
+                            "fields": {
+                                "rect": {
+                                    "x": 490,
+                                    "y": 68,
+                                    "scale": 0.4
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Aqv" },
+									"right": { "name": "Jav" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Jav",
+                            "fields": {
+                                "rect": {
+                                    "x": 600,
+                                    "y": 75,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Cqv" },
+									"right": { "name": "Tax" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Tax",
+                            "fields": {
+                                "rect": {
+                                    "x": 700,
+                                    "y": 82,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Jav" },
+									//"right": { "name": "Tax" },
+									"up": { "name": "RvlImage" },
+									"down": { "name": "ToaImage" }
+								}
+                            }
+                        },
+                    ]
+                },
+                {//1400 任務品合成
+                    "type": "Widget",
+                    "name": "YteWidgetQuestsA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1680
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetQuestsB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextQuests",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytequeststf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ToaImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "RvlImage" },
+											"right": { "name": "SocketedImage" },
+											"up": { "name": "Yps" },
+											"down": { "name": "Hst" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Hst",
+                            "fields": {
+                                "rect": {
+                                    "x": 50,
+                                    "y": 60,
+                                    "scale": 0.3
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Jav" },
+									"right": { "name": "Qf2" },
+									"up": { "name": "ToaImage" },
+									"down": { "name": "SocketedImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Qf2",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 65,
+                                    "scale": 0.40
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Hst" },
+									"right": { "name": "Toa" },
+									"up": { "name": "ToaImage" },
+									"down": { "name": "SocketedImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Toa",
+                            "fields": {
+                                "rect": {
+                                    "x": 420,
+                                    "y": 95,
+                                    "scale": 0.8
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Qf2" },
+									"right": { "name": "Redp" },
+									"up": { "name": "ToaImage" },
+									"down": { "name": "SocketedImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Redp",
+                            "fields": {
+                                "rect": {
+                                    "x": 640,
+                                    "y": 90,
+                                    "scale": 0.25
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Toa" },
+									//"right": { "name": "Redp" },
+									"up": { "name": "ToaImage" },
+									"down": { "name": "SocketedImage" }
+								}
+                            }
+                        },
+                    ]
+                },
+                {//1620 裝備打孔
+                    "type": "Widget",
+                    "name": "YteWidgetSocketsA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 1940
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetSocketsB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextSockets",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytesocketsadd",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "SocketedImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "ToaImage" },
+											"right": { "name": "ItemupgImage" },
+											"up": { "name": "Hst" },
+											"down": { "name": "Wpns" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpns",
+                            "fields": {
+                                "rect": {
+                                    "x": 60,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Toa" },
+									"right": { "name": "Arms" },
+									"up": { "name": "SocketedImage" },
+									"down": { "name": "ItemupgImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Arms",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Wpns" },
+									"right": { "name": "Shlds" },
+									"up": { "name": "SocketedImage" },
+									"down": { "name": "ItemupgImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shlds",
+                            "fields": {
+                                "rect": {
+                                    "x": 380,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Arms" },
+									"right": { "name": "Helms" },
+									"up": { "name": "SocketedImage" },
+									"down": { "name": "ItemupgImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helms",
+                            "fields": {
+                                "rect": {
+                                    "x": 520,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Shlds" },
+									"right": { "name": "Rares" },
+									"up": { "name": "SocketedImage" },
+									"down": { "name": "ItemupgImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rares",
+                            "fields": {
+                                "rect": {
+                                    "x": 680,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Helms" },
+									//"right": { "name": "Rares" },
+									"up": { "name": "SocketedImage" },
+									"down": { "name": "ItemupgImage" }
+								}
+                            }
+                        },
+                    ]
+                },
+                {//1860 裝備升級
+                    "type": "Widget",
+                    "name": "YteWidgetItemupgA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2260
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetItemupgB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextItemupg",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteitemupg",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ItemupgImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "SocketedImage" },
+											"right": { "name": "ItemfixImage" },
+											"up": { "name": "Wpns" },
+											"down": { "name": "Lowwpn" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Lowwpn",
+                            "fields": {
+                                "rect": {
+                                    "x": 70,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Helms" },
+									"right": { "name": "Lowarm" },
+									"up": { "name": "ItemupgImage" },
+									"down": { "name": "ItemfixImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Lowarm",
+                            "fields": {
+                                "rect": {
+                                    "x": 250,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Lowwpn" },
+									"right": { "name": "Wpnup" },
+									"up": { "name": "ItemupgImage" },
+									"down": { "name": "ItemfixImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnup",
+                            "fields": {
+                                "rect": {
+                                    "x": 430,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Lowarm" },
+									"right": { "name": "Armup" },
+									"up": { "name": "ItemupgImage" },
+									"down": { "name": "ItemfixImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armup",
+                            "fields": {
+                                "rect": {
+                                    "x": 610,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Wpnup" },
+									//"right": { "name": "Armup" },
+									"up": { "name": "ItemupgImage" },
+									"down": { "name": "ItemfixImage" }
+								}
+                            }
+                        },
+                    ]
+                },
+                {//2100 裝備修复与镶嵌物移除
+                    "type": "Widget",
+                    "name": "YteWidgetItemfixA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2560
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetItemfixB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextItemfix",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteitemfix",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ItemfixImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "ItemupgImage" },
+											"right": { "name": "ItemtfImage" },
+											"up": { "name": "Lowwpn" },
+											"down": { "name": "Wpnfix" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnfix",
+                            "fields": {
+                                "rect": {
+                                    "x": 70,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Wpnup" },
+									"right": { "name": "Armfix" },
+									"up": { "name": "ItemfixImage" },
+									"down": { "name": "ItemtfImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armfix",
+                            "fields": {
+                                "rect": {
+                                    "x": 250,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Wpnfix" },
+									"right": { "name": "Gemoff" },
+									"up": { "name": "ItemfixImage" },
+									"down": { "name": "ItemtfImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gemoff",
+                            "fields": {
+                                "rect": {
+                                    "x": 410,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Armfix" },
+									//"right": { "name": "Gemoff" },
+									"up": { "name": "ItemfixImage" },
+									"down": { "name": "ItemtfImage" }
+								}
+                            }
+                        },
+                    ]
+                },
+                {//2340 物品合成与重鑄
+                    "type": "Widget",
+                    "name": "YteWidgetItemCreateRecastA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 2860
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetItemCreateRecastB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextItemCreateRecast",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@yteitemcreaterecast",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "ItemtfImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "ItemfixImage" },
+											"right": { "name": "CitemImage" },
+											"up": { "name": "Wpnfix" },
+											"down": { "name": "Mrinamu" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Mrinamu",
+                            "fields": {
+                                "rect": {
+                                    "x": 60,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Armfix" },
+									"right": { "name": "Msss" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Msss",
+                            "fields": {
+                                "rect": {
+                                    "x": 210,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Mrinamu" },
+									"right": { "name": "Mwpns" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Mwpns",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Msss" },
+									"right": { "name": "Mitem" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Mitem",
+                            "fields": {
+                                "rect": {
+                                    "x": 570,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Mwpns" },
+									"right": { "name": "Ritem" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Ritem",
+                            "fields": {
+                                "rect": {
+                                    "x": 740,
+                                    "y": 80,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Mitem" },
+									"right": { "name": "CraftedColdRupture" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedColdRupture",
+                            "fields": {
+                                "rect": {
+                                    "x": 900,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Ritem" },
+									"right": { "name": "CraftedFlameRift" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedColdRuptureimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 900,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedFlameRift",
+                            "fields": {
+                                "rect": {
+                                    "x": 1020,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "CraftedColdRupture" },
+									"right": { "name": "CraftedCrackoftheHeavens" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedFlameRiftimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 1020,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedCrackoftheHeavens",
+                            "fields": {
+                                "rect": {
+                                    "x": 1140,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "CraftedFlameRift" },
+									"right": { "name": "CraftedRottingFissure" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedCrackoftheHeavensimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 1140,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedRottingFissure",
+                            "fields": {
+                                "rect": {
+                                    "x": 1260,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "CraftedCrackoftheHeavens" },
+									"right": { "name": "CraftedBoneBreak" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedRottingFissureimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 1260,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedBoneBreak",
+                            "fields": {
+                                "rect": {
+                                    "x": 1380,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "CraftedRottingFissure" },
+									"right": { "name": "CraftedBlackCleft" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedBoneBreakimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 1380,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CraftedBlackCleft",
+                            "fields": {
+                                "rect": {
+                                    "x": 1500,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "CraftedBoneBreak" },
+									//"right": { "name": "CraftedBlackCleft" },
+									"up": { "name": "ItemtfImage" },
+									"down": { "name": "CitemImage" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "CraftedBlackCleftimg",
+                            "fields": {
+                                "rect": {
+                                    "x": 1500,
+                                    "y": 80,
+                                    "scale": 0.5
+                                },
+                            }
+                        },
+                    ]
+                },
+                {//2580 手工藝品
+                    "type": "Widget",
+                    "name": "YteWidgetCraftedItemsA",
+                    "fields": {
+                        "rect": {
+                            "x": 0,
+                            "y": 3160
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "YteWidgetCraftedItemsB",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "YteTextCraftedItems",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 80,
+                                            "y": 0
+                                        },
+                                        "text": "@ytecrafteditemstf",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$MediumLargeFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        },
+                                    }
+                                },
+                                {
+                                    "type": "ButtonWidget",
+                                    "name": "CitemImage",
+                                    "fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											"left": { "name": "ItemtfImage" },
+											"right": { "name": "Close" },
+											"up": { "name": "Mrinamu" },
+											"down": { "name": "CitemHelp" }
+										}
+                                    }
+                                },
+                                {
+                                    "type": "ImageWidget",
+                                    "name": "Divider",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 24
+                                        },
+                                        "filename": "PauseMenu\\Divider"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "CraftedItemsHelp",
+                            "fields": {
+                                "rect": {
+                                    "x": 55,
+                                    "y": 55,
+                                    "width": 540,
+                                    "height": 60,
+                                },
+                                "text": "@Ytemodhelp22",
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumLargeFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                        }
+                                }
+                            },
+                            "children": [
+								{
+									"type": "ButtonWidget", "name": "CitemHelp",
+									"fields": {
+										"rect": { "x": -15, "y": 6,"scale": 0.9 },
+										"filename": "Lobby\\Final\\LobbyArrowSmallR",
+										"focusIndicatorFilename": "Controller/HoverImages/SmallArrowR_Hover",
+										"tooltipString": "@Ytemodhelp23@Ytemodhelp24",
+										"tooltipStyle": "$YtemodLeftToolTipStyle",
+										"tooltipOffset":{ "x": -1150 },
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Mitem" },
+											//"right": { "name": "Ritem" },
+											"up": { "name": "CitemImage" },
+											"down": { "name": "Amuhit" }
+										}
+									}
+								},
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amuhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 50,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Mitem" },
+									"right": { "name": "Rinhit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Amublo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rinhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Amuhit" },
+									"right": { "name": "Gloveshit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Rinblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Gloveshit",
+                            "fields": {
+                                "rect": {
+                                    "x": 370,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rinhit" },
+									"right": { "name": "Belthit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Glovesblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Belthit",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Gloveshit" },
+									"right": { "name": "Bootshit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Beltblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootshit",
+                            "fields": {
+                                "rect": {
+                                    "x": 730,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Belthit" },
+									"right": { "name": "Helmhit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Bootsblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 900,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Bootshit" },
+									"right": { "name": "Armhit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Helmblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 1070,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Helmhit" },
+									"right": { "name": "Shldhit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Armblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 1240,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Armhit" },
+									"right": { "name": "Wpnhit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Shldblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnhit",
+                            "fields": {
+                                "rect": {
+                                    "x": 1410,
+                                    "y": 140,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Shldhit" },
+									//"right": { "name": "Wpnhit" },
+									"up": { "name": "CitemHelp" },
+									"down": { "name": "Wpnblo" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amublo",
+                            "fields": {
+                                "rect": {
+                                    "x": 50,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Shldhit" },
+									"right": { "name": "Rinblo" },
+									"up": { "name": "Amuhit" },
+									"down": { "name": "Amucas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rinblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Amublo" },
+									"right": { "name": "Glovesblo" },
+									"up": { "name": "Rinhit" },
+									"down": { "name": "Rincas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Glovesblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 370,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rinblo" },
+									"right": { "name": "Beltblo" },
+									"up": { "name": "Gloveshit" },
+									"down": { "name": "Glovescas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Beltblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Glovesblo" },
+									"right": { "name": "Bootsblo" },
+									"up": { "name": "Belthit" },
+									"down": { "name": "Beltcas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootsblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 730,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Beltblo" },
+									"right": { "name": "Helmblo" },
+									"up": { "name": "Bootshit" },
+									"down": { "name": "Bootscas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 900,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Bootsblo" },
+									"right": { "name": "Armblo" },
+									"up": { "name": "Helmhit" },
+									"down": { "name": "Helmcas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 1070,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Helmblo" },
+									"right": { "name": "Shldblo" },
+									"up": { "name": "Armhit" },
+									"down": { "name": "Armcas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 1240,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Armblo" },
+									"right": { "name": "Wpnblo" },
+									"up": { "name": "Shldhit" },
+									"down": { "name": "Shldcas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnblo",
+                            "fields": {
+                                "rect": {
+                                    "x": 1450,
+                                    "y": 300,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Shldblo" },
+									//"right": { "name": "Wpnblo" },
+									"up": { "name": "Wpnhit" },
+									"down": { "name": "Wpncas" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amucas",
+                            "fields": {
+                                "rect": {
+                                    "x": 50,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Shldblo" },
+									"right": { "name": "Rincas" },
+									"up": { "name": "Amublo" },
+									"down": { "name": "Amusafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rincas",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Amucas" },
+									"right": { "name": "Glovescas" },
+									"up": { "name": "Rinblo" },
+									"down": { "name": "Rinsafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Glovescas",
+                            "fields": {
+                                "rect": {
+                                    "x": 370,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rincas" },
+									"right": { "name": "Beltcas" },
+									"up": { "name": "Glovesblo" },
+									"down": { "name": "Glovessafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Beltcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Glovescas" },
+									"right": { "name": "Bootscas" },
+									"up": { "name": "Beltblo" },
+									"down": { "name": "Beltsafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootscas",
+                            "fields": {
+                                "rect": {
+                                    "x": 730,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Beltcas" },
+									"right": { "name": "Helmcas" },
+									"up": { "name": "Bootsblo" },
+									"down": { "name": "Bootssafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 900,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Bootscas" },
+									"right": { "name": "Armcas" },
+									"up": { "name": "Helmblo" },
+									"down": { "name": "Helmsafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 1070,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Helmcas" },
+									"right": { "name": "Shldcas" },
+									"up": { "name": "Armblo" },
+									"down": { "name": "Armsafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldcas",
+                            "fields": {
+                                "rect": {
+                                    "x": 1240,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Armcas" },
+									"right": { "name": "Wpncas" },
+									"up": { "name": "Shldblo" },
+									"down": { "name": "Shldsafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpncas",
+                            "fields": {
+                                "rect": {
+                                    "x": 1440,
+                                    "y": 460,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Shldcas" },
+									//"right": { "name": "Wpncas" },
+									"up": { "name": "Wpnblo" },
+									"down": { "name": "Wpnsafe" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Amusafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 50,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									//"left": { "name": "Shldcas" },
+									"right": { "name": "Rinsafe" },
+									"up": { "name": "Amucas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rinsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 220,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Amusafe" },
+									"right": { "name": "Glovessafe" },
+									"up": { "name": "Rincas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Glovessafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 370,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Rinsafe" },
+									"right": { "name": "Beltsafe" },
+									"up": { "name": "Glovescas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Beltsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Glovessafe" },
+									"right": { "name": "Bootssafe" },
+									"up": { "name": "Beltcas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Bootssafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 730,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Beltsafe" },
+									"right": { "name": "Helmsafe" },
+									"up": { "name": "Bootscas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Helmsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 900,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Bootssafe" },
+									"right": { "name": "Armsafe" },
+									"up": { "name": "Helmcas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Armsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 1070,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Helmsafe" },
+									"right": { "name": "Shldsafe" },
+									"up": { "name": "Armcas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Shldsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 1240,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Armsafe" },
+									"right": { "name": "Wpnsafe" },
+									"up": { "name": "Shldcas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Wpnsafe",
+                            "fields": {
+                                "rect": {
+                                    "x": 1450,
+                                    "y": 620,
+                                    "scale": 0.35
+                                },
+								"focusIndicatorVisible": true,
+								"focusIndicatorOffset": { "x": -2, "y": 0 },
+								"navigation": {
+									"left": { "name": "Shldsafe" },
+									//"right": { "name": "Wpnsafe" },
+									"up": { "name": "Wpncas" },
+									"down": { "name": "Close" }
+								}
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YteFih888",
+                    "fields": {
+                        "rect": { "x": 0, "y": 3980, "width": 1800, "height": 60 },
+                    }
+                },
+            ]
+        },
+    ]
+}

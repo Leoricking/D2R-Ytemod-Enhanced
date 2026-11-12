@@ -1,0 +1,87 @@
+﻿{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/custom particles/Psionics/Psionics.particles"
+            },
+            {
+                "path": "data/hd/vfx/particles/character/enemy/lightningspire/fx_lightningspire_death.particles"
+            },
+            {
+                "path": "data/hd/vfx/particles/character/enemy/baalcrab/baalcast_effects.particles"
+            },
+            {
+                "path": "data/hd/vfx/custom particles/Blast Start/Blast Start.particles"
+            },
+            {
+                "path": "data/hd/vfx/custom particles/Upper Fire/Upper Fire.particles"
+            },
+            {
+                "path": "data/hd/vfx/custom particles/Lower Fire/Lower Fire.particles"
+            },
+            {
+                "path": "data/hd/vfx/particles/overlays/common/quickness/quickness_icon.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/custom effect/baalshield/B_fire_color.texture"
+            },
+            {
+                "path": "data/hd/vfx/custom effect/blasterstart/B_blast_color.texture"
+            },
+            {
+                "path": "data/hd/vfx/custom effect/t_fire_upper_parts/A_color.texture"
+            },
+            {
+                "path": "data/hd/custom effect/t_fire_lower_parts/B_color.texture"
+            },
+            {
+                "path": "data/hd/custom effect/t_fire_lower_parts/C_color.texture"
+            }
+
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "baal_on_throne",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 2381333979,
+            "components": []
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 992020576,
+            "components": [
+                //퀴크니스 이펙트 아이콘 스킨
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/common/quickness/quickness_icon.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 126.0,
+                        "y": 98.0,
+                        "z": 126.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

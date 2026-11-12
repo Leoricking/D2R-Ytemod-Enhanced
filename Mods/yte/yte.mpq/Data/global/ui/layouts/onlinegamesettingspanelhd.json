@@ -1,0 +1,121 @@
+{
+    "type": "SettingsPanel", "name": "OnlineGameSettingsPanel",
+    "fields": {
+        "priority": 100,
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "fields": {
+				"anchor": "$LeftPanelAnchor",
+				"rect": "$MessagePanelRect",
+                "color": [ 0.0, 0.0, 0.0, 0.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "catcher",
+                    "fields": {
+						"rect": { "x": 0, "y": 0, "width": 875, "height": 1500 }
+                    }
+                },
+                {
+                    "type": "Widget", "name": "Anchor",
+                    "fields": {
+						"rect": { "x": 0, "y": 0 }
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "Background",
+                            "fields": {
+								"filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_BG",
+                            },
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "Title",
+                            "fields": {
+								"text": "@0scmsgp",
+								"rect": { "x": 120, "y": 61, "width": 640, "height": 85 },
+								"style": "$StyleTitleBlock"
+								
+                            },
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "CloseButton",
+                            "fields": {
+								"rect": { "x": 791, "y": 10 },
+								"filename": "PANEL\\closebtn_4x",
+								"hoveredFrame": 3,
+								"onClickMessage": "SettingsPanelMessage:CheckChanges:Close",
+								"tooltipString": "@strClose",
+								"sound": "cursor_close_window_hd",
+								"acceptsEscKeyEverywhere": true
+                            },
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "UptoVip",
+            "fields": {
+				"anchor": "$LeftPanelAnchor",
+                "rect": { "x": 2000, "y": -591,"scale": 0.6 },
+                "filename": "ytepic\\uptovip",
+                "hoveredFrame": 0,
+				"pressedFrame": 0,
+                "onClickMessage": "PanelManager:TogglePanel:YtemodUptoVip",
+                "tooltipString": "当前为共享版，升级至增值版，可解锁全部查询资料。\n点击查看升级方法。",
+                "sound": "cursor_close_window_hd",
+            },
+        },
+        {
+            "type": "TabBarWidget", "name": "OptionsTabs",
+            "fields": {
+				"anchor": "$LeftPanelAnchor",
+				"rect": "$MessagePanelTabBarRect",
+                "tabCount": 7,
+                "tabSize": { "x": 95, "y": 60, },
+                "tabPadding": { "x": 3, "y": 0 },
+                "unavailableTabsLeaveGaps": false,
+                "tabSizingMethod": "fixedCenter",
+                "filename": "PANEL\\message\\Boctabc",
+                "inactiveFrames": [ 1, 1, 1, 1, 1, 1, 1 ],
+                "activeFrames": [ 0, 0, 0, 0, 0, 0, 0 ],
+                "activeTextColor": "$FontColorGoldYellow",
+                "inactiveTextColor": "$TabsInactiveTextColor",
+                "tabTextOffset": {
+                    "x": 0,
+                    "y": -15,
+                },
+                "textStyle": {
+                    "options": {
+                        "lineWrap": true
+                    },
+                    "pointSize": "$MediumFontSize",
+                    "alignment": {
+                        "h": "center",
+                        "v": "center"
+                    },
+                    "fontColor": "$FontColorWhite",
+                    "spacing": {
+                        "leading": 0.9,
+                        "kerning": 0.95
+                    }
+                },
+                "textStrings": [ "ㆉ", "ㅪ", "ㅂ", "ㅅ", "㆐", "ㅲ", "ㆍ" ],
+                "tooltipStrings": [ "ㆉ @ytecubemain", "ㅪ @yterunewords", "ㅂ @ytesetitems", "ㅅ @yteunimisc", "㆐ @yteuniweapon", "ㅲ @yteuniarmor", "ㆍ @ytebasics" ],
+                "tabMessages": [
+                    "SettingsPanelMessage:CheckChanges:BocCubeVPanel",
+                    "SettingsPanelMessage:CheckChanges:BocRwVPanel",
+                    "SettingsPanelMessage:CheckChanges:BocSetsVPanel",
+                    "SettingsPanelMessage:CheckChanges:BocUniMVPanel",
+                    "SettingsPanelMessage:CheckChanges:BocUniWVPanel",
+                    "SettingsPanelMessage:CheckChanges:BocUniAVPanel",
+                    "SettingsPanelMessage:CheckChanges:BocBasicVPanel",
+                ],
+            },
+        },
+    ]
+}
+

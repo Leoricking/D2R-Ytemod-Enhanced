@@ -1,0 +1,87 @@
+{
+    "type": "HoradricCubePanel", "name": "HoradricCubeLayout",
+    "fields": {
+        "priority": 10,
+        "rect": { "x": -320, "y": -240, "width": 320, "height": 432 },
+        "anchor": "$LeftPanelAnchor",
+    },
+    "children": [
+	
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+            "fields": {
+                //"rect": { "width": 320, "height": 432 }
+            },
+        },
+        {
+            "type": "GridImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\supertransmogrifier",
+				"rect": { "x": 229, "y": 252 },
+                //"frames": 4,
+                //"rows": 2,
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "convert",
+            "fields": {
+                //"rect": { "x": 144, "y": 260 },
+				"rect": { "x": 288, "y": 374 },
+                "filename": "PANEL\\miniconvert",
+                "tooltipString": "@strUiMenu2",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "HoradricCubePanelMessage:Convert",
+            },
+        },
+		
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                //"rect": { "x": 275, "y": 383 },
+				"rect": { "x": 288, "y": 220 },
+                "filename": "PANEL\\buysellbtn",
+                "normalFrame": 10,
+                "pressedFrame": 11,
+                "tooltipString": "@strClose",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "HoradricCubePanelMessage:Close",
+            },
+        },
+		/*
+        {
+            "type": "ButtonWidget", "name": "minicubebtn",
+            "fields": {
+                //"rect": { "x": 275, "y": 383 },
+				"rect": { "x": 228, "y": 220 },
+                "filename": "PANEL\\cubebtn",
+                "normalFrame": 0,
+                "pressedFrame": 1,
+                "tooltipString": "@mod51096gameguidetxt1",
+                "tooltipOffset": { "x": 0, "y": -3 },
+                "onClickMessage": "PanelManager:TogglePanel:MiniCubeLayoutsd",
+            },
+        },
+		*/
+        {
+            "type": "InventoryGridWidget", "name": "grid",
+            "fields": {
+                //"rect": { "x": 118, "y": 139 },
+				"rect": { "x": 232, "y": 255 },
+                "cellCount": { "x": 3, "y": 4 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "flourish",
+            "fields": {
+                "rect": { "x": 320, "y": 237 },
+                "filename": "MENU\\horadric",
+                "blendMode": "black",
+                "fps": 14,
+                "playing": false,
+                "loop": false,
+            },
+        },
+    ]
+}

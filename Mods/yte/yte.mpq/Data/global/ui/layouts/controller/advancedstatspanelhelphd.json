@@ -1,0 +1,1554 @@
+{
+	"basedOn": "AdvancedStatsPanelHelpHD.json",
+    "type": "UKComplianceModal", "name": "AdvancedStatsPanelHelp",
+    "fields": {
+        "drawTint": false,
+        "anchor": { "x": 0.5, "y": 0 },
+		"rect": { "x": -785, "y": 200, "width": 1570, "height": 1500 },
+        "priority": 100,
+        "isDismissable": true,
+		"defaultWidget": "ScrollController"
+    },
+    "children": [
+		{
+			"type": "ImageWidget", "name": "Background",
+		},
+		{
+			"type": "ClickCatcherWidget", "name": "catcher",
+		},
+		{
+			"type": "TextBoxWidget", "name": "Title",
+		},
+		{
+			"type": "ImageWidget", "name": "ScrollBarBackground",
+			"children": [
+				{
+					"type": "ScrollControllerWidget", "name": "ScrollController",
+					"fields": {
+                        "focusOnMouseOver": false,
+                        "focusIndicatorVisible": false,
+						"navigation": {
+							"left": { "name": "YteSorbtn" },
+						}
+					}
+				},
+			]
+		},
+		{
+			"type": "ScrollViewWidget", "name": "ScrollView",
+			"children": [
+				{//200  魔法使
+					"type": "Widget",
+					"name": "YteWidgetSorA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetSorB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextSor",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteSorbtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											//"up": { "name": "Anch001" },
+											"down": { "name": "YtePalbtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e-FCR
+							"type": "Widget",
+							"name": "YteWidgetSorFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "SorFcr01Title",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SorFcr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFcr11Title",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFcr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFcr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "SorFcr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "SorFcr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 打击恢复+格挡速度
+							"type": "Widget",
+							"name": "YteWidgetSorFhr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "SorFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SorFhr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "SorFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFhr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFhr12Text",
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "SorFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "SorFhr02Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "SorFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFbr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "SorFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "SorFbr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//2600  圣骑士
+					"type": "Widget",
+					"name": "YteWidgetPalA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetPalB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextPal",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YtePalbtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YteSorbtn" },
+											"down": { "name": "YteNecbtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e-FCR
+							"type": "Widget",
+							"name": "YteWidgePalFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "PalFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "PalFcr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFcr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFcr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFcr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFcr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3c-FHR
+							"type": "Widget",
+							"name": "YteWidgetPalFhr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "PalFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "PalFhr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFhr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFhr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFhr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFhr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3f-FBR
+							"type": "Widget",
+							"name": "YteWidgetPalFbr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "PalFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "PalFbr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFbr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "PalFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "PalFbr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "PalFbr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "PalFbr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//2600  死灵法师
+					"type": "Widget",
+					"name": "YteWidgetNecA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetNecB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextNec",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteNecbtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YtePalbtn" },
+											"down": { "name": "YteBarbtn" }
+										}
+									}
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteWarbtn",
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e-FCR
+							"type": "Widget",
+							"name": "YteWidgetNecFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "NecFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NecFcr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFcr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFcr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFcr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFcr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3c-FHR
+							"type": "Widget",
+							"name": "YteWidgetNecFhr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "NecFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NecFhr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFhr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFhr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "NecFhr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "NecFhr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3f-FBR
+							"type": "Widget",
+							"name": "YteWidgetNecFbr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "NecFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "NecFbr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "NecFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFbr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "NecFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "NecFbr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  野蠻人
+					"type": "Widget",
+					"name": "YteWidgetBarA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetBarB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextBar",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteBarbtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YteNecbtn" },
+											"down": { "name": "YteAmabtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e+打击恢复
+							"type": "Widget",
+							"name": "YteWidgetBarFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "BarFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "BarFcr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "BarFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFcr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFcr12Text",
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "BarFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "BarFhr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "BarFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFhr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFhr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 格挡速度
+							"type": "Widget",
+							"name": "YteWidgeBarFbr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "BarFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "BarFbr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "BarFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFbr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "BarFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "BarFbr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  亞馬遜
+					"type": "Widget",
+					"name": "YteWidgetAmaA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetAmaB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextAma",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteAmabtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YteBarbtn" },
+											"down": { "name": "YteAssbtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e+打击恢复
+							"type": "Widget",
+							"name": "YteWidgetAmaFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AmaFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AmaFcr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "AmaFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFcr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFcr12Text",
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "AmaFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AmaFhr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "AmaFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFhr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFhr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3f-FBR
+							"type": "Widget",
+							"name": "YteWidgetAmaFbr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AmaFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AmaFbr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFbr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AmaFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AmaFbr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "AmaFbr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "AmaFbr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  刺客
+					"type": "Widget",
+					"name": "YteWidgetAssA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetAssB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextAss",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteAssbtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YteAmabtn" },
+											"down": { "name": "YteDrubtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e+打击恢复
+							"type": "Widget",
+							"name": "YteWidgetAssFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AssFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AssFcr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "AssFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFcr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFcr12Text",
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "AssFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AssFhr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "AssFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFhr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFhr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 格挡速度
+							"type": "Widget",
+							"name": "YteWidgetAssFbr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "AssFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "AssFbr01Text",
+										},
+										//1
+										{
+											"type": "NineTileImageWidget", "name": "AssFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFbr11Text",
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "AssFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "AssFbr12Text",
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//200  德魯伊
+					"type": "Widget",
+					"name": "YteWidgetDruA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetDruB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextDru",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteDrubtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YteAssbtn" },
+											"down": { "name": "YteHirebtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 @yte1k3e-FCR
+							"type": "Widget",
+							"name": "YteWidgetDruFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "DruFcr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFcr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFcr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFcr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr24Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFcr13Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFcr13Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr25Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr25Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFcr26Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFcr26Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3c-FHR
+							"type": "Widget",
+							"name": "YteWidgetDruFhr1",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "DruFhr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr24Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3c-FHR
+							"type": "Widget",
+							"name": "YteWidgetDruFhr2",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFhr02Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "VipHeaderText",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr13Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr13Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr25Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr25Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr26Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr26Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFhr14Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFhr14Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr27Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr27Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFhr28Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFhr28Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3f-FBR
+							"type": "Widget",
+							"name": "YteWidgetDruFbr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "DruFbr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "DruFbr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFbr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFbr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFbr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFbr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr24Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "DruFbr13Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "DruFbr13Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr25Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr25Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "DruFbr26Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "DruFbr26Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{//傭兵
+					"type": "Widget",
+					"name": "YteWidgetHireA",
+					"children": [
+						{
+							"type": "Widget",
+							"name": "YteWidgetHireB",
+							"children": [
+								{
+									"type": "TextBoxWidget",
+									"name": "YteTextHire",
+								},
+								{
+									"type": "ButtonWidget",
+									"name": "YteHirebtn",
+									"fields": {
+										"focusIndicatorVisible": true,
+										"focusIndicatorOffset": { "x": -2, "y": 0 },
+										"navigation": {
+											//"left": { "name": "Anch001" },
+											"right": { "name": "ScrollController" },
+											"up": { "name": "YteDrubtn" },
+											//"down": { "name": "YteA2Hbtn" }
+										}
+									}
+								},
+								{
+									"type": "ImageWidget",
+									"name": "Divider",
+								}
+							]
+						},
+						{//40 打击恢复
+							"type": "Widget",
+							"name": "YteWidgetHirFhr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "HirFhr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "HirFhr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr22Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr12Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr12Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr23Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr23Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr24Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr24Text",
+														},
+													]
+												},
+											]
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr13Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr13Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr25Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr25Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr26Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr26Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+						{//40 @yte1k3e+打击恢复
+							"type": "Widget",
+							"name": "YteWidgetHirFcr",
+							"children": [
+								{
+									"type": "NineTileImageWidget", "name": "HirFcr01Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "HirFcr01Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFcr11Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFcr11Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "HirFcr21Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFcr21Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFcr22Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFcr22Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+								{
+									"type": "NineTileImageWidget", "name": "HirFhr02Tile",
+									"children": [
+										{
+											"type": "TextBoxWidget", "name": "HirFhr02Text",
+										},
+										{
+											"type": "NineTileImageWidget", "name": "HirFhr14Tile",
+											"children": [
+												{
+													"type": "TextBoxWidget", "name": "HirFhr14Text",
+												},
+												//1
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr27Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr27Text",
+														},
+													]
+												},
+												{
+													"type": "NineTileImageWidget", "name": "HirFhr28Tile",
+													"children": [
+														{
+															"type": "TextBoxWidget", "name": "HirFhr28Text",
+														},
+													]
+												},
+											]
+										},
+									]
+								},
+							]
+						},
+					]
+				},
+				{
+					"type": "TextBoxWidget", "name": "YteFih888",
+				},
+			]
+		},
+    ]
+}
